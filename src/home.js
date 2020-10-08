@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
-    BrowserRouter,
-    Switch,
-    Route,
+  //  BrowserRouter,
+  //  Switch,
+  //  Route,
     Link,
-    useHistory
+  //  useHistory
   } from "react-router-dom";
 
 class home extends Component {

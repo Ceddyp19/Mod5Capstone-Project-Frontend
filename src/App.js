@@ -27,7 +27,7 @@
 
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import SignUp from './signup'
 import Login from './login'
@@ -37,8 +37,8 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Link,
-  useHistory
+//  Link,
+// useHistory
 } from "react-router-dom";
 
 
