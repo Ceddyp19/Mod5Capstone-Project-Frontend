@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Auth0Provider } from "@auth0/auth0-react";  //UNIVERSAL LOGIN
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Auth0Provider                                                        //UNIVERSAL LOGIN CODE
+    domain="dev-rez4d2lc.us.auth0.com"
+    clientId="yam3iTtCPpG7Pvkah89pkLaM50HOD8sZ"
+    redirectUri={window.location.origin + '/mainmenu'}
+  >
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Auth0Provider>,                                                     //UNIVERSAL LOGIN CODE
   document.getElementById('root')
 );
 

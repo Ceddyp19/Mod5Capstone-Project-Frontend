@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import LoginButton from './loginButton';
+//import LogoutButton from './logoutButton'
+//import {lock, Auth} from './Authentication'  //EMBEDDED LOGIN CODE
 
 class login extends Component {
     constructor(){
@@ -10,6 +13,12 @@ class login extends Component {
             currentUser: ""
         }
     }
+
+    lock;
+
+    // componentDidMount(){    Allows for a login widget to popup upon page load
+    //     lock.show();
+    // }
 
 
     handleChange = (event) => {
@@ -60,12 +69,15 @@ class login extends Component {
     render() {
         return (
             <div>
+                {/* {lock.show()} */}
                 <form onSubmit={this.login}>
                     <input type="text" name="username" placeholder="Username" onChange={this.handleChange} />
                     <input type="text" name="password" placeholder="Password" onChange={this.handleChange} />
                     <button type="submit">Submit</button>
                 </form>
                 {this.greeting()}
+                <LoginButton/>
+                {/* <LogoutButton/> */}
             </div>
         );
     }
