@@ -1,0 +1,79 @@
+#mainmenudiv {
+   background-color: #74777e;
+   text-align: center;
+   border: 3px solid green;
+   height: 100vh;
+   /* overflow: auto; */
+   /* display: flex; */
+   align-items: center;
+}
+
+#background {
+    background-color: steelblue;
+}
+
+.mainbuttons {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.buttondiv {
+    padding: 20px 0;
+    border: 3px solid beige;
+    text-align: center;
+    background-color: orangered;
+    font-style: 'initial';
+    font-size: 16px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 20px;
+    margin: 15px 0px 15px 15px;
+    color: white;
+    height:100%;
+    border-radius: 8px;
+    display: inline;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+   width: 50%;
+}
+
+#mapdiv {
+    
+    position: relative;;
+    top:100px;
+    /* right:20px; */
+} 
+
+#translatediv {
+    background-color: orangered;
+    position: relative;;
+    top:300px;
+    /* right:20px; */
+} 
+
+#conversediv {
+    background-color: orangered;
+    position: relative;;
+    top:500px;
+    /* right:20px; */
+} 
+
+#apptitle {
+    padding: 20px 0;
+    border: 3px solid beige;
+    text-align: center;
+    background-color: orangered;
+    font-style: 'initial';
+    font-size: 16px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 20px;
+    margin: 15px 0px 15px 15px;
+    color: white;
+    height:100%;
+    border-radius: 8px;
+    display: inline;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+     width: 50%;
+}

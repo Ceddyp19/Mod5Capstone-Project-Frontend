@@ -4,14 +4,20 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.1.0",
+    "@auth0/auth0-spa-js": "^1.12.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "auth0-lock": "^11.27.0",
+    "dotenv": "^8.2.0",
+    "google-maps-react": "^2.0.6",
     "react": "^16.13.1",
+    "react-cool-onclickoutside": "^1.5.7",
     "react-dom": "^16.13.1",
+    "react-json-pretty": "^2.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "use-places-autocomplete": "^1.5.4"
   },
   "scripts": {
     "start": "react-scripts start",

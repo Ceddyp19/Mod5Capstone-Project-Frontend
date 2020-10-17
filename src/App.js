@@ -33,6 +33,7 @@ import SignUp from './signup'
 import Login from './login'
 import Home from './home'
 import MainMenu from './mainMenu'
+import MapPage from './mapPage'
 
 import {
   BrowserRouter,
@@ -67,6 +68,10 @@ class App extends Component {
 
             <Route exact path="/mainmenu">
               <MainMenu />
+            </Route>
+
+            <Route exact path="/map">
+              <MapPage />
             </Route>
 
           </Switch>

@@ -1,0 +1,17 @@
+#map-wrapper {
+    border-color: blue;
+    /* padding: 10px; */
+}
+
+/* #map {
+    width: '80%';    
+    height: '60%'
+} */
+
+#sidebar {
+    background-color: brown;
+    position: absolute;
+    top: 140px;
+    width: 38%;
+    height: 80%;
+}

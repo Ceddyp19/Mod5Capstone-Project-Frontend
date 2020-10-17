@@ -1,0 +1,8 @@
+ a.current {                                 /*change the nav button style user is currently viewing */
+    text-decoration: underline overline;    
+    color: orange;
+}
+
+.navdiv {
+    z-index: 20;
+}
