@@ -27,6 +27,7 @@ import "@reach/combobox/styles.css";
 import mapStyles from './mapStyles';
 import Tabs from "./Tabs";
 import PlacesAutocomplete from './PlacesAutocomplete'
+import DropDown from './dropDown';
 
 //=================================================================My Global Variables===============================================================================
 const libraries = ["places"];
@@ -52,8 +53,14 @@ export default function NewMap() {
     const [nameValue, setNameValue] = useState('');  //set the input value of Name of Place as person types
     const [imageUrlValue, setImageUrlValue] = useState('');  //set the input value of image
     const [destinations, setDestinations] = useState([]);  //holds all destinations created by user
+    const [favorited, setFavorited] = useState([]);  //holds favorited destinations list
+    const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
+    const [visited, setVisited] = useState([]);      //holds Visited destinations list
+    // const [shared, setShared] = useState([]);     //holds Shared destinations list
 
-    const [markers, setmarkers] = React.useState([]);
+
+
+    //const [markers, setmarkers] = React.useState([]);
     const [selectedDefaultMarker, setselectedDefaultMarker] = React.useState(null);
     const [selectedCreatedMarker, setselectedCreatedMarker] = React.useState(null);
     //***************Variables*************************************/
@@ -132,6 +139,25 @@ export default function NewMap() {
             });
 
     }
+
+    function addToList(markerProps, listName) {
+        //console.log('addToList function operational!', markerProps, listName)
+
+        switch (listName) {
+            case "Favorite":
+                console.log(markerProps.name + ' added to ' + listName)
+                break;
+            case "Want to Go":
+                console.log(markerProps.name + ' added to ' + listName)
+                break;
+            case "Visited":
+                console.log(markerProps.name + ' added to ' + listName)
+                break;
+            default:
+                console.log('Error, List not found')
+        }
+    }
+
     //********************Returned Component Values**************************************/
     return (
         <div>
@@ -174,9 +200,9 @@ export default function NewMap() {
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.address}</p>
                             </div>
-                         
-    ))}
-       </div>
+
+                        ))}
+                    </div>
 
                     <div label="Want2Go">
                         After 'while, <em>Crocodile</em>!
@@ -186,10 +212,13 @@ export default function NewMap() {
                         Nothing to see here, this tab is <em>extinct</em>!
        </div>
 
-                    <div label="Walk">
+                    <div label="Favorited">
                         Nothing to see here, this tab is <em>extinct</em>!
        </div>
 
+                    <div label="Shared">
+                        Nothing to see here, this tab is <em>extinct</em>!
+       </div>
 
                 </Tabs>
             </div>
@@ -261,6 +290,7 @@ export default function NewMap() {
                         <div>
                             <h2>{selectedCreatedMarker.name}</h2>
                             <img src={selectedCreatedMarker.image} width="400" height="300" />
+                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
                         </div>
                     </InfoWindow>
                 )}
