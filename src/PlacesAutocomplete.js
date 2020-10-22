@@ -34,7 +34,7 @@ const PlacesAutocomplete = () => {
     // by setting the second parameter to "false"
     setValue(description, false);
     clearSuggestions();
- 
+    //console.log(description)
     // Get latitude and longitude via utility functions
     getGeocode({ address: description })
       .then((results) => getLatLng(results[0]))
@@ -63,6 +63,7 @@ const PlacesAutocomplete = () => {
   return (
     <div ref={ref}>
       <input
+        name='autocomplete'
         value={value}
         onChange={handleInput}
         //disabled={!ready}

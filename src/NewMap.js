@@ -1,7 +1,8 @@
+//============================================My Imports======================================================
 import './App.css';
 import './NewMap.css';
 import * as resturantsData from './TokyoResturants.json'
-import React from 'react';
+import React, { useState } from 'react';
 import {
     GoogleMap,
     useLoadScript,
@@ -27,6 +28,7 @@ import mapStyles from './mapStyles';
 import Tabs from "./Tabs";
 import PlacesAutocomplete from './PlacesAutocomplete'
 
+//=================================================================My Global Variables===============================================================================
 const libraries = ["places"];
 const mapContainerStyle = {
     width: "100vw",
@@ -43,18 +45,23 @@ const options = {
     streetViewControl: true
 }
 
-
+//==================================================================My Map Component=========================================================
 export default function NewMap() {
 
+    //**************State Hooks***************************/
+    const [nameValue, setNameValue] = useState('');  //set the input value of Name of Place as person types
+    const [imageUrlValue, setImageUrlValue] = useState('');  //set the input value of image
+    const [destinations, setDestinations] = useState([]);  //holds all destinations created by user
 
+    const [markers, setmarkers] = React.useState([]);
+    const [selectedDefaultMarker, setselectedDefaultMarker] = React.useState(null);
+    const [selectedCreatedMarker, setselectedCreatedMarker] = React.useState(null);
+    //***************Variables*************************************/
     const { isLoaded, loadError } = useLoadScript({
         // googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
         googleMapsApiKey: 'AIzaSyCkpZHFHHoT4a991ZAcJ7Z7jUnZXXgaO2Y',
         libraries,
     });
-
-    const [markers, setmarkers] = React.useState([]);
-    const [selectedMarker, setSelectedMarker] = React.useState(null);
 
     const mapRef = React.useRef();
     const onMapLoad = React.useCallback((map) => {
@@ -70,7 +77,7 @@ export default function NewMap() {
     if (loadError) return "Error loading maps";
     if (!isLoaded) return "Loading Maps";
 
-
+    //***************Functions*****************************************/
     function toggleForm() {
         let coll = document.getElementsByClassName("form-drop-down");
         let i;
@@ -97,6 +104,35 @@ export default function NewMap() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
     }
+
+    function handleNameInput(event) {
+        setNameValue(event.target.value);   //handles user input in form 
+    }
+
+    function handleImageInput(event) {
+        setImageUrlValue(event.target.value);   //handles user input in form 
+    }
+
+    function addDestination(e) {
+        e.preventDefault();
+        //console.log('it works!', e.target.autocomplete.value)
+
+        let name = e.target.name.value
+        let image = e.target.image.value
+        let address = e.target.autocomplete.value
+
+        getGeocode({ address: address })
+            .then((results) => getLatLng(results[0]))
+            .then(({ lat, lng }) => {
+                //console.log(" I grabbed the Coordinates on Submit!", { lat, lng });
+                setDestinations([...destinations, { name: name, image: image, address: address, lat: lat, lng: lng }])
+            })
+            .catch((error) => {
+                console.log("😱 Error: ", error);
+            });
+
+    }
+    //********************Returned Component Values**************************************/
     return (
         <div>
             <h1 id='Logo'>Logo here!!</h1>
@@ -104,21 +140,21 @@ export default function NewMap() {
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
             </div>
             <div id='mySidebar'>
-                <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>×</a>
+                <a href="#" className="closebtn" onClick={closeNav}>×</a>
 
 
                 <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
                 <div className='content'>
 
                     <div className='form-div'>
-                        <form>
+                        <form onSubmit={addDestination}>
                             <label className='place-input'>
                                 Name of Place:<br />
-                                <input type="text" name="name" />
+                                <input type="text" name="name" placeholder="What's the Name?" value={nameValue} onChange={handleNameInput} />
                             </label><br /><br />
                             <label className='image-input'>
                                 Url Image:<br />
-                                <input type="text" name="name" />
+                                <input type="text" name="image" placeholder="Paste Image Url" value={imageUrlValue} onChange={handleImageInput} />
                             </label><br /><br />
                             <label className='location-input'>
                                 Location:<br />
@@ -128,15 +164,18 @@ export default function NewMap() {
 
                         </form>
                     </div>
-                    {/* <div className='location-search'> */}
-                    {/* Location:
-                        <PlacesAutocomplete />
-                    </div> */}
 
                 </div>
                 <Tabs>
                     <div label="All">
-                        See ya later, <em>Alligator</em>!
+                        {destinations.map((destination) => (
+                            <div>
+                                <h2>{destination.name}</h2>
+                                <img src={destination.image} width="120" height="80" />
+                                <p>{destination.address}</p>
+                            </div>
+                         
+    ))}
        </div>
 
                     <div label="Want2Go">
@@ -177,24 +216,51 @@ export default function NewMap() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setSelectedMarker(resturant);
+                            setselectedDefaultMarker(resturant);
                         }}
                     />
                 ))}
 
-                {selectedMarker && (
+                {destinations.map((destination, index) => (
+                    <Marker
+                        key={index}
+                        position={{ lat: parseFloat(destination.lat), lng: parseFloat(destination.lng) }}
+                        onClick={() => {
+                            setselectedCreatedMarker(destination);
+                        }}
+                    />
+                ))}
+
+                {selectedDefaultMarker && (
                     <InfoWindow
                         position={{
-                            lat: parseFloat(selectedMarker.geometry.location.lat),
-                            lng: parseFloat(selectedMarker.geometry.location.lng)
+                            lat: parseFloat(selectedDefaultMarker.geometry.location.lat),
+                            lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
                         }}
                         onCloseClick={() => {
-                            setSelectedMarker(null);
+                            setselectedDefaultMarker(null);
                         }}
                     >
                         <div>
-                            <h2>{selectedMarker.name}</h2>
-                            <img src={`${selectedMarker.photos['photo_reference']}`} />
+                            <h2>{selectedDefaultMarker.name}</h2>
+                            {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
+                        </div>
+                    </InfoWindow>
+                )}
+
+                {selectedCreatedMarker && (
+                    <InfoWindow
+                        position={{
+                            lat: parseFloat(selectedCreatedMarker.lat),
+                            lng: parseFloat(selectedCreatedMarker.lng)
+                        }}
+                        onCloseClick={() => {
+                            setselectedCreatedMarker(null);
+                        }}
+                    >
+                        <div>
+                            <h2>{selectedCreatedMarker.name}</h2>
+                            <img src={selectedCreatedMarker.image} width="400" height="300" />
                         </div>
                     </InfoWindow>
                 )}
@@ -203,7 +269,7 @@ export default function NewMap() {
     );
 }
 
-
+//===============================================================Global Functions========================================================================
 function Locate({ panTo }) {
     return (
         <button
