@@ -1,0 +1,1052 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCHwEAAMTQf1NXAchmDK9RskeTODUBAhextF79UeHX4aPzBf2EEOCYU9Pwnf9Q8CQlQqtl_igZO5yrsty7P16xWX8sRq7f8eLd2TrCZYEo0PGQ-SrcVkBWm09mVKEi6BMuDik6WTF7jjND-vDBRR6-XUsbcumfnVqWix9K_mREGwxGGyL7Wm0flDxsqJgBrtwXBdSivw3lag5bDammyHN9FEStiHaNnE-ZCi2GPzgHRUBcQRWlGQe9kEuYWMpnGM-iBaUsTJFRJBeAGXVXUAtxbeH8RC8SX2I2BKwmFMbtLajxDjrl87rQj5YzOwk_f9_7nAoQPPkeTJtXAO5JUW8b6NDp8J53da0xOMJjEaEE6uOuyVIsC7eqaARYFUNDXPvBGgiqXBIQUhctXeLoJ4o_dWp4vl3S8xoUnwvKAONKBZv9Z0iBbQEPwcUiVww",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6612139,
+            "lng": 139.7162296
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6625628802915,
+              "lng": 139.7175785802915
+            },
+            "southwest": {
+              "lat": 35.6598649197085,
+              "lng": 139.7148806197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Blue Note Tokyo",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106294414836523823340\">ブルーノート東京</a>"
+            ],
+            "photo_reference": "CmRaAAAAADCxy7uSB_AuejHEfXXMmOtAdTj1SvF6-NSL2Aut8Kh92sN9TI8uPQ6nJ1ab0HlwVpB411pOksYFE-otXmGkUso29W-vNodiPaA90PCHCRykOaRj2x7cs9Py5K6sS6JYEhAIwl-ZzhabhU3pNYfqoxrMGhTlpQ3eNy8W6wTCYPJg4D3Mhj41ng",
+            "width": 1500
+          }
+        ],
+        "place_id": "ChIJmYBOrGaLGGARUHAVps9SV9k",
+        "plus_code": {
+          "compound_code": "MP68+FF Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP68+FF"
+        },
+        "price_level": 3,
+        "rating": 4.6,
+        "reference": "ChIJmYBOrGaLGGARUHAVps9SV9k",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2017,
+        "vicinity": "6 Chome-3-16 Minamiaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.4487901,
+            "lng": 139.6307949
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.4502583802915,
+              "lng": 139.6323461802915
+            },
+            "southwest": {
+              "lat": 35.44756041970851,
+              "lng": 139.6296482197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Breeze Bay Hotel Resort & Spa",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3577,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106131769560514659902\">ブリーズベイホテル リゾート&amp;スパ</a>"
+            ],
+            "photo_reference": "CmRaAAAA8Syz2-vyaenHZa5YShkwBycllGYyPRymFA0MKKcebM2cN4Ilk0FH9Whe4czegqpZVcmQd0079R8OX7Ktf1BkX1I55WCpCy1wZ0sbudkp7-U8W7AmsNA4oygGAFLhBm2vEhD6-f3JNbkdB_EgjZ5MyxEAGhQZkUbUhWH8t38cJJeKDmJJKm0tmA",
+            "width": 5365
+          }
+        ],
+        "place_id": "ChIJUez6619cGGARka2ssXbTR_g",
+        "plus_code": {
+          "compound_code": "CJXJ+G8 Yokohama, Kanagawa, Japan",
+          "global_code": "8Q7XCJXJ+G8"
+        },
+        "rating": 3.7,
+        "reference": "ChIJUez6619cGGARka2ssXbTR_g",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1039,
+        "vicinity": "1 Chome-22-2 Hanasakicho, Naka Ward, Yokohama"
+      },
+      {
+        "business_status": "CLOSED_TEMPORARILY",
+        "geometry": {
+          "location": {
+            "lat": 35.66827469999999,
+            "lng": 139.741108
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66962368029149,
+              "lng": 139.7424569802915
+            },
+            "southwest": {
+              "lat": 35.66692571970849,
+              "lng": 139.7397590197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "MIXX Bar & Lounge",
+        "permanently_closed": true,
+        "photos": [
+          {
+            "height": 1600,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116927648416722498428\">MIXX バー＆ラウンジ MIXX Bar &amp; Lounge</a>"
+            ],
+            "photo_reference": "CmRaAAAAKl8rpsf0Pw1NYf5AyCqScMGQd6n8E5OlVmhCtLSjToZ6a_3wbMY5eo3JfdRThoD5LNPuT440J98KVhyMABFTwR_qHvavsvi0zOclY6N6ZE9NlRczKFKyp2Qr2eoBFRP0EhD8XfzG2DpX9phquJgbt1LJGhT7iigx6lIVa93-rOPeESi8jzLjzQ",
+            "width": 2400
+          }
+        ],
+        "place_id": "ChIJSbSAbIWLGGARmUIn7pmrxZw",
+        "plus_code": {
+          "compound_code": "MP9R+8C Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP9R+8C"
+        },
+        "price_level": 3,
+        "rating": 4.2,
+        "reference": "ChIJSbSAbIWLGGARmUIn7pmrxZw",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "night_club",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 144,
+        "vicinity": "1 Chome-12-33 Akasaka, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.66534589999999,
+            "lng": 139.7607793
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66669488029149,
+              "lng": 139.7621282802915
+            },
+            "southwest": {
+              "lat": 35.6639969197085,
+              "lng": 139.7594303197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Bar&Lounge MAJESTIC 汐留",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 4480,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109771742873951262153\">Bar&amp;Lounge MAJESTIC 汐留</a>"
+            ],
+            "photo_reference": "CmRaAAAARVVJzfoVAABkxv-fRsNWfOU-XF2x9C4ONke8thqqOntJN35JnZyvP4PryFedRbIVkLUf7VvYhIp-zutj1PBzEv0HtQeyHuDOM80JxdePHC61fsH9eGWptpc1FoJm7i7uEhBZOBRbt3i_GwjdJWeSYcGLGhSpeWajX5zzVR_7D_JnSDCLAgaEmQ",
+            "width": 6720
+          }
+        ],
+        "place_id": "ChIJi0-ensKLGGARTXiwvVl85lQ",
+        "plus_code": {
+          "compound_code": "MQ86+48 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMQ86+48"
+        },
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "ChIJi0-ensKLGGARTXiwvVl85lQ",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "night_club",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 127,
+        "vicinity": "汐留シティセンタ 41F, 1 Chome-5−２ Higashishinbashi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6621747,
+            "lng": 139.7306501
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6635236802915,
+              "lng": 139.7319990802915
+            },
+            "southwest": {
+              "lat": 35.66082571970851,
+              "lng": 139.7293011197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Jazz House ALFIE",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117735816315606795140\">Alfie</a>"
+            ],
+            "photo_reference": "CmRaAAAAaotaseIUXytzO47kOLr_UqsJ2Ht5pqjRM90y6dKpIn0g9JisjTUV5aWY2wuo5rtjjAaKPyZ9h5llwHCR-_mkCfZSWS6B0YqO6M1mz1mBmFNj_BCBvGrWSw_olfGQ8gTPEhDxCCIDriyFOqzxl11ovowIGhT06AMpELXwZqFIDVo1fHvojDkfdA",
+            "width": 5184
+          }
+        ],
+        "place_id": "ChIJNX7sjHeLGGAR8Dua6_6pAKw",
+        "plus_code": {
+          "compound_code": "MP6J+V7 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP6J+V7"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJNX7sjHeLGGAR8Dua6_6pAKw",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 109,
+        "vicinity": "ハマ六本木ビル 5F, 6 Chome-2−３５ Roppongi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.71218899999999,
+            "lng": 139.706915
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.71353798029149,
+              "lng": 139.7082639802915
+            },
+            "southwest": {
+              "lat": 35.71084001970849,
+              "lng": 139.7055660197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Cafe Cotton Club",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 667,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106993079029766698791\">カフェ コットンクラブ</a>"
+            ],
+            "photo_reference": "CmRaAAAAOEjSPtYKgwL84aE-1eZ4aSCRx-GCrE7XCmIrjUGb3NachMs_LaeuamJppvl8FPpanhoHj1xJwXg6qFg4WIP3s5TdthLBqCylWKMA905R4eqbhf_2xGm9VO0XE6y7NCUlEhA9KKPWF04d8mOxptHBk2tHGhQ_M99WnhXwq4hQ5BmPJ8UlO6LhSQ",
+            "width": 1000
+          }
+        ],
+        "place_id": "ChIJESeKBTyNGGARw1fSUCEYw3M",
+        "plus_code": {
+          "compound_code": "PP64+VQ Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XPP64+VQ"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJESeKBTyNGGARw1fSUCEYw3M",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "cafe",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 773,
+        "vicinity": "ＳＯＵＮＤＳビル, 1 Chome-17−１４ Takadanobaba, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6739006,
+            "lng": 139.7408218
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.67524958029149,
+              "lng": 139.7421707802915
+            },
+            "southwest": {
+              "lat": 35.6725516197085,
+              "lng": 139.7394728197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "ORIGAMI",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109607555668213992615\">ラウンジ ORIGAMI</a>"
+            ],
+            "photo_reference": "CmRaAAAAgzn-EvEIbVJD7PV0LWDga75YoBc0KmMDAkg9Ke21d5gKgByRACWl_QiqqN7LN4B0mDR7z6rCGFdp478fiOywcuw1F8NkIf99iFamckWjmXj4wlFPHy1xOWBz-MssapWqEhAdQe3pMT7Dso-UHcjopmgDGhQXrUEofW1RXEOp8TCg7VWCeaghwA",
+            "width": 1820
+          }
+        ],
+        "place_id": "ChIJh0sCyYeLGGAReKEOxVauSBw",
+        "plus_code": {
+          "compound_code": "MPFR+H8 Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMPFR+H8"
+        },
+        "price_level": 3,
+        "rating": 4.4,
+        "reference": "ChIJh0sCyYeLGGAReKEOxVauSBw",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 205,
+        "vicinity": "2 Chome-10-3 Nagatachō, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6867817,
+            "lng": 139.7729165
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6881306802915,
+              "lng": 139.7742654802915
+            },
+            "southwest": {
+              "lat": 35.6854327197085,
+              "lng": 139.7715675197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Oriental Lounge",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 467,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100598147227880204122\">Oriental Lounge</a>"
+            ],
+            "photo_reference": "CmRaAAAAsCrUYU6q-9MAh7VjW1Z1b-E6upJDYVWd8ufyR1JZBjHAYpacC6M3dkIIlDV_-WV_HhB28HDFs1e9Qz3NDJtAfs5nEX3PKHbKMW8HZ7oCXdLZnRXmvaOkHT9pHaFvAoQFEhDh68FWuzuHJUDUtrxFGj_qGhRwK2ngD-bakCZI1Ivfkh6Q6x06eA",
+            "width": 700
+          }
+        ],
+        "place_id": "ChIJGcxVfFWJGGARnzHHOEcEFcQ",
+        "plus_code": {
+          "compound_code": "MQPF+P5 Chuo City, Tokyo, Japan",
+          "global_code": "8Q7XMQPF+P5"
+        },
+        "rating": 4.6,
+        "reference": "ChIJGcxVfFWJGGARnzHHOEcEFcQ",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "night_club",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 124,
+        "vicinity": "2-1-1, 日本橋室町, 中央区"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6636986,
+            "lng": 139.7306995
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6650475802915,
+              "lng": 139.7320484802915
+            },
+            "southwest": {
+              "lat": 35.6623496197085,
+              "lng": 139.7293505197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "R2 SUPPER CLUB",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102950400124245533845\">R2 SUPPERCLUB</a>"
+            ],
+            "photo_reference": "CmRaAAAAQ65QqCJvKDS0iFMRFtdRSC3irNKsXypStBZzYK0-wjpN_yqbgirzumIpGgq8D-4nhz1b05YH4C02SCBkGim2-kk8nDWeMPwNj30C3SlbbEAR_m3kcz6D1m7DzQmVBu4cEhBsLzQF5Ea_KQbvNBf_MEgSGhQk9sahZJUDrkI45w7mXg2XSXiw0w",
+            "width": 1500
+          }
+        ],
+        "place_id": "ChIJnSVHFXiLGGARVFFk75g3KTQ",
+        "plus_code": {
+          "compound_code": "MP7J+F7 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP7J+F7"
+        },
+        "price_level": 3,
+        "rating": 3.9,
+        "reference": "ChIJnSVHFXiLGGARVFFk75g3KTQ",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "night_club",
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 353,
+        "vicinity": "7 Chome-14-23 Roppongi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.686905,
+            "lng": 139.773086
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6882539802915,
+              "lng": 139.7744349802915
+            },
+            "southwest": {
+              "lat": 35.6855560197085,
+              "lng": 139.7717370197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Mandarin Bar",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 467,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117784795577805390829\">Mandarin Bar</a>"
+            ],
+            "photo_reference": "CmRaAAAAv3Vk-VvEa8Ve45HutLthiIz9Wl_-78G63b-uFts9MQ8vhcqwdOJ6b_9hex3vxVMiOvaVI09ZX2hAuhb-ydtG7ebmlBqxzVeanYSS9xrCgbvjaXskGqe5SAt2VDQCG5S1EhAssFyjd5nzggfCzL5b8B2nGhQwNBVQKrnudCGiXSAVkPK6S9HZjg",
+            "width": 700
+          }
+        ],
+        "place_id": "ChIJGcxVfFWJGGAR3ST5qxzV9s8",
+        "plus_code": {
+          "compound_code": "MQPF+Q6 Chuo City, Tokyo, Japan",
+          "global_code": "8Q7XMQPF+Q6"
+        },
+        "rating": 4.5,
+        "reference": "ChIJGcxVfFWJGGAR3ST5qxzV9s8",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "night_club",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 190,
+        "vicinity": "2-1-1, 日本橋室町, 中央区"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.63950519999999,
+            "lng": 139.7305974
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.64085418029149,
+              "lng": 139.7319463802915
+            },
+            "southwest": {
+              "lat": 35.6381562197085,
+              "lng": 139.7292484197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Bamboo Lobby Bar & Lounge",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3840,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110791974851032428803\">ラウンジ バンブー</a>"
+            ],
+            "photo_reference": "CmRaAAAA5LGUgAEueRIDWPDey42KU6V2ZzlxSu9fxVlHp_PQHj-Zpkmju7wQEAmg8k_pIZaPz2S21ecV9xQbE4yu8OlBHMSnP8SCDeltrNA97v7vfHZjl5VHrOxRFqjjq9hsKSn5EhDblf2CqZUpZS-jTXsAnDVoGhQhR6EWvDkw1k6rG8h9y0UpvnehQA",
+            "width": 5760
+          }
+        ],
+        "place_id": "ChIJhQ3wygCLGGARjFjYnvLFMcU",
+        "plus_code": {
+          "compound_code": "JPQJ+R6 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJPQJ+R6"
+        },
+        "rating": 4.1,
+        "reference": "ChIJhQ3wygCLGGARjFjYnvLFMcU",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 63,
+        "vicinity": "1 Chome-1-50 Shirokanedai, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6668835,
+            "lng": 139.7493926
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6682324802915,
+              "lng": 139.7507415802915
+            },
+            "southwest": {
+              "lat": 35.6655345197085,
+              "lng": 139.7480436197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "The Tavern - Grill & Lounge",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2666,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113673380735479284667\">ザ タヴァン グリル＆ラウンジ</a>"
+            ],
+            "photo_reference": "CmRaAAAAtnAG3NoJ3YmqbLpUjTXP1zD-_gfO6wdXh3tzcZnkg7GanibikxOrBVjdnz0G2DbZ8ql1UiSDY_Rin4Y638cR5A6kaFcBQar1zaxZnxxzHvHwEkHntdJvWIhPSk1w1tQGEhArW07QucmWsonPNPAglsu2GhRfqbfUbrGZeIlvrcSu64YbCLLAng",
+            "width": 4000
+          }
+        ],
+        "place_id": "ChIJlydToJOLGGARXATPHdiPljI",
+        "plus_code": {
+          "compound_code": "MP8X+QQ Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP8X+QQ"
+        },
+        "rating": 4.2,
+        "reference": "ChIJlydToJOLGGARXATPHdiPljI",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 176,
+        "vicinity": "ヒルズ 森タワ アンダーズ 東京 51F, 1 Chome-23−４ Toranomon, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6668835,
+            "lng": 139.7493926
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6682324802915,
+              "lng": 139.7507415802915
+            },
+            "southwest": {
+              "lat": 35.6655345197085,
+              "lng": 139.7480436197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "カフェ＆バー BeBu（ビブ）（アンダーズ 東京）",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 826,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105862868931406540148\">カフェ＆バー BeBu（ビブ）（アンダーズ 東京）</a>"
+            ],
+            "photo_reference": "CmRaAAAATaIPdFljxTRMN9yoA4fkn81IFjkHLiRyAxrqimfdNkos4EsJxW4YFsL1U8jz0rJHmE1nkWHDJj5D54EMY8aww3adCDr5ZEhKX32hGClmMApualWiIVZaTfWFY2wI4VD0EhCEmbNDkHGJlyN3sXgPlyg1GhTCYXFi83KAPzyrUfFz8O-t_cRPpA",
+            "width": 1280
+          }
+        ],
+        "place_id": "ChIJyTJfdpOLGGARrDSzeihHnjg",
+        "plus_code": {
+          "compound_code": "MP8X+QQ Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP8X+QQ"
+        },
+        "price_level": 2,
+        "rating": 4,
+        "reference": "ChIJyTJfdpOLGGARrDSzeihHnjg",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 204,
+        "vicinity": "ヒルズ 森タワ アンダーズ 東京 1F, 1 Chome-23−４ Toranomon, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.68636859999999,
+            "lng": 139.7004506
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6876928802915,
+              "lng": 139.7015802302915
+            },
+            "southwest": {
+              "lat": 35.6849949197085,
+              "lng": 139.6988822697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Century Southern Tower",
+        "photos": [
+          {
+            "height": 1236,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/101003166473250919795\">Hotel Century Southern Tower</a>"
+            ],
+            "photo_reference": "CmRaAAAAQcClVgBZrwOpipMyC2Xbq7JwcsWAdJqu3z_8QfniUqZU2r_v6uLnWe3IttE2IEjJGlzirVokpi2isrwGlGf_1_CJoDoJdcJ6HzjezAvZ-P7LTZ8UTsfXSBBCnyW0dmEUEhAMRD-PY_I0f121cR26dHUqGhT4LqVKjHwpt6psdE7AX47QXhWF-w",
+            "width": 1986
+          }
+        ],
+        "place_id": "ChIJB9gt78-MGGAR1m-scQlkRsg",
+        "plus_code": {
+          "compound_code": "MPP2+G5 Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMPP2+G5"
+        },
+        "rating": 4.1,
+        "reference": "ChIJB9gt78-MGGAR1m-scQlkRsg",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 3714,
+        "vicinity": "2 Chome-2-1 Yoyogi, Shibuya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6641954,
+            "lng": 139.7605401
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66554438029149,
+              "lng": 139.7618890802915
+            },
+            "southwest": {
+              "lat": 35.6628464197085,
+              "lng": 139.7591911197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "THE BAR",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3168,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114357126197270410372\">THE BAR</a>"
+            ],
+            "photo_reference": "CmRaAAAAsDnzpDAzHcXuIAseZMH27t5MejSIkKHzGfP6CxL9Jaa86AnbMgTwvn4gahXMwff-BReX8cOpNjkbD_TccGeDR9gTHRccnY-e9IrV7k-K5DOju4C7EnBwYEbpm70gaA65EhAVhoE7_KTP2XFznWHnlEGlGhSrVxaj9Y7cpOXKBP04J9Qxk9CFWw",
+            "width": 4752
+          }
+        ],
+        "place_id": "ChIJp6Mk88KLGGARIqmjzJlBYvE",
+        "plus_code": {
+          "compound_code": "MQ76+M6 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMQ76+M6"
+        },
+        "rating": 3.8,
+        "reference": "ChIJp6Mk88KLGGARIqmjzJlBYvE",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 50,
+        "vicinity": "1 Chome-6-3 Higashishinbashi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6900856,
+            "lng": 139.6943105
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6914345802915,
+              "lng": 139.6956594802915
+            },
+            "southwest": {
+              "lat": 35.6887366197085,
+              "lng": 139.6929615197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "アートラウンジ デュエット",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117340680269609370245\">アートラウンジ デュエット</a>"
+            ],
+            "photo_reference": "CmRaAAAAOYy_yy0Bk957In1MhDO7Q4-uLLjv6qVNW69tz4YBNEn7IbLBRn3ocNtgxM0NiaMy0ZGKaCetTZQ_A_X9CqYwOJ-cV4kJj-YdukWHJYHzBB3iT2hpkSpFn_hb-KR8JAJZEhBgjAsfalYN8x-MeZiRzfvmGhTxxuc7YB9i24F4lK_Yf14UkoQKFg",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJ4WIcdNSMGGARTrVIbeD_7LI",
+        "plus_code": {
+          "compound_code": "MMRV+2P Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMMRV+2P"
+        },
+        "price_level": 3,
+        "rating": 4,
+        "reference": "ChIJ4WIcdNSMGGARTrVIbeD_7LI",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "night_club",
+          "bar",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 111,
+        "vicinity": "京王プラザホテル 本館 3階, 2 Chome-2−１ Nishishinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.657303,
+            "lng": 139.698032
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.65865198029149,
+              "lng": 139.6993809802915
+            },
+            "southwest": {
+              "lat": 35.6559540197085,
+              "lng": 139.6966830197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Emma lounge",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 853,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115694995088566377027\">EMMA LOUNGE</a>"
+            ],
+            "photo_reference": "CmRaAAAAIdemFE7_hABaweDSHcrtjGA2Vbk0pnwDOiGLIxo35_IYl78HuE0rny-lsxBt1dBOPuUGbevzKtLZKfgpCNDwCJ6qkzn_7vVKkL0z2nUugpBZYON592eQGlXal1Ay2FtDEhAhPlqoNf9iljmCdFR_iqnIGhS_UCHbtczRjmYN6CEM-goyE74dIg",
+            "width": 1280
+          }
+        ],
+        "place_id": "ChIJIZhoRlaLGGARoHtonsnP9A4",
+        "plus_code": {
+          "compound_code": "MM4X+W6 Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMM4X+W6"
+        },
+        "price_level": 2,
+        "rating": 3.7,
+        "reference": "ChIJIZhoRlaLGGARoHtonsnP9A4",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 163,
+        "vicinity": "ソシアルビル 2F, 1 Chome-14−９ Dogenzaka, Shibuya City"
+      },
+      {
+        "business_status": "CLOSED_TEMPORARILY",
+        "geometry": {
+          "location": {
+            "lat": 35.6605463,
+            "lng": 139.7295299
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6618952802915,
+              "lng": 139.7308788802915
+            },
+            "southwest": {
+              "lat": 35.6591973197085,
+              "lng": 139.7281809197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "THE MOON",
+        "permanently_closed": true,
+        "photos": [
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116464359292331325289\">THE MOON</a>"
+            ],
+            "photo_reference": "CmRaAAAAd--tYbzWALLdo1_mfboHjgla_nBzPHfHQu9VrjNdxk4VBnfRE9nL2Bp8oaTqCJLArHvcFd4aFdLynb8OqgOS_Rgu3vvlxngmladPZ0ur1lDP9JvI4vh4EeT2B3PmyLgFEhCGellydxwweDS5uFFGIUNoGhQy2-rtxsxLMZVQnp_5qtv3g8sn_Q",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJx1UWp3eLGGARpPcHwVnM3js",
+        "plus_code": {
+          "compound_code": "MP6H+6R Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP6H+6R"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJx1UWp3eLGGARpPcHwVnM3js",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 244,
+        "vicinity": "六本木ヒルズ 森タワ, 52Ｆ, 6 Chome-10−１ Roppongi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.631581,
+            "lng": 139.7347182
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.63296613029149,
+              "lng": 139.7357147802915
+            },
+            "southwest": {
+              "lat": 35.63026816970849,
+              "lng": 139.7330168197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Lounge KOMYO",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 853,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115206443843940534159\">ラウンジ 光明 KOMYO Lounge</a>"
+            ],
+            "photo_reference": "CmRaAAAAiWa24J5az0rfI4Fhi-8ofIVqQlsYjDIhtR0doicyF9RNE53G8kV9VV3OASYPE_zjCHXFAmkopdoxxPZ7JIuzOGaUN_AnK0-PDHbHH2IxEgDMN0aXTaifclSA4kmTrGAUEhBduowi3jCI9QFu6ERuKhVXGhToziSjHmxInc7ijnjx-uOJdAg7wQ",
+            "width": 1280
+          }
+        ],
+        "place_id": "ChIJuSrO7VaKGGAROiqjiKTDFK4",
+        "plus_code": {
+          "compound_code": "JPJM+JV Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJPJM+JV"
+        },
+        "rating": 4.5,
+        "reference": "ChIJuSrO7VaKGGAROiqjiKTDFK4",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "night_club",
+          "bar",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 92,
+        "vicinity": "3 Chome-13-1 Takanawa, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6302316,
+            "lng": 139.7336825
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6315805802915,
+              "lng": 139.7350314802915
+            },
+            "southwest": {
+              "lat": 35.6288826197085,
+              "lng": 139.7323335197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Momiji Lounge",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 800,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115733819337918916503\">ラウンジ もみじ Lounge Momiji</a>"
+            ],
+            "photo_reference": "CmRaAAAAt0kARVOKEWDmC8tCrZ6gn6k8nBNH_PWYRBCEDRPoC0pgRZB4l6i7fNRZqjHruEwzx1GzXyEkl9i8m5kTjqT1WG5Va5IPjKPxNLL6_ToSToSozGC3ayKtu_yw5GOyPIpeEhBHE2QRY-5ejsasOCWFOo7cGhRlSUkunKjarV4mqjgJfJZHng-RaA",
+            "width": 1200
+          }
+        ],
+        "place_id": "ChIJ0XwEQlaKGGAR5QbF7kHjIWY",
+        "plus_code": {
+          "compound_code": "JPJM+3F Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJPJM+3F"
+        },
+        "price_level": 3,
+        "rating": 4.1,
+        "reference": "ChIJ0XwEQlaKGGAR5QbF7kHjIWY",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "cafe",
+          "bar",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 150,
+        "vicinity": "3 Chome-13-1 Takanawa, Minato City"
+      }
+    ],
+    "status": "OK"
+  }

@@ -1,0 +1,1051 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCIAEAAEAD_DTOU6cMJr1GZv-Su-Z9mBKLV6YFjZcD2XOUIg2tFY61CxFlWcIpI7ikjQYNB8Uepk14fgWDkuCm6WqVT-qj0uBOcACIbY7cIt6LttOB29NSHLXU6aOc9U5fINtxJ2k2PhuwXGWD9eYCevZIBsOLL02FO_lE4Sj-WN-8BPjIeTxlARFImb-CWCSsRUSTgm5HhTtcvCvL-fzNlrTyaolUp9FTXHYdLy4opzTIWrA4z2j8kV8HOq7SevT8KuHw-nu42ZZ60zucT-ZhwRvReS2aWJDXewA8vRrie9RJU1lbmzASU6_czJYEKCw_8tncgPRvsu7ahQlpLwJ3coM-XeGUQVkJf5oHqEEJgK3jJlNFRm8csczdZya3Cx3Lc-q02BIQESNK1EemVawo-2eMQ1-TyRoU0PbvexXZYZHxA62xzk23ohRGLw0",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6735053,
+            "lng": 139.7630516
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6748542802915,
+              "lng": 139.7644005802915
+            },
+            "southwest": {
+              "lat": 35.6721563197085,
+              "lng": 139.7617026197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "SEIJO ISHII Lumine Yurakucho 2",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115520386667645195751\">にゃんこゴールド</a>"
+            ],
+            "photo_reference": "CmRaAAAAnOtWdS3ub4fh8V0hMdsOSM-vao9YRml-x0P7At2WiwWHBBWV0llRAuKzC3zp0NgU1cF_SSQejad2UWFF-dk6MMDGCCXqyttMZq1KKNNvCzP2i6zA0nNiBkYjUHLQB_KFEhAh_kzMee9fkB7Tm2ky2N0aGhRHJk9gUjPJLFq3HBNn8aCD1rl9XA",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJVdAEd-WLGGARN8zd4J5FLDA",
+        "plus_code": {
+          "compound_code": "MQF7+C6 Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQF7+C6"
+        },
+        "rating": 3.7,
+        "reference": "ChIJVdAEd-WLGGARN8zd4J5FLDA",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 112,
+        "vicinity": "ルミネ有楽町店ルミネ2 B1F, 2 Chome-5−１ Yurakucho, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6822222,
+            "lng": 139.7641667
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.68357118029149,
+              "lng": 139.7655156802915
+            },
+            "southwest": {
+              "lat": 35.6808732197085,
+              "lng": 139.7628177197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115520386667645195751\">にゃんこゴールド</a>"
+            ],
+            "photo_reference": "CmRaAAAAKH4PL79_l7OTaIb5165Lwf7pZhqubYWEdax3TrUn4yjxTSVIzCT7SK0S5-yN1xYiIlstpRI1psMQBNZMiubOI9yMYYARBwVctJ6Iy68T8scdEyegRbdhHQLqqpl8P1KhEhCLx74CX8KSlzUtsizcXQQJGhSCYO15puKHQ5tqh8Piqna5BLVykQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJuZb6sPmLGGARCoz5kqL0vF0",
+        "plus_code": {
+          "compound_code": "MQJ7+VM Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQJ7+VM"
+        },
+        "rating": 3.9,
+        "reference": "ChIJuZb6sPmLGGARCoz5kqL0vF0",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 210,
+        "vicinity": "新丸の内ビルディング, 地下1階, 1 Chome-5−１ Marunouchi, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6655067,
+            "lng": 139.835264
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6668556802915,
+              "lng": 139.8366129802915
+            },
+            "southwest": {
+              "lat": 35.66415771970851,
+              "lng": 139.8339150197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "ダイエー南砂町スナモ店・イオンフードスタイル",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3240,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107804304792480228126\">さへきひろのぶ</a>"
+            ],
+            "photo_reference": "CmRaAAAABwBhUGvM6d0LhfaMPCzdDwH-WdB0Z5Eii18lPX-52UDZU2S41b9J1l5Bpgg2pajjjU-BOA0SNFWUo3qJfoRp-sW85kmAJDS90_dZwxIUelnAMwmbwPo9HCjnYkef_YU1EhD9q-qd77Gj__jv1SrjNLyKGhQ3klwtE9LqAxyA9qlDv_REmd8TdA",
+            "width": 4320
+          }
+        ],
+        "place_id": "ChIJy2YFyWmIGGARmJ9x7qPXGtw",
+        "plus_code": {
+          "compound_code": "MR8P+64 Koto City, Tokyo, Japan",
+          "global_code": "8Q7XMR8P+64"
+        },
+        "rating": 3.6,
+        "reference": "ChIJy2YFyWmIGGARmJ9x7qPXGtw",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "atm",
+          "grocery_or_supermarket",
+          "finance",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 637,
+        "vicinity": "3 Chome-4-31 Shinsuna, Koto City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6203904,
+            "lng": 139.4710421
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6219326802915,
+              "lng": 139.4723051802915
+            },
+            "southwest": {
+              "lat": 35.6192347197085,
+              "lng": 139.4696072197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Yaoko Frespo Wakabadai",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100789150857758761653\">taichi matsuo</a>"
+            ],
+            "photo_reference": "CmRaAAAAuBRbC4u3osxLrRslT1Vh1JHrDiMHw8-9pgyFwmHcMmT-jrCt1a77kL3JCZEWomU8losQU0z6alSRN_T0qPek3jq1pWP93qVw9g2vLv0Mo6y0XMGQI4_VxfIAAFMIncBYEhAoYE8CSWBta97tHR8V_tlPGhSDz6fqXlZAfXRHbL5DfAw8Dh50pw",
+            "width": 4608
+          }
+        ],
+        "place_id": "ChIJ4SZDyBX7GGARt4IRqq9uNSs",
+        "plus_code": {
+          "compound_code": "JFCC+5C Inagi, Tokyo, Japan",
+          "global_code": "8Q7XJFCC+5C"
+        },
+        "rating": 3.7,
+        "reference": "ChIJ4SZDyBX7GGARt4IRqq9uNSs",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 278,
+        "vicinity": "2 Chome-４−２ Wakabadai, Inagi"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7018536,
+            "lng": 139.5437102
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7032025802915,
+              "lng": 139.5450591802915
+            },
+            "southwest": {
+              "lat": 35.7005046197085,
+              "lng": 139.5423612197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijō Ishi Emio Musashi-Sakai Store",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3268,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110807531686252733131\">Masahiko Motono</a>"
+            ],
+            "photo_reference": "CmRaAAAAfyjD6xAjzLwwc4Yu49sYMhFy-xPGNU5GJfzQWGj6HjT_1Trt8We9kf7eiCsHtkGGne-4ZTan3we3Uy0RnZN3uiYGbsSfDjgMAftb_mRHot-nCgZzSZCLoB9zw_GyjOjIEhDfW_Ko1GIuDVJPW3rkazJqGhRA7E0V4Kw7kN2l85Ifa-JbOfrWbQ",
+            "width": 4895
+          }
+        ],
+        "place_id": "ChIJAX12UpnvGGARUChV5KNmSuk",
+        "plus_code": {
+          "compound_code": "PG2V+PF Musashino, Tokyo, Japan",
+          "global_code": "8Q7XPG2V+PF"
+        },
+        "price_level": 1,
+        "rating": 3.9,
+        "reference": "ChIJAX12UpnvGGARUChV5KNmSuk",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 48,
+        "vicinity": "Emio武蔵境, 1F, 2 Chome-1−１３ Kyonancho, Musashino"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.661826,
+            "lng": 139.7301784
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66317498029149,
+              "lng": 139.7315273802915
+            },
+            "southwest": {
+              "lat": 35.66047701970849,
+              "lng": 139.7288294197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "SEIJO ISHII Roppongi Hills",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2268,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104267287296320200197\">Joe Halstead</a>"
+            ],
+            "photo_reference": "CmRaAAAAiQ7KJr3MkGIdV8QQ1IkwwxRT2zBXtl29Q4bGWV-orG8VDyLNQIHezHTjSQpN6aVJS_PAv35NRzVyNQrST9cgspyboz7X6fiuFpU7ABGPHTe-vjn0aZCMOYCWiW2fOPO5EhBlJZol-cPBJiSP5yGY5xOIGhQW1Z1X9QLJ0V8Yyw3Ith0VHYND2w",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJlw0kkHeLGGARbFtahK90fA4",
+        "plus_code": {
+          "compound_code": "MP6J+P3 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP6J+P3"
+        },
+        "rating": 3.8,
+        "reference": "ChIJlw0kkHeLGGARbFtahK90fA4",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 96,
+        "vicinity": "六本木ヒルズノースタワー, B1F, 6−２−３１ Roppongi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7495266,
+            "lng": 139.8047993
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7508755802915,
+              "lng": 139.8061482802915
+            },
+            "southwest": {
+              "lat": 35.7481776197085,
+              "lng": 139.8034503197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3984,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116255948641712864444\">n 1</a>"
+            ],
+            "photo_reference": "CmRaAAAAHajJJSC4ZWd9Vm6w-iIxmOs0kCnQ2-Iq-2QDMU3_5AVW1DyU_BlgkI99WkfaN8QECKqDG2euqBswL5PikqwKhELyJs-qn7wa5XJy0P0IxXjCEKQbXbIKqCcjhpfpk4dDEhD03_0vMmwoxnNVQ3p1ai9eGhQr5qvUAXVPneRHN4ggouT45F7hLg",
+            "width": 5312
+          }
+        ],
+        "place_id": "ChIJl-yJoU-OGGARVIKRZW_zrUk",
+        "plus_code": {
+          "compound_code": "PRX3+RW Adachi City, Tokyo, Japan",
+          "global_code": "8Q7XPRX3+RW"
+        },
+        "rating": 3.8,
+        "reference": "ChIJl-yJoU-OGGARVIKRZW_zrUk",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 183,
+        "vicinity": "ルミネ北千住 2F, 42−２ Senjuasahicho, Adachi City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.94978799999999,
+            "lng": 139.411421
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.95121838029149,
+              "lng": 139.4130204802915
+            },
+            "southwest": {
+              "lat": 35.94852041970849,
+              "lng": 139.4103225197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Yaoko Wakaba Walk branch",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1536,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104788903142684728961\">EZRA SK</a>"
+            ],
+            "photo_reference": "CmRaAAAA_Ph0zQ7vggqjvtLVMGkFxDgAdZcZrbaspa9sQ_a_IHZKAm-3TH6-deiSjMmwve_RRRhaBVsq4cdrea7dSk5B0mwqz3f6PGj-beKk0fiA_qrCIPk0vLnCw5Cga1z2WdyQEhAQ0ys9P5FtWDJCxz6TWT9NGhRprhXeGOGdORI3dKP22Jz4pqegPA",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJd07Ap_7WGGARszkbBjS-9cs",
+        "plus_code": {
+          "compound_code": "WCX6+WH Tsurugashima, Saitama, Japan",
+          "global_code": "8Q7XWCX6+WH"
+        },
+        "rating": 3.8,
+        "reference": "ChIJd07Ap_7WGGARszkbBjS-9cs",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 506,
+        "vicinity": "２番１号, 1 Chome-2 Fujimi, Tsurugashima"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6059061,
+            "lng": 139.7348841
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.60725508029149,
+              "lng": 139.7362330802915
+            },
+            "southwest": {
+              "lat": 35.6045571197085,
+              "lng": 139.7335351197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "SEIJO ISHII Atre Ōimachi",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1836,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103918767994689677956\">Ali Noorani</a>"
+            ],
+            "photo_reference": "CmRaAAAA-WZMIqZFhynxNUTDOcRE1uan05PSTtFMDymHqLD1WCSrFltcmzTZvfInpQY0FsS80SB0dnUJKLZNeFS8uAyyqdG-m4cqXCQmZ-LiK1osko46KsJTUX_iqOqBiKmvoF7-EhCHo-1zv83_D9gzgy4pzX_TGhRzDZGs6GPMKwmA4Crhxyztk5r8NQ",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJHS_nTXyKGGARe4t71pdLVlo",
+        "plus_code": {
+          "compound_code": "JP4M+9X Shinagawa City, Tokyo, Japan",
+          "global_code": "8Q7XJP4M+9X"
+        },
+        "rating": 3.8,
+        "reference": "ChIJHS_nTXyKGGARe4t71pdLVlo",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 106,
+        "vicinity": "アトレ大井町, 1F, 1 Chome-2−１ Ōi, Shinagawa City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6891594,
+            "lng": 139.6993866
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6905083802915,
+              "lng": 139.7007355802915
+            },
+            "southwest": {
+              "lat": 35.6878104197085,
+              "lng": 139.6980376197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii Lumine Shinjuku",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115520386667645195751\">にゃんこゴールド</a>"
+            ],
+            "photo_reference": "CmRaAAAAF1L9-EFRiLZvjITeAlwhnlCSZmtGEc3w989dbIH-K5nvxrRBwdM1aNYONMXbFceFfd3drWkMNWWY-8FaKe61r_6NoR6ECrE2xjjD0LFKCqV2dL-OynDiL7t-oPDyYrK6EhBPRAHNty95ArRCKb35m3hDGhRc3sSO0uNUweGabGVaGU20nzGMsw",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJlQav-dCMGGARMvAt_g7p8VA",
+        "plus_code": {
+          "compound_code": "MMQX+MQ Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMMQX+MQ"
+        },
+        "rating": 3.9,
+        "reference": "ChIJlQav-dCMGGARMvAt_g7p8VA",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 145,
+        "vicinity": "ルミネ新宿店, ルミネ1 B2F, 1 Chome-1−５ Nishishinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7315406,
+            "lng": 139.7080693
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7328895802915,
+              "lng": 139.7094182802915
+            },
+            "southwest": {
+              "lat": 35.7301916197085,
+              "lng": 139.7067203197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1152,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118252634782609753961\">奈塚Q弥</a>"
+            ],
+            "photo_reference": "CmRaAAAANcw_jt6YrwUVn59cpD2iBC2oqhgpoOFIXPq72RbdBqTEYpQfwGe7KUhYzl4iG1mX0_BCLBRwlLyOKv22GhxN4G9pbDzVUnZgOukg7DiPF0pj5ZS7mGpxhf22a4EbeFlREhCYoFwzIqv3rlxQa9tCkx3dGhQ4IYwafkNgAqT7XH_wGuuqHcSHGQ",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJi3rdpV6NGGARpNrU0OBShvw",
+        "plus_code": {
+          "compound_code": "PPJ5+J6 Toshima City, Tokyo, Japan",
+          "global_code": "8Q7XPPJ5+J6"
+        },
+        "rating": 3.5,
+        "reference": "ChIJi3rdpV6NGGARpNrU0OBShvw",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 305,
+        "vicinity": "Echika池袋 B1F, 3 Chome-28−１４ Nishiikebukuro, Toshima City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7120016,
+            "lng": 139.7751321
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7133505802915,
+              "lng": 139.7764810802915
+            },
+            "southwest": {
+              "lat": 35.7106526197085,
+              "lng": 139.7737831197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1152,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118252634782609753961\">奈塚Q弥</a>"
+            ],
+            "photo_reference": "CmRaAAAAlm0Wg3jgNI4eKXFtbO6OWZyUnB2VZEJWb3yaWZKY7N2B_arfZD0caXGCBAHNHsHf_cpX_znAqkXH04CmRTFViToNI2KWuoxu_-dXRQaY_JT9HWjK7IXBxOuM2sGQ5PWcEhA23jWs5dj525JaGEFDyhhbGhTJ-rBnqsMwq3WwFg8RxxV7T8EI9A",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJ_wKqG5yOGGAR7EIYpFeS04Q",
+        "plus_code": {
+          "compound_code": "PQ6G+R3 Taito City, Tokyo, Japan",
+          "global_code": "8Q7XPQ6G+R3"
+        },
+        "rating": 3.7,
+        "reference": "ChIJ_wKqG5yOGGAR7EIYpFeS04Q",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 254,
+        "vicinity": "アトレ上野, 1F, 7 Chome-1−１ Ueno, Taito City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7017282,
+            "lng": 139.6990075
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.70307718029149,
+              "lng": 139.7003564802915
+            },
+            "southwest": {
+              "lat": 35.70037921970849,
+              "lng": 139.6976585197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "華僑服務社",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3840,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113198175094038564516\">Tomoyuki Morishita</a>"
+            ],
+            "photo_reference": "CmRaAAAAMmJUIVctLKu72z5Sj5tjrO5dcaZjDyQnHgpevyiQoPhluYU2YINdA9MH9MWxgxQXbvHO4jadpPTlRwrUDsdNLiA8i6_kcRqlvLhy_Pb4TE5weirIxcm0M6UTqtuApP83EhBkwc-MXK2gYU97jnE-HcrCGhS8UB6xz2yySJLDD809FLqxDNgrIQ",
+            "width": 2160
+          }
+        ],
+        "place_id": "ChIJ-baaHi-NGGARpiIW2otzKwc",
+        "plus_code": {
+          "compound_code": "PM2X+MJ Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XPM2X+MJ"
+        },
+        "rating": 4.1,
+        "reference": "ChIJ-baaHi-NGGARpiIW2otzKwc",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 367,
+        "vicinity": "B1F, 2 Chome-11−２ Hyakunincho, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6931623,
+            "lng": 139.7018671
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.69451128029149,
+              "lng": 139.7032160802915
+            },
+            "southwest": {
+              "lat": 35.69181331970849,
+              "lng": 139.7005181197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Sanpei Store",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 4032,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102586901322391698793\">yu51688 Chiang</a>"
+            ],
+            "photo_reference": "CmRaAAAAkLhhm7vR5PcnALDA8E75cueSimoCjL1mulhRz46gxn18hxxKRTpc82VQsWDq8YC9fGY0PKaiRSiBe8pqLfEoBKvWcE-tX80OzDUOezjou8gljIzM6kdEbQFlaOrpp-L6EhBxQPwcdFPtxPKTEzGyT85EGhQNnVykXhqr9e7Ps7CfZHi1gAyCgA",
+            "width": 3024
+          }
+        ],
+        "place_id": "ChIJ81Ex5NmMGGARdu2Po1eP68o",
+        "plus_code": {
+          "compound_code": "MPV2+7P Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMPV2+7P"
+        },
+        "rating": 3.8,
+        "reference": "ChIJ81Ex5NmMGGARdu2Po1eP68o",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 321,
+        "vicinity": "3 Chome-22-12 Shinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.66689209999999,
+            "lng": 139.4694604
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66818268029149,
+              "lng": 139.4709965802915
+            },
+            "southwest": {
+              "lat": 35.66548471970849,
+              "lng": 139.4682986197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "SUMMIT Minano Bubaigawara Shop",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1836,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108152209224021071369\">N 700S</a>"
+            ],
+            "photo_reference": "CmRZAAAAJ4cX4mSDTuVSrzp4X3FnqYI2wp1FgzYWQfavnU2oTFg_E0mKys7UAmTwcOMgg5SdZV5qN1cJ4giRvf4lBCptrMThMTZigHFrsICjZb_w-537rS6mH19uBPEFPGmrgHDFEhD9PSOFJRqLXvHe-1bPZ2Q-GhTSKhRTN9I43N2_Mq17l84j06SwTw",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJsdbOeO3kGGAR6BEHE09Q_9o",
+        "plus_code": {
+          "compound_code": "MF89+QQ Fuchu, Tokyo, Japan",
+          "global_code": "8Q7XMF89+QQ"
+        },
+        "rating": 3.7,
+        "reference": "ChIJsdbOeO3kGGAR6BEHE09Q_9o",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 561,
+        "vicinity": "3 Chome-２２−２６ Katamachi, Fuchu"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6556391,
+            "lng": 139.735627
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6570075302915,
+              "lng": 139.7369430802915
+            },
+            "southwest": {
+              "lat": 35.6543095697085,
+              "lng": 139.7342451197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii Azabujuban",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3240,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107804304792480228126\">さへきひろのぶ</a>"
+            ],
+            "photo_reference": "CmRaAAAATHsIGqosDC8cUQ-q2_i7uVu4LQdbL8EvKGMqTmr-gqGm6fIWp4A31t0ESvbn0kl8uRSCNIfKSoHlzq7UzrzAWcVLxzJ-VRSj5jGwFY_XV4aV4CM6hcOVFk4HFsxIHP_MEhCQSZ8eW4sk0X7LK8PmlpwEGhS96PVDT0C4mWXT_QI85SB6wFpEtQ",
+            "width": 4320
+          }
+        ],
+        "place_id": "ChIJFXXIYZ-LGGAR4fTlf4doJ6k",
+        "plus_code": {
+          "compound_code": "MP4P+77 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP4P+77"
+        },
+        "rating": 3.7,
+        "reference": "ChIJFXXIYZ-LGGAR4fTlf4doJ6k",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 189,
+        "vicinity": "スクエア 1F, 2 Chome-2−１０ Azabujuban, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.72210299999999,
+            "lng": 139.925868
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.72345198029149,
+              "lng": 139.9272169802915
+            },
+            "southwest": {
+              "lat": 35.72075401970849,
+              "lng": 139.9245190197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "OK Store",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109185127964325173372\">Ichan Takachan</a>"
+            ],
+            "photo_reference": "CmRaAAAAzqgHpgBY4N-76z9aP8EGjYUkPt8xf9etl2_6o1e7k1LIlC17oudREjeUDv0wxO-h8Hc7gJynba2XnY18xWt13rgXtQK3XUxZzK62lkUnzuMLp1y082M7ARf0j9zmtnc2EhCSVLb1QAvcsB4BPcGTbK3oGhQ2uXTCn2W0zhCFwTHnuGBNT1QSoQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJ5c5gstqGGGAROPe314nv1Ys",
+        "plus_code": {
+          "compound_code": "PWCG+R8 Ichikawa, Chiba, Japan",
+          "global_code": "8Q7XPWCG+R8"
+        },
+        "rating": 4,
+        "reference": "ChIJ5c5gstqGGGAROPe314nv1Ys",
+        "scope": "GOOGLE",
+        "types": [
+          "grocery_or_supermarket",
+          "supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 904,
+        "vicinity": "3 Chome-6-1 Yawata, Ichikawa"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.5317247,
+            "lng": 139.6997448
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.5328787802915,
+              "lng": 139.7009686802915
+            },
+            "southwest": {
+              "lat": 35.5301808197085,
+              "lng": 139.6982707197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "KEIKYU STORE",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3268,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110807531686252733131\">Masahiko Motono</a>"
+            ],
+            "photo_reference": "CmRaAAAAqrUo-aqaAZabK_ugcEqrBruMABqqQfyblrzSC78oPcJidzlrjC0f0xLg-lYLpyxLBf49yD3X8TbzyCcKdhiE6k7QZxYThEy8j-Y9P2qX3TLZ3WYS6MwjlV7-As981-oEEhDhs_dKEggOKcAHgfDVJMZOGhRn_rS7VMFCnfc5fAxhHzCh77fD3g",
+            "width": 4895
+          }
+        ],
+        "place_id": "ChIJqz0yFJhgGGARR5fM90vcAfU",
+        "plus_code": {
+          "compound_code": "GMJX+MV Kawasaki, Kanagawa, Japan",
+          "global_code": "8Q7XGMJX+MV"
+        },
+        "rating": 3.3,
+        "reference": "ChIJqz0yFJhgGGARR5fM90vcAfU",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 295,
+        "vicinity": "28 Ekimae Honcho, Kawasaki Ward, Kawasaki"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.69890239999999,
+            "lng": 139.7663746
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.70025138029149,
+              "lng": 139.7677235802915
+            },
+            "southwest": {
+              "lat": 35.6975534197085,
+              "lng": 139.7650256197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3265,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110807531686252733131\">Masahiko Motono</a>"
+            ],
+            "photo_reference": "CmRaAAAAZBwSa0UdkQP8kuUIIMyaPpibpLt-_47_ZbCoW6uqkVDg-u3JIvgob-ZTsiiStjQD4VvJN4Z4OJhvkf2GvQkGQYi0Wl0XMSfn2ETDtBZFi5uRxy8_dOBZHcrx6-aqA3dnEhCr-CKDi9K7Nm9iAJVB-I_sGhSlFdkcWNDu9GIJUJQBgr6r7h2zqA",
+            "width": 4898
+          }
+        ],
+        "place_id": "ChIJT3qglhuMGGARZK12ILsyoM0",
+        "plus_code": {
+          "compound_code": "MQX8+HG Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQX8+HG"
+        },
+        "rating": 3.5,
+        "reference": "ChIJT3qglhuMGGARZK12ILsyoM0",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 156,
+        "vicinity": "御茶ノ水ソラシティ, B1F, 4 Chome-６ Kanda Surugadai, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6620473,
+            "lng": 139.7477319
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66339628029149,
+              "lng": 139.7490808802915
+            },
+            "southwest": {
+              "lat": 35.6606983197085,
+              "lng": 139.7463829197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "Seijo Ishii",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110406978324701787389\">Genki</a>"
+            ],
+            "photo_reference": "CmRaAAAAnVDnWv5nj4zzqSWmx7m57VmTOjdHl3LOa7hT1BEUmXwgB9Ai0jtkf_rKlSy4fQUywF1AurHPpUYRhIoB8CkwmTVNSI3ZNJiIIcEvhee6baD8fdfxKWyqN0_siRoRFxqpEhCQ4O9jt7DYNE2Dh7HhEUeoGhTge8Ta5MxdkROTSswQvdEfYopuzg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJWW3n0JWLGGARzovXlfvyjc0",
+        "plus_code": {
+          "compound_code": "MP6X+R3 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP6X+R3"
+        },
+        "rating": 3.6,
+        "reference": "ChIJWW3n0JWLGGARzovXlfvyjc0",
+        "scope": "GOOGLE",
+        "types": [
+          "supermarket",
+          "grocery_or_supermarket",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 95,
+        "vicinity": "愛宕グリーンヒルズプラザ, 1F, 3 Chome-21−５ Toranomon, Minato City"
+      }
+    ],
+    "status": "OK"
+  }

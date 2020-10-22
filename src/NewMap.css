@@ -1,0 +1,147 @@
+/* map related code below */
+
+#Logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: orange;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    position: absolute;
+    top: 1 rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+}
+
+.locate {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    z-index: 10;
+}
+
+.locate img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Code related to side bar */
+
+#mySidebar {
+    background-color: brown;
+    position: absolute;
+    top: 97px;
+    width: 38%;
+    height: 90%;
+    z-index: 9;
+}
+
+.form-drop-down {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .form-drop-down:hover {
+    background-color: #555;
+}
+
+.form-drop-down:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+/* slides sidebar open/close */
+
+/* #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      } */
+
+/* Code related to sidebar above */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    transition: margin-left .5s;
+    padding: 16px;
+    z-index: 10;
+}

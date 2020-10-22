@@ -1,0 +1,984 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCHAEAAHkvCnizOt2eN4UmkW2ZJG-7Wh1vuBYD9ap-epEJkofGCByuOd2z6tdtqyzR9APvSOKnebinuZtPfaho8bzVj72OLyhMTf1CabmItxFnRH1i621PujhBZQZ0RsltmRODlQyPQC-40TAmt4ahicIedVjP2RKPDb3bYrBfgdlRwMIo9o5jfD-1n2yjGaGl8ny_p0ZPOTmDn5axNipriwQ7n_y_StTPOVia7xTywzYa7VwikiCNNFdUQOUGQOIf_e6hLHUWGQOOBA-xEbP98vFi2-yLE-zYvbqZVKIrxpSadMU1s_LKKT5Lc8Jf5lPcP65pZNxLPoAG9_VW6ZWaxsG_ObbnjqvBsr1qhEcGiJN16D1RTPZ7K6A0j9CF1UL6HhEdZBIQfNlctVTx18DmD8PAj3OsJxoUXnUn_r0ceP2BBGOtWnWTidi2RtA",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6955987,
+            "lng": 135.498306
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6969592802915,
+              "lng": 135.4995661802915
+            },
+            "southwest": {
+              "lat": 34.6942613197085,
+              "lng": 135.4968682197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "ANA Crowne Plaza Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 800,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105297007944311336878\">ANA Crowne Plaza Osaka</a>"
+            ],
+            "photo_reference": "CmRaAAAAzTAU2fZ3Rt2X7DUEYQyE_RFm9OeQyD06D3CAdho3-uWhaRRrUEmXD38S_D2-26bXCKoSbgnRC-TGP0mCY6ZcKyY74MXOpeTrjg05a67YY367d9QceijgiKhtbOue1FZXEhBbLCjKttrQp0lkSKM1Q3NBGhSJKE4Wqu8vxFJ21QbboILmUfksZA",
+            "width": 1422
+          }
+        ],
+        "place_id": "ChIJP_i1be7mAGAROk8NomTDVsw",
+        "plus_code": {
+          "compound_code": "MFWX+68 Osaka, Japan",
+          "global_code": "8Q6QMFWX+68"
+        },
+        "rating": 4,
+        "reference": "ChIJP_i1be7mAGAROk8NomTDVsw",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2880,
+        "vicinity": "1 Chome-3-1 Dojimahama, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6998798,
+            "lng": 135.4958784
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7012287802915,
+              "lng": 135.4972273802915
+            },
+            "southwest": {
+              "lat": 34.6985308197085,
+              "lng": 135.4945294197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hilton Osaka",
+        "photos": [
+          {
+            "height": 1358,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104462525176066641328\">Hilton Osaka</a>"
+            ],
+            "photo_reference": "CmRaAAAAhqU6wj43fdxE_omdVRWy0zFOsWODqeisSTj0Dq94o3sXfJrJIIJPjrLi8PR-buwaVaCDLt5GqUhtgw9ltO3uutFMPpssyJuUrlJoMkXWJRkF_C1ggkDZjjyETex2AATcEhCLA7ee0TUXvFNzoCi6N501GhSY6tt0v9ank7qoAgiNY2D126FNXg",
+            "width": 1924
+          }
+        ],
+        "place_id": "ChIJXUg-SY3mAGARGoOwO1U017E",
+        "plus_code": {
+          "compound_code": "MFXW+X9 Osaka, Japan",
+          "global_code": "8Q6QMFXW+X9"
+        },
+        "rating": 4.2,
+        "reference": "ChIJXUg-SY3mAGARGoOwO1U017E",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 4041,
+        "vicinity": "1 Chome-8-番8号 Umeda, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.701726,
+            "lng": 135.4963754
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7030749802915,
+              "lng": 135.4977243802915
+            },
+            "southwest": {
+              "lat": 34.7003770197085,
+              "lng": 135.4950264197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Granvia Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1621,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111385423110307524028\">ホテルグランヴィア大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAAh_L72oLpQNAFLd_ptqxzmfk6oNK1wVKvDPRJC8ij74rW3Yte3FO_DQ5dQN65kuUF1Du8UzPtP028mHMX_cz5y-lvg-XIF1Lx7zT6JgO-jv_ypv-UkH2JuY5J4PZxw7uJEhApXaREsDaCXtZyiAjqYmoXGhT1ur7CnjlWGOWqm9EjB2kI3ykKEA",
+            "width": 2480
+          }
+        ],
+        "place_id": "ChIJy1pGdo3mAGARjbQgwjt3bl4",
+        "plus_code": {
+          "compound_code": "PF2W+MH Osaka, Japan",
+          "global_code": "8Q6QPF2W+MH"
+        },
+        "rating": 4,
+        "reference": "ChIJy1pGdo3mAGARjbQgwjt3bl4",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1845,
+        "vicinity": "3 Chome-1-番１号 Umeda, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6994979,
+            "lng": 135.4917808
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7008468802915,
+              "lng": 135.4931297802915
+            },
+            "southwest": {
+              "lat": 34.6981489197085,
+              "lng": 135.4904318197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Monterey Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1333,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103889159163441937931\">ホテルモントレ大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAAZgPmwgiQVnUPCr3p1l7zqwDodBNlEQq7ecEy5MVmgPetsQdjSQBC5Hv6zUzmC6LleXHxgQ8X1sLCq3_7H-NXR40IuAtA-hJSHYxrXnLk7xZSOppFnecpmHqfGox6uuVuEhD9yXhlb5kpBstcGOTX0zKMGhRz9hejUMrO5CCjDNuITeNZYgRYrg",
+            "width": 2000
+          }
+        ],
+        "place_id": "ChIJT6YLe4vmAGARRn7GOJLaLy8",
+        "plus_code": {
+          "compound_code": "MFXR+QP Osaka, Japan",
+          "global_code": "8Q6QMFXR+QP"
+        },
+        "rating": 3.9,
+        "reference": "ChIJT6YLe4vmAGARRn7GOJLaLy8",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1869,
+        "vicinity": "3 Chome-3-45 Umeda, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6901586,
+            "lng": 135.4873864
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6915075802915,
+              "lng": 135.4887353802915
+            },
+            "southwest": {
+              "lat": 34.6888096197085,
+              "lng": 135.4860374197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "RIHGA Royal Hotel Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1161,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118096932479083920335\">リーガロイヤルホテル（大阪）</a>"
+            ],
+            "photo_reference": "CmRaAAAAN9EBp-uGJg2qy4OBi7kV4fP47J51rEFOyf-7-_V9sKZ8kBOFNDhaPHTPw07hsL4yDB_15p_h0ds3C_LTz-2kghL_SeTHLHbGt4IpK42yFGEDEKa5DbaBeCYF_88XG2q3EhDYAZXRP6OBrCh8Xv4yjDpMGhSnh4vv95_0C0AO0RNob8GVeJPG9w",
+            "width": 2708
+          }
+        ],
+        "place_id": "ChIJq23VpljmAGARdNZzejUkbv4",
+        "plus_code": {
+          "compound_code": "MFRP+3X Osaka, Japan",
+          "global_code": "8Q6QMFRP+3X"
+        },
+        "rating": 4.2,
+        "reference": "ChIJq23VpljmAGARdNZzejUkbv4",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "spa",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 7413,
+        "vicinity": "5 Chome-3-68 Nakanoshima, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6938858,
+            "lng": 135.5325623
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.69523478029151,
+              "lng": 135.5339112802915
+            },
+            "southwest": {
+              "lat": 34.69253681970851,
+              "lng": 135.5312133197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Monterey La Soeur Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1366,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109316871187118895542\">ホテルモントレ ラ・スール大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAA0l6db8-ajOm2X2a9wSErmZ7oKW2vztiWYSCczXvnsGWiEwY4ApgrRMkrBgEIwpEjwbRfMBU4U5e7ofAlGliA7IYSRv2NnPkdmtsf5aQCMKccUfQbOrtlQvdgUWGBGXQlEhBfLtB24WovsMFDLChWO5DVGhRYxySDdaygSdbPn-ePzub03SNeOQ",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJ95T609DgAGARGR6hO7EmCRE",
+        "plus_code": {
+          "compound_code": "MGVM+H2 Osaka, Japan",
+          "global_code": "8Q6QMGVM+H2"
+        },
+        "rating": 4,
+        "reference": "ChIJ95T609DgAGARGR6hO7EmCRE",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1800,
+        "vicinity": "2 Chome-2-22 Shiromi, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6685646,
+            "lng": 135.4988001
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6699624302915,
+              "lng": 135.5001451802915
+            },
+            "southwest": {
+              "lat": 34.66726446970851,
+              "lng": 135.4974472197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Dotonbori Hotel",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 5616,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110706320617775293455\">道頓堀ホテル</a>"
+            ],
+            "photo_reference": "CmRaAAAAqFeTKwekmsOdqPhXb0OkmJKhv-zri2C8_HmxK732SxCR-D-lZH4aqGL7HNojQVkSQ7b51lxRPt4AI2_qFOuJHOwMl4yxXhSdKlFX4sCwrAXHcwtdEVqREDKiIt6d6zqEEhBIkrxw9185LfCKDARxxZSqGhR4marQ86Rqit_QpgiyWYBY1P91GQ",
+            "width": 3744
+          }
+        ],
+        "place_id": "ChIJWd9bSBLnAGAR_0cprh1ESrk",
+        "plus_code": {
+          "compound_code": "MF9X+CG Osaka, Japan",
+          "global_code": "8Q6QMF9X+CG"
+        },
+        "rating": 4,
+        "reference": "ChIJWd9bSBLnAGAR_0cprh1ESrk",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1586,
+        "vicinity": "2 Chome-3-25 Dotonbori, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6666189,
+            "lng": 135.4960742
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6679678802915,
+              "lng": 135.4974231802915
+            },
+            "southwest": {
+              "lat": 34.6652699197085,
+              "lng": 135.4947252197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Monterey Grasmere Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1837,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111727700524157238499\">ホテルモントレ グラスミア大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAAxFaF_WyuJZTdsGOPCDfaLhLr7iCc2ZwX2DBNdEAHyaW_-jmq8dg5C4gF4GYh52xcJMagdLVnloOjio6Vl56oTglAQb9pdtaPWGH-m7CJ8xkHWsA5p8cbn2tIF2SfGGrlEhBjijWBByrD0Olp4BsymgX4GhToUiWJlOg9JF-cCJvDhTO7f_FjJg",
+            "width": 2756
+          }
+        ],
+        "place_id": "ChIJI_--Eg3nAGARcvVi6kRKyKM",
+        "plus_code": {
+          "compound_code": "MF8W+JC Osaka, Japan",
+          "global_code": "8Q6QMF8W+JC"
+        },
+        "rating": 4.2,
+        "reference": "ChIJI_--Eg3nAGARcvVi6kRKyKM",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2672,
+        "vicinity": "1 Chome-2-3 Minatomachi, Naniwa Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6657666,
+            "lng": 135.5037294
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6671155802915,
+              "lng": 135.5050783802915
+            },
+            "southwest": {
+              "lat": 34.6644176197085,
+              "lng": 135.5023804197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Namba Oriental Hotel",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107869419217959286317\">なんばオリエンタルホテル</a>"
+            ],
+            "photo_reference": "CmRaAAAA6KrD6e1CQakRxWWdMbE5llexUfLjSaJXkQws37fEUNoOFlPcv3OTQ-1etOQMjXzcuZfPXnefULvUjns30NOMO0zLwy9Ee8PfqvYt4InU6I__BWnLbMYD0Y9HD3pbxIY1EhBz_652tTqwv3wYuUGi-XcwGhQ0Ylc08kBeOp7Bft-sJ8P7Bj0EWw",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJgQyYBGvnAGARMxMiJyMOY-I",
+        "plus_code": {
+          "compound_code": "MG83+8F Osaka, Japan",
+          "global_code": "8Q6QMG83+8F"
+        },
+        "rating": 4,
+        "reference": "ChIJgQyYBGvnAGARMxMiJyMOY-I",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2235,
+        "vicinity": "2 Chome-8-17 Sennichimae, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6658222,
+            "lng": 135.5206123
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6672849302915,
+              "lng": 135.5219133302915
+            },
+            "southwest": {
+              "lat": 34.6645869697085,
+              "lng": 135.5192153697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Sheraton Miyako Hotel Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 810,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111616073606578199601\">Sheraton Miyako Hotel Osaka</a>"
+            ],
+            "photo_reference": "CmRaAAAAabzfQh2lOwWnRRljQ5tG-OpBYXnzOiAyQt9APaab7hSOzfvWiw3byx25DMq24QQeycg8SxxPNLpYWQC50xEGHORb8AIpYMcpywXs-6o8DkWmHfFOQpK0_2kglPGMXd3pEhCYUzVTneAo4axnJUV1JdcjGhTu6j53J3ep31ZMUpNtMGBVoQoDlw",
+            "width": 1440
+          }
+        ],
+        "place_id": "ChIJqflWHFLnAGARXT6tCBm1IIU",
+        "plus_code": {
+          "compound_code": "MG8C+86 Tennoji Ward, Osaka, Japan",
+          "global_code": "8Q6QMG8C+86"
+        },
+        "rating": 4.1,
+        "reference": "ChIJqflWHFLnAGARXT6tCBm1IIU",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 3537,
+        "vicinity": "6 Chome-1-55 Uehonmachi, Tennoji Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.99511800000001,
+            "lng": 135.7516961
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.9963441302915,
+              "lng": 135.7533994302915
+            },
+            "southwest": {
+              "lat": 34.99364616970851,
+              "lng": 135.7507014697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Kyoto Tokyu Hotel",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 640,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106627127730703103150\">京都東急ホテル｜宿泊 ホテル</a>"
+            ],
+            "photo_reference": "CmRaAAAAv2Od_R-SRtpwt9F6mo6V5tH4EaBFMb9Jj4dr7LaN6p09BJj5xod8TDEx6IL8Pilq03yGSHMD3m-7pfI5WMxL5HLuKZGGFCFg3sfefMq2uQcy96APucAZNxijzBpLHIi_EhDYdqe9KxRMeEidaeHNQ0c6GhTs9YVhUMYgeQbVmFU_aB0oOtStRw",
+            "width": 960
+          }
+        ],
+        "place_id": "ChIJNVg1AyAGAWARce4JCgb-RyE",
+        "plus_code": {
+          "compound_code": "XQW2+2M Kyoto, Japan",
+          "global_code": "8Q6QXQW2+2M"
+        },
+        "rating": 4.2,
+        "reference": "ChIJNVg1AyAGAWARce4JCgb-RyE",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2184,
+        "vicinity": "五条下ル柿本町580, Kyoto, Shimogyo Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.00899199999999,
+            "lng": 135.7882459
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.0103409802915,
+              "lng": 135.7895948802915
+            },
+            "southwest": {
+              "lat": 35.0076430197085,
+              "lng": 135.7868969197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "The Westin Miyako Kyoto",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 959,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106856311915745929895\">The Westin Miyako Kyoto</a>"
+            ],
+            "photo_reference": "CmRaAAAAhDolhiiPeKEaOHWys-uc2hyPkmjmUHY7BWRPS_B3KoOPqoO6ScFdWz5KLCATBsB_A53McGLlMrgTV1ba54DhXsDNqCJEQvqPYKx1Ms_MBH_xAlODXwpw2OuQPzh9ZlUrEhALotTNdXsYWAWjTV_a01YzGhQoOH5Ly13G8_L8bgWPNFs9USbNuA",
+            "width": 1706
+          }
+        ],
+        "place_id": "ChIJN1AzAd8IAWAR2hJ9wcsW4TE",
+        "plus_code": {
+          "compound_code": "2Q5Q+H7 Higashiyama Ward, Kyoto, Japan",
+          "global_code": "8Q7Q2Q5Q+H7"
+        },
+        "rating": 4.1,
+        "reference": "ChIJN1AzAd8IAWAR2hJ9wcsW4TE",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2568,
+        "vicinity": "Keage, Higashiyama Ward, Sanjo"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6842687,
+            "lng": 135.5106707
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.68558833029149,
+              "lng": 135.5118046302915
+            },
+            "southwest": {
+              "lat": 34.6828903697085,
+              "lng": 135.5091066697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "City Plaza Osaka",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 900,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111483390836977379223\">シティプラザ大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAAeYRiDyXsZ8xKvVHF1EoxlzRAXILbysBf3bVFmlIIcqtSLsSsJHXnclvtCM4kEQNkMy2ttGLbpF5e84C8_3JzYTWE6O7ZwgvJ3-UZURl2Ae2L9xUW38jbZwN_DAVq2yutEhCxKrRF8nE9bgkvqxr1D-5dGhTOYnUFB_LScHEzI4HVQ7gXVF874A",
+            "width": 1200
+          }
+        ],
+        "place_id": "ChIJ54HhViHnAGARgzdwvH6kP8Y",
+        "plus_code": {
+          "compound_code": "MGM6+P7 Osaka, Japan",
+          "global_code": "8Q6QMGM6+P7"
+        },
+        "rating": 4,
+        "reference": "ChIJ54HhViHnAGARgzdwvH6kP8Y",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1418,
+        "vicinity": "2-31 Honmachibashi, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.689069,
+            "lng": 135.507885
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.69041798029149,
+              "lng": 135.5092339802915
+            },
+            "southwest": {
+              "lat": 34.68772001970849,
+              "lng": 135.5065360197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Brighton City Osaka Kitahama",
+        "photos": [
+          {
+            "height": 1400,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110244935400109127359\">ホテルブライトンシティ大阪北浜</a>"
+            ],
+            "photo_reference": "CmRaAAAANOHxnCvNqLfrdIB1sbnRQmGKBEy0wByz30NK1STptMx8pzVRjKBvuXTCN-W80wO2XrEFgSYS5XpTaldXwZUZpENJtljLmRiE9kC4V7Ne5hvRU50gxDZn0p6gURAMNqz6EhAzjxT4gaSGigXV_O6LlIMuGhRwBmc2uaH65FNEN8jmIpgQFja30g",
+            "width": 2100
+          }
+        ],
+        "place_id": "ChIJN051sN_mAGAR_bYL1QvF-Qo",
+        "plus_code": {
+          "compound_code": "MGQ5+J5 Osaka, Japan",
+          "global_code": "8Q6QMGQ5+J5"
+        },
+        "rating": 4.3,
+        "reference": "ChIJN051sN_mAGAR_bYL1QvF-Qo",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 909,
+        "vicinity": "1 Chome-1 Fushimimachi, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.7208754,
+            "lng": 135.4214065
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7218598302915,
+              "lng": 135.4226841802915
+            },
+            "southwest": {
+              "lat": 34.7191618697085,
+              "lng": 135.4199862197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Miyako Hotel Amagasaki",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104320117213919750836\">都ホテル 尼崎</a>"
+            ],
+            "photo_reference": "CmRZAAAAbNfWLBAeG6WgZKztcmsykntBICkLgAKnY41Bz2t43S3do3r8JhYTIwmlPPwRKC6rZJiUhooqkdrZynLPWVnGt9VovD1EoKmVdzSm2T0PtuuIR0IXeywtkpppsrM7XRD-EhAHoGBmi7yvY9i_V9lfX0xXGhRWFMWxppzEFOJcP1IloeDfDfrfmQ",
+            "width": 5184
+          }
+        ],
+        "place_id": "ChIJ213igKjvAGARR7HNTnCI7Vg",
+        "plus_code": {
+          "compound_code": "PCCC+9H Amagasaki, Hyogo, Japan",
+          "global_code": "8Q6QPCCC+9H"
+        },
+        "rating": 3.8,
+        "reference": "ChIJ213igKjvAGARR7HNTnCI7Vg",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1163,
+        "vicinity": "２丁目-7-1 昭和通, Amagasaki"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6708863,
+            "lng": 135.4974433
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.67222783029149,
+              "lng": 135.4988919302915
+            },
+            "southwest": {
+              "lat": 34.66952986970849,
+              "lng": 135.4961939697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Dormy Inn Shinsaibashi",
+        "photos": [
+          {
+            "height": 586,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116665680889346180620\">人工温泉八幡の湯 ドーミーイン心斎橋</a>"
+            ],
+            "photo_reference": "CmRaAAAAjSKQ1yZtO4a6ROeCpqHwcjXAnwqBsuy9ADBWjCyirLQZZGWdicmn_sWG_xvKvBatoyJkxoHLX-bOfoIgE-VvIdvop2ebELTCP9RndWGW_seu1aGir32P3iVpaMxnp4c1EhBZ59EWgPkTplHSt2-rqcXVGhSuD7WffyyfCax-MBfsIv8ZXuDO2w",
+            "width": 879
+          }
+        ],
+        "place_id": "ChIJ9wEz0BHnAGAR_ZYte2XUKMw",
+        "plus_code": {
+          "compound_code": "MFCW+9X Osaka, Japan",
+          "global_code": "8Q6QMFCW+9X"
+        },
+        "rating": 3.7,
+        "reference": "ChIJ9wEz0BHnAGAR_ZYte2XUKMw",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 705,
+        "vicinity": "2 Chome-17-3 Nishishinsaibashi, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6676979,
+            "lng": 135.4378502
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6690468802915,
+              "lng": 135.4391991802915
+            },
+            "southwest": {
+              "lat": 34.6663489197085,
+              "lng": 135.4365012197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Keihan Universal Tower",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3840,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110069390398821050282\">ホテル京阪 ユニバーサル・タワー</a>"
+            ],
+            "photo_reference": "CmRaAAAAnN7oP5B_5_xKB46UcAQXwk5JqozcSBLpsih3etuulekdrlamk4meSh4LF8OuL5z_VvDBWeO8VxeyLiSO-x-MrDwQJCnz3F9qmQHJNxd_A56R0IB8GT0IL8JVSKo4qEteEhAn9XVQNbtxayyiockzmoL5GhQ7_IYVcut0OXSf6QZKp-uriBkkjA",
+            "width": 5760
+          }
+        ],
+        "place_id": "ChIJ_QQ6J5HoAGARLDt22R88_-s",
+        "plus_code": {
+          "compound_code": "MC9Q+34 Osaka, Japan",
+          "global_code": "8Q6QMC9Q+34"
+        },
+        "rating": 4.2,
+        "reference": "ChIJ_QQ6J5HoAGARLDt22R88_-s",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2844,
+        "vicinity": "6 Chome-2-45 Shimaya, Konohana Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6969253,
+            "lng": 135.4876352
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6983796802915,
+              "lng": 135.4888978302915
+            },
+            "southwest": {
+              "lat": 34.6956817197085,
+              "lng": 135.4861998697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Hanshin Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3500,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102001980303760298039\">ホテル阪神大阪</a>"
+            ],
+            "photo_reference": "CmRaAAAAX0JjDz1Zne_PZfsMY--PFs-Lb6XzdV715_e9kSQh-4-4bLcyHYj0pav4eaTOYEFFfJBI5UbvepiuqgDrhDqN-YXBo1w3drEf0F_yajs0CU4mUI3keF1dr-w1hit6OhvXEhBDqqen2VHg7Zrr13mYXMLgGhQrhC21Uj-MkHtKyKqrX3eeR23RcQ",
+            "width": 2296
+          }
+        ],
+        "place_id": "ChIJfd9En4rmAGAR7S16-8i3se0",
+        "plus_code": {
+          "compound_code": "MFWQ+Q3 Osaka, Japan",
+          "global_code": "8Q6QMFWQ+Q3"
+        },
+        "rating": 3.9,
+        "reference": "ChIJfd9En4rmAGAR7S16-8i3se0",
+        "scope": "GOOGLE",
+        "types": [
+          "spa",
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2393,
+        "vicinity": "5 Chome-6-16 Fukushima, Fukushima Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.68786410000001,
+            "lng": 135.5024116
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6892130802915,
+              "lng": 135.5037605802915
+            },
+            "southwest": {
+              "lat": 34.6865151197085,
+              "lng": 135.5010626197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Toyoko Inn Yodoyabasi",
+        "photos": [
+          {
+            "height": 1840,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108079508812063040602\">成任民</a>"
+            ],
+            "photo_reference": "CmRaAAAA4-KZWcDKMKTTjaY4dXxYWqi68YxH-QFGQmor3MtYweoWRZStTYWSLI9Cp7ceGsfkWSt5El2PZiqqvDcjSdG1dibqKlfsf6jcNIn2voYHYWTzDj6I2wPH1FXoLoNaBT11EhDMTLwjtZN34JZkUJeGZGYTGhRolJ7Jt6T93v7W-diXVJ-Vo3uNbQ",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJdQQtaOHmAGAR221DW1H95Iw",
+        "plus_code": {
+          "compound_code": "MGQ2+4X Osaka, Japan",
+          "global_code": "8Q6QMGQ2+4X"
+        },
+        "rating": 3.8,
+        "reference": "ChIJdQQtaOHmAGAR221DW1H95Iw",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 701,
+        "vicinity": "3 Chome-4-6 Hiranomachi, Chuo Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6788968,
+            "lng": 135.8208739
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.68023523029149,
+              "lng": 135.8222934302915
+            },
+            "southwest": {
+              "lat": 34.6775372697085,
+              "lng": 135.8195954697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Guesthouse Nara Komachi",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3265,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114677383782537653590\">Radu Micu</a>"
+            ],
+            "photo_reference": "CmRaAAAA62APvOkRm4ZhGpJNPhvYL3qrLN6kWJrRo5mVpHLZ-CKPzBiRBtjGJgbRtkb20ofX_kS662uvvCXIJ8P--5_yQ8phiqNfRuv-dkxcro6NqWjXcnUVetZXr1tZF3fcDgKoEhBTDMwy0JqIK_IkQsyR8CKjGhSLh-PndRBUjfbtoChxNk2tp_SPSQ",
+            "width": 4898
+          }
+        ],
+        "place_id": "ChIJ35EBgC86AWARuesUBQXwPkI",
+        "plus_code": {
+          "compound_code": "MRHC+H8 Nara, Japan",
+          "global_code": "8Q6QMRHC+H8"
+        },
+        "rating": 4.6,
+        "reference": "ChIJ35EBgC86AWARuesUBQXwPkI",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 161,
+        "vicinity": "41−２ Surugamachi, Nara"
+      }
+    ],
+    "status": "OK"
+  }

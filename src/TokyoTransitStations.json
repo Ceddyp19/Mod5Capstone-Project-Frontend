@@ -1,0 +1,911 @@
+{
+  "html_attributions": [],
+  "next_page_token": "CrQCJAEAAPtnXBajOTlRkvRA7QBTuU1xtVIEPY4x1vwMu-ckSkZcac6N1E-PGKv0IpE0oLj3TcyU387rrybUoZCs8fH7mVF3HTxYkrnsWkTtgqmASNf_US6u2TWOz6asKzxFoQdls3krieIHYKC0euV8M_0y92EtrIMAokbZ_x_VJgfD4yExL2W4y5R0ZDA9Ce10jpLK6TdlDK90ai3KZcSuSYD3YkzVZriygeo9K9j1Xj4fBjzeXoeCyAGYyB61pXqTa-CJSfjXb8OhRSyeCTs7ecNtxUe4XKZXxv3cZ-J4J9yI0-RrVxAIp8PHnbvDNEzVctt45o_14QvyXoqbnQcx9fJBgnG_WJHfY-9adJrEWD87SYOGq6yhhjPPFazzMrzvZU-gSL9z8wLFJb5f7aDrtY6OvXwSEPtfFV91y_QYEy502CUQDcgaFAWiDWyEchNM0MNpn37JVyAfThow",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.67990169999999,
+          "lng": 139.7638946
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.68125068029149,
+            "lng": 139.7652435802915
+          },
+          "southwest": {
+            "lat": 35.67855271970849,
+            "lng": 139.7625456197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Sky Bus Tokyo ticket counter / landing",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1704,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100473650365238018440\">よしのたつや</a>"
+          ],
+          "photo_reference": "CmRaAAAAGe6PShMgZXOxFoVwi8tMRCu-3Xb3XifUHhU4M7WE-_Yak4DYDUz984CVC-xzo0zEHwkzQX-oKUq8YNZcz1vuKdzw1OsE8ebUfgp3J5PC6ci_6szmiIF6O_rkV9Onh5ApEhCLBtaCxdTXVkPg-PzQfOPjGhQSYSj_K3hYRdACIXDmxa1f-YqAkw",
+          "width": 2272
+        }
+      ],
+      "place_id": "ChIJ8RGoF_qLGGARCQfGNfJJN8M",
+      "plus_code": {
+        "compound_code": "MQH7+XH Chiyoda City, Tokyo, Japan",
+        "global_code": "8Q7XMQH7+XH"
+      },
+      "rating": 3.5,
+      "reference": "ChIJ8RGoF_qLGGARCQfGNfJJN8M",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 81,
+      "vicinity": "2-5-2 Marunouchi, Chiyoda City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7262543,
+          "lng": 139.5921496
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.72760838029151,
+            "lng": 139.5931313802915
+          },
+          "southwest": {
+            "lat": 35.72491041970851,
+            "lng": 139.5904334197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Kami-Shakujii Station",
+      "photos": [
+        {
+          "height": 1536,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104945020514010604737\">Y. Tanaka</a>"
+          ],
+          "photo_reference": "CmRaAAAA0yqJhEYqJKK19AEpXKRJcgDIkkT_Mesm_yM8Jjqf1Dr-h_fuEYX-9jKAYSkI0zL7RkdrV9XJumxcQvuN6d0HFp36e_WWKFR1iuHsCyzlMeEt42SfPQDqI20C5Wm-GvBJEhA4a4ENgrs3jxzHhS3ex5k6GhQw57Qx2CvLF69paAlvlNEPCXe5SQ",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJkcoZeYruGGARsl0VvdceIK0",
+      "plus_code": {
+        "compound_code": "PHGR+GV Nerima City, Tokyo, Japan",
+        "global_code": "8Q7XPHGR+GV"
+      },
+      "rating": 3.5,
+      "reference": "ChIJkcoZeYruGGARsl0VvdceIK0",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 77,
+      "vicinity": "1 Chome-2-45 Kamishakujii, Nerima City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.6072728,
+          "lng": 139.6686661
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6088876802915,
+            "lng": 139.6702405802915
+          },
+          "southwest": {
+            "lat": 35.6061897197085,
+            "lng": 139.6675426197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Jiyūgaoka Sta.",
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112937531980206495067\">Gsony Wong</a>"
+          ],
+          "photo_reference": "CmRaAAAAapdu8_fVQbgImjfHWQnxLc99IHFsKrMqFJJUezV0-Um6yBli9XYgBvbSGNaEsipzBNKbCABtUkcTThcSJlmqByPD4ZRvP9q5JaIbHAeGBpBOX72uzecq7gMsvXVsaOI9EhAPhZCaBJXaBpesedTCD62KGhRT9mCjPLQj03ZEVoVmEUhW9R0MSg",
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJKXN7Dh_1GGARo-Cb17tu-cA",
+      "plus_code": {
+        "compound_code": "JM49+WF Meguro City, Tokyo, Japan",
+        "global_code": "8Q7XJM49+WF"
+      },
+      "rating": 3.8,
+      "reference": "ChIJKXN7Dh_1GGARo-Cb17tu-cA",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 294,
+      "vicinity": "Jiyūgaoka Station, 南口ビル2階, 1 Chome-9−８ Jiyugaoka, Meguro City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7771736,
+          "lng": 139.7904267
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.7785225802915,
+            "lng": 139.7917756802915
+          },
+          "southwest": {
+            "lat": 35.7758246197085,
+            "lng": 139.7890777197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Nishiarai Station",
+      "photos": [
+        {
+          "height": 1608,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106326014192265492444\">石丸正夫</a>"
+          ],
+          "photo_reference": "CmRaAAAA9xrqNcH9RABGlEN2YqilHHTmuV1EHPm6uD2jgG9ZhOvsLRPg-ns87wBY-HgjKvBsttoDpK1bZFjdmoqus5_yrQEoA-hQtdI9kOuo7dFZcHVJixq1zKvwJqoilWSVg1J4EhDTzXl0R2-JrtLb2_d72fxJGhTnBxTY4SRle-wyI2zAufnxpyb9HQ",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJfQgHNuaRGGARYEluN_mXiaM",
+      "plus_code": {
+        "compound_code": "QQGR+V5 Adachi City, Tokyo, Japan",
+        "global_code": "8Q7XQQGR+V5"
+      },
+      "rating": 3.7,
+      "reference": "ChIJfQgHNuaRGGARYEluN_mXiaM",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 169,
+      "vicinity": "2 Chome-1-1 Nishiaraisakaecho, Adachi City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.6275325,
+          "lng": 139.7788145
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.62856653029151,
+            "lng": 139.7802688302915
+          },
+          "southwest": {
+            "lat": 35.62586856970851,
+            "lng": 139.7775708697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Tokyo Teleport Station",
+      "photos": [
+        {
+          "height": 4480,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108839327085409911755\">Yuichi Hoshino</a>"
+          ],
+          "photo_reference": "CmRaAAAAxnMFhMFbsgZkaXPPU3O47GoSQsmEpK0y1l4bIxs8Rn_k6pbPMdk4paCjEJruFe7tZlsY_pVe0Psgo8TnG4ybQuLgFrHOTxygFoVSz9Vgw5aLRfP76Fg1rxLOnEHVMNKrEhCvI8BpmDvfdg0q8_7UxKtGGhRBL46NYfYWa1yfcXV0Ro99qUXJUA",
+          "width": 6720
+        }
+      ],
+      "place_id": "ChIJ6RCyu_CJGGARN8lKFZBh6J4",
+      "plus_code": {
+        "compound_code": "JQHH+2G Koto City, Tokyo, Japan",
+        "global_code": "8Q7XJQHH+2G"
+      },
+      "rating": 3.9,
+      "reference": "ChIJ6RCyu_CJGGARN8lKFZBh6J4",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 231,
+      "vicinity": "1 Chome Aomi, Koto City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.61157180000001,
+          "lng": 139.6265863
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6135178302915,
+            "lng": 139.6284958802915
+          },
+          "southwest": {
+            "lat": 35.61081986970851,
+            "lng": 139.6257979197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Futako-Tamagawa Sta.",
+      "photos": [
+        {
+          "height": 3972,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109140146972963127586\">円山応挙</a>"
+          ],
+          "photo_reference": "CmRaAAAADTKtHNYLMk58XQe6sO18ZVuVmABuMBKEcGgMbAdaOUg_m89ShF-tJvSi9GK1Q6vuLfF5mM61VlAewhXIq17ShScn5vtZ4J2tVuEKfjPDAfwnJ0FIXMzbxxDf99DTGEtiEhCKRWZtR3csgJw8xPtspF3CGhT_ua78sPjDNC2TxDpIYmzlNcx4Ug",
+          "width": 5296
+        }
+      ],
+      "place_id": "ChIJbbRNghX0GGARDceTApUQnBg",
+      "plus_code": {
+        "compound_code": "JJ6G+JJ Setagaya City, Tokyo, Japan",
+        "global_code": "8Q7XJJ6G+JJ"
+      },
+      "rating": 4,
+      "reference": "ChIJbbRNghX0GGARDceTApUQnBg",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 343,
+      "vicinity": "2 Chome-22-13 Tamagawa, Setagaya City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.714037,
+          "lng": 139.7924263
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.71754815,
+            "lng": 139.7938125302915
+          },
+          "southwest": {
+            "lat": 35.71105274999999,
+            "lng": 139.7911145697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Asakusa Sta.",
+      "photos": [
+        {
+          "height": 798,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107699371608880833673\">poeto</a>"
+          ],
+          "photo_reference": "CmRaAAAA2s0To1BW2koJs1hxyiJXrkeatJKe-wrZxel0RKobo9vrm6aTlbP_G7D9IVeMslEJTwzCHuL_LVGXDiWzHf_NTLn2ywoHiPCGjqyE8bj20uJg5fa4bYvT3uzggQx4boyJEhBcgoYAApMkYQVlg060j5G8GhTn5NiYkb_u5XmEtAuMLhD8j3JoSQ",
+          "width": 1200
+        }
+      ],
+      "place_id": "ChIJ8UU86L-OGGARn9PySbX_CnM",
+      "plus_code": {
+        "compound_code": "PQ7R+JX Taito City, Tokyo, Japan",
+        "global_code": "8Q7XPQ7R+JX"
+      },
+      "rating": 3.8,
+      "reference": "ChIJ8UU86L-OGGARn9PySbX_CnM",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 241,
+      "vicinity": "3 Chome-1-11 Nishiasakusa, Taito City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7107919,
+          "lng": 139.7984862
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.71214088029149,
+            "lng": 139.7998351802915
+          },
+          "southwest": {
+            "lat": 35.7094429197085,
+            "lng": 139.7971372197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Tokyo Cruise",
+      "photos": [
+        {
+          "height": 2941,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110489995061488587458\">yasukazu kanehira</a>"
+          ],
+          "photo_reference": "CmRaAAAAIhGa6drgW7V89qiNQqwswAzGnAoU4WPakYGjUm3os9RFfFalF9UObMp3t3qLOZug3lSCinqC2fneOlNpQf3uay3jdiGzWlCivV4glbpqwyg-POh0EvAWd2Rj2mPy4yHaEhBL1zQ4xtUP6HuFN8ETxR2hGhTR501nQbITig4ML3zZf8OLlvEy3w",
+          "width": 3142
+        }
+      ],
+      "place_id": "ChIJ8RvoL8SOGGAR_jLysacG8sc",
+      "plus_code": {
+        "compound_code": "PQ6X+89 Taito City, Tokyo, Japan",
+        "global_code": "8Q7XPQ6X+89"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ8RvoL8SOGGAR_jLysacG8sc",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 723,
+      "vicinity": "1 Chome-2-7 Hanakawado, Taito City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.66682659999999,
+          "lng": 139.7264971
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.66917254999998,
+            "lng": 139.7292665
+          },
+          "southwest": {
+            "lat": 35.66439195,
+            "lng": 139.7233321
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Nogizaka Sta.",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111519802063070487980\">Tomo Kitami</a>"
+          ],
+          "photo_reference": "CmRaAAAAjkHNMvMRjaE88_VqdJjw6aALHyiwa0ylW8hI7hUddhPFirJF-mmXUOsMOPWtWKzxFq45Tj4VufxcBr51v8EOnSzDa3y1-zNtrJmjYjlXumwNkziIBQDveVcHq1ZgH82cEhDvxRbcGGUD1aaXIEGvzdj5GhSloa9WSXyX2nOcuR7T4pa1u8eh8w",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJdzWDgX6LGGAR_Fg_79e-e44",
+      "plus_code": {
+        "compound_code": "MP8G+PH Minato City, Tokyo, Japan",
+        "global_code": "8Q7XMP8G+PH"
+      },
+      "rating": 4,
+      "reference": "ChIJdzWDgX6LGGAR_Fg_79e-e44",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 193,
+      "vicinity": "東京都港区南青山１丁目２５−８"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.68534940000001,
+          "lng": 139.7632784
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6913753,
+            "lng": 139.77455305
+          },
+          "southwest": {
+            "lat": 35.67929329999999,
+            "lng": 139.75764285
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Otemachi Sta.",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102356555223867748482\">乙名丹次郎</a>"
+          ],
+          "photo_reference": "CmRaAAAAb7O2zVYUTNnBBTNpFZq_QwAdf-T_XesvZfbQ90_VvBft7huN-WYp-lr3cL2W1SJ37NpLz_gjqRiXF2pzzkI5ksT2pHxV1TrVOCGo4NdmAfafH2KMQ-hwRTWh17TGkoZjEhBr-8zMZtn1tG_L_EPJnEe0GhT3NyhgBFOvTHvOA6bD0GC4oqJUwg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJnUcMGviLGGAROCgXeJNX4xg",
+      "plus_code": {
+        "compound_code": "MQP7+48 Chiyoda City, Tokyo, Japan",
+        "global_code": "8Q7XMQP7+48"
+      },
+      "rating": 3.6,
+      "reference": "ChIJnUcMGviLGGAROCgXeJNX4xg",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "train_station",
+        "subway_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 369,
+      "vicinity": "2 Chome-1-1 Ōtemachi, Chiyoda City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.6476602,
+          "lng": 139.7486572
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6500175,
+            "lng": 139.7511485
+          },
+          "southwest": {
+            "lat": 35.6447203,
+            "lng": 139.7439649
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Mita Sta.",
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100864015117825279986\">Ryo IT</a>"
+          ],
+          "photo_reference": "CmRaAAAAFSbL2JBmXOVz4xa6JPZg3z3b8jiCiB1yUhZercRjf3piyB5sX1ST_5hb_IWP9FwJkGPL34VXjKUyZHi7rUPUWYi3KgVdX4Q_ngFIiWqs7DwhV0FeBtFDep9j4_xnJmDZEhDXuBVkO1hkRp5RhHWmkL-DGhRk6ZMWf5u9YU9gMRvssEH8uRVGew",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJsz5EwLaLGGARFF9MhRbqhL8",
+      "plus_code": {
+        "compound_code": "JPXX+3F Minato City, Tokyo, Japan",
+        "global_code": "8Q7XJPXX+3F"
+      },
+      "rating": 3.5,
+      "reference": "ChIJsz5EwLaLGGARFF9MhRbqhL8",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 135,
+      "vicinity": "5 Chome-18-8 Shiba, Minato City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.677314,
+          "lng": 139.6768408
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6786666302915,
+            "lng": 139.6782047302915
+          },
+          "southwest": {
+            "lat": 35.6759686697085,
+            "lng": 139.6755067697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Hatagaya Station",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107534026239032847747\">飯野博之</a>"
+          ],
+          "photo_reference": "CmRaAAAAnLqHOzEwa07u4v6U7VoOOqY8RaZO3D8XHhjaX1T9CEXSnxv8Odi9rMNMfTa8l0CrNTJrxlYUx18veX5f3gQvT4MlO5PQSyKPhtsl2zAA2UJutaGGQlaEjS7vq6cOhKxsEhCv2O-Zo0e59ywfI0M7TqTYGhQyKAfmhfw5nEG5aRv1mh7TItY6dg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ4yc4UTvzGGAR2dzBPcNtwDo",
+      "plus_code": {
+        "compound_code": "MMGG+WP Shibuya City, Tokyo, Japan",
+        "global_code": "8Q7XMMGG+WP"
+      },
+      "rating": 3.4,
+      "reference": "ChIJ4yc4UTvzGGAR2dzBPcNtwDo",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 69,
+      "vicinity": "東京都渋谷区幡ケ谷1丁目2−1"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7612601,
+          "lng": 139.7055333
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.7626028802915,
+            "lng": 139.7070186302915
+          },
+          "southwest": {
+            "lat": 35.7599049197085,
+            "lng": 139.7043206697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Itabashihoncho Station",
+      "photos": [
+        {
+          "height": 1440,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101677830307582897371\">Fuji Y</a>"
+          ],
+          "photo_reference": "CmRaAAAAWKQiv2a1HgXcQV_IeJBznFyZd9mHxTH73XBmUrtfnYoCRK6x4JS8P6FRPZh0MS19JnNiGEmSnc80Uml7RZy2PcoqzsbNgdDSVzohLJUqSiJhDQafF9VCQsfuvcex1QEqEhCTEjGcj8e3P8-Ro08tiMQTGhT8AptjJoNePzrpBUcS8_0KhT4MtQ",
+          "width": 2560
+        }
+      ],
+      "place_id": "ChIJjU_dw8SSGGAR2kTeNy6Ptys",
+      "plus_code": {
+        "compound_code": "QP64+G6 Itabashi City, Tokyo, Japan",
+        "global_code": "8Q7XQP64+G6"
+      },
+      "rating": 3.2,
+      "reference": "ChIJjU_dw8SSGGAR2kTeNy6Ptys",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 90,
+      "vicinity": "東京都板橋区大和町17−1"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7289765,
+          "lng": 139.7093428
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.7303254802915,
+            "lng": 139.7106917802915
+          },
+          "southwest": {
+            "lat": 35.72762751970851,
+            "lng": 139.7079938197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "東日本トランスポーテック（株） 経理部",
+      "place_id": "ChIJV16JG12NGGAR09j5dCliNps",
+      "plus_code": {
+        "compound_code": "PPH5+HP Toshima City, Tokyo, Japan",
+        "global_code": "8Q7XPPH5+HP"
+      },
+      "reference": "ChIJV16JG12NGGAR09j5dCliNps",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "1 Chome-11-1 Nishiikebukuro, Toshima City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.7278755,
+          "lng": 139.7448665
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.72908218029151,
+            "lng": 139.74642345
+          },
+          "southwest": {
+            "lat": 35.72638421970851,
+            "lng": 139.74338765
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Sengoku Sta.",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112555184210373704479\">Ryuya Yamada</a>"
+          ],
+          "photo_reference": "CmRaAAAAAwiv849Nh4ttaDsUw05G0ybY6NZwXmte2BrOi0AGCwBeV8_13Yee6mIuaH4J_izyOK7jMTJMY4yJbAvQqqLjze_pePys6-9i35sFSqWKzy_B5kVao2LCdHy0Ovh9jt27EhCgRA9tPH-4hV5tr7t7HBNbGhScJDD_7hK-2TNkYkSktzBVOUKIWA",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ00segLuNGGARAuZ5J4rSIek",
+      "plus_code": {
+        "compound_code": "PPHV+5W Bunkyo City, Tokyo, Japan",
+        "global_code": "8Q7XPPHV+5W"
+      },
+      "rating": 3.6,
+      "reference": "ChIJ00segLuNGGARAuZ5J4rSIek",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 43,
+      "vicinity": "1 Chome-29-13 Sengoku, Bunkyo City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.69215519999999,
+          "lng": 139.7848473
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6933429302915,
+            "lng": 139.7859308302915
+          },
+          "southwest": {
+            "lat": 35.69064496970851,
+            "lng": 139.7832328697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Higashi-Nihombashi Station",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114020561924222668879\">Byeong Seong Lim</a>"
+          ],
+          "photo_reference": "CmRaAAAAyqS_kz71vFGO4p8W7cLK5h1SVr7n3xbrasMhDaxycsharTnmKA1hewmzsIV_QfdqwLAuzB3hz4wdedl5Ik2D6g7ZfvF1K3WcPd4kvwozZcZEve-v44jobEEZo9NU2YZmEhAm3TMLsqvctzJzUC-7ZlOQGhSP1QdmFXojpVlEDAlh4_ldDbxxKw",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJsYO9Fk2JGGARn5__zRcUaG8",
+      "plus_code": {
+        "compound_code": "MQRM+VW Chuo City, Tokyo, Japan",
+        "global_code": "8Q7XMQRM+VW"
+      },
+      "rating": 3.6,
+      "reference": "ChIJsYO9Fk2JGGARn5__zRcUaG8",
+      "scope": "GOOGLE",
+      "types": [
+        "subway_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 77,
+      "vicinity": "3 Chome Higashinihonbashi, Chuo City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.6119618,
+          "lng": 139.6389246
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6134071802915,
+            "lng": 139.6399332302915
+          },
+          "southwest": {
+            "lat": 35.6107092197085,
+            "lng": 139.6372352697085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/train-71.png",
+      "name": "Kaminoge Sta.",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102776178632522095970\">岩澤信吾</a>"
+          ],
+          "photo_reference": "CmRaAAAAVSzIEspOhSWvkoDpQISUjgjshOG0CHFfb7j8U015rknqCZBcLolyFvgV31CYNXhLh6u2kaQQrVGhUUs59WskSTb6GZJ2ffpvU8P5nuzA77fqnYRxt9F_KLOZ_zmz-Av4EhDKauBhCII4lduA_n0wAYK2GhRYAiGTA2I5qcOlNT8cQdFDRgxskA",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ-wPhX0P0GGAR3-cbNtZToSQ",
+      "plus_code": {
+        "compound_code": "JJ6Q+QH Setagaya City, Tokyo, Japan",
+        "global_code": "8Q7XJJ6Q+QH"
+      },
+      "rating": 3.6,
+      "reference": "ChIJ-wPhX0P0GGAR3-cbNtZToSQ",
+      "scope": "GOOGLE",
+      "types": [
+        "train_station",
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 49,
+      "vicinity": "1 Chome-26-6 Kaminoge, Setagaya City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.71506189999999,
+          "lng": 139.6872821
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.71581739999999,
+            "lng": 139.6879979802915
+          },
+          "southwest": {
+            "lat": 35.71279539999999,
+            "lng": 139.6853000197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Nakai Station",
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100864015117825279986\">Ryo IT</a>"
+          ],
+          "photo_reference": "CmRaAAAAWR7O8gNxGLyJtn621Gt3MhAmWExuUUrmuk3wrkZ_bPCTsNkWdvjuGRwjIKUgl_LlHBTllrUVAg6B1Cg4GsDAzWDt5DM7WrrEXr4HExkhMNLdjgAJ17B5KOPwK0ev51faEhCuFkyKAySKctsFzWaT_x9GGhTJ1ZwnISzX5pp5zPdqC7aU10P0Tg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJmcgB_LPyGGARLh0pXmS7UYI",
+      "plus_code": {
+        "compound_code": "PM8P+2W Shinjuku City, Tokyo, Japan",
+        "global_code": "8Q7XPM8P+2W"
+      },
+      "rating": 3.6,
+      "reference": "ChIJmcgB_LPyGGARLh0pXmS7UYI",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "train_station",
+        "subway_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 97,
+      "vicinity": "2 Chome-20-8 Kamiochiai, Shinjuku City"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.69151,
+          "lng": 139.6915
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6928589802915,
+            "lng": 139.6928489802915
+          },
+          "southwest": {
+            "lat": 35.6901610197085,
+            "lng": 139.6901510197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "ハイアットリージェンシー東京",
+      "place_id": "ChIJ28NvNtWMGGARyONgTvk5y5k",
+      "plus_code": {
+        "compound_code": "MMRR+JJ Shinjuku City, Tokyo, Japan",
+        "global_code": "8Q7XMMRR+JJ"
+      },
+      "reference": "ChIJ28NvNtWMGGARyONgTvk5y5k",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Japan"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 35.68625000000001,
+          "lng": 139.6902
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 35.6876041302915,
+            "lng": 139.6915877802915
+          },
+          "southwest": {
+            "lat": 35.6849061697085,
+            "lng": 139.6888898197085
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "name": "Park Hyatt Tokyo",
+      "place_id": "ChIJ4_2txizzGGARXvN4j6xxPsw",
+      "plus_code": {
+        "compound_code": "MMPR+G3 Shinjuku City, Tokyo, Japan",
+        "global_code": "8Q7XMMPR+G3"
+      },
+      "reference": "ChIJ4_2txizzGGARXvN4j6xxPsw",
+      "scope": "GOOGLE",
+      "types": [
+        "transit_station",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Japan"
+    }
+  ],
+  "status": "OK"
+}

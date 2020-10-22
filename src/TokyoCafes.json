@@ -1,0 +1,1059 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCGQEAAOEZ9jTVqs5DBkp_U-JpBXGWLjaYYLrR5Tyj6IBh9PaVPCubnTYwc8rB77OeVlhb4g_3DGBjCRdumT6NnW_U4uq87IwLvY0S5Vo_KaI7HWL3CF9rGjAImJW1p21A9ywJT1Q77zozapPZhVCPU5RQVPhy86o9CY6lqDKAriaWjbia-9B6PnrytYw-HX2540PR9PUnD2fi5HWZRStkufYiX6oZv5ntyoVJQf9SBA5Te3NLkuy1Qr7cwybrOty0KQHF51-K-LsVxkHWnt0goYMcT8fpr21B8rEwOB48REiPGn1T1ZaakypICq1wk4UdLCleEoS1zKMooEik7yg9yZ-H1BvmHrghwJrWxcJsUB9PdMDCr_iOzpKXbgVGwZhTygQxKxIQs2K177-u_OHShAtXVye_ABoUDu-nH8To5HeScQs6pjsuQ0D7OIo",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6901586,
+            "lng": 135.4873864
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6915075802915,
+              "lng": 135.4887353802915
+            },
+            "southwest": {
+              "lat": 34.6888096197085,
+              "lng": 135.4860374197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "RIHGA Royal Hotel Osaka",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1161,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118096932479083920335\">リーガロイヤルホテル（大阪）</a>"
+            ],
+            "photo_reference": "CmRaAAAADR3j2QuzkkOzCSNgyYUEw4Y0P4sAvgpur5L8zJ8COgYOYDXBmYR-1WRm8PBL4dga3V2tvQ3a8YY6cC9r0LwXNY4d8B4w31jIJzQqU8RXC2MY7zemWpeYahVvQIWoVD9OEhBJhEokYKIijhV_E1SYyt6AGhTECVEc3NbWmZaJueMq4IzxVq-N1g",
+            "width": 2708
+          }
+        ],
+        "place_id": "ChIJq23VpljmAGARdNZzejUkbv4",
+        "plus_code": {
+          "compound_code": "MFRP+3X Osaka, Japan",
+          "global_code": "8Q6QMFRP+3X"
+        },
+        "rating": 4.2,
+        "reference": "ChIJq23VpljmAGARdNZzejUkbv4",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "spa",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 7413,
+        "vicinity": "5 Chome-3-68 Nakanoshima, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.693802,
+            "lng": 135.1918392
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6951509802915,
+              "lng": 135.1931881802915
+            },
+            "southwest": {
+              "lat": 34.6924530197085,
+              "lng": 135.1904902197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Patisserie Tooth Tooth",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 4032,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105615977262827872538\">Takeyoshi Suka</a>"
+            ],
+            "photo_reference": "CmRaAAAAgwXIYvTc4SCNtnbbY8AGbK1jpsS0RQvQj6udSMKJWwC30sZKh-KcCsDnHtDP4rQEmiynyln4G9hudr0EEHCBo4Pw4YNxWbJHVuGrXD8TuOViYPBTzVUyN1CXkhUFkOf1EhB5veOekAgUyPYMJcqVNOi8GhS2LODscz4QLF1-hDVre48VKFlQpQ",
+            "width": 3024
+          }
+        ],
+        "place_id": "ChIJPY5bg-SOAGARV_9WWE52R-Q",
+        "plus_code": {
+          "compound_code": "M5VR+GP Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5VR+GP"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJPY5bg-SOAGARV_9WWE52R-Q",
+        "scope": "GOOGLE",
+        "types": [
+          "bakery",
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 153,
+        "vicinity": "成浩ビル 1F, 1 Chome-4−１ Nakayamatedori, KobeChuo Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6929161,
+            "lng": 135.1940624
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6942225302915,
+              "lng": 135.1954501802915
+            },
+            "southwest": {
+              "lat": 34.6915245697085,
+              "lng": 135.1927522197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "カフェ モロゾフ さんちか店",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117271126616614818302\">岡晴夫</a>"
+            ],
+            "photo_reference": "CmRaAAAAjmDYLVTItQ7qFwF_9QzMiMHHYDwCiePHrElZDifyfiJemYJ0trcrCwA0f1TE9iUCVV_x4UIlpPfJh6SD8TboCDvLvzgpF1S0GW8gG-b3AlLRR39IOeSYV2R2hhvxjZB2EhAg2_mkN7nDQ4kPiON9Beg7GhRVrlkYaTEJVXnTe7ob7V_zDfZcMw",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJoY3x1eSOAGARrB8C5Hgl_us",
+        "plus_code": {
+          "compound_code": "M5VV+5J Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5VV+5J"
+        },
+        "price_level": 2,
+        "rating": 4,
+        "reference": "ChIJoY3x1eSOAGARrB8C5Hgl_us",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 97,
+        "vicinity": "1 Chome-10-1 Sannomiyacho, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.66653099999999,
+            "lng": 135.432772
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.67104105,
+              "lng": 135.43676995
+            },
+            "southwest": {
+              "lat": 34.66502764999998,
+              "lng": 135.4244009499999
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Snoopy's Backlot Cafe",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2736,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117769076944941795070\">peng younver</a>"
+            ],
+            "photo_reference": "CmRaAAAAjaBK4NT1o4C9smA7sPBHFpQl2ohwoQm1eslgZP9mXpQnvmoCSKWZStPVnH_c4zVYjyA_rfaWjZwpxaZ6r3VsX2gBaq5rdZvUwKBELklKz7Ahc4czRRtwt-_6_C7OKHM5EhBdJN-7QcVAcgThbTlSi6eiGhQmMKm33pYhMfyr1YyoE07lwKpVcA",
+            "width": 3648
+          }
+        ],
+        "place_id": "ChIJe0vaVJHoAGAR9ctnddyDJAg",
+        "plus_code": {
+          "compound_code": "MC8M+J4 Osaka, Japan",
+          "global_code": "8Q6QMC8M+J4"
+        },
+        "price_level": 3,
+        "rating": 4,
+        "reference": "ChIJe0vaVJHoAGAR9ctnddyDJAg",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "cafe",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 198,
+        "vicinity": "2 Chome-1 Sakurajima, Konohana Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.917775,
+            "lng": 135.182868
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.9191302802915,
+              "lng": 135.1843532302915
+            },
+            "southwest": {
+              "lat": 34.9164323197085,
+              "lng": 135.1816552697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "パティシエ エス コヤマ",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3413,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100430795327943252829\">パティシエ エス コヤマ</a>"
+            ],
+            "photo_reference": "CmRaAAAAr-y7cfU4J4F0NywtTcHcpqB2-O80jN7izs00ZuqESp-8SvQjRS8C4RQd28Ih06FjUKsyt_2A_f9ViGS806Qd5aZwcZAFc4hAmKfEzv0Qly81_6e_bPSb2FDLABPqXRcGEhBuzzQa0C11W7kyv076X2nuGhRPub9ALrmCpe1ADAKsQrkwLg5ZkQ",
+            "width": 5120
+          }
+        ],
+        "place_id": "ChIJ7RaCVndlAGARjfMtbQkyFLo",
+        "plus_code": {
+          "compound_code": "W59M+44 Sanda, Hyogo, Japan",
+          "global_code": "8Q6QW59M+44"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJ7RaCVndlAGARjfMtbQkyFLo",
+        "scope": "GOOGLE",
+        "types": [
+          "bakery",
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 3257,
+        "vicinity": "5 Chome-３２−１ Yurinokidai, Sanda"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.66454510000001,
+            "lng": 135.5026735
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6658940802915,
+              "lng": 135.5040224802915
+            },
+            "southwest": {
+              "lat": 34.66319611970851,
+              "lng": 135.5013245197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Cafe&Meal MUJI 難波",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114043903762027554959\">Seungeon Jung</a>"
+            ],
+            "photo_reference": "CmRaAAAA6lGKrLwZ43ZuYmEK6AGgMAKZdIIlsmlKuZr9Uc9a4l5vNDMDS9kP2YYXNAnc_YhPAL5VRs8lC0BgIDCF3m_515mB9kxyJrAttIVVXG5xfDgRdEQ1f8o7Q9tdm7OaHud0EhA_oJP_4OtH3WOOrBorWasMGhQfG4_1belN73sMsRJPk49AFVuD1g",
+            "width": 4608
+          }
+        ],
+        "place_id": "ChIJGT3InmvnAGARmHK6oBtKtlw",
+        "plus_code": {
+          "compound_code": "MG73+R3 Osaka, Japan",
+          "global_code": "8Q6QMG73+R3"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJGT3InmvnAGARmHK6oBtKtlw",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 68,
+        "vicinity": "難波センタービル Ｂ２Ｆ, 12−２２ Nanbasennichimae, Osaka, Chuo Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.687616,
+            "lng": 135.1929188
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6892042802915,
+              "lng": 135.1943770302915
+            },
+            "southwest": {
+              "lat": 34.6865063197085,
+              "lng": 135.1916790697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Oriental Hotel",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 788,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110219448871481330545\">ORIENTAL HOTEL | オリエンタルホテル</a>"
+            ],
+            "photo_reference": "CmRaAAAAlFioS4o7CYWDxVTV2SjJQPAOKznnWmk1FUjVawbvfbZ93mWzKY9gCLvgrMBaNAsSTsCfYSoTZdWj3BC0bDT-Tm1Y0gd267qY_fYifU3NXh3M_sO-KDxdD5YcZ9-xJTNCEhDcngFt0r0RMbV9B5Uhc1ENGhQZ7RQrMh1HXT8fRx1kANvCG5KbYQ",
+            "width": 1400
+          }
+        ],
+        "place_id": "ChIJ6VPyZvmOAGARpaD_SECrvA8",
+        "plus_code": {
+          "compound_code": "M5QV+25 Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5QV+25"
+        },
+        "rating": 4.3,
+        "reference": "ChIJ6VPyZvmOAGARpaD_SECrvA8",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 1745,
+        "vicinity": "25 Kyomachi, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6904268,
+            "lng": 135.4913328
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6918292802915,
+              "lng": 135.4927332302915
+            },
+            "southwest": {
+              "lat": 34.6891313197085,
+              "lng": 135.4900352697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+        "name": "graf",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109645620959622471069\">graf</a>"
+            ],
+            "photo_reference": "CmRZAAAAIqTc85mr1NzPDuGmtNZlK-STWVT3Zk_DhfoJ0WA8fh1gTlt8zcv0y6b6a9D2PjDUiNZI1Qn4U0AZ_CJy59_yxvmX7D14ekQZ9FsDeeHCcjxRwt6rGCdkXKcUwWVtrWPWEhDeV-l6umXjnJ_gn-Xc2lmiGhT7Yw8Q2HnAZgMiyLI1psP8-8y_zA",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJaxfRKvfmAGARenhLWVNoCd8",
+        "plus_code": {
+          "compound_code": "MFRR+5G Osaka, Japan",
+          "global_code": "8Q6QMFRR+5G"
+        },
+        "rating": 4.1,
+        "reference": "ChIJaxfRKvfmAGARenhLWVNoCd8",
+        "scope": "GOOGLE",
+        "types": [
+          "home_goods_store",
+          "cafe",
+          "furniture_store",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 97,
+        "vicinity": "4 Chome-1-9 Nakanoshima, Kita Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.678642,
+            "lng": 135.180245
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6799960802915,
+              "lng": 135.1815693802915
+            },
+            "southwest": {
+              "lat": 34.6772981197085,
+              "lng": 135.1788714197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Crown Palais Kobe",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1349,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117664698869496173939\">ホテルクラウンパレス神戸</a>"
+            ],
+            "photo_reference": "CmRaAAAAzMk7Kxv40BFHEh8HqThM46Q05NrE2WNizI0ZBqImEQXfeEYzOsJNj19oH5tH8lmvpP28hzlk3cuw8DW359A8JhilP1E0Idb-6haUMl9iyGF_p_RHzlUtIJJP5_Xz7ExKEhB9BQ4WcaC9YIrgiaf5sOYCGhSyJ10UVDzUZpMzmVpFkKS_q1VdVA",
+            "width": 1350
+          }
+        ],
+        "place_id": "ChIJ21B_CgePAGARJu6B9JCqMn8",
+        "plus_code": {
+          "compound_code": "M5HJ+F3 Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5HJ+F3"
+        },
+        "rating": 3.8,
+        "reference": "ChIJ21B_CgePAGARJu6B9JCqMn8",
+        "scope": "GOOGLE",
+        "types": [
+          "beauty_salon",
+          "cafe",
+          "spa",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1656,
+        "vicinity": "1 Chome-3-5 Higashikawasakicho, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6660629,
+            "lng": 135.434618
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.66732718029149,
+              "lng": 135.4361098802915
+            },
+            "southwest": {
+              "lat": 34.66462921970849,
+              "lng": 135.4334119197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Beverly Hills Boulangerie",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100773902085260836404\">asuka</a>"
+            ],
+            "photo_reference": "CmRaAAAALugUAoHTb1xq5SI5nbgKkiRskpBV6kMpTJUsdDHMs1_ncoKBTv5wP47cy1WOsXa2iThHGKeXouWQbXR4zXQ-fWIQYRIpBz2gpSA_FKyMprQ9UU22j8ZrkqDbYNC52RffEhDnTt56NpJWRmMBX9Vc4E8JGhRd0_K5lfWB7rF2g3E_AdsdFag8bg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJe0vaVJHoAGAR56yh6CdGlL0",
+        "plus_code": {
+          "compound_code": "MC8M+CR Osaka, Japan",
+          "global_code": "8Q6QMC8M+CR"
+        },
+        "rating": 4,
+        "reference": "ChIJe0vaVJHoAGAR56yh6CdGlL0",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 68,
+        "vicinity": "2 Chome-1 Sakurajima, Konohana Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6924411,
+            "lng": 135.1894032
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6937696302915,
+              "lng": 135.1906997802915
+            },
+            "southwest": {
+              "lat": 34.6910716697085,
+              "lng": 135.1880018197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "a la Campagne Tor Road",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 350,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108913783954001962256\">アラカンパーニュトアロード店</a>"
+            ],
+            "photo_reference": "CmRaAAAA880zlpJcKxiltAkl_VSEiH8pUrfrbLSR7qb9pzGfwS41CEQHbp5GihtHLH-01uQjlSO2sKs8ZNR1zfdY4rNwvsSSBGxvnl8JKgvVc6JZHXtk3-lA4wBw4xIxyA56IAP7EhBIlFJhub90kpP7d3YpmJQyGhSP2BPZlGgcWb9-LEGiWgb3TdchZQ",
+            "width": 470
+          }
+        ],
+        "place_id": "ChIJnab7HOOOAGAR--zPyzzxYtU",
+        "plus_code": {
+          "compound_code": "M5RQ+XQ Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5RQ+XQ"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJnab7HOOOAGAR--zPyzzxYtU",
+        "scope": "GOOGLE",
+        "types": [
+          "bakery",
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 114,
+        "vicinity": "2 Chome-5-5 Shimoyamatedori, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6959734,
+            "lng": 135.194879
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6972832302915,
+              "lng": 135.1961241802915
+            },
+            "southwest": {
+              "lat": 34.6945852697085,
+              "lng": 135.1934262197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Green House Silva",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 597,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/101216102390576925114\">グリーンハウス シルバ</a>"
+            ],
+            "photo_reference": "CmRaAAAAijPjxXEoL8-rzoORthDUt_5NggJFFLVAdLmDDCU8r0TCzPV4782MWtRSz_RiT1eTGGHBe7XNqL-lxP5E7nusowhcTQ3ajz16gyUOik1Fiq1vd2adqxR11l3EyfOU4SAAEhC92ybB4m8ogIdrdd7gI8JbGhRkmKt-fMsouqrb44mQUn8sz_cx_g",
+            "width": 896
+          }
+        ],
+        "place_id": "ChIJeVdwoeWOAGAREWZTxenscB0",
+        "plus_code": {
+          "compound_code": "M5WV+9X Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5WV+9X"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJeVdwoeWOAGAREWZTxenscB0",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 573,
+        "vicinity": "5 Chome-5-25 Kotonoocho, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.661952,
+            "lng": 135.502684
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6632861802915,
+              "lng": 135.5039776302915
+            },
+            "southwest": {
+              "lat": 34.6605882197085,
+              "lng": 135.5012796697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "cafe太陽ノ塔 NAMBA CITY",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105783762312201433482\">cafe太陽ノ塔 NAMBA CITY</a>"
+            ],
+            "photo_reference": "CmRaAAAA2RZHFWhxnmrENXbg3Q0uNmn3rl1JKZehURmEd5QeKY4RulMF-kyX9HJL8hcnGCqSeHEOouTgrdiM5r8PWOoRtE9EQYWOuDgyov6cKVh0mDl_Nd540vkHRcf-eIBw1a8DEhAJewVJ_o9mTf2_oaQbsBPrGhTZdlm1ZH_Mc0V1rCH5M61siQsEFg",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJQSRsfmznAGARVP_t79lcXfQ",
+        "plus_code": {
+          "compound_code": "MG63+Q3 Osaka, Japan",
+          "global_code": "8Q6QMG63+Q3"
+        },
+        "price_level": 2,
+        "rating": 3.7,
+        "reference": "ChIJQSRsfmznAGARVP_t79lcXfQ",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "clothing_store",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 96,
+        "vicinity": "5 Chome-1-60 Nanba, 中央区 Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.70559699999999,
+            "lng": 135.504062
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7069786802915,
+              "lng": 135.5053834802915
+            },
+            "southwest": {
+              "lat": 34.7042807197085,
+              "lng": 135.5026855197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Bastone(バストーネ)",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 960,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/112625847188382385294\">Bastone(バストーネ)</a>"
+            ],
+            "photo_reference": "CmRaAAAA9aIMyb8V3ndxfnEB6V9J0SchxVCAdlmv8dPo_C5TxJnACSj7izJxXLptG73CKV9btDLqKjLmusixJRy3pSjeN2CY1CzgMNF8NC61bpWm4A6vVX8ChAfzNdaLyQibtSxqEhBej6-dexK6lB_5xaU3UyBxGhSTqevtknya8gBxsPiA8uh5AEvlYw",
+            "width": 960
+          }
+        ],
+        "place_id": "ChIJsWNcqpXmAGARatDwl4w6PQI",
+        "plus_code": {
+          "compound_code": "PG43+6J Osaka, Japan",
+          "global_code": "8Q6QPG43+6J"
+        },
+        "rating": 3.9,
+        "reference": "ChIJsWNcqpXmAGARatDwl4w6PQI",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 166,
+        "vicinity": "浪速ビル1F, 4−１２ Banzaicho, Osaka, Kita Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6934086,
+            "lng": 135.1978181
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.69478573029149,
+              "lng": 135.1992370302915
+            },
+            "southwest": {
+              "lat": 34.69208776970849,
+              "lng": 135.1965390697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "カフェケシパール&ケシパルーフ",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 433,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115673736670225139002\">カフェケシパール&amp;ケシパルーフ</a>"
+            ],
+            "photo_reference": "CmRaAAAABLgkLxQuIpHta3KrIQBwZswVRnMGLvnkbEZ9rFWqMlx17MrCLM0dyTkcjGBYHHSzyekoet69ZU8JnfZouPvS_6FV6RfL9SlCSHGs2Xu52aR8b_7M3Yn1dC47lZfewrVaEhDDA37PRiqTQXQ1oU0XRN2wGhRsRyYYv7MlkabVOJcJSxAQSldEFQ",
+            "width": 577
+          }
+        ],
+        "place_id": "ChIJP3k_RPCOAGARPJn2eMktQtQ",
+        "plus_code": {
+          "compound_code": "M5VX+94 Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5VX+94"
+        },
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "ChIJP3k_RPCOAGARPJn2eMktQtQ",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 273,
+        "vicinity": "ももの木三宮ビル, 6 Chome-1−２５ Gokodori, KobeChuo Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.69958370000001,
+            "lng": 135.4940831
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.70093818029149,
+              "lng": 135.4955412302915
+            },
+            "southwest": {
+              "lat": 34.6982402197085,
+              "lng": 135.4928432697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "XEX West",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 622,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106907539293586868573\">XEX WEST（ゼックス ウエスト）</a>"
+            ],
+            "photo_reference": "CmRaAAAA28-jMktWxg9nd6U8e92md2RwAGTjRTbvg1cKnjbplqhKxT-9aUS6fNsmtcxB75kjyfEgbf_x9TBI00sa56bnIfht6f3jbTXdwAG3QozQbG9IT0AjqbHahi0rwmdMH33lEhAI4EsfhQNSe2uWB8ZDzc-yGhQgdRN4VP6GLfsaXPGmFPoPtNlx9w",
+            "width": 1000
+          }
+        ],
+        "place_id": "ChIJtbiN24zmAGARTiZVtKmqEis",
+        "plus_code": {
+          "compound_code": "MFXV+RJ Osaka, Japan",
+          "global_code": "8Q6QMFXV+RJ"
+        },
+        "price_level": 3,
+        "rating": 4,
+        "reference": "ChIJtbiN24zmAGARTiZVtKmqEis",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 531,
+        "vicinity": "ハービスエント 7F, 2 Chome-2−２２ Umeda, OsakaKita Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6928018,
+            "lng": 135.1981008
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6940951302915,
+              "lng": 135.1994840302915
+            },
+            "southwest": {
+              "lat": 34.6913971697085,
+              "lng": 135.1967860697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "cafe zoe",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2801,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108962994378518195246\">teoteo</a>"
+            ],
+            "photo_reference": "CmRaAAAAPBEtRQNINXFJBvqeMrsqxvhp8BCHqwGmutSHDljjrf6EsM641LNjumaw-6JwVzHfz9tBrQTZYlbWR5R29hlB2W-uE0bDlMV_V79MnRqiNcIDNzQ8Z0zeEWhjisRddPQmEhCBXf37e7_gdQbkq9zNPvqxGhRr0aauUWTeAW_lpTcQ3tIIKTuDew",
+            "width": 3735
+          }
+        ],
+        "place_id": "ChIJiQLdV_COAGARfj3PZOGE-0U",
+        "plus_code": {
+          "compound_code": "M5VX+46 Kobe, Hyogo, Japan",
+          "global_code": "8Q6QM5VX+46"
+        },
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "ChIJiQLdV_COAGARfj3PZOGE-0U",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 62,
+        "vicinity": "6 Chome-1-3 Gokodori, Chuo Ward, Kobe"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.6452132,
+            "lng": 135.5135324
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.6465621802915,
+              "lng": 135.5148813802915
+            },
+            "southwest": {
+              "lat": 34.6438642197085,
+              "lng": 135.5121834197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Starbucks",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115520386667645195751\">にゃんこゴールド</a>"
+            ],
+            "photo_reference": "CmRaAAAAWfKKWnPFRYfqP9D0DCMmBKCIdMCWyFHGdcw7tSyUiz94XmNDpcS7b2BD6xNHk4N52e_l6A8NJCONJWKH30bRAfsuQ-Vwo6u4UpeTpPjPXbkivMat8Dw91dCvJeWhNAjQEhAUjwTp0xY2KcUPTIS-1MLWGhR82VkPuxTenOW-mdG_hKZsvyHdYQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJR7ZH0e_dAGAROR-LCiDGpfU",
+        "plus_code": {
+          "compound_code": "JGW7+3C Osaka, Japan",
+          "global_code": "8Q6QJGW7+3C"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJR7ZH0e_dAGAROR-LCiDGpfU",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 408,
+        "vicinity": "あべのHoop, 2階, 1 Chome-2-30 Abenosuji, Abeno Ward, Osaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.7071056,
+            "lng": 135.4991451
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.7084735802915,
+              "lng": 135.5005426802915
+            },
+            "southwest": {
+              "lat": 34.7057756197085,
+              "lng": 135.4978447197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "ビランチャ 梅田店",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2640,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113091371275696856641\">ビランチャ 梅田店</a>"
+            ],
+            "photo_reference": "CmRaAAAA6ZwRHnYLNQ0KvA0w_CJIgzdYrwVIbQMfK9IgaNhnfp9i0DVWRK2Ji3oOAoljTARV7n_7gX_eCA5Pqyz1qNpmiGAAnIiPTgqgFpAkJPz8vO-ZYBHskhXM5Lzo5PY3TQ2dEhC151LhBbI7kl1LaLP8epaGGhQrcwHZLXhhMtiJbm5iZrDWSpggug",
+            "width": 3960
+          }
+        ],
+        "place_id": "ChIJK974ppHmAGAR0SjOxht3Tu8",
+        "plus_code": {
+          "compound_code": "PF4X+RM Osaka, Japan",
+          "global_code": "8Q6QPF4X+RM"
+        },
+        "price_level": 2,
+        "rating": 3.5,
+        "reference": "ChIJK974ppHmAGAR0SjOxht3Tu8",
+        "scope": "GOOGLE",
+        "types": [
+          "meal_takeaway",
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 52,
+        "vicinity": "ＮＵ茶屋町8F, 10−１２ Chayamachi, Osaka, Kita Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 34.8087063,
+            "lng": 135.4724959
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 34.81002763029149,
+              "lng": 135.4739481802915
+            },
+            "southwest": {
+              "lat": 34.8073296697085,
+              "lng": 135.4712502197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "ヒロコーヒー 豊中緑ヶ丘店",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1335,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114209217916043523563\">GUCCI HAMMER</a>"
+            ],
+            "photo_reference": "CmRaAAAA3K8uUnjuej_f_Nw9Ui8szC0l4Crsyf7tfbKo1O-cNAUQgXW-ZPYudEsywROLV4Mv90UvpPIEm5FGQ3DGG5MpXWV6H585-Fj_5-MZHip2swAmUS8a_vK07XJ7UGw1by6dEhA7gpJs2TGkNSL24C_bkSaqGhRFB6lIC862kNO2SvI8hGQbRnCmBQ",
+            "width": 2000
+          }
+        ],
+        "place_id": "ChIJzVjuCfT6AGAR5Ld7bxgjN3w",
+        "plus_code": {
+          "compound_code": "RF5C+FX Toyonaka, Osaka, Japan",
+          "global_code": "8Q6QRF5C+FX"
+        },
+        "price_level": 2,
+        "rating": 4,
+        "reference": "ChIJzVjuCfT6AGAR5Ld7bxgjN3w",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 180,
+        "vicinity": "1 Chome-7-1 Mukaigaoka, Toyonaka"
+      }
+    ],
+    "status": "OK"
+  }

@@ -1,0 +1,1036 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCGAEAAFZFYnETfuEZnlKDIVKBARRsE7e7HSqcwa4ByKPZYJ08SpQa-ri1T-VgMG5z1Eb5-TIJR8fYlRiOWpTdtm7s-LM9mfdOawx8M8KBDua233zdLyvuuCnBPgy2xu4HbtWqjrAugoFIMaGv9UARYG63oNKRdmUbpdPSwb0p8zj6OFucu1zJ5vw_Ic4PlLSaKFPdk_BQn4muEcBrIFTR-tJvawAd6VM7pELjjRsLrd0NpObTLLe66Chhq50XnYZLUnkxqXa-doe-4g6VRYrw8n1B0vFXofNoClJup8C8AP5gnyLQ5e9niuJxYZHafgqgxFFD09DHDQZp3zg5ZtZOhVlEijVyteiBUjiB1o2KZy6_Q2Sib3_Ny9KjOTnEmRZEZCjO_xIQf6R9u9KZmxhAYpMLkcTn1xoUoew9T0S3zSXTo_5JTGHVsriV_3M",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6612275,
+            "lng": 139.7301566
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6627298302915,
+              "lng": 139.7314039802915
+            },
+            "southwest": {
+              "lat": 35.6600318697085,
+              "lng": 139.7287060197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Total Workout Roppongi Hills",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3649,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104144274162812433907\">トータル・ワークアウト 六本木ヒルズ店</a>"
+            ],
+            "photo_reference": "CmRaAAAAvHsefzn8Gt9EQ8Ttan8tsHCw302HkUVXzwyngjrEF2b5ePuva3Dp5Pjo_CkwtNCuzW815zOEJLU26aNNWZQvNiKvdzmu2W3TILxcIPWPzkBI4jlqHG8mBPzJm0R1lz6gEhC4GoPHcxMUTK4-lJ2zLMEyGhQWA8tnZ23Vi_5BvsYNSHUjp7BQOg",
+            "width": 5473
+          }
+        ],
+        "place_id": "ChIJ-TaDl3eLGGARVQ4ZpphOD7w",
+        "plus_code": {
+          "compound_code": "MP6J+F3 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP6J+F3"
+        },
+        "rating": 3.8,
+        "reference": "ChIJ-TaDl3eLGGARVQ4ZpphOD7w",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "spa",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 61,
+        "vicinity": "ヒルズ メトロハット／ハリウッドプラザ B2F, 6 Chome-4−１ Roppongi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.28259199999999,
+            "lng": 139.568942
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.28393008029149,
+              "lng": 139.5705552302915
+            },
+            "southwest": {
+              "lat": 35.28123211970849,
+              "lng": 139.5678572697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "tricca Balcony Hayama",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2336,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113168711818495570901\">tricca Balcony Hayama - トリッカ バルコニー葉山</a>"
+            ],
+            "photo_reference": "CmRaAAAALDjoV__lyiTP3mzyPY7Nc1pZZeotn61Qaq_KyiytuR-2SVYWfHK_Yr0Iyq13gJcAzzCdVwVdh68soCDjqraGz0e8xxiZStzypCZOubMnzvpLv8KQiZrCkplrqkkPi74mEhDJEpmGd5eNEESP1I1OcX55GhTktSH5zOY6KpFzLZ5hl7hlPqqh0g",
+            "width": 3500
+          }
+        ],
+        "place_id": "ChIJ_eprrwFHGGARr9MVrSH-yTE",
+        "plus_code": {
+          "compound_code": "7HM9+2H Hayama, Kanagawa, Japan",
+          "global_code": "8Q7X7HM9+2H"
+        },
+        "rating": 4.1,
+        "reference": "ChIJ_eprrwFHGGARr9MVrSH-yTE",
+        "scope": "GOOGLE",
+        "types": [
+          "beauty_salon",
+          "hair_care",
+          "spa",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 16,
+        "vicinity": "葉山 マリーナ 2F, ５０−２ Horiuchi, 三浦郡葉山町"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6908535,
+            "lng": 139.6912172
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6922024802915,
+              "lng": 139.6925661802915
+            },
+            "southwest": {
+              "lat": 35.6895045197085,
+              "lng": 139.6898682197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "SPA & WELLNESS Joule （スパ＆ウェルネス ジュール)",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 5333,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110818293873389659064\">SPA &amp; WELLNESS Joule （スパ＆ウェルネス ジュール)</a>"
+            ],
+            "photo_reference": "CmRaAAAAqVFCWmvo2PxLjchiZ2A9vw6qiVRzdhk85LwNPxZ0vHRRQPZIrq9bd06wfn7nJxKPexzVLTCMT_7oSnIZSJHrQQlk1uNndKCYq2h2D1SeM2nf7-sMXH9EEVSf3pjCxhwhEhDO7HASAwfBlgvmKb1oSAkRGhTsTclV1r2mzzvszRuSTleiig_KTw",
+            "width": 8000
+          }
+        ],
+        "place_id": "ChIJbSJpzSrzGGARzUjFqX2-bIo",
+        "plus_code": {
+          "compound_code": "MMRR+8F Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMMRR+8F"
+        },
+        "rating": 4,
+        "reference": "ChIJbSJpzSrzGGARzUjFqX2-bIo",
+        "scope": "GOOGLE",
+        "types": [
+          "spa",
+          "beauty_salon",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 12,
+        "vicinity": "ハイアットリージェンシ ２８F, 7 Chome-7−２−７−２ Nishishinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6681313,
+            "lng": 139.7167605
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66948028029149,
+              "lng": 139.7181094802915
+            },
+            "southwest": {
+              "lat": 35.6667823197085,
+              "lng": 139.7154115197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Riviera Aoyama",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 410,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108363936599259919740\">リビエラ青山</a>"
+            ],
+            "photo_reference": "CmRaAAAAVZH0mGYL83R-ZslaE6VhlqKd8-Q1O_KJYrS-oKKCaTRjO5QtYS200l0rgYyWNVip6-53XshH3GSw6ZhbS_OVNwVseCUUCOSdMmtMu83ufD3jizQvMvdDF9AyLuXsMlNIEhCRlLbRBJM7SJAo7Kb26UJZGhRchUfZagc4MJg14aFerWPSDmR_kw",
+            "width": 480
+          }
+        ],
+        "place_id": "ChIJaYyr1Z2MGGARF82lqu0LjSc",
+        "plus_code": {
+          "compound_code": "MP98+7P Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP98+7P"
+        },
+        "rating": 3.9,
+        "reference": "ChIJaYyr1Z2MGGARF82lqu0LjSc",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 154,
+        "vicinity": "3 Chome-3-3 Minamiaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.830419,
+            "lng": 139.805017
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.8318657302915,
+              "lng": 139.8063746802915
+            },
+            "southwest": {
+              "lat": 35.8291677697085,
+              "lng": 139.8036767197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "メガロス草加店",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 648,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107462688737343670839\">メガロス草加店</a>"
+            ],
+            "photo_reference": "CmRZAAAAOUdcMARhQCDsgMj8UREgR2ZiO_LSBuSr1ufPQiug-KT6tmdt2kKj5p_jcTOmNvEjtW_vKMPYXrYq4An8bV9_mhUPjqddkOCJyRvf-3KZY2UHYtk00A1aivgQLTajDeNTEhDkricv7IW0ZCL6rPyUHzuqGhTFW_b99ajvdUmz-EalCxgOHRCnMw",
+            "width": 980
+          }
+        ],
+        "place_id": "ChIJY-z4mCKRGGARBawsNPExvaE",
+        "plus_code": {
+          "compound_code": "RRJ4+52 Sōka, Saitama, Japan",
+          "global_code": "8Q7XRRJ4+52"
+        },
+        "rating": 3.6,
+        "reference": "ChIJY-z4mCKRGGARBawsNPExvaE",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 117,
+        "vicinity": "オーク第1ビルアリオモール, 1 Chome-7−７ Sumiyoshi, Sōka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6446825,
+            "lng": 139.7085491
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.64601923029149,
+              "lng": 139.7099377802915
+            },
+            "southwest": {
+              "lat": 35.6433212697085,
+              "lng": 139.7072398197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "MEGALOS_0+",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 400,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108045927433482837741\">MEGALOS_0+</a>"
+            ],
+            "photo_reference": "CmRaAAAA5K9tyiDKRlv0Slt_fKHIwg5GGnUQf24qElDV54OgdZysJpbrdLYhDBfaXg3-RXLwX1F4c8spEI7Rup8xzcWwOMQDGL9Qx_vNOlzVQsCT2nb-adCx87pCRgvAmoJRCTP9EhCDUQghbYm_dk4-j8LJoN3YGhTrIQIm1ecuSWEYbxNYnmtXIG-lvA",
+            "width": 786
+          }
+        ],
+        "place_id": "ChIJpeAZg0CLGGARqcSa_eVQ8gs",
+        "plus_code": {
+          "compound_code": "JPV5+VC Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XJPV5+VC"
+        },
+        "rating": 4.7,
+        "reference": "ChIJpeAZg0CLGGARqcSa_eVQ8gs",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 10,
+        "vicinity": "1F, 2 Chome-4−４ Ebisuminami, Shibuya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.5507066,
+            "lng": 139.5754102
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.5523944,
+              "lng": 139.5764863302915
+            },
+            "southwest": {
+              "lat": 35.54860479999999,
+              "lng": 139.5737883697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "港北天然温泉ゆったりCOco",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 427,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105947465280787867908\">港北天然温泉ゆったりCOco</a>"
+            ],
+            "photo_reference": "CmRaAAAAru50VWO9YBrrgFQtUo8NM93Qdu1HBBG-qrh2Eo2Du1Cj7VHQjtaOP3ZyE-yG3WLb-vhJ3XU-kj4mDgPn181JXLFf6cIsN_xIkacIEeXxC0WfLbjYKqAcjsAjM0F78mU3EhC82VeP1PIVEhm5aviYcCkjGhTQS2uekWEbTiVLc8x_OqTQdD9dJg",
+            "width": 640
+          }
+        ],
+        "place_id": "ChIJcysmwjb2GGARsCi9Ve4aSNY",
+        "plus_code": {
+          "compound_code": "HH2G+75 Yokohama, Kanagawa, Japan",
+          "global_code": "8Q7XHH2G+75"
+        },
+        "rating": 3.7,
+        "reference": "ChIJcysmwjb2GGARsCi9Ve4aSNY",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "spa",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 512,
+        "vicinity": "港北みなも 3階, 2 Chome-7−１ Nakagawachuo, YokohamaTsuzuki Ward"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.757195,
+            "lng": 139.6755855
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.75854398029151,
+              "lng": 139.6769344802915
+            },
+            "southwest": {
+              "lat": 35.75584601970851,
+              "lng": 139.6742365197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+        "name": "Itabashi Kuritsu Kamiitabashi Gymnasium",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103781841368714886073\">S naki</a>"
+            ],
+            "photo_reference": "CmRaAAAAFEhYGixt5y9Q7IF-FkaLyxephIS90OnpPDQ1taUAxP0A3YiDOUr2pNqzX4_Q8YcazDiosjThMJwWo2oVhyjYbBy_x4H-EmAL5QM2ouv3yGWKu3yMAtjYmRCjrAZUXKKFEhA-DBo4lC0Tab25omviJuxVGhS89E-S8S_L37v6dq9ZrIfkDZIQjg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJNYtTLCHtGGARTzk2Krge55g",
+        "plus_code": {
+          "compound_code": "QM4G+V6 Itabashi City, Tokyo, Japan",
+          "global_code": "8Q7XQM4G+V6"
+        },
+        "rating": 3.6,
+        "reference": "ChIJNYtTLCHtGGARTzk2Krge55g",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 64,
+        "vicinity": "1 Chome-3-1 Sakuragawa, Itabashi City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.580882,
+            "lng": 139.737401
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.58223098029149,
+              "lng": 139.7387499802915
+            },
+            "southwest": {
+              "lat": 35.5795330197085,
+              "lng": 139.7360520197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+        "name": "Ōmori Sports Center",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/112914405723025690276\">Shigeru M</a>"
+            ],
+            "photo_reference": "CmRaAAAAJgby4XucZlYU83w4uGLfxdEbn8VavZwcykJt2jrZOGahWooVU5l0ZanV6CkNRJ38ZjnExAjoI3C8pHofxkLt_375rSqnn2rl0SvflwAWpPpQoTKkx-Tms1riOiH1o8XWEhBdrvLw7LfA0xnymi7wPqq2GhSuX9GTvnViXkjg395uvpQlnf_XxA",
+            "width": 4608
+          }
+        ],
+        "place_id": "ChIJSQhbd7ZhGGARGmQprwIyOj8",
+        "plus_code": {
+          "compound_code": "HPJP+9X Ota City, Tokyo, Japan",
+          "global_code": "8Q7XHPJP+9X"
+        },
+        "rating": 3.7,
+        "reference": "ChIJSQhbd7ZhGGARGmQprwIyOj8",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 48,
+        "vicinity": "2 Chome-2-5 Omorihoncho, Ota City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.71712849999999,
+            "lng": 139.3615955
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.71847748029149,
+              "lng": 139.3629444802915
+            },
+            "southwest": {
+              "lat": 35.71577951970849,
+              "lng": 139.3602465197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "PLAY climbing gym & yoga studio",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109697533853852150087\">Kome Hana</a>"
+            ],
+            "photo_reference": "CmRaAAAA-q18bQxCnxZZw5bBb-hTtUZz2qQ8wkyCN9O1H3Qrypr991ATMHRvP7WsDF6YN6hM4GZeORxv3SISZhezBE2uc24Dy-iUb5ldu9JE6ZOqxEfNKC8bWwbdrJ38BleYvzuTEhCGnr4BxMlSdDMX4uwjxaPIGhRU07fnxy3y19ZlewCCU8ozxNI3Hw",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJIV-LpNkfGWAR2DqTGq9Dnv0",
+        "plus_code": {
+          "compound_code": "P986+VJ Akishima, Tokyo, Japan",
+          "global_code": "8Q7XP986+VJ"
+        },
+        "price_level": 2,
+        "rating": 4.3,
+        "reference": "ChIJIV-LpNkfGWAR2DqTGq9Dnv0",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "spa",
+          "furniture_store",
+          "home_goods_store",
+          "restaurant",
+          "food",
+          "gym",
+          "health",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 27,
+        "vicinity": "MORIPARK Outdoor Village内, ６１０−４ Tanakacho, Akishima"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.8314665,
+            "lng": 139.9192014
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.8328541802915,
+              "lng": 139.9205757802915
+            },
+            "southwest": {
+              "lat": 35.8301562197085,
+              "lng": 139.9178778197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+        "name": "オーロラバレエ 松戸本部",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 658,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107958824776503131658\">オーロラバレエ 松戸本部</a>"
+            ],
+            "photo_reference": "CmRaAAAAbvWx2J31XYTjI2eVZ5vXRI94-CRSoZkLRev6tmSKVBXyXMPrYTIgihRnhBsAG4Vd1joLShRg2OdVQbAcpCKJARNtZFsJVRjvTsbs5jGpGEO0Ubziby6oTyawVpqT8e0lEhAVjz_Q5SuQIwizP5j0yl0DGhTGCZxesy3j8VxbUpIgFEeEek2AdQ",
+            "width": 1014
+          }
+        ],
+        "place_id": "ChIJSY5ZTkabGGARodrVXdRLt18",
+        "plus_code": {
+          "compound_code": "RWJ9+HM Matsudo, Chiba, Japan",
+          "global_code": "8Q7XRWJ9+HM"
+        },
+        "rating": 5,
+        "reference": "ChIJSY5ZTkabGGARodrVXdRLt18",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 6,
+        "vicinity": "1 Chome-１４−１０ Shinmatsudokita, Matsudo"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.4277416,
+            "lng": 139.546972
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.42909058029149,
+              "lng": 139.5483209802915
+            },
+            "southwest": {
+              "lat": 35.42639261970849,
+              "lng": 139.5456230197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "セントラルスポーツクラブ東戸塚",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 5333,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102206849328593068027\">littleboss</a>"
+            ],
+            "photo_reference": "CmRaAAAAT4fpbzYM47JqU9bB7BvnDAQdUDQiEN9-L9aiwYvmfWZmwoFkgUsx3xDVDf0KqfnYjdSKgGOgiusgtNAN6Bop3opzxEiyXcUyW403WlPgEoZKsFvWs_4tsp5ffJ74_9x9EhDqzMiRZ_QYFZdVI4k9UEysGhQLH8Ua7pZaLhuRG0yldWwVwyVmTg",
+            "width": 3000
+          }
+        ],
+        "place_id": "ChIJIYdZ7WlaGGARud4kZBoufMA",
+        "plus_code": {
+          "compound_code": "CGHW+3Q Yokohama, Kanagawa, Japan",
+          "global_code": "8Q7XCGHW+3Q"
+        },
+        "rating": 3.4,
+        "reference": "ChIJIYdZ7WlaGGARud4kZBoufMA",
+        "scope": "GOOGLE",
+        "types": [
+          "spa",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 39,
+        "vicinity": "415-2 Kawakamicho, Totsuka Ward, Yokohama"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.66800799999999,
+            "lng": 139.862564
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6692452802915,
+              "lng": 139.8638559
+            },
+            "southwest": {
+              "lat": 35.6665473197085,
+              "lng": 139.8611119
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Edogawaku Sports Center",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1537,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107161356131989255332\">江戸川区スポーツセンター</a>"
+            ],
+            "photo_reference": "CmRaAAAAPxw3RNR6sUenKAJIBgPR4o63E897ejt1sRRs7A64FD1_3IJRElw7m3CfEi5D0nBlunkmIuf0OrShdmr2cZFbhO2-yeg9zVasCcPNCDXlqZif-hMqygqOD0OzPfvO74gjEhB-D42dr0RDCEvzj-lZIXXNGhSFV3LgjHvvtcBgeYU0jMvDuriljQ",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJm-M_p-eHGGARFTuXtyK-948",
+        "plus_code": {
+          "compound_code": "MV97+62 Edogawa City, Tokyo, Japan",
+          "global_code": "8Q7XMV97+62"
+        },
+        "rating": 3.7,
+        "reference": "ChIJm-M_p-eHGGARFTuXtyK-948",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 135,
+        "vicinity": "4 Chome-2-20 Nishikasai, Edogawa City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.65345,
+            "lng": 139.6155395
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6547989802915,
+              "lng": 139.6168884802915
+            },
+            "southwest": {
+              "lat": 35.6521010197085,
+              "lng": 139.6141905197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "セントラルウェルネスクラブ 成城",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1583,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102164858057318972928\">Y Marry</a>"
+            ],
+            "photo_reference": "CmRaAAAAIQKzI7VGNEWBivHmJCaJV9fIpnlbqc9bofr3KBwVL5m7-OyQS1V4-J-AeI-uCjh54VYS24UQCNlD5O7BMPKzgsm3QZly9Jy9Txau6Gc9Vwqm02KbrzOI0Byem3yfP0aREhB2Fx2gRmfzwdDNqAQBLU6AGhSZjBOs35mJdd7bGouW6822KooWRA",
+            "width": 2287
+          }
+        ],
+        "place_id": "ChIJqYitu9DzGGARuUe3dAABVXM",
+        "plus_code": {
+          "compound_code": "MJ38+96 Setagaya City, Tokyo, Japan",
+          "global_code": "8Q7XMJ38+96"
+        },
+        "rating": 3.7,
+        "reference": "ChIJqYitu9DzGGARuUe3dAABVXM",
+        "scope": "GOOGLE",
+        "types": [
+          "spa",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 138,
+        "vicinity": "カリーノ千歳台, 3 Chome-20−２ Chitosedai, Setagaya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.66103729999999,
+            "lng": 139.6992088
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66238628029149,
+              "lng": 139.7005577802915
+            },
+            "southwest": {
+              "lat": 35.65968831970849,
+              "lng": 139.6978598197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Empowerment Gym TIP.X TOKYO Shibuya",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 450,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113238409222272712513\">ティップ.クロス TOKYO渋谷</a>"
+            ],
+            "photo_reference": "CmRaAAAAC67tCcuBiBJMkxEUA2lzREuE-OW81mAyV48_ObU6Fj9i0k30priKkESwO36a2dm95X5zKaxeyq79cLCRG2VlDrKHa2WlpOFDwBafyLfNM5NC10iQ8MRygiAmQDUyAGNCEhBOjg9z1NXOs1Cf2ZHlKZoNGhT_MBoFaQpobD_pjhuPMtUuBt-dmg",
+            "width": 800
+          }
+        ],
+        "place_id": "ChIJI6iNVqiMGGARZZnMR3HqDKU",
+        "plus_code": {
+          "compound_code": "MM6X+CM Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMM6X+CM"
+        },
+        "rating": 3.7,
+        "reference": "ChIJI6iNVqiMGGARZZnMR3HqDKU",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 121,
+        "vicinity": "16-16-4 Udagawacho, Shibuya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.577806,
+            "lng": 139.658964
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.57915498029149,
+              "lng": 139.6603129802915
+            },
+            "southwest": {
+              "lat": 35.5764570197085,
+              "lng": 139.6576150197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "東急スポーツオアシス武蔵小杉24Plus",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 480,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/112307841793491326177\">東急スポーツオアシス武蔵小杉24Plus</a>"
+            ],
+            "photo_reference": "CmRaAAAAXzGjlcUJtALPT_B-PCrzcIvME_cxy4luh2saGnZ1rnugSAKW4iTyTzciX7xvvulkQroNjQ1T6VK_1g-WsgPktf-o82MD3njDXUr1MPLKWjbOvgwoEaIKBQlubQqBfymMEhBLzVG7ZzUHNaNOjqd2Hh_6GhSlPFw74kt55EMRk3xTgzoxgPhjrA",
+            "width": 640
+          }
+        ],
+        "place_id": "ChIJ1WV97nr1GGAR4fHkNwXlEH8",
+        "plus_code": {
+          "compound_code": "HMH5+4H Kawasaki, Kanagawa, Japan",
+          "global_code": "8Q7XHMH5+4H"
+        },
+        "rating": 3.8,
+        "reference": "ChIJ1WV97nr1GGAR4fHkNwXlEH8",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "spa",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 82,
+        "vicinity": "1 Chome-403 Kosugimachi, Nakahara Ward, Kawasaki"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.3525,
+            "lng": 139.5386111
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.3538489802915,
+              "lng": 139.5399600802915
+            },
+            "southwest": {
+              "lat": 35.3511510197085,
+              "lng": 139.5372621197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "鎌倉芸術館",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 420,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106236942339975848512\">鎌倉芸術館</a>"
+            ],
+            "photo_reference": "CmRaAAAAuHC9W1xUl-kNRcwJAC0CSzKUlMrNiYejjefY4VAVvQ1bnaLzREXoeyUpjO9Kz2bgdd4DiQ2gDRUAQXgxGq65QT77ucvXBGg3iPfXXdm2wyOl8WPkFX_rApzutSPj7w0PEhBONt8xbf-i0bDzhPXr-whUGhQmzmwicb0n8VijpGI5BJCZ4BgwNA",
+            "width": 748
+          }
+        ],
+        "place_id": "ChIJG-mbm2hFGGARwN3AzXIJnDY",
+        "plus_code": {
+          "compound_code": "9G2Q+XC Kamakura, Kanagawa, Japan",
+          "global_code": "8Q7X9G2Q+XC"
+        },
+        "rating": 3.8,
+        "reference": "ChIJG-mbm2hFGGARwN3AzXIJnDY",
+        "scope": "GOOGLE",
+        "types": [
+          "electronics_store",
+          "church",
+          "place_of_worship",
+          "home_goods_store",
+          "gym",
+          "health",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 527,
+        "vicinity": "6 Chome-1-2 Ofuna, Kamakura"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6228199,
+            "lng": 139.6820658
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6239587802915,
+              "lng": 139.6834275302915
+            },
+            "southwest": {
+              "lat": 35.6212608197085,
+              "lng": 139.6807295697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Atrio Due Himonya",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 570,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111316462542997275577\">アトリオドゥーエ 碑文谷</a>"
+            ],
+            "photo_reference": "CmRaAAAAb08sjcBksGdaRoW8slAtqLI63obXhP9xwF8p_l3KhJW_qiOCmzUCGy8_BlEyePuNPK8jGeiv9PgeBvxfoZv-1kKTmnaWVH8YLOfCS9WVYsBzrrkjkrub_5tN0z07_QzTEhBpxezKYtAFdXbJrY_Ihn_aGhSTLQdQUOfyvuRwFYv1KkztMAj3cw",
+            "width": 854
+          }
+        ],
+        "place_id": "ChIJS1GvYND0GGAR-IXUaNUIipE",
+        "plus_code": {
+          "compound_code": "JMFJ+4R Meguro City, Tokyo, Japan",
+          "global_code": "8Q7XJMFJ+4R"
+        },
+        "rating": 3.7,
+        "reference": "ChIJS1GvYND0GGAR-IXUaNUIipE",
+        "scope": "GOOGLE",
+        "types": [
+          "beauty_salon",
+          "spa",
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 56,
+        "vicinity": "5 Chome-13-12 Himonya, Meguro City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.71874700000001,
+            "lng": 139.926844
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7200959802915,
+              "lng": 139.9281929802915
+            },
+            "southwest": {
+              "lat": 35.7173980197085,
+              "lng": 139.9254950197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "メガロス 本八幡店",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 648,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103484488334531226180\">メガロス 本八幡店</a>"
+            ],
+            "photo_reference": "CmRaAAAAfp1L65xa8d-SzgOjZdnFTudnatctG2S8bemALQe2t9HZKEV02QigCKe0x5f8b3TxbD9c-oH2dw8QhVkgDnJNBZ2PtnG4uOdBabvGUDSTGXZ9XTlgytxnlS4u6LweT2DBEhD8iRq1MDA3gv6RzzDJe3JGGhSp_RKjyU0ty5GbDBTXMnDT6FWzgw",
+            "width": 980
+          }
+        ],
+        "place_id": "ChIJfUu-pdCGGGARTuv-STH_h3c",
+        "plus_code": {
+          "compound_code": "PW9G+FP Ichikawa, Chiba, Japan",
+          "global_code": "8Q7XPW9G+FP"
+        },
+        "rating": 3.5,
+        "reference": "ChIJfUu-pdCGGGARTuv-STH_h3c",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 87,
+        "vicinity": "3 Chome-14-26 Minamiyawata, Ichikawa"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.71972359999999,
+            "lng": 139.7137628
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7210725802915,
+              "lng": 139.7151117802915
+            },
+            "southwest": {
+              "lat": 35.7183746197085,
+              "lng": 139.7124138197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png",
+        "name": "Toshimaku Zoshigaya Gymnastics",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1704,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100473650365238018440\">よしのたつや</a>"
+            ],
+            "photo_reference": "CmRaAAAAvE-6XE6ydSxmThSE3ENKjH5lrr21Cz7rSVFCmKyNLabL1ZXsc_kXlq7Fmc0gD9kt2hvj-5jUuQb-XyXiAPR82Mmi-GrhQrphcJ2nLHLGVH2iwXvYVLU0CRrlGywhbyzzEhBsl3tUus8R3nkHPJOL10FNGhTco6n8Tk9C6WI8ZZ5p1vH-nrjbPQ",
+            "width": 2272
+          }
+        ],
+        "place_id": "ChIJJSO1LhWNGGARe4hMboQqCFw",
+        "plus_code": {
+          "compound_code": "PP97+VG Toshima City, Tokyo, Japan",
+          "global_code": "8Q7XPP97+VG"
+        },
+        "rating": 3.3,
+        "reference": "ChIJJSO1LhWNGGARe4hMboQqCFw",
+        "scope": "GOOGLE",
+        "types": [
+          "gym",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 21,
+        "vicinity": "3 Chome-1-7 Zoshigaya, Toshima City"
+      }
+    ],
+    "status": "OK"
+  }
+  

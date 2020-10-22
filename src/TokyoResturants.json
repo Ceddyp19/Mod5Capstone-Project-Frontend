@@ -1,0 +1,1044 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCHwEAAMeDkGLSiILbshmcjtHnwfEDbLgY9h3hpT6n-YHYGXHaLM6abu1w9QvAkQxOBSawn7Ek1qhrWjLDkYarGOwVDGKtvwRXE_5gATgGybqjPei9ZU1yT5MgK8DaJZdHyzSC4APYEUBUwpsseieIQDV84tM5AA8r7fDlUDVraaMjUjKnPYNvTlPgCFCgS8tkrXyytOKjRaHPReDzMIz5z0-vaUWgZgtiTAzi5L4lpazk3DVv7Kp2x-t3bvkDgdarahBTHBfh9fq6zcJiu_Nx50l639OJlZV0dRfByY_508zaL3Dfpo09hYxwovZ11TJAnokCfBpx6Ye2ADV3eN_fs50PXDXFe6cf-mzia-g8n29YZObt2VIm-dPMeS83djsz47oayhIQPsU0vdDbDtNhpYJxVOdhshoUDpfX0pBeSDRggN8zviWiEXkJdMc",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.65861110000001,
+            "lng": 139.6997222
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.65996008029151,
+              "lng": 139.7010711802915
+            },
+            "southwest": {
+              "lat": 35.65726211970851,
+              "lng": 139.6983732197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Shibuya Excel Hotel Tokyu",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1701,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/101297695086602663090\">渋谷エクセルホテル東急</a>"
+            ],
+            "photo_reference": "CmRaAAAA6qoxVRToquut1kL6sPoCEdG44K4z4ydqK_khJ1afHb4SmvKZ5WlYguUCTeDmM0tH6PR8fneSxx4_7oOxecATzZsacPrOHep6o-jsNOfY3oWVGiJjd8Ah0nSqdwQZyyjwEhBNsTBLRFhqkBTRy-gnBmJ5GhQ4TTz_pcRSyjEXjC1UY84raryXTw",
+            "width": 2268
+          }
+        ],
+        "place_id": "ChIJTzNfw1eLGGARagCmVhCOmP4",
+        "plus_code": {
+          "compound_code": "MM5X+CV Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMM5X+CV"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJTzNfw1eLGGARagCmVhCOmP4",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1863,
+        "vicinity": "1 Chome-12-2 Dogenzaka, Shibuya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6552627,
+            "lng": 139.7470359
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6565266302915,
+              "lng": 139.7483708802915
+            },
+            "southwest": {
+              "lat": 35.6538286697085,
+              "lng": 139.7456729197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "The Prince Park Tower Tokyo",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 818,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115177777824557517865\">ザ プリンス パークタワー東京</a>"
+            ],
+            "photo_reference": "CmRaAAAAPd1WUyWn0eNiCtMHPA5fGf7h5QChzPySieuG79GpGnoi7hUzhDnKu-a7nXuXoXKC_SaTdusgyC-1AJJpUriFM9GuJIrE95nZzRxZTLcOpk3-6Yh8igwzwm9IVUHtmbWZEhBrQOFXXWJIhgOCr2yGeNzPGhS8_tRQwbD4m44ptIVeAyQGcPqs8w",
+            "width": 1024
+          }
+        ],
+        "place_id": "ChIJ9fTLo0TsGGAR9hOYI9J4Bus",
+        "plus_code": {
+          "compound_code": "MP4W+4R Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP4W+4R"
+        },
+        "rating": 4.2,
+        "reference": "ChIJ9fTLo0TsGGAR9hOYI9J4Bus",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 4436,
+        "vicinity": "4 Chome-8-1 Shibakoen, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6687232,
+            "lng": 139.7573713
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6700888302915,
+              "lng": 139.7587877802915
+            },
+            "southwest": {
+              "lat": 35.6673908697085,
+              "lng": 139.7560898197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Dai-ichi Hotel Tokyo",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116915136602643272455\">第一ホテル東京</a>"
+            ],
+            "photo_reference": "CmRaAAAAKGpcCWqOKe51PnQR7_dtWYy4jEG4rABYQmJ5XnnuIgwR_yRShdyHYFZoCKMFd2_IsCe_CKdM_b-4OL36x6sGcUZRiU9Oav4btFYmsRuhAqskQiX0KnOBVDYa7H8Pm6dKEhCe1AReljL3tSECXDh_rmKAGhQ8c3qfP5n78YyMZPqbY0S7U8y6XA",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJIeuDAOyLGGARhI_-HrDOv4E",
+        "plus_code": {
+          "compound_code": "MQ94+FW Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMQ94+FW"
+        },
+        "rating": 4,
+        "reference": "ChIJIeuDAOyLGGARhI_-HrDOv4E",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2715,
+        "vicinity": "1 Chome-2-6 Shinbashi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.682566,
+            "lng": 139.769441
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6839149802915,
+              "lng": 139.7707899802915
+            },
+            "southwest": {
+              "lat": 35.6812170197085,
+              "lng": 139.7680920197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Shangri-La Hotel, Tokyo",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1337,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103783145234414092724\">シャングリ・ラ ホテル 東京 Shangri-La Hotel, Tokyo</a>"
+            ],
+            "photo_reference": "CmRaAAAAef9XYyg22ytBRwcT7-rAn6kZrIBKt4hHgdcjLuDPhWjMPtCznpbWVCEZBoE-FpL0JtdKWGJN7_MjVfAUQQN_XdFw_RtVKedOtXlReLOHTcx42K0zEPOtBPXXkN8UsLg0EhB7Uo2CTMssuMy3qG3hLNGNGhSowpoxyorHO9VjJZihABw5trp_AA",
+            "width": 2000
+          }
+        ],
+        "place_id": "ChIJL6nVJvyLGGAR8jHaHUYIL48",
+        "plus_code": {
+          "compound_code": "MQM9+2Q Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQM9+2Q"
+        },
+        "rating": 4.5,
+        "reference": "ChIJL6nVJvyLGGAR8jHaHUYIL48",
+        "scope": "GOOGLE",
+        "types": [
+          "beauty_salon",
+          "spa",
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1985,
+        "vicinity": "丸の内トラストタワ 本館, 1 Chome-8−３ Marunouchi, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.672249,
+            "lng": 139.7204036
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6735979802915,
+              "lng": 139.7217525802915
+            },
+            "southwest": {
+              "lat": 35.6709000197085,
+              "lng": 139.7190546197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Royal Garden Cafe",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 780,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110759097562847383923\">ロイヤルガーデンカフェ青山</a>"
+            ],
+            "photo_reference": "CmRaAAAAFWO7RiU3eBB7Mexk_i53UPf5dKm79AQzkMlNkwIWUVEZwWE1Ud2cFlfFrAkhoE1tD1s8vBPs6pb5HvxQCFki9J3lcH7jSqT5F2nkUxqjRRATicqgfXatoEGN30D0iy7kEhBS54kX-ch1cjk4w89JYZR2GhQuPf0qERx-VMvpZE0x-j6yO_jcuw",
+            "width": 1387
+          }
+        ],
+        "place_id": "ChIJjXQ5YJuMGGARrqlwMED3KpA",
+        "plus_code": {
+          "compound_code": "MPCC+V5 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMPCC+V5"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJjXQ5YJuMGGARrqlwMED3KpA",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 807,
+        "vicinity": "2 Chome-1-19 Kitaaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7007062,
+            "lng": 139.7407235
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7020551802915,
+              "lng": 139.7420724802915
+            },
+            "southwest": {
+              "lat": 35.6993572197085,
+              "lng": 139.7393745197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Bettei Torijyaya",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1080,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104358535371849374803\">Yutaka Asai</a>"
+            ],
+            "photo_reference": "CmRaAAAAH7Zc0pcwhJ3XA85fqMr1icTd1pyJjsI2pPzHsEVzSKHsKzWwatmbyukJorbm4PXgeDLGaKwF94lyviN52tnJARwe9hDuDsVuEZYhxFBDE1EznFin7UqhPsJMp9bk-t8CEhCw0tWsgIMGMqFJHE1d3jZLGhSgIG9jvXKjr4_v7wQ-y983N6LcaQ",
+            "width": 1920
+          }
+        ],
+        "place_id": "ChIJQ-hQ_FqMGGARpahC3jaFMjg",
+        "plus_code": {
+          "compound_code": "PP2R+77 Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XPP2R+77"
+        },
+        "price_level": 3,
+        "rating": 4.2,
+        "reference": "ChIJQ-hQ_FqMGGARpahC3jaFMjg",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 488,
+        "vicinity": "3-6 Kagurazaka, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.694959,
+            "lng": 139.756455
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6963079802915,
+              "lng": 139.7578039802915
+            },
+            "southwest": {
+              "lat": 35.6936100197085,
+              "lng": 139.7551060197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Sakura Hotel Jimbocho",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 634,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105702212451192460044\">Sakura Hotel Jimbocho サクラホテル 神保町</a>"
+            ],
+            "photo_reference": "CmRaAAAA90_Bnd0Kq65h2RlhPr-6R0-5efZW5-NwGY9DOBksLtsE7uPT4MB5IjXw92mMGuQkj0u2JB0N0nym7YEC6pjeWaDB24Zue8XAbmB82m780qAEOJNBiKF3bibw5oE96WTtEhClE4z5zCjPt_TF5dHsQbC2GhRGO9W-B0V26FPSAc95Ah71vTeYyg",
+            "width": 634
+          }
+        ],
+        "place_id": "ChIJyydOXV6NGGARBS91BMcN8bE",
+        "plus_code": {
+          "compound_code": "MQV4+XH Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQV4+XH"
+        },
+        "rating": 4.2,
+        "reference": "ChIJyydOXV6NGGARBS91BMcN8bE",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 620,
+        "vicinity": "2 Chome-21-4 Kanda Jinbocho, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6920497,
+            "lng": 139.6979921
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6933986802915,
+              "lng": 139.6993410802915
+            },
+            "southwest": {
+              "lat": 35.6907007197085,
+              "lng": 139.6966431197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Starbucks Coffee Shinjuku L Tower",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104168138614234216021\">juniwasaki manishanisha</a>"
+            ],
+            "photo_reference": "CmRaAAAAYTYMP1hER5CcEsqL02JPW9MsDv7ZXLsO3BO7HT8jA91iA24sjQ35sU4sFbGk1ZRRHqiJFl4szII7fVWYTR5HlAN6tj5KSosxFzxm53wxR4TlQIBMdtoOX02aZPjrZbd8EhB94uNYg9MVlFE-4vwGy3F1GhQGdH5P5FiYmvJ8ODjh5IcoDX_PPg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJxeYJktaMGGAR1yXmiIGOV1k",
+        "plus_code": {
+          "compound_code": "MMRX+R5 Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMMRX+R5"
+        },
+        "price_level": 2,
+        "rating": 3.7,
+        "reference": "ChIJxeYJktaMGGAR1yXmiIGOV1k",
+        "scope": "GOOGLE",
+        "types": [
+          "meal_takeaway",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 277,
+        "vicinity": "Shinjuku L Tower, 1F, 1 Chome-6−１ Nishishinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6771361,
+            "lng": 139.7623199
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.67848508029149,
+              "lng": 139.7636688802915
+            },
+            "southwest": {
+              "lat": 35.6757871197085,
+              "lng": 139.7609709197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Brasserie AUX AMIS",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110617205233367118666\">Kenichi Toba</a>"
+            ],
+            "photo_reference": "CmRaAAAAWb-icsQkBipooJBcKkwx5R5SBNm3a5_ksDAQ62UQadffVuw5Dv2RXzZr8YKwfLLMBtgodesIQ4qp61P6_b3zu4xZ4Zf86Q8jmK-aCPV4mtMcH28i19y-kr_jTn4iNFAlEhDIPDPIhuqRKWzshqNsRwqxGhTbCrSxvKnJtJ2U9DkM5m_eulNAAg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJi34-g_qLGGARqfitVs69g2k",
+        "plus_code": {
+          "compound_code": "MQG6+VW Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQG6+VW"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJi34-g_qLGGARqfitVs69g2k",
+        "scope": "GOOGLE",
+        "types": [
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 303,
+        "vicinity": "Shin-Tokyo Building, 1F, 3 Chome-3−１ Marunouchi, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6742888,
+            "lng": 139.7107767
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6756377802915,
+              "lng": 139.7121256802915
+            },
+            "southwest": {
+              "lat": 35.6729398197085,
+              "lng": 139.7094277197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Emilia",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115170565142175674933\">くちゅくん</a>"
+            ],
+            "photo_reference": "CmRZAAAAbqwqLbiw1rVcT1pm37FuWchb0CfmedVd8pKQADWRosVRa_kbk0BGZ77P4irFtSsw5W8MKreo_fN3aNeeBROVIYF1AOlJF3CeURN4lYM65YCMNEZyQ8Co2Rq6GmPiEoUxEhDMJFv5ZSPgGKMLVPsotoQ4GhTB4ufxr8dkCG86W1-haIMeoWyB1g",
+            "width": 5333
+          }
+        ],
+        "place_id": "ChIJJ6dHab2MGGARBp4F33cg_v4",
+        "plus_code": {
+          "compound_code": "MPF6+P8 Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMPF6+P8"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJJ6dHab2MGGARBp4F33cg_v4",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 147,
+        "vicinity": "2 Chome-25-4 Jingūmae, Shibuya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6630521,
+            "lng": 139.7594459
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6644010802915,
+              "lng": 139.7607948802915
+            },
+            "southwest": {
+              "lat": 35.6617031197085,
+              "lng": 139.7580969197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Park Hotel Tokyo",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117502906118688070425\">Park Hotel Tokyo</a>"
+            ],
+            "photo_reference": "CmRaAAAAw2Cmg-nQV1FK3rlNIrtS1ncVXefwAXxth1i8Mdi4cFj0sYT8uEXQIa9NqP0G2zQJdEzbldCcqqz6i7P_rE2oBcm7DPOKqFjwOR9e4MGOF1uYsRl3IKJa3D654CvqICLaEhCQ_qF5fNnoPUvjSIfRzm0WGhS4_vPqNcb6KWhzSwAgMUi9DQSZDg",
+            "width": 3000
+          }
+        ],
+        "place_id": "ChIJqbHzUMKLGGAR15DTArzlkgI",
+        "plus_code": {
+          "compound_code": "MQ75+6Q Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMQ75+6Q"
+        },
+        "price_level": 2,
+        "rating": 4.4,
+        "reference": "ChIJqbHzUMKLGGAR15DTArzlkgI",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1766,
+        "vicinity": "汐留メディアタワ フロント25F, 1 Chome-7−１ Higashishinbashi, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6888426,
+            "lng": 139.7614973
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6901915802915,
+              "lng": 139.7628462802915
+            },
+            "southwest": {
+              "lat": 35.6874936197085,
+              "lng": 139.7601483197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Dining hall of Tokyo Fire Dep.",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116513962713309066433\">YY</a>"
+            ],
+            "photo_reference": "CmRaAAAA-jmPypODEECHZiNBe9eDzFvQyLt0U6poaZOybPhEhkyYuV2o2jra2PQB4ydYexsehrvfLrRNcmpL1kotIbU7HsRNKoVZkkFINj4sNmJJSbX-UAg6XidhL7KVGvcV9Ww2EhBBF6EVJdt0zSKMBd4KuQMfGhRSCOc-nrerW90_2PiZv2sRbRYMoQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJqaQ7Sw-MGGARso2XmCN8X-Y",
+        "plus_code": {
+          "compound_code": "MQQ6+GH Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMQQ6+GH"
+        },
+        "price_level": 1,
+        "rating": 3.8,
+        "reference": "ChIJqaQ7Sw-MGGARso2XmCN8X-Y",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 57,
+        "vicinity": "東京消防庁, 本部庁舎12F, 1 Chome-3−５ Ōtemachi, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6612139,
+            "lng": 139.7162296
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6625628802915,
+              "lng": 139.7175785802915
+            },
+            "southwest": {
+              "lat": 35.6598649197085,
+              "lng": 139.7148806197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+        "name": "Blue Note Tokyo",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106294414836523823340\">ブルーノート東京</a>"
+            ],
+            "photo_reference": "CmRaAAAAan4gGVkJOxC-_JvAWLLBccwrBFezDpBj0jSiZ_hywH47BiIZyIeQWGpUPNpXr-EP1Z-sON6Wr7u0pMsTxEoKVI27ySooN_hHAYIiSbZNed1V62ECqjVQ9SzBhl-Zikx5EhAz6LCsMlAXyXPRnbyr0hBDGhSUaa6AR7120Jzs-ladCJmtEn5zRA",
+            "width": 1500
+          }
+        ],
+        "place_id": "ChIJmYBOrGaLGGARUHAVps9SV9k",
+        "plus_code": {
+          "compound_code": "MP68+FF Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP68+FF"
+        },
+        "price_level": 3,
+        "rating": 4.6,
+        "reference": "ChIJmYBOrGaLGGARUHAVps9SV9k",
+        "scope": "GOOGLE",
+        "types": [
+          "night_club",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2017,
+        "vicinity": "6 Chome-3-16 Minamiaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.683065,
+            "lng": 139.7394613
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6844139802915,
+              "lng": 139.7408102802915
+            },
+            "southwest": {
+              "lat": 35.6817160197085,
+              "lng": 139.7381123197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Soranoiro",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 360,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105302945043948264545\">SORANOIRO 本店</a>"
+            ],
+            "photo_reference": "CmRaAAAA6i9W3-B8K3esRPIFd_gl9tGuKXqrJtuv75jKIOfB5BkmtJHDkaH5K8ij9jjRsrOQFmKkNjqkZeQU-RbHZMeIjlEoOZhx1K9G593lWjZuKmDjBqPJDFTR65K6kCgdMqphEhD1NEniFL27wmMS7D9fxbqfGhTrh9mo7Fh5bZLCPvufyqQ66ScvkQ",
+            "width": 641
+          }
+        ],
+        "place_id": "ChIJMTinHnuMGGAR7I2I9azgOhY",
+        "plus_code": {
+          "compound_code": "MPMQ+6Q Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMPMQ+6Q"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJMTinHnuMGGAR7I2I9azgOhY",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 723,
+        "vicinity": "ブルービル本館 1B, 1 Chome-3−１０ Hirakawachō, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.65100040000001,
+            "lng": 139.7229152
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.65234938029151,
+              "lng": 139.7242641802915
+            },
+            "southwest": {
+              "lat": 35.64965141970851,
+              "lng": 139.7215662197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Hiramatsu Hiroo Restaurant",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1837,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105169803531610922406\">レストランひらまつ 広尾</a>"
+            ],
+            "photo_reference": "CmRaAAAAOnFYRazA5ehvxdxKermgAzTXJBrEbv2IXU_1HW-CgLfqvYH7pC1poatAna9q6DYduxUc5NvA-ZJ0xFpogfyGNh4rzJ5efjNd8NXMWyfGge_idtBMtMTA2EmnCYbNmeSGEhChjICnVf6iGn3suqMEPZa_GhTQhvdPZwwRsvFNgHggVeWp3sXbHg",
+            "width": 2756
+          }
+        ],
+        "place_id": "ChIJ3bA6v3KLGGAR7echfNibZDA",
+        "plus_code": {
+          "compound_code": "MP2F+C5 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP2F+C5"
+        },
+        "price_level": 4,
+        "rating": 4.4,
+        "reference": "ChIJ3bA6v3KLGGAR7echfNibZDA",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 138,
+        "vicinity": "5 Chome-15-13 Minamiazabu, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6639794,
+            "lng": 139.7107092
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.66532838029149,
+              "lng": 139.7120581802915
+            },
+            "southwest": {
+              "lat": 35.6626304197085,
+              "lng": 139.7093602197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+        "name": "Gerbeaud",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1333,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118167159210472688737\">Marco Togni</a>"
+            ],
+            "photo_reference": "CmRaAAAAk538PCQFDL-5Rr5I99SxXHdf0BInX-Ic0TwdgVQEaQqEBGj_Rr2zkR6OPq_MakPDW696QB51eD4g0a6p_lgGaqePELg0v8lFW0LXfandHfJB_fVlEZKrhRU3K-TNrGypEhDF60VHBqJVsEh0nemqVV8pGhR6W27JeAXqd5rl6Hwy-kWxvy1Srg",
+            "width": 2000
+          }
+        ],
+        "place_id": "ChIJqTaTj1-LGGAR4XkxiQ9Zyuk",
+        "plus_code": {
+          "compound_code": "MP76+H7 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP76+H7"
+        },
+        "price_level": 2,
+        "rating": 3.8,
+        "reference": "ChIJqTaTj1-LGGAR4XkxiQ9Zyuk",
+        "scope": "GOOGLE",
+        "types": [
+          "cafe",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 100,
+        "vicinity": "2F AO, 3 Chome-11−７ Kitaaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6935823,
+            "lng": 139.7026684
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6949312802915,
+              "lng": 139.7040173802915
+            },
+            "southwest": {
+              "lat": 35.6922333197085,
+              "lng": 139.7013194197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+        "name": "Alice",
+        "photos": [
+          {
+            "height": 723,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/112003057346873522055\">絵本の国のアリス</a>"
+            ],
+            "photo_reference": "CmRaAAAAf6Kg8kORrTnQfa-357x64zUUEehLdazQeRuOBYb7G6zlTX1arwZPd0p-7P834ZLve2l2ut9NPKqkE90EyFFF7MpZndlbT3zDpaMbBkF12KmtXV4eAf8jPT2hu0ieSv4_EhB4V9wbDfEiyaDTRih-weE0GhReQxQpZpUFe2qcPrXc0P5FE51-VQ",
+            "width": 964
+          }
+        ],
+        "place_id": "ChIJm-nJlNmMGGAR7l45WOOfozw",
+        "plus_code": {
+          "compound_code": "MPV3+C3 Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMPV3+C3"
+        },
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "ChIJm-nJlNmMGGAR7l45WOOfozw",
+        "scope": "GOOGLE",
+        "types": [
+          "restaurant",
+          "meal_takeaway",
+          "cafe",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 263,
+        "vicinity": "T-wing B2 ビル, 1 Chome-6−２ Kabukicho, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6919401,
+            "lng": 139.7376327
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6932421302915,
+              "lng": 139.7389620802915
+            },
+            "southwest": {
+              "lat": 35.6905441697085,
+              "lng": 139.7362641197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Arcadia Ichigaya (Shigaku Kaikan)",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 801,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115934545284930299169\">アルカディア市ケ谷 私学会館</a>"
+            ],
+            "photo_reference": "CmRaAAAAxcfpPfPLE4RjJdckzUqWV0eIJW6-OdBnUpnV0oYs1NBp8TjXRpQSehA6YVbN3GT7WxkYI7ejRizZ71nwQ2k8pde8cQzBUP7iFyYfDcwqpJEyEV-_omHMHNRsZGJYfiSLEhCizdkyAyrxZ4-cMCDryteUGhRDI1t6lDMHl4WGJt0KQ9irk1UnpQ",
+            "width": 1200
+          }
+        ],
+        "place_id": "ChIJPxvbSGeMGGARk8wFO0HmAiw",
+        "plus_code": {
+          "compound_code": "MPRQ+Q3 Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMPRQ+Q3"
+        },
+        "rating": 3.6,
+        "reference": "ChIJPxvbSGeMGGARk8wFO0HmAiw",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1849,
+        "vicinity": "4 Chome-2-25 Kudankita, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.692872,
+            "lng": 139.711396
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6942771802915,
+              "lng": 139.7128894802915
+            },
+            "southwest": {
+              "lat": 35.6915792197085,
+              "lng": 139.7101915197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Hotel Listel Shinjuku",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 603,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113092077084768690578\">ホテルリステル新宿</a>"
+            ],
+            "photo_reference": "CmRaAAAAngRj4ByCqYvcgpjSz9sN6ICuswxm6gtpwKkzeFpVacQsHclxSGQt7fqsWkrsnqMeWSjjXVL2v701FwvOoe35NH67VbZhgk9N5eGVNiVbc8xX3SlyfvpWoZygv5-fc9NbEhBDq09-LKCml99JbqmvRPfvGhScl2C85yxI-OiStUHNp3Q7m9Dmhg",
+            "width": 494
+          }
+        ],
+        "place_id": "ChIJRQ4IYd2MGGARlYQ9xI5GQME",
+        "plus_code": {
+          "compound_code": "MPV6+4H Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMPV6+4H"
+        },
+        "rating": 3.6,
+        "reference": "ChIJRQ4IYd2MGGARlYQ9xI5GQME",
+        "scope": "GOOGLE",
+        "types": [
+          "lodging",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 388,
+        "vicinity": "5 Chome-3-20 Shinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6561375,
+            "lng": 139.6992872
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6578215302915,
+              "lng": 139.7006760302915
+            },
+            "southwest": {
+              "lat": 35.6551235697085,
+              "lng": 139.6979780697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+        "name": "Cerulean Tower Tokyu Hotel",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 4912,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106543267539419266124\">Cerulean Tower Tokyu Hotel</a>"
+            ],
+            "photo_reference": "CmRaAAAAvt9GNQMhdcpveRcTKgUuJHBJzcuTL3nThbb3q7D8QKf7SFpwn9BtOHSMMZ4m7f1akZMUlVxkx1VbsfyKo1s7YpOR_WZw2HdKxJDS1w8m9iJ8U7QeYjRzxaAhOUPNBnUWEhBCekJo_Dpq5owSuiO8hRZuGhT4JYdOE4HGTSl5SJ4r6msue043AQ",
+            "width": 7360
+          }
+        ],
+        "place_id": "ChIJJ3iPEFeLGGARNN9drD7dk4k",
+        "plus_code": {
+          "compound_code": "MM4X+FP Shibuya City, Tokyo, Japan",
+          "global_code": "8Q7XMM4X+FP"
+        },
+        "rating": 4.2,
+        "reference": "ChIJJ3iPEFeLGGARNN9drD7dk4k",
+        "scope": "GOOGLE",
+        "types": [
+          "convenience_store",
+          "bakery",
+          "cafe",
+          "lodging",
+          "bar",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "store",
+          "establishment"
+        ],
+        "user_ratings_total": 3812,
+        "vicinity": "26-1 Sakuragaokacho, Shibuya City"
+      }
+    ],
+    "status": "OK"
+  }

@@ -34,6 +34,7 @@ import Login from './login'
 import Home from './home'
 import MainMenu from './mainMenu'
 import MapPage from './mapPage'
+import NewMap from './NewMap' //transferring new map from other file 
 
 import {
   BrowserRouter,
@@ -42,6 +43,7 @@ import {
   //  Link,
   // useHistory
 } from "react-router-dom";
+
 
 
 class App extends Component {
@@ -72,6 +74,10 @@ class App extends Component {
 
             <Route exact path="/map">
               <MapPage />
+            </Route>
+
+            <Route exact path="/newmap">
+              <NewMap />
             </Route>
 
           </Switch>

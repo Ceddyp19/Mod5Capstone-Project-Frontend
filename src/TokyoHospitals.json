@@ -1,0 +1,974 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CqQCHQEAAC-2Ccywx42jn3Cb0AH6Bs2pl8w1qqeimH_oPZGmtd0-9VhV2dUSn_UD31C5pITnBQAA-JRqQALFRG1A__Ti0e-kWfPBwwIDoq5HZ4ApXCYjbmAj8PRy41wBdc7BiOIp6q-Mz-jf8O7ka2wrp2Z0IhJDxNwYzLDxjUICV9IgJpuCHgjJ4OjjVEC6XK3LdX8ys_20hb-vk3qXeC5XjrQxC1Hr8c0bZNfG2MRJXSZbFse_QtDLEcdnrtnJNHuZbmeBmF1ZSoIbaQy0OS7PluPvsZv6BFHS-Dcm6BBEkJUmV-9Ryvb4rMMEuAWOpK14URm3mSCZxVBjcuVBIjnJJNUnbBaYnyZLQCoryBaM7JE4QIAWsd6KqPJA434_3pOnVWzOIhIQjDJD4hARjDVDCb_hk8x6zRoUmsOPQ8JxsY4XuBOlsNKDTr8qg9Q",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6207757,
+            "lng": 139.6242097
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6223352302915,
+              "lng": 139.6256471302915
+            },
+            "southwest": {
+              "lat": 35.6196372697085,
+              "lng": 139.6229491697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tamagawa Hospital",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1704,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100473650365238018440\">よしのたつや</a>"
+            ],
+            "photo_reference": "CmRaAAAA3tgtrWDaGKuAX2ji1q5sZzBnPSGB46HKF2aPJ0wDEt9ruYulaZyxlAAXtn5dpCQbvvVv2U_3wlV-m6TDXzzAb5CxYMHCTa91nGWosE-fdDLXUk0sMSNDK9wKZ6Rgau2DEhCOMrbd5nxNxe-4N8A_hsVlGhS05xcLnqnHSxQO07vUwzTesII8Qw",
+            "width": 2272
+          }
+        ],
+        "place_id": "ChIJW-hEEA70GGARmeVyjhgET1g",
+        "plus_code": {
+          "compound_code": "JJCF+8M Setagaya City, Tokyo, Japan",
+          "global_code": "8Q7XJJCF+8M"
+        },
+        "rating": 2.6,
+        "reference": "ChIJW-hEEA70GGARmeVyjhgET1g",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 112,
+        "vicinity": "4 Chome-8-1 Seta, Setagaya City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.69775119999999,
+            "lng": 139.7198015
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.69916878029149,
+              "lng": 139.7211264802915
+            },
+            "southwest": {
+              "lat": 35.69647081970849,
+              "lng": 139.7184285197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tokyo Women's Medical University Hospital",
+        "photos": [
+          {
+            "height": 4000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/116048787356094797980\">内藤一郎</a>"
+            ],
+            "photo_reference": "CmRaAAAAHxV2Gpa88uHVhJo7YrdlIJF4fty0UHthJ2ckDpNKb2yayfRISKXYtB-tDJJaeOe50_j1lkKS20qjFz3GN2Tz3ZPG004OwDFtoTUZmukbyEWJXe28miyDEIYo-21lEMOVEhA2TW6vAH_T9GdphsX8djtzGhT3Izgo7QR5R6jmG9yQ0ZIkj61mag",
+            "width": 3000
+          }
+        ],
+        "place_id": "ChIJBXRPAuWMGGARsUGftIFLZx8",
+        "plus_code": {
+          "compound_code": "MPX9+4W Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMPX9+4W"
+        },
+        "rating": 2.9,
+        "reference": "ChIJBXRPAuWMGGARsUGftIFLZx8",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 411,
+        "vicinity": "8-1 Kawadacho, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6937646,
+            "lng": 139.6925124
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6949000302915,
+              "lng": 139.6938559802915
+            },
+            "southwest": {
+              "lat": 35.6922020697085,
+              "lng": 139.6911580197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tokyo Medical University Hospital",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1704,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100473650365238018440\">よしのたつや</a>"
+            ],
+            "photo_reference": "CmRaAAAALt4aZilzxjeEhvk5SL-koiFh0f2xsdw_xH42H9fuo63F2dZQxOmHbPRGNTJrenTPUgjhtljzIO7FR_46KqlC54CHibCXoeNbKdFUYsNRPYMRloovvDfl4GDwlP0ekGU6EhClYqMXpqar0dKYJwwfEspdGhR0sOkswbIgdry1EVfn0yuWTd8SpQ",
+            "width": 2272
+          }
+        ],
+        "place_id": "ChIJhVxcpSqNGGARlB-64csFe6Q",
+        "plus_code": {
+          "compound_code": "MMVV+G2 Shinjuku City, Tokyo, Japan",
+          "global_code": "8Q7XMMVV+G2"
+        },
+        "rating": 3.2,
+        "reference": "ChIJhVxcpSqNGGARlB-64csFe6Q",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 329,
+        "vicinity": "6 Chome-7-1 Nishishinjuku, Shinjuku City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.8203525,
+            "lng": 139.5710864
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.8214615802915,
+              "lng": 139.5726185302915
+            },
+            "southwest": {
+              "lat": 35.81876361970851,
+              "lng": 139.5699205697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Niiza Shiki Chūō General Hospital",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100070589399976545197\">Kazuya Saito</a>"
+            ],
+            "photo_reference": "CmRaAAAAvqfjdOK1Rz5x1rrh09AQZFBtYdfMfzv9SUlL429pCTpIElqHLLyke9ePlcBX6KmfwUEEh8MAKQCFBzHRoxwmNuJsG2UkLQ4sqFIWQJ9b0ZxO2wrmRks6DYyMq9XoP5kPEhCdiVGv-emfvk0oQBVPTqMPGhQkjqZeouNrRWau_S5dKegRZqc-Cg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJ9WSF99LpGGARgARCedMOqcI",
+        "plus_code": {
+          "compound_code": "RHCC+4C Niiza, Saitama, Japan",
+          "global_code": "8Q7XRHCC+4C"
+        },
+        "rating": 2,
+        "reference": "ChIJ9WSF99LpGGARgARCedMOqcI",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 147,
+        "vicinity": "1 Chome-7-2 Tohoku, Niiza"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6969672,
+            "lng": 139.7423212
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.69848278029149,
+              "lng": 139.7435083302915
+            },
+            "southwest": {
+              "lat": 35.69578481970849,
+              "lng": 139.7408103697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tōkyō Teishin Hospital",
+        "photos": [
+          {
+            "height": 4032,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/117014557933378659736\">中澤譲</a>"
+            ],
+            "photo_reference": "CmRaAAAAdm19fp8c8ZC2ojE6BagwKrwN819s6mM007qnNFWSBRdbGGLnzO8qIdKVVX6DP0OjANVRZPXK2YfPQlevZ-NiBxNl27niWSxwbZ_18NpMwMPSrkEeOtqqNZsGzwC2SsFZEhDy4TRViDCtqmpCuiHEMX9uGhQBcLiV0fopmOwfCUeUccGLASgMBA",
+            "width": 3024
+          }
+        ],
+        "place_id": "ChIJEf5e0UKMGGAREs1VuR64M9E",
+        "plus_code": {
+          "compound_code": "MPWR+QW Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XMPWR+QW"
+        },
+        "rating": 3.8,
+        "reference": "ChIJEf5e0UKMGGAREs1VuR64M9E",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 136,
+        "vicinity": "2 Chome-14-23 Fujimi, Chiyoda City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.5238904,
+            "lng": 139.6750681
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.5250540302915,
+              "lng": 139.6765669802915
+            },
+            "southwest": {
+              "lat": 35.5223560697085,
+              "lng": 139.6738690197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Saiseikai Yokohamashi Tobu Hospital",
+        "photos": [
+          {
+            "height": 2268,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113924548703876266249\">よんちゃん</a>"
+            ],
+            "photo_reference": "CmRaAAAAqOUXeE4Okl7tvjtx5TfY7eeGRhtc0bk-T7oFdvLp0NkN53dks76Sg2tz0KVCyUTcWQ133z6lf7453KafZo0_urrqcMPuICXLr1Ytl4MJSV-G0Kb1SBeuhzKj5YVJG_XLEhDuP3M6IdjHZPJ-e1yazeKIGhTALHmcKpgBdP8nIfcxZ_roW87Jwg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJjxmCmj5eGGARaSl4TSDmPqg",
+        "plus_code": {
+          "compound_code": "GMFG+H2 Yokohama, Kanagawa, Japan",
+          "global_code": "8Q7XGMFG+H2"
+        },
+        "rating": 2.6,
+        "reference": "ChIJjxmCmj5eGGARaSl4TSDmPqg",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 204,
+        "vicinity": "3 Chome-6-1 Shimosueyoshi, Tsurumi Ward, Yokohama"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7058901,
+            "lng": 139.9700005
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.70701113029149,
+              "lng": 139.9709464302915
+            },
+            "southwest": {
+              "lat": 35.70431316970849,
+              "lng": 139.9682484697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Japan Community Healthcare Organization Funabashi Central Hospital",
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113702333147991300436\">nishidachihiro</a>"
+            ],
+            "photo_reference": "CmRaAAAAqQyUT0d6VD-7NZDtTwJ-8GTiSfLQD-qcz2F5c1Zp_Jx8-wId1l6GDuNtUNxAgt_U4c4DpBJRkjEuAmWYOtGzCtbhMmLLP1P_YNl-Dkbtv78GHFKMJ3ZQoQFc0BARhb_mEhAmqw-RTQSUZd_L9cEsd5GPGhQE_ppcHUhrXFvthEX-SY_6WjNpGQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJ0eUHWY6AGGARoGWbspYToM8",
+        "plus_code": {
+          "compound_code": "PX4C+92 Funabashi, Chiba, Japan",
+          "global_code": "8Q7XPX4C+92"
+        },
+        "rating": 3.3,
+        "reference": "ChIJ0eUHWY6AGGARoGWbspYToM8",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 93,
+        "vicinity": "6 Chome-13-10 Kaijin, Funabashi"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.72984629999999,
+            "lng": 139.7557286
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.73127753029149,
+              "lng": 139.7570983302915
+            },
+            "southwest": {
+              "lat": 35.72857956970849,
+              "lng": 139.7544003697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Tokyo Metropolitan Cancer and Infectious Diseases Center Komagome Hospital",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111212002279322334490\">Joshua</a>"
+            ],
+            "photo_reference": "CmRaAAAA-LvwrD-YT28Frw4-xn5ZRZf90r9e3plPFRpOjgRyludh9xUnra4QmbUN0y1_815AJIP1l4CZXZ_vULj1935_g97gAK1B1ovArFIkTR2fnma_PEPspgj7OqC3Llpr_2CEEhD2h6gAyUWKulWET7EvnQKAGhT7Qpv_9EHVKSy5ruWs7Yo23Kqh0A",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJifSpZ8aNGGARiyh0cXv6638",
+        "plus_code": {
+          "compound_code": "PQH4+W7 Bunkyo City, Tokyo, Japan",
+          "global_code": "8Q7XPQH4+W7"
+        },
+        "rating": 3.8,
+        "reference": "ChIJifSpZ8aNGGARiyh0cXv6638",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 114,
+        "vicinity": "3 Chome-18 Honkomagome, Bunkyo City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7210943,
+            "lng": 139.7589509
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7222632302915,
+              "lng": 139.7603596302915
+            },
+            "southwest": {
+              "lat": 35.7195652697085,
+              "lng": 139.7576616697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Nippon Medical School Hospital",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2322,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100689039355298728862\">Ortelius Abraham</a>"
+            ],
+            "photo_reference": "CmRaAAAA7YRuNSMRFms1_eBlAxpkYAxpaEc5QK2jLNojxf4mJpb-netERuomIk6HyJJWcy_O1dsI_hs0V5hV8q4CM6VBi4m9wFTrYq81eUU9MgwRGcXuEuAEaEYGfcIKRIkRa26eEhDv54WsbMfL3WQAiQPFlOAmGhRod43_4Py8YHLeobttmZoZVY8Sqw",
+            "width": 4128
+          }
+        ],
+        "place_id": "ChIJT9y7v8yNGGARF4TSZPtf0bM",
+        "plus_code": {
+          "compound_code": "PQC5+CH Bunkyo City, Tokyo, Japan",
+          "global_code": "8Q7XPQC5+CH"
+        },
+        "rating": 3.4,
+        "reference": "ChIJT9y7v8yNGGARF4TSZPtf0bM",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 234,
+        "vicinity": "1 Chome-1-5 Sendagi, Bunkyo City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7015014,
+            "lng": 139.7549169
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7027225302915,
+              "lng": 139.7564724302915
+            },
+            "southwest": {
+              "lat": 35.7000245697085,
+              "lng": 139.7537744697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tokyo Dental College Suidobashi Hospital",
+        "photos": [
+          {
+            "height": 3268,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/110807531686252733131\">Masahiko Motono</a>"
+            ],
+            "photo_reference": "CmRaAAAAwXq8516F1Ho-Yg3RHRuB_QkAP5kSuljoPjVtFHkNpH3MY26Cu8nAx-nJgpqcHtYUCuYT5v-JFeFozIDQ_T8bGKofd_uq4fBrdGCiOYqdtgf_4Foa8ZuuSgXG9Uat9o1sEhBn5x9ntc4jyr3YpwiMI1fvGhR-l_aoGHHI88WvQYkEVT4CvQ_l2A",
+            "width": 4895
+          }
+        ],
+        "place_id": "ChIJa4T4rT-MGGARhLyM25RL81A",
+        "plus_code": {
+          "compound_code": "PQ23+JX Chiyoda City, Tokyo, Japan",
+          "global_code": "8Q7XPQ23+JX"
+        },
+        "rating": 2.7,
+        "reference": "ChIJa4T4rT-MGGARhLyM25RL81A",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "dentist",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 74,
+        "vicinity": "2 Chome-9-18 Misakicho, Chiyoda City"
+      },
+      {
+        "business_status": "CLOSED_TEMPORARILY",
+        "geometry": {
+          "location": {
+            "lat": 35.5940502,
+            "lng": 139.6934428
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.5950262802915,
+              "lng": 139.6942616302915
+            },
+            "southwest": {
+              "lat": 35.5923283197085,
+              "lng": 139.6915636697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Ebara Hospital",
+        "permanently_closed": true,
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/100789150857758761653\">taichi matsuo</a>"
+            ],
+            "photo_reference": "CmRaAAAAQhFS6WUBbG49EMi9oBHsZ8qrtz2gEuVSx2pRL-wB506oHmV5jfkAlh0n1Qn94wr8IWwRuppUxOixWmsDf5wFyFmaB1nxzlHwOVof6XKav-81iOy62pQkTWnGjTKxJLDSEhCTcYwqXROE6_ax9V19l6DQGhQLOLS44cqXSN49_UZljKeXdQ6OdA",
+            "width": 4608
+          }
+        ],
+        "place_id": "ChIJS22M7bKKGGARx6PJeq6Vtjg",
+        "plus_code": {
+          "compound_code": "HMVV+J9 Ota City, Tokyo, Japan",
+          "global_code": "8Q7XHMVV+J9"
+        },
+        "rating": 3.3,
+        "reference": "ChIJS22M7bKKGGARx6PJeq6Vtjg",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 115,
+        "vicinity": "4 Chome-5-10 Higashiyukigaya, Ota City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.77677699999999,
+            "lng": 139.6961662
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7776830302915,
+              "lng": 139.6978872302915
+            },
+            "southwest": {
+              "lat": 35.7749850697085,
+              "lng": 139.6951892697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Itabashi Chuo Medical Center",
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/112699601156009013455\">Thanh-Tu Tran</a>"
+            ],
+            "photo_reference": "CmRaAAAAQlyPzi3QgXmqlVznxl6BjNP2b95qdeScljen8IcunqysdaeuRmQxGQbgMzwgoLaPfcO4HVLlT-fsOfVh2ejyZlgZqymCeynK0ZyzGZaYeaXA2WFEh8m0FEE977FqPEjdEhDGdHyvYBSRGtZySXJncjnYGhSphGstclAyETgmH-4g9GtRoqfBPg",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJ7xHnCy6TGGARPb9zjf0hFj0",
+        "plus_code": {
+          "compound_code": "QMGW+PF Itabashi City, Tokyo, Japan",
+          "global_code": "8Q7XQMGW+PF"
+        },
+        "rating": 2.6,
+        "reference": "ChIJ7xHnCy6TGGARPb9zjf0hFj0",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 154,
+        "vicinity": "2 Chome-12-7 Azusawa, Itabashi City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.736977,
+            "lng": 139.4759241
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7380713302915,
+              "lng": 139.4772924802915
+            },
+            "southwest": {
+              "lat": 35.7353733697085,
+              "lng": 139.4745945197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "National Center of Neurology and Psychiatry",
+        "photos": [
+          {
+            "height": 2988,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102647936005128929623\">Akari Tsukino</a>"
+            ],
+            "photo_reference": "CmRaAAAAblLhCXADZCL7fTgsQ1TOJyXSJXMhlUDDMQrkcUPPaYsy7ZXZsIk4xf9f-er263WaKMymxeuZlK8a4Id913Svv8MnfEwBM89qAP2mPKSq5yxjVvN9Zj9oVkHnWHYLM2uhEhBVh9LPSSRbe3I3UOo1V_OXGhRBKezgRPFKH50t3VF3v8vFCAa43g",
+            "width": 3984
+          }
+        ],
+        "place_id": "ChIJgxEeCe3mGGARRqM8C72xrFY",
+        "plus_code": {
+          "compound_code": "PFPG+Q9 Kodaira, Tokyo, Japan",
+          "global_code": "8Q7XPFPG+Q9"
+        },
+        "rating": 3,
+        "reference": "ChIJgxEeCe3mGGARRqM8C72xrFY",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "doctor",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 89,
+        "vicinity": "4 Chome-1-1 Ogawahigashicho, Kodaira"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.60052789999999,
+            "lng": 139.5488325
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.60187688029149,
+              "lng": 139.5501814802915
+            },
+            "southwest": {
+              "lat": 35.59917891970849,
+              "lng": 139.5474835197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "St. Marianna Medical University Hospital",
+        "photos": [
+          {
+            "height": 2736,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/101490805637467981508\">77 Waka_</a>"
+            ],
+            "photo_reference": "CmRaAAAAphhouGinHL3YIbnXJD5iyuAUBmWXF8cFYTn71lHsoz4TIrJbfDIEmXWd4LxZAl_nYFpNbxVTmlmgQv4WYuUVy4UU2CcHVF9MMJXRYIpq2YK0n_bNyIbJuX5y_XE8HupOEhAPmm9rYbO37YyjA507NdQvGhRkJcIFFeHFBjJvkE5IrX0zi4gTzQ",
+            "width": 3648
+          }
+        ],
+        "place_id": "ChIJJ6-IZLXwGGARvASeMpMT4wc",
+        "plus_code": {
+          "compound_code": "JG2X+6G Kawasaki, Kanagawa, Japan",
+          "global_code": "8Q7XJG2X+6G"
+        },
+        "rating": 3.2,
+        "reference": "ChIJJ6-IZLXwGGARvASeMpMT4wc",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 186,
+        "vicinity": "2 Chome-16-1 Sugao, Miyamae Ward, Kawasaki"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6523016,
+            "lng": 139.6837689
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6536293302915,
+              "lng": 139.6853825802915
+            },
+            "southwest": {
+              "lat": 35.6509313697085,
+              "lng": 139.6826846197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Toho University Ohashi Medical Center",
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109455260799956731370\">mashio yatsuzuka</a>"
+            ],
+            "photo_reference": "CmRaAAAAYy8i2O4rxOnvwReLgniEobAvqOobG6wdiuOCf_j7OG23Y0BQ-6yRFZRarus17irTwPgYQ_xuYlqULwK5jVhELP3v7bHfZopuz71gxowbfxgukyANzGhcpE81GNleHwhjEhB42apL9mskkDtuQunG8ygzGhTJqnr8JkOaCdyb05TiFfGu50-5dg",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJDZbajKn0GGARis2n6ZPYKg8",
+        "plus_code": {
+          "compound_code": "MM2M+WG Meguro City, Tokyo, Japan",
+          "global_code": "8Q7XMM2M+WG"
+        },
+        "rating": 3.4,
+        "reference": "ChIJDZbajKn0GGARis2n6ZPYKg8",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 155,
+        "vicinity": "2 Chome-22-36 Ohashi, Meguro City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7080539,
+            "lng": 139.6192878
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.70928303029149,
+              "lng": 139.6206363302915
+            },
+            "southwest": {
+              "lat": 35.7065850697085,
+              "lng": 139.6179383697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Tokyo Adventist Hospital",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2936,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107676544519556763706\">廣瀬臨太郎</a>"
+            ],
+            "photo_reference": "CmRaAAAA2fkuoZrpYAlaW62Ov9hI37GrDfU6HVw6DugoCt1pCq5nttqjVNYLHxgpu6ZRQXU7A66mVDfviRhTdXMeQfNgt_MTiDd77mSuQENGrb13KWJ3tVxBmhhQhN5h5dMgLIYhEhCHA0Bw1gknQvTs0rmchgi6GhTfLYQQ7Qg_Hiu3lJqRgYOv3tjw7w",
+            "width": 3916
+          }
+        ],
+        "place_id": "ChIJH1oGnPrtGGAR-JttB8zRMCs",
+        "plus_code": {
+          "compound_code": "PJ59+6P Suginami City, Tokyo, Japan",
+          "global_code": "8Q7XPJ59+6P"
+        },
+        "rating": 3.6,
+        "reference": "ChIJH1oGnPrtGGAR-JttB8zRMCs",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 96,
+        "vicinity": "3 Chome-17-3 Amanuma, Suginami City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.3507902,
+            "lng": 139.4822456
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.3521067302915,
+              "lng": 139.4835665802915
+            },
+            "southwest": {
+              "lat": 35.3494087697085,
+              "lng": 139.4808686197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Fujisawa City Hospital",
+        "photos": [
+          {
+            "height": 3096,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/101490805637467981508\">77 Waka_</a>"
+            ],
+            "photo_reference": "CmRaAAAAfm_in0S72erOVuqDVW0b0wq4A0hNq5a9_zynQi-9Jol19cbF_b9oiSWJ5ImbPP3kNYaFC7Ljj9lKznRCy3sVIpIzJDuWQaMFXNSk9JKIkB6iOkLajsRe9zkpM4imT6CXEhD8o-wad5zJW8lg8d8hZ6PCGhSYvg_drMGed8xVKP_R3hhlxjdxdg",
+            "width": 5504
+          }
+        ],
+        "place_id": "ChIJaeiX-ilOGGARnG9rqnxCZ_M",
+        "plus_code": {
+          "compound_code": "9F2J+8V Fujisawa, Kanagawa, Japan",
+          "global_code": "8Q7X9F2J+8V"
+        },
+        "rating": 3,
+        "reference": "ChIJaeiX-ilOGGARnG9rqnxCZ_M",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 125,
+        "vicinity": "2 Chome-6-1 Fujisawa"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7295166,
+            "lng": 139.5386644
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7309756802915,
+              "lng": 139.5400969302915
+            },
+            "southwest": {
+              "lat": 35.7282777197085,
+              "lng": 139.5373989697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Sassa General Hospital",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107804304792480228126\">さへきひろのぶ</a>"
+            ],
+            "photo_reference": "CmRaAAAA61O4h5vtuYEBPAdb0F145WpY3bVqHRMnVsJXk-WVeCtsjVyeH7mwtafOE7D_w2ZMoT49vCA1AYmVghUNKoYxXzDn4ZZdkpm4Y7JrrJ68ZVlq_f9h34kpAsSsobHW9WJmEhA4eKPaor7fMnN8Zy6tdqURGhTQyN_TVZmwCdtpf6SgibnOQN-yfA",
+            "width": 4000
+          }
+        ],
+        "place_id": "ChIJDzCR10TvGGARYZuT1jifpEM",
+        "plus_code": {
+          "compound_code": "PGHQ+RF Nishitokyo, Tokyo, Japan",
+          "global_code": "8Q7XPGHQ+RF"
+        },
+        "rating": 2.3,
+        "reference": "ChIJDzCR10TvGGARYZuT1jifpEM",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 120,
+        "vicinity": "4 Chome-24-15 Tanashicho, Nishitokyo"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6905069,
+            "lng": 139.8341593
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6918528302915,
+              "lng": 139.8353446302915
+            },
+            "southwest": {
+              "lat": 35.6891548697085,
+              "lng": 139.8326466697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Kōtō Hospital",
+        "photos": [
+          {
+            "height": 1440,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114682430855488026057\">こてつ&amp;チャムby忍</a>"
+            ],
+            "photo_reference": "CmRaAAAAOEcLtX9yl6k14Cw4AbIVw-nmczKzoX75HoA1IdxG-e3WNfg_4uqQpXMF8KB5F-QL86zhAEk4prpPAnmmPQ5BwiaxFby86mppYZ5M5de4XiW69qbyWDx61KTJn0EfZwFLEhCB7hO-gBH8LoQH4o2tea0IGhQ5xxeT2XR7VkOTWaMjwzYpxdkvfg",
+            "width": 1920
+          }
+        ],
+        "place_id": "ChIJG29UVZOIGGARkMGJvkprqyk",
+        "plus_code": {
+          "compound_code": "MRRM+6M Koto City, Tokyo, Japan",
+          "global_code": "8Q7XMRRM+6M"
+        },
+        "rating": 2.3,
+        "reference": "ChIJG29UVZOIGGARkMGJvkprqyk",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 115,
+        "vicinity": "6 Chome-8-5 Ojima, Koto City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.70673009999999,
+            "lng": 139.6385522
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7079638302915,
+              "lng": 139.6401578802915
+            },
+            "southwest": {
+              "lat": 35.70526586970851,
+              "lng": 139.6374599197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/doctor-71.png",
+        "name": "Kawakita General Hospital",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 4000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/115774836398269436196\">河北総合病院</a>"
+            ],
+            "photo_reference": "CmRaAAAAPm0wroQrpUvPS2VhcB1R2j-KddyYbr9ZYYASD6v68yb8dzKZgnbMEGFzONcBqU4s6-Pa77k0lm0Kr5FkVhjun8u-ao29_RGYoBahP9MVFjMgRQO4183_il5sulryMmBHEhBw7IeNnvL5kShSEOchEH1RGhTHthzPluA_E8_0CRCI-ihHJovUDw",
+            "width": 6016
+          }
+        ],
+        "place_id": "ChIJo4uOvXfyGGARsOIwHXdeKDU",
+        "plus_code": {
+          "compound_code": "PJ4Q+MC Suginami City, Tokyo, Japan",
+          "global_code": "8Q7XPJ4Q+MC"
+        },
+        "rating": 2.7,
+        "reference": "ChIJo4uOvXfyGGARsOIwHXdeKDU",
+        "scope": "GOOGLE",
+        "types": [
+          "hospital",
+          "health",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 167,
+        "vicinity": "1 Chome-7-3 Asagayakita, Suginami City"
+      }
+    ],
+    "status": "OK"
+  }

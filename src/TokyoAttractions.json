@@ -1,0 +1,989 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CrQCJwEAAEVi-A2zalp8-06bAW4FyAtY2qEJL_4rlkf7ORmDcKdX8W1BC1u7kXdIpTAjIw277YkM3DA8bYJZyY2-hxdj_c_r5_mn0nzlaoPGVfoDOoYt1FCpy2EXWJ991fwyw1RWOcqks1yp4TOqYvnfWXaMTONf0ulQh5QMftjWfEfWOZEmXGOKAW4OfXlNuJkM6kKCKIu5_ZQ3PLeEZcPCyMXInRnpkTyeE72zCe0jlvd5JwYMb86qIFov4_NxSUyHxPurcKkDnH3C8qFbcFzkGMg89DaZ0uJx6-4D6J8lmeWJdEAO6XxP1sdEDOBxOJX9gdNqZfWiI_4iVofVXntVFvitgl0y4LvVXCtiBwba-xtk_bcwoiTk7z-T-jhiregtrw1w7CniZdFXJCCAkjzyB3ZsYOgSENgi-whyRzTFXdK-pxzEgr4aFEHb3qXy1BiLRDMpXH7ewaazDT10",
+    "results": [
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.4554755,
+            "lng": 139.6388669
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.4569588302915,
+              "lng": 139.6401153802915
+            },
+            "southwest": {
+              "lat": 35.4542608697085,
+              "lng": 139.6374174197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+        "name": "Cup Noodles Museum",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106421059372834674503\">tung nguyen</a>"
+            ],
+            "photo_reference": "CmRaAAAAl3yRT-JNWGHzN6V0RnnofXZnonCT2qor0LD0wYweplw_cHdxiTWmRtPkG5lqWc0jeZgNVyPYcndl0AvvPtubA7lRrHHxmuy89zEw84cryq_mQcp3wORkUbUPeI129MtXEhD0zLoI1zg7KQ0O6OiJXpSJGhQBK4EC9FJY97-Rozh-mVV08_F8xA",
+            "width": 4000
+          }
+        ],
+        "place_id": "ChIJ3ZNhe1dcGGARvjq5QHdmaHM",
+        "plus_code": {
+          "compound_code": "FJ4Q+5G Yokohama, Kanagawa, Japan",
+          "global_code": "8Q7XFJ4Q+5G"
+        },
+        "rating": 4.2,
+        "reference": "ChIJ3ZNhe1dcGGARvjq5QHdmaHM",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "museum",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 11546,
+        "vicinity": "2 Chome-3-4 Shinko, Naka Ward, Yokohama"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6694245,
+            "lng": 139.7677687
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.67077348029149,
+              "lng": 139.7691176802915
+            },
+            "southwest": {
+              "lat": 35.66807551970849,
+              "lng": 139.7664197197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Kabuki-za Theatre",
+        "photos": [
+          {
+            "height": 3120,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/106390137949335158880\">T L</a>"
+            ],
+            "photo_reference": "CmRaAAAA-L98NVypAlZq6q1p4jSj14vFi-LkE8GSvz7ZXX0W7tQD167-iq1_cfBN8cw80oFzgAmutAMDWWDbg45QHi-9ECndpG3CL7ohiLC3ohkN8j1HFefz-5WUgTuxmQFFuxkNEhA3afTZuW73ZTCgZe6iCX7LGhR-F-XSM7Jlh1v2rng7iy6LqVUlag",
+            "width": 4160
+          }
+        ],
+        "place_id": "ChIJbUAZSOeLGGARGMEf4WW16AE",
+        "plus_code": {
+          "compound_code": "MQ99+Q4 Chuo City, Tokyo, Japan",
+          "global_code": "8Q7XMQ99+Q4"
+        },
+        "rating": 4.2,
+        "reference": "ChIJbUAZSOeLGGARGMEf4WW16AE",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 7401,
+        "vicinity": "4 Chome-12-15 Ginza, Chuo City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.80579580000001,
+            "lng": 139.6962849
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.80732203029151,
+              "lng": 139.6975210302915
+            },
+            "southwest": {
+              "lat": 35.80462406970851,
+              "lng": 139.6948230697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Shichifuku No Yu",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 1836,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113555173164916408878\">haixuan ye</a>"
+            ],
+            "photo_reference": "CmRaAAAAGZGKZFTWjAJcCb-Wc4X9CKwrzUQ0-wXfnhNHD2RK0klV2F5n_4uljt9GnXgzN36aKmKUM31_DA70MskbnEixycECmGAse8uamT7hsbTBlqgg8cctHzOElo_SLDJ_X5q_EhApXy1if_4rry_bgXf-_ph6GhTCVxC3TnI9blAyle22t4RaLgw08A",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJTyVn9amUGGARS-2IQP6otWA",
+        "plus_code": {
+          "compound_code": "RM4W+8G Toda, Saitama, Japan",
+          "global_code": "8Q7XRM4W+8G"
+        },
+        "rating": 4,
+        "reference": "ChIJTyVn9amUGGARS-2IQP6otWA",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "spa",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 1967,
+        "vicinity": "1 Chome-4-56 Kizawaminami, Toda"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.66703810000001,
+            "lng": 139.7219133
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6739168,
+              "lng": 139.72735455
+            },
+            "southwest": {
+              "lat": 35.6578088,
+              "lng": 139.71548075
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cemetery_grave-71.png",
+        "name": "Aoyama Cemetery",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3266,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113433531284737403661\">Takashi Yoshida</a>"
+            ],
+            "photo_reference": "CmRaAAAAn1CEuhiYtu5mwn9KU_2vMB2dfw5MGsMX0WZzMwjKlrJalWZYXZfLV283Z2-1cPYEr6dUzVUtPx80sh8JNk0EK4vawWMMYOh5KOoWso9Xou4k-C5mDX3G64I7KQZnRXGJEhDLAdSFHMt6QKa90cWldUT0GhQeL-7Vs_FnbIONrqOUr0rBM0Bgvg",
+            "width": 4898
+          }
+        ],
+        "place_id": "ChIJIe1uymKLGGARGpOwOiZEDog",
+        "plus_code": {
+          "compound_code": "MP8C+RQ Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP8C+RQ"
+        },
+        "rating": 4.3,
+        "reference": "ChIJIe1uymKLGGARGpOwOiZEDog",
+        "scope": "GOOGLE",
+        "types": [
+          "cemetery",
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 157,
+        "vicinity": "2 Chome-32-2 Minamiaoyama, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.626605,
+            "lng": 139.774056
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.62795398029149,
+              "lng": 139.7754049802915
+            },
+            "southwest": {
+              "lat": 35.62525601970849,
+              "lng": 139.7727070197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Fuji Television Network, Inc.",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2976,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102907292294089881531\">Joe Chang</a>"
+            ],
+            "photo_reference": "CmRaAAAAypOfXYodBi89jHpCfF06rqkhREufAGVVg-6AVgaxsvBWpxIxm01Eb6mV4nVGgSlzHCrxhGVpH4cPLP3BlzlOpT5U4v7NQM9CULMYQ2kECyjS-ZGWk8tOPZtt_D7yeRm2EhDtK27Ohs73RWC0fdH8uj4cGhR3S7atoC4GStq31sEF9iqKxhz_wQ",
+            "width": 2976
+          }
+        ],
+        "place_id": "ChIJQQ6UsPeJGGAR3LFE4U43_NQ",
+        "plus_code": {
+          "compound_code": "JQGF+JJ Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJQGF+JJ"
+        },
+        "rating": 3.8,
+        "reference": "ChIJQQ6UsPeJGGAR3LFE4U43_NQ",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 8209,
+        "vicinity": "2 Chome-4-8 Daiba, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7172272,
+            "lng": 139.7738127
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.71857618029149,
+              "lng": 139.7751616802915
+            },
+            "southwest": {
+              "lat": 35.7158782197085,
+              "lng": 139.7724637197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+        "name": "Tokyo Metropolitan Art Museum",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3464,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/102400201436616358268\">謝東昇</a>"
+            ],
+            "photo_reference": "CmRaAAAAOIV8Ao6Sq-fd7npYiAbknhX29BFgGwag_VoiGgg4x33jKVRsxR-DivpZ8daf-NVkyzXOSSBzRUjXcirn_Qf4sm9cdosAYDfdP3hBSih7WTv36hSxQkq4Efkjk81kwFOEEhDfnkLNqG2dl2Guw_EMn7TnGhQxJTYvOXcMpVIEKe0YCFKp2n3syA",
+            "width": 4618
+          }
+        ],
+        "place_id": "ChIJb_o7HiiMGGARUKu8uO7fGIQ",
+        "plus_code": {
+          "compound_code": "PQ8F+VG Taito City, Tokyo, Japan",
+          "global_code": "8Q7XPQ8F+VG"
+        },
+        "rating": 4.2,
+        "reference": "ChIJb_o7HiiMGGARUKu8uO7fGIQ",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "museum",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 9480,
+        "vicinity": "8-36 Uenokoen, Taito City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.71538690000001,
+            "lng": 139.7758138
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7163440802915,
+              "lng": 139.7773397802915
+            },
+            "southwest": {
+              "lat": 35.7136461197085,
+              "lng": 139.7746418197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+        "name": "National Museum of Western Art",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2160,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108348447950647953278\">高橋弓子</a>"
+            ],
+            "photo_reference": "CmRZAAAAwg8YlEBNfec2UgZ7fy6832KrMPtU-8KPvAzzEsQE_AknEcgsXxqGyD3_59ELzS7XUvKjgwhrP69ZzouIXDb9wC6GGa733_aQvg-Galk7VfmWCIh761Y9jf-atWSEfVKqEhBTP-DLTdr8yLlNctGX87MwGhSP4nHZkO2laQyXGHSdT7bERFPj1w",
+            "width": 3840
+          }
+        ],
+        "place_id": "ChIJf8xB-pyOGGARizzhlNTcI7s",
+        "plus_code": {
+          "compound_code": "PQ8G+58 Taito City, Tokyo, Japan",
+          "global_code": "8Q7XPQ8G+58"
+        },
+        "rating": 4.4,
+        "reference": "ChIJf8xB-pyOGGARizzhlNTcI7s",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "museum",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 6156,
+        "vicinity": "7-7 Uenokoen, Taito City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.8578059,
+            "lng": 140.023414
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.85901673029149,
+              "lng": 140.0248483802915
+            },
+            "southwest": {
+              "lat": 35.8563187697085,
+              "lng": 140.0221504197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Road Station Shonan",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111329295385244831779\">道の駅 しょうなん</a>"
+            ],
+            "photo_reference": "CmRaAAAAN796TjL6EKiXwrMWjWVI4ln2DdDxHmKNU-sjDf5b4fBgF09fdcfTqtRjZJW7dTQ9RCXxlWsVecYBEYob00WIB60f6gxEjhec8u32WbSJZqnrl1U6aZmxVNXF1p0S7divEhBW0oR20sCN6doN4v6kIJUEGhRAd-MN0Vlu1p4BywH_dGJCWnLrLw",
+            "width": 4608
+          }
+        ],
+        "place_id": "ChIJF_6vUwF4ImARtWAtVobXReE",
+        "plus_code": {
+          "compound_code": "V25F+49 Kashiwa, Chiba, Japan",
+          "global_code": "8R72V25F+49"
+        },
+        "rating": 3.6,
+        "reference": "ChIJF_6vUwF4ImARtWAtVobXReE",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 2395,
+        "vicinity": "59-2 Minowa Shinden, Kashiwa"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.64974719999999,
+            "lng": 139.8299139
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6510961802915,
+              "lng": 139.8312628802915
+            },
+            "southwest": {
+              "lat": 35.6483982197085,
+              "lng": 139.8285649197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Tokyo Sports Culture Center",
+        "photos": [
+          {
+            "height": 3096,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/109074758865242677944\">makoto k</a>"
+            ],
+            "photo_reference": "CmRaAAAAOU7urKNGrq3r-zGZOaabYyKgaA4ayLjU-4H2l9teCeXfN4_mCHewNdu82fScOUrBhy1QJYqPK_zoLmEy2YcWfSIiIecg4UwpNyiIkyuikZ7WbyJ3zs_eRZgcn7I5AxXlEhBcrfL-xjwif_EHbLGIEqBkGhR74qL_MVPXTDJDDl1IyyhlXRey1A",
+            "width": 5504
+          }
+        ],
+        "place_id": "ChIJIwa7XTyIGGARGn0k_6aUb8I",
+        "plus_code": {
+          "compound_code": "JRXH+VX Koto City, Tokyo, Japan",
+          "global_code": "8Q7XJRXH+VX"
+        },
+        "rating": 3.8,
+        "reference": "ChIJIwa7XTyIGGARGn0k_6aUb8I",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 700,
+        "vicinity": "2 Chome-1-3 Yumenoshima, Koto City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6320732,
+            "lng": 139.8782264
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6415136,
+              "lng": 139.8794932
+            },
+            "southwest": {
+              "lat": 35.6289264,
+              "lng": 139.875536
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Tomorrowland Hall Appreciation Lottery Place",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/103428864048175818211\">のぶこ</a>"
+            ],
+            "photo_reference": "CmRaAAAAkZipeof4fpGKFmiDVzSdfTMACmkrx4fL3Ov99Snsn7oytnSyj2FNswk54xhquMLRHVu5k-kaHdZbgWDHN3hBQXnegQSqrrsk8j2kdCfFzY385dJ6fR65iZFR_Q_xPisYEhDLJetaCaYxBQVCHgbC6TeDGhQSCUgctBd1-Tfoa2x6XerNbjCuiQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJ-ZJC_RZ9GGARB3GFqw_dvPA",
+        "plus_code": {
+          "compound_code": "JVJH+R7 Urayasu, Chiba, Japan",
+          "global_code": "8Q7XJVJH+R7"
+        },
+        "rating": 4.1,
+        "reference": "ChIJ-ZJC_RZ9GGARB3GFqw_dvPA",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 106,
+        "vicinity": "1-1 Maihama, Urayasu"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.7266224,
+            "lng": 139.7051854
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.7278264302915,
+              "lng": 139.7066248302915
+            },
+            "southwest": {
+              "lat": 35.7251284697085,
+              "lng": 139.7039268697085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_recreational-71.png",
+        "name": "Toshima-ku Tachiagariyashiki Park",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/105422355373971358354\">ta ma</a>"
+            ],
+            "photo_reference": "CmRaAAAAxtVz7K2Aml_v30YGxDE9guMd_xoOXerDf3V-1tA5YBtHW3G0TN15D_eHTRRYetvlQmDglDIE54sJhEZYggt9c9jCRdr_D-YzaD9_EaZnbys6wKAs9k_3weoOJtLBGzd6EhBS-si0mbGrBNq-061cirJ8GhRH4Npn81zj-jfuV--YWzTdjYITmQ",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJYXBWR1uNGGARtkqckMsH1QU",
+        "plus_code": {
+          "compound_code": "PPG4+J3 Toshima City, Tokyo, Japan",
+          "global_code": "8Q7XPPG4+J3"
+        },
+        "rating": 3.6,
+        "reference": "ChIJYXBWR1uNGGARtkqckMsH1QU",
+        "scope": "GOOGLE",
+        "types": [
+          "park",
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 106,
+        "vicinity": "2 Chome-14-2 Nishiikebukuro, Toshima City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6546301,
+            "lng": 139.7480695
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6559790802915,
+              "lng": 139.7494184802915
+            },
+            "southwest": {
+              "lat": 35.6532811197085,
+              "lng": 139.7467205197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Shiba Maruyama Kofun",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3456,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/107275867413226485065\">湯田睦</a>"
+            ],
+            "photo_reference": "CmRaAAAA9E8HESYO7D2qekrJfvFX1hhUTTGIe-0obsDoA5BDyh1QPgO2vTTD6ELx3rfJVb4WlZg1IXXxMpJCk3370DscwxgVRQjb66WepNoQo3NzvhqmF8QNS1VjSEgCnGu9qShJEhAgyoZF9n2r6G8FHQjiiC6sGhSbBNh5KWVWZWIiwYDHcKY1VTT5zQ",
+            "width": 5184
+          }
+        ],
+        "place_id": "ChIJ55pIRbmLGGAReFx7rf2nL8c",
+        "plus_code": {
+          "compound_code": "MP3X+V6 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XMP3X+V6"
+        },
+        "rating": 3.7,
+        "reference": "ChIJ55pIRbmLGGAReFx7rf2nL8c",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 73,
+        "vicinity": "4 Chome-8-25 Shibakoen, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6399991,
+            "lng": 139.7348477
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.64142198029149,
+              "lng": 139.7364093802915
+            },
+            "southwest": {
+              "lat": 35.63872401970849,
+              "lng": 139.7337114197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Site where Oishi Yoshitaka and 16 others demonstrated unswerving loyalty",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1080,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113876282776551741142\">大川直也</a>"
+            ],
+            "photo_reference": "CmRaAAAAlKrd_BjITX0nYUyZ9l1--YBKaIxoAgCoFVa83WJt1R8cPlnA82TYrt2Fkd_cKIBOo9VpXbaFWm6GpwGFQAoWsF66Ap6w_NwVPOOcvHI5MljnaQzraty697yaHd1q9j3DEhAKVJtz1bYUugUbDZlGJmTIGhTvoLQOXyuC2YitjfQ3e8W7N5_m7w",
+            "width": 1920
+          }
+        ],
+        "place_id": "ChIJt8JMCKmLGGAROamwk0o7_-o",
+        "plus_code": {
+          "compound_code": "JPQM+XW Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJPQM+XW"
+        },
+        "rating": 4,
+        "reference": "ChIJt8JMCKmLGGAROamwk0o7_-o",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 55,
+        "vicinity": "1 Chome-4-6 Takanawa, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6394708,
+            "lng": 139.7406418
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.64081978029149,
+              "lng": 139.7419907802915
+            },
+            "southwest": {
+              "lat": 35.63812181970849,
+              "lng": 139.7392928197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Ruins of Takanawa Ōkido Gate",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3024,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/114444487814750203083\">neco cat</a>"
+            ],
+            "photo_reference": "CmRaAAAAiXTGHy0qdwFBGbC3U7IKBW9RNyJgc2mWE33u5EvL9DOGoC9cLXdYjg_o_7GIjB7Z66z2whum_MFcgLDhiuZscqrlOD9qQTlouSM11phLAPpNyRPlK20YR0B0R3GlzRCcEhA_GfcHoZWAeWuBdnzoViXvGhTq7KveabsQoix1J_nu0zdCYpLcKg",
+            "width": 4032
+          }
+        ],
+        "place_id": "ChIJCVfWNq2LGGARvuAHzNroBTc",
+        "plus_code": {
+          "compound_code": "JPQR+Q7 Minato City, Tokyo, Japan",
+          "global_code": "8Q7XJPQR+Q7"
+        },
+        "rating": 3.5,
+        "reference": "ChIJCVfWNq2LGGARvuAHzNroBTc",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 73,
+        "vicinity": "2 Chome-19 Takanawa, Minato City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.60729549999999,
+            "lng": 139.6056794
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.60864448029149,
+              "lng": 139.6070283802915
+            },
+            "southwest": {
+              "lat": 35.6059465197085,
+              "lng": 139.6043304197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "久地円筒分水",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 3000,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104996679031051398898\">Hank Hogawa</a>"
+            ],
+            "photo_reference": "CmRaAAAAoPTP_Vrwnv_htT9T4LT5MerfsN8KtJjk__wIKZ-m23gkupVaIFp34orh-wvvqDAM69qxa93YfIc5yiYG7PqiQsBrwYPy1JClLJPWCfVQ6__eZjSrqlsentnOMWD94IpHEhD2-UiTTfSxuUCIdjtlPCESGhTEeBweQYYylhwLVkzh_9RUztMQ_w",
+            "width": 5333
+          }
+        ],
+        "place_id": "ChIJMWMoSKH2GGARqueaT5Rut1Y",
+        "plus_code": {
+          "compound_code": "JJ44+W7 Kawasaki, Kanagawa, Japan",
+          "global_code": "8Q7XJJ44+W7"
+        },
+        "rating": 4,
+        "reference": "ChIJMWMoSKH2GGARqueaT5Rut1Y",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 349,
+        "vicinity": "1 Chome-34 Kuji, Takatsu Ward, Kawasaki"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.8095145,
+            "lng": 139.6057767
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.8108634802915,
+              "lng": 139.6071256802915
+            },
+            "southwest": {
+              "lat": 35.8081655197085,
+              "lng": 139.6044277197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "柊塚古墳",
+        "opening_hours": {
+          "open_now": false
+        },
+        "photos": [
+          {
+            "height": 2448,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/108054829108006183237\">Kamejiro Kamejiro</a>"
+            ],
+            "photo_reference": "CmRaAAAA9AxeFJlDoRRQcU4pEbaByUrGDML2FTbWjCxIa1QHaeN1oVbeBkYIDzl8Uf8ynVdZNrg-Q9lyhMjT4t_Gm8rf3lpySR_tmYNMGsMF3J7_UgpvVwposKJwtEGD-tt5G4a0EhAkqIJz3ay0vQFytSaWeE7TGhTZYGI2OPrB0MnS4GJi7IIVir-rGg",
+            "width": 3264
+          }
+        ],
+        "place_id": "ChIJw8KOyobpGGAROiJkDErqdAw",
+        "plus_code": {
+          "compound_code": "RJ54+R8 Asaka, Saitama, Japan",
+          "global_code": "8Q7XRJ54+R8"
+        },
+        "rating": 3.6,
+        "reference": "ChIJw8KOyobpGGAROiJkDErqdAw",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 64,
+        "vicinity": "3 Chome-17 Oka, Asaka"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6754991,
+            "lng": 139.8745453
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6765504802915,
+              "lng": 139.88012475
+            },
+            "southwest": {
+              "lat": 35.6738525197085,
+              "lng": 139.86953295
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_recreational-71.png",
+        "name": "Furukawa Water Park",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2160,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/104669170229398789157\">謙吾馬込</a>"
+            ],
+            "photo_reference": "CmRaAAAAcINHzGOK1Xe0POyv29-Ri7TcnRpdffH89ViZSkuIS2PP1FFpDQF0wFVgrXkMGH3O23wGsnChGCMgZgV_Ce9VvnFVWZe81Ts5ve5xsf4EwrjwsgKrQI8qt6Ru8yAkITGuEhA7yclvB6b1_e20K1L7_jtlGhQsaBU8HO5gJWD_UC5TMUtI04fHOw",
+            "width": 3840
+          }
+        ],
+        "place_id": "ChIJpWytJ76HGGARW_OQFpzXZTQ",
+        "plus_code": {
+          "compound_code": "MVGF+5R Edogawa City, Tokyo, Japan",
+          "global_code": "8Q7XMVGF+5R"
+        },
+        "rating": 3.9,
+        "reference": "ChIJpWytJ76HGGARW_OQFpzXZTQ",
+        "scope": "GOOGLE",
+        "types": [
+          "park",
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 151,
+        "vicinity": "6 Chome Edogawa, Edogawa City"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.6538525,
+            "lng": 139.4879623
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.6562441,
+              "lng": 139.4892251802915
+            },
+            "southwest": {
+              "lat": 35.6530553,
+              "lng": 139.4865272197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Koremasa Bridge",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2160,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/118252634782609753961\">奈塚Q弥</a>"
+            ],
+            "photo_reference": "CmRaAAAAaMjdeHWQwXx9DQpk46oZgLTYiExcKGwY7jFh3izqZuNqJJVVvnUUer9kQ4GURhWXtA8vqbFsGykVhksPiTzsbOt64AsLhoeF2w_MBROPiVZDOnhv0U1Rk30ep6agR_6EEhDmKn2ZgXGE5OY0Ab6zM1PdGhSAU-T0Qo4nMRMH1PBXapZNvOylGQ",
+            "width": 3840
+          }
+        ],
+        "place_id": "ChIJQzI9zinlGGAR3C_71yYywlk",
+        "plus_code": {
+          "compound_code": "MF3Q+G5 Fuchu, Tokyo, Japan",
+          "global_code": "8Q7XMF3Q+G5"
+        },
+        "rating": 4.1,
+        "reference": "ChIJQzI9zinlGGAR3C_71yYywlk",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 150,
+        "vicinity": "府中街道, Fuchu"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.67517849999999,
+            "lng": 139.4571236
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.67652058029149,
+              "lng": 139.4585775802915
+            },
+            "southwest": {
+              "lat": 35.6738226197085,
+              "lng": 139.4558796197085
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+        "name": "Musashi Fuchu Kumano Shrine Tumulus",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 1365,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/111398055393584875661\">Hiroshi Saito</a>"
+            ],
+            "photo_reference": "CmRaAAAAYQqDtBs8haTbsslZaNKFV7tudGoIqBLi1pdeaYqlKwTd1RDwdS4Z9vjkbFUaYM2--OptBEgeRJndam_NOLL9yPA6V1FFQ5jCg6hLBZd2pCkfOwO86nfGkxO6GM8qjbXfEhDhNRi4WsQv_sYJnlOrBEjOGhSppn4NIy7fQMmVSdXLozuiR9rHYA",
+            "width": 2048
+          }
+        ],
+        "place_id": "ChIJ_7paSWPkGGARkEbSZnENj4s",
+        "plus_code": {
+          "compound_code": "MFG4+3R Fuchu, Tokyo, Japan",
+          "global_code": "8Q7XMFG4+3R"
+        },
+        "rating": 3.9,
+        "reference": "ChIJ_7paSWPkGGARkEbSZnENj4s",
+        "scope": "GOOGLE",
+        "types": [
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 82,
+        "vicinity": "2 Chome-９−５ Nishifucho, Fuchu"
+      },
+      {
+        "business_status": "OPERATIONAL",
+        "geometry": {
+          "location": {
+            "lat": 35.8489561,
+            "lng": 139.5527213
+          },
+          "viewport": {
+            "northeast": {
+              "lat": 35.8508605,
+              "lng": 139.5553372
+            },
+            "southwest": {
+              "lat": 35.8465801,
+              "lng": 139.5496108
+            }
+          }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_recreational-71.png",
+        "name": "Yamazaki Park",
+        "opening_hours": {
+          "open_now": true
+        },
+        "photos": [
+          {
+            "height": 2976,
+            "html_attributions": [
+              "<a href=\"https://maps.google.com/maps/contrib/113188594134691847556\">エクシアR2</a>"
+            ],
+            "photo_reference": "CmRaAAAAYLuooXuXLzW9MJw2vSW5Lv31vu7b_sLEJFL5TJSacEI4tT1QkJVb_tDf-81pbaTsz26e2FCoueu0TAtGsW4UFADjFxMM_0M0NqzbapqOmULEZKSqsBR2K3aXDHP5hTZuEhD97J8JRyBprNRPo9ONVGYyGhTVy4OFaAAGtXLNnAXIRfhRle_1SA",
+            "width": 3968
+          }
+        ],
+        "place_id": "ChIJGZ2VbubCGGARcodV4mUWsPs",
+        "plus_code": {
+          "compound_code": "RHX3+H3 Fujimi, Saitama, Japan",
+          "global_code": "8Q7XRHX3+H3"
+        },
+        "rating": 3.7,
+        "reference": "ChIJGZ2VbubCGGARcodV4mUWsPs",
+        "scope": "GOOGLE",
+        "types": [
+          "park",
+          "tourist_attraction",
+          "point_of_interest",
+          "establishment"
+        ],
+        "user_ratings_total": 170,
+        "vicinity": "184番地 Mizuko, Fujimi"
+      }
+    ],
+    "status": "OK"
+  }
