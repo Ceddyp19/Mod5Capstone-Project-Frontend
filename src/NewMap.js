@@ -25,6 +25,7 @@ import "@reach/combobox/styles.css";
 
 import mapStyles from './mapStyles';
 import Tabs from "./Tabs";
+import PlacesAutocomplete from './PlacesAutocomplete'
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -90,12 +91,12 @@ export default function NewMap() {
     function openNav() {
         document.getElementById("mySidebar").style.width = "38%";
         // document.getElementById("main").style.marginLeft = "250px";
-      }
-      
-      function closeNav() {
+    }
+
+    function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-      }
+        document.getElementById("main").style.marginLeft = "0";
+    }
     return (
         <div>
             <h1 id='Logo'>Logo here!!</h1>
@@ -103,14 +104,35 @@ export default function NewMap() {
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
             </div>
             <div id='mySidebar'>
-            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>×</a>
-            
-               
+                <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>×</a>
+
+
                 <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
                 <div className='content'>
-                    <p>
-                        fsfasfafa
-                    </p>
+
+                    <div className='form-div'>
+                        <form>
+                            <label className='place-input'>
+                                Name of Place:<br />
+                                <input type="text" name="name" />
+                            </label><br /><br />
+                            <label className='image-input'>
+                                Url Image:<br />
+                                <input type="text" name="name" />
+                            </label><br /><br />
+                            <label className='location-input'>
+                                Location:<br />
+                                <PlacesAutocomplete />
+                            </label>
+                            <input className='submit-btn' type="submit" value="Submit" />
+
+                        </form>
+                    </div>
+                    {/* <div className='location-search'> */}
+                    {/* Location:
+                        <PlacesAutocomplete />
+                    </div> */}
+
                 </div>
                 <Tabs>
                     <div label="All">
