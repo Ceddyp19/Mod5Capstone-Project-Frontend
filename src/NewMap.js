@@ -1,7 +1,18 @@
 //============================================My Imports======================================================
 import './App.css';
 import './NewMap.css';
-import * as resturantsData from './TokyoResturants.json'
+
+import * as attractionssData from './TokyoAttractions.json';
+import * as cafesData from './TokyoCafes.json';
+import * as gymsData from './TokyoGyms.json';
+import * as hospitalsData from './TokyoHospitals.json';
+import * as lodgingData from './TokyoLodging.json';
+import * as NightClubsData from './TokyoNightClubs.json';
+import * as resturantsData from './TokyoResturants.json';
+import * as shoppingMallsData from './TokyoShoppingMalls.json';
+import * as superMarketsData from './TokyoSuperMarkets.json';
+import * as transitStationsData from './TokyoTransitStations.json';
+
 import React, { useState } from 'react';
 import {
     GoogleMap,
