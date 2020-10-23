@@ -107,7 +107,8 @@ export default function NewMap() {
         // document.getElementById("main").style.marginLeft = "250px";
     }
 
-    function closeNav() {
+    function closeNav(e) {
+        e.preventDefault();
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
     }
@@ -140,24 +141,83 @@ export default function NewMap() {
 
     }
 
-    function addToList(markerProps, listName) {
+    function addToList(destination, listName) {
         //console.log('addToList function operational!', markerProps, listName)
 
-        switch (listName) {
-            case "Favorite":
-                console.log(markerProps.name + ' added to ' + listName)
-                break;
-            case "Want to Go":
-                console.log(markerProps.name + ' added to ' + listName)
-                break;
-            case "Visited":
-                console.log(markerProps.name + ' added to ' + listName)
-                break;
-            default:
-                console.log('Error, List not found')
-        }
+        const newDestinations = destinations.map((d) => {
+            const newDestination = { ...d }
+            if (destination.name === d.name) {
+                newDestination.listCategory = listName
+            }
+            return newDestination;
+        })
+
+        setDestinations(newDestinations);
+        // switch (listName) {
+        //     case "Favorite":
+        //         console.log(marker.name + ' added to ' + listName)
+        //         break;
+        //     case "Want to Go":
+        //         console.log(marker.name + ' added to ' + listName)
+        //         break;
+        //     case "Visited":
+        //         console.log(marker.name + ' added to ' + listName)
+        //         break;
+        //     default:
+        //         console.log('Error, List not found')
+        // }
     }
 
+    function deleteFromList(destination) {                       //deletes marker from list 
+
+        if (destination.listCategory === undefined){
+            const currentDestinations = destinations
+            setDestinations(currentDestinations.filter(d => d.name !== destination.name))
+        } else {
+
+        const newDestinations = destinations.map((d) => {
+                    const newDestination = { ...d }
+                    if (destination.name === d.name) {
+                        newDestination.listCategory = undefined
+                    }
+                    return newDestination;
+                })
+        
+                setDestinations(newDestinations);
+        }
+
+        //console.log(destination.listCategory)
+        //    switch (destination.listCategory) {
+        //     case "Favorite":
+        //         // console.log(marker.name + ' added to ' + listName)
+        //         const newDestinations = destinations.map((d) => {
+        //             const newDestination = { ...d }
+        //             if (destination.name === d.name) {
+        //                 newDestination.listCategory = null
+        //             }
+        //             return newDestination;
+        //         })
+        
+        //         setDestinations(newDestinations);
+        //         break;
+        //     case "Want to Go":
+        //         console.log(marker.name + ' added to ' + listName)
+        //         break;
+        //     case "Visited":
+        //         console.log(marker.name + ' added to ' + listName)
+        //         break;
+        //     default:
+        //         console.log('Error, List not found')
+        // }
+
+      //  setDestinations(currentDestinations.filter(d => d.name !== destination.name))
+    }
+
+
+    //lists for each category shown in side panel
+    const favoritedDestinations = destinations.filter(destination => destination.listCategory === 'Favorite')
+    const wantToGoDestinations = destinations.filter(destination => destination.listCategory === 'Want to Go')
+    const VisitedDestinations = destinations.filter(destination => destination.listCategory === 'Visited')
     //********************Returned Component Values**************************************/
     return (
         <div>
@@ -166,7 +226,7 @@ export default function NewMap() {
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
             </div>
             <div id='mySidebar'>
-                <a href="#" className="closebtn" onClick={closeNav}>×</a>
+                <a href="" className="closebtn" onClick={closeNav}>×</a>
 
 
                 <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
@@ -199,22 +259,48 @@ export default function NewMap() {
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.address}</p>
+                                <button onClick={() => deleteFromList(destination)}>Delete</button>
                             </div>
 
                         ))}
                     </div>
 
                     <div label="Want2Go">
-                        After 'while, <em>Crocodile</em>!
-       </div>
+                        {wantToGoDestinations.map((destination) => (
+                            <div>
+                                <h2>{destination.name}</h2>
+                                <img src={destination.image} width="120" height="80" />
+                                <p>{destination.address}</p>
+                                <button onClick={() => deleteFromList(destination)}>Delete</button>
+                            </div>
+
+                        ))}
+                    </div>
 
                     <div label="Visited">
-                        Nothing to see here, this tab is <em>extinct</em>!
-       </div>
+                        {VisitedDestinations.map((destination) => (
+                            <div>
+                                <h2>{destination.name}</h2>
+                                <img src={destination.image} width="120" height="80" />
+                                <p>{destination.address}</p>
+                                <button onClick={() => deleteFromList(destination)}>Delete</button>
+                            </div>
+
+                        ))}
+                    </div>
 
                     <div label="Favorited">
-                        Nothing to see here, this tab is <em>extinct</em>!
-       </div>
+
+                        {favoritedDestinations.map((destination) => (
+                            <div>
+                                <h2>{destination.name}</h2>
+                                <img src={destination.image} width="120" height="80" />
+                                <p>{destination.address}</p>
+                                <button onClick={() => deleteFromList(destination)}>Delete</button>
+                            </div>
+
+                        ))}
+                    </div>
 
                     <div label="Shared">
                         Nothing to see here, this tab is <em>extinct</em>!
