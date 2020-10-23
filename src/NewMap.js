@@ -35,10 +35,12 @@ import {
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
 
-import mapStyles from './mapStyles';
+//import mapStyles from './mapStyles';
+import * as mapStyles from './mapStyles';
 import Tabs from "./Tabs";
 import PlacesAutocomplete from './PlacesAutocomplete'
 import DropDown from './dropDown';
+import MapStyleDropDown from './mapStyleDropDown'
 
 //=================================================================My Global Variables===============================================================================
 const libraries = ["places"];
@@ -50,12 +52,12 @@ const center = {
     lat: 35.689487,
     lng: 139.691711,
 }
-const options = {
-    styles: mapStyles,
-    disableDefaultUI: true,
-    zoomControl: true,
-    streetViewControl: true
-}
+// const options = {
+//     styles: mapStyle,
+//     disableDefaultUI: true,
+//     zoomControl: true,
+//     streetViewControl: true
+// }
 
 //==================================================================My Map Component=========================================================
 export default function NewMap() {
@@ -71,10 +73,18 @@ export default function NewMap() {
 
 
 
-    //const [markers, setmarkers] = React.useState([]);
+    const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
     const [selectedDefaultMarker, setselectedDefaultMarker] = React.useState(null);
     const [selectedCreatedMarker, setselectedCreatedMarker] = React.useState(null);
     //***************Variables*************************************/
+    const options = {                     //map options
+        styles: mapStyle,
+        disableDefaultUI: true,
+        zoomControl: true,
+        streetViewControl: true
+    }
+
+
     const { isLoaded, loadError } = useLoadScript({
         // googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
         googleMapsApiKey: 'AIzaSyCkpZHFHHoT4a991ZAcJ7Z7jUnZXXgaO2Y',
@@ -96,6 +106,7 @@ export default function NewMap() {
     if (!isLoaded) return "Loading Maps";
 
     //***************Functions*****************************************/
+    
     function toggleForm() {
         let coll = document.getElementsByClassName("form-drop-down");
         let i;
@@ -224,11 +235,18 @@ export default function NewMap() {
         //  setDestinations(currentDestinations.filter(d => d.name !== destination.name))
     }
 
+    function StyleMap(){
+    const changeStyle = (style) => { 
+     setMapStyle(mapStyles[style])
+    } 
+    return  <MapStyleDropDown changeStyle={changeStyle} />    
+    }
+
 
     //lists for each category shown in side panel
     const favoritedDestinations = destinations.filter(destination => destination.listCategory === 'Favorite')
     const wantToGoDestinations = destinations.filter(destination => destination.listCategory === 'Want to Go')
-    const VisitedDestinations = destinations.filter(destination => destination.listCategory === 'Visited')
+    const visitedDestinations = destinations.filter(destination => destination.listCategory === 'Visited')
     //********************Returned Component Values**************************************/
     return (
         <div>
@@ -289,7 +307,7 @@ export default function NewMap() {
                     </div>
 
                     <div label="Visited">
-                        {VisitedDestinations.map((destination) => (
+                        {visitedDestinations.map((destination) => (
                             <div>
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
@@ -322,303 +340,305 @@ export default function NewMap() {
 
             <Search panTo={panTo} />
             <Locate panTo={panTo} />
+            <StyleMap />
 
-            <GoogleMap
-                id='map'
-                mapContainerStyle={mapContainerStyle}
-                zoom={13}
-                center={center}
-                options={options}
-                onLoad={onMapLoad}
-            >
+                <GoogleMap
+                    id='map'
+                    mapContainerStyle={mapContainerStyle}
+                    zoom={13}
+                    center={center}
+                    options={options}
+                    onLoad={onMapLoad}
+                >
 
-                {transitStationsData.results.map((transitStation) => (
-                    <Marker
-                        key={transitStation['place_id']}
-                        position={{ lat: parseFloat(transitStation.geometry.location.lat), lng: parseFloat(transitStation.geometry.location.lng) }}
-                        icon={{
-                            url: 'transit64.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(transitStation);
-                        }}
-                    />
-                ))}
+                    {transitStationsData.results.map((transitStation) => (
+                        <Marker
+                            key={transitStation['place_id']}
+                            position={{ lat: parseFloat(transitStation.geometry.location.lat), lng: parseFloat(transitStation.geometry.location.lng) }}
+                            icon={{
+                                url: 'transit64.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(transitStation);
+                            }}
+                        />
+                    ))}
 
-                {superMarketsData.results.map((superMarket) => (
-                    <Marker
-                        key={superMarket['place_id']}
-                        position={{ lat: parseFloat(superMarket.geometry.location.lat), lng: parseFloat(superMarket.geometry.location.lng) }}
-                        icon={{
-                            url: 'superMarketpx.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(superMarket);
-                        }}
-                    />
-                ))}
+                    {superMarketsData.results.map((superMarket) => (
+                        <Marker
+                            key={superMarket['place_id']}
+                            position={{ lat: parseFloat(superMarket.geometry.location.lat), lng: parseFloat(superMarket.geometry.location.lng) }}
+                            icon={{
+                                url: 'superMarketpx.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(superMarket);
+                            }}
+                        />
+                    ))}
 
-                {shoppingMallsData.results.map((shoppingMall) => (
-                    <Marker
-                        key={shoppingMall['place_id']}
-                        position={{ lat: parseFloat(shoppingMall.geometry.location.lat), lng: parseFloat(shoppingMall.geometry.location.lng) }}
-                        icon={{
-                            url: 'mall64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(shoppingMall);
-                        }}
-                    />
-                ))}
+                    {shoppingMallsData.results.map((shoppingMall) => (
+                        <Marker
+                            key={shoppingMall['place_id']}
+                            position={{ lat: parseFloat(shoppingMall.geometry.location.lat), lng: parseFloat(shoppingMall.geometry.location.lng) }}
+                            icon={{
+                                url: 'mall64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(shoppingMall);
+                            }}
+                        />
+                    ))}
 
-                {nightClubsData.results.map((nightClub) => (
-                    <Marker
-                        key={nightClub['place_id']}
-                        position={{ lat: parseFloat(nightClub.geometry.location.lat), lng: parseFloat(nightClub.geometry.location.lng) }}
-                        icon={{
-                            url: 'nightclub64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(nightClub);
-                        }}
-                    />
-                ))}
+                    {nightClubsData.results.map((nightClub) => (
+                        <Marker
+                            key={nightClub['place_id']}
+                            position={{ lat: parseFloat(nightClub.geometry.location.lat), lng: parseFloat(nightClub.geometry.location.lng) }}
+                            icon={{
+                                url: 'nightclub64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(nightClub);
+                            }}
+                        />
+                    ))}
 
-                {lodgingData.results.map((lodge) => (
-                    <Marker
-                        key={lodge['place_id']}
-                        position={{ lat: parseFloat(lodge.geometry.location.lat), lng: parseFloat(lodge.geometry.location.lng) }}
-                        icon={{
-                            url: 'lodging64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(lodge);
-                        }}
-                    />
-                ))}
+                    {lodgingData.results.map((lodge) => (
+                        <Marker
+                            key={lodge['place_id']}
+                            position={{ lat: parseFloat(lodge.geometry.location.lat), lng: parseFloat(lodge.geometry.location.lng) }}
+                            icon={{
+                                url: 'lodging64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(lodge);
+                            }}
+                        />
+                    ))}
 
-                {hospitalsData.results.map((hospital) => (
-                    <Marker
-                        key={hospital['place_id']}
-                        position={{ lat: parseFloat(hospital.geometry.location.lat), lng: parseFloat(hospital.geometry.location.lng) }}
-                        icon={{
-                            url: 'icons8-hospital-3-64.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(hospital);
-                        }}
-                    />
-                ))}
+                    {hospitalsData.results.map((hospital) => (
+                        <Marker
+                            key={hospital['place_id']}
+                            position={{ lat: parseFloat(hospital.geometry.location.lat), lng: parseFloat(hospital.geometry.location.lng) }}
+                            icon={{
+                                url: 'icons8-hospital-3-64.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(hospital);
+                            }}
+                        />
+                    ))}
 
-                {gymsData.results.map((gym) => (
-                    <Marker
-                        key={gym['place_id']}
-                        position={{ lat: parseFloat(gym.geometry.location.lat), lng: parseFloat(gym.geometry.location.lng) }}
-                        icon={{
-                            url: 'gym64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(gym);
-                        }}
-                    />
-                ))}
+                    {gymsData.results.map((gym) => (
+                        <Marker
+                            key={gym['place_id']}
+                            position={{ lat: parseFloat(gym.geometry.location.lat), lng: parseFloat(gym.geometry.location.lng) }}
+                            icon={{
+                                url: 'gym64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(gym);
+                            }}
+                        />
+                    ))}
 
-                {cafesData.results.map((cafe) => (
-                    <Marker
-                        key={cafe['place_id']}
-                        position={{ lat: parseFloat(cafe.geometry.location.lat), lng: parseFloat(cafe.geometry.location.lng) }}
-                        icon={{
-                            url: 'cafe64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(cafe);
-                        }}
-                    />
-                ))}
+                    {cafesData.results.map((cafe) => (
+                        <Marker
+                            key={cafe['place_id']}
+                            position={{ lat: parseFloat(cafe.geometry.location.lat), lng: parseFloat(cafe.geometry.location.lng) }}
+                            icon={{
+                                url: 'cafe64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(cafe);
+                            }}
+                        />
+                    ))}
 
-                {attractionsData.results.map((attraction) => (
-                    <Marker
-                        key={attraction['place_id']}
-                        position={{ lat: parseFloat(attraction.geometry.location.lat), lng: parseFloat(attraction.geometry.location.lng) }}
-                        icon={{
-                            url: 'attraction64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(attraction);
-                        }}
-                    />
-                ))}
+                    {attractionsData.results.map((attraction) => (
+                        <Marker
+                            key={attraction['place_id']}
+                            position={{ lat: parseFloat(attraction.geometry.location.lat), lng: parseFloat(attraction.geometry.location.lng) }}
+                            icon={{
+                                url: 'attraction64px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(attraction);
+                            }}
+                        />
+                    ))}
 
-                {resturantsData.results.map((resturant) => (
-                    <Marker
-                        key={resturant['place_id']}
-                        position={{ lat: parseFloat(resturant.geometry.location.lat), lng: parseFloat(resturant.geometry.location.lng) }}
-                        icon={{
-                            url: 'restaurant48px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setselectedDefaultMarker(resturant);
-                        }}
-                    />
-                ))}
+                    {resturantsData.results.map((resturant) => (
+                        <Marker
+                            key={resturant['place_id']}
+                            position={{ lat: parseFloat(resturant.geometry.location.lat), lng: parseFloat(resturant.geometry.location.lng) }}
+                            icon={{
+                                url: 'restaurant48px.png',
+                                scaledSize: new window.google.maps.Size(30, 30),
+                                origin: new window.google.maps.Point(0, 0),
+                                anchor: new window.google.maps.Point(15, 15),
+                            }}
+                            onClick={() => {
+                                setselectedDefaultMarker(resturant);
+                            }}
+                        />
+                    ))}
 
-                {/* destinations are markers created by users whereas the one above is created by data files */}
-                {destinations.map((destination, index) => (
-                    <Marker
-                        key={index}
-                        position={{ lat: parseFloat(destination.lat), lng: parseFloat(destination.lng) }}
-                        onClick={() => {
-                            setselectedCreatedMarker(destination);
-                        }}
-                    />
-                ))}
+                    {/* destinations are markers created by users whereas the one above is created by data files */}
+                    {destinations.map((destination, index) => (
+                        <Marker
+                            key={index}
+                            position={{ lat: parseFloat(destination.lat), lng: parseFloat(destination.lng) }}
+                            onClick={() => {
+                                setselectedCreatedMarker(destination);
+                            }}
+                        />
+                    ))}
 
-                {selectedDefaultMarker && (
-                    <InfoWindow
-                        position={{
-                            lat: parseFloat(selectedDefaultMarker.geometry.location.lat),
-                            lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
-                        }}
-                        onCloseClick={() => {
-                            setselectedDefaultMarker(null);
-                        }}
-                    >
-                        <div>
-                            <h2>{selectedDefaultMarker.name}</h2>
-                            {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
-                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
-                        </div>
-                    </InfoWindow>
-                )}
+                    {selectedDefaultMarker && (
+                        <InfoWindow
+                            position={{
+                                lat: parseFloat(selectedDefaultMarker.geometry.location.lat),
+                                lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
+                            }}
+                            onCloseClick={() => {
+                                setselectedDefaultMarker(null);
+                            }}
+                        >
+                            <div>
+                                <h2>{selectedDefaultMarker.name}</h2>
+                                {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
+                                <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
+                            </div>
+                        </InfoWindow>
+                    )}
 
-                {selectedCreatedMarker && (
-                    <InfoWindow
-                        position={{
-                            lat: parseFloat(selectedCreatedMarker.lat),
-                            lng: parseFloat(selectedCreatedMarker.lng)
-                        }}
-                        onCloseClick={() => {
-                            setselectedCreatedMarker(null);
-                        }}
-                    >
-                        <div>
-                            <h2>{selectedCreatedMarker.name}</h2>
-                            <img src={selectedCreatedMarker.image} width="400" height="300" />
-                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
-                        </div>
-                    </InfoWindow>
-                )}
-            </GoogleMap>
-        </div>
+                    {selectedCreatedMarker && (
+                        <InfoWindow
+                            position={{
+                                lat: parseFloat(selectedCreatedMarker.lat),
+                                lng: parseFloat(selectedCreatedMarker.lng)
+                            }}
+                            onCloseClick={() => {
+                                setselectedCreatedMarker(null);
+                            }}
+                        >
+                            <div>
+                                <h2>{selectedCreatedMarker.name}</h2>
+                                <img src={selectedCreatedMarker.image} width="400" height="300" />
+                                <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
+                            </div>
+                        </InfoWindow>
+                    )}
+                </GoogleMap>
+            </div>
     );
 }
 
 //===============================================================Global Functions========================================================================
-function Locate({ panTo }) {
+function Locate({ panTo}) {
     return (
-        <button
-            className="locate"
-            onClick={() => {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        console.log(typeof position.coords.latitude)
-                        panTo({
-                            //  lat: parseFloat(position.coords.latitide),
-                            //  lng: parseFloat(position.coords.longitude),
-                            lat: parseFloat(31.117809),
-                            lng: parseFloat(-97.731133),
-                        });
-                    },
-                    () => null
-                );
-            }}
-        >
-            <img src="compass1.png" alt="compass" />
-        </button>
+            <button
+                className="locate"
+                onClick={() => {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            console.log(typeof position.coords.latitude)
+                            panTo({
+                                //  lat: parseFloat(position.coords.latitide),
+                                //  lng: parseFloat(position.coords.longitude),
+                                lat: parseFloat(31.117809),
+                                lng: parseFloat(-97.731133),
+                            });
+                        },
+                        () => null
+                    );
+                }}
+            >
+                <img src="compass1.png" alt="compass" />
+            </button>
     );
 }
 
 function Search({ panTo }) {
     const {
-        ready,
-        value,
-        suggestions: { status, data },
+                ready,
+                value,
+                suggestions: { status, data},
         setValue,
         clearSuggestions,
     } = usePlacesAutocomplete({
-        requestOptions: {
-            location: { lat: () => 31.117809, lng: () => -97.731133 },
+                requestOptions: {
+                location: { lat: () => 31.117809, lng: () => -97.731133 },
             radius: 200 * 1000,
         },
     });
 
 
     const handleInput = (e) => {
-        setValue(e.target.value);
+                setValue(e.target.value);
     };
 
     const handleSelect = async (address) => {
-        setValue(address, false);
+                setValue(address, false);
         clearSuggestions();
 
         try {
-            const results = await getGeocode({ address });              //info pertaining to the address the user selected
-            const { lat, lng } = await getLatLng(results[0]);           // gives the latitude and longitude of result
-            panTo({ lat, lng });
+            const results = await getGeocode({ address});              //info pertaining to the address the user selected
+            const { lat, lng} = await getLatLng(results[0]);           // gives the latitude and longitude of result
+            panTo({ lat, lng});
         } catch (error) {
-            console.log("😱 Error: ", error);
+                console.log("😱 Error: ", error);
         }
     };
 
 
     return (
-        <div className="search">
-            <Combobox onSelect={handleSelect}>
-                <ComboboxInput
-                    value={value}
-                    onChange={handleInput}
-                    disabled={!ready}
-                    placeholder="Enter an address"
-                />
-                <ComboboxPopover>
-                    <ComboboxList>
-                        {status === 'OK' &&
-                            data.map(({ id, description }) => (
-                                <ComboboxOption key={id} value={description} />
-                            ))}
-                    </ComboboxList>
-                </ComboboxPopover>
-            </Combobox>
-        </div>
+            <div className="search">
+                <Combobox onSelect={handleSelect}>
+                    <ComboboxInput
+                        value={value}
+                        onChange={handleInput}
+                        disabled={!ready}
+                        placeholder="Enter an address"
+                    />
+                    <ComboboxPopover>
+                        <ComboboxList>
+                            {status === 'OK' &&
+                                data.map(({ id, description }) => (
+                                    <ComboboxOption key={id} value={description} />
+                                ))}
+                        </ComboboxList>
+                    </ComboboxPopover>
+                </Combobox>
+            </div>
     );
 }
+
