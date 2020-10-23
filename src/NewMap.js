@@ -2,12 +2,12 @@
 import './App.css';
 import './NewMap.css';
 
-import * as attractionssData from './TokyoAttractions.json';
+import * as attractionsData from './TokyoAttractions.json';
 import * as cafesData from './TokyoCafes.json';
 import * as gymsData from './TokyoGyms.json';
 import * as hospitalsData from './TokyoHospitals.json';
 import * as lodgingData from './TokyoLodging.json';
-import * as NightClubsData from './TokyoNightClubs.json';
+import * as nightClubsData from './TokyoNightClubs.json';
 import * as resturantsData from './TokyoResturants.json';
 import * as shoppingMallsData from './TokyoShoppingMalls.json';
 import * as superMarketsData from './TokyoSuperMarkets.json';
@@ -181,20 +181,20 @@ export default function NewMap() {
 
     function deleteFromList(destination) {                       //deletes marker from list 
 
-        if (destination.listCategory === undefined){
+        if (destination.listCategory === undefined) {
             const currentDestinations = destinations
             setDestinations(currentDestinations.filter(d => d.name !== destination.name))
         } else {
 
-        const newDestinations = destinations.map((d) => {
-                    const newDestination = { ...d }
-                    if (destination.name === d.name) {
-                        newDestination.listCategory = undefined
-                    }
-                    return newDestination;
-                })
-        
-                setDestinations(newDestinations);
+            const newDestinations = destinations.map((d) => {
+                const newDestination = { ...d }
+                if (destination.name === d.name) {
+                    newDestination.listCategory = undefined
+                }
+                return newDestination;
+            })
+
+            setDestinations(newDestinations);
         }
 
         //console.log(destination.listCategory)
@@ -208,7 +208,7 @@ export default function NewMap() {
         //             }
         //             return newDestination;
         //         })
-        
+
         //         setDestinations(newDestinations);
         //         break;
         //     case "Want to Go":
@@ -221,7 +221,7 @@ export default function NewMap() {
         //         console.log('Error, List not found')
         // }
 
-      //  setDestinations(currentDestinations.filter(d => d.name !== destination.name))
+        //  setDestinations(currentDestinations.filter(d => d.name !== destination.name))
     }
 
 
@@ -331,6 +331,151 @@ export default function NewMap() {
                 options={options}
                 onLoad={onMapLoad}
             >
+
+                {transitStationsData.results.map((transitStation) => (
+                    <Marker
+                        key={transitStation['place_id']}
+                        position={{ lat: parseFloat(transitStation.geometry.location.lat), lng: parseFloat(transitStation.geometry.location.lng) }}
+                        icon={{
+                            url: 'transit64.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(transitStation);
+                        }}
+                    />
+                ))}
+
+                {superMarketsData.results.map((superMarket) => (
+                    <Marker
+                        key={superMarket['place_id']}
+                        position={{ lat: parseFloat(superMarket.geometry.location.lat), lng: parseFloat(superMarket.geometry.location.lng) }}
+                        icon={{
+                            url: 'superMarketpx.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(superMarket);
+                        }}
+                    />
+                ))}
+
+                {shoppingMallsData.results.map((shoppingMall) => (
+                    <Marker
+                        key={shoppingMall['place_id']}
+                        position={{ lat: parseFloat(shoppingMall.geometry.location.lat), lng: parseFloat(shoppingMall.geometry.location.lng) }}
+                        icon={{
+                            url: 'mall64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(shoppingMall);
+                        }}
+                    />
+                ))}
+
+                {nightClubsData.results.map((nightClub) => (
+                    <Marker
+                        key={nightClub['place_id']}
+                        position={{ lat: parseFloat(nightClub.geometry.location.lat), lng: parseFloat(nightClub.geometry.location.lng) }}
+                        icon={{
+                            url: 'nightclub64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(nightClub);
+                        }}
+                    />
+                ))}
+
+                {lodgingData.results.map((lodge) => (
+                    <Marker
+                        key={lodge['place_id']}
+                        position={{ lat: parseFloat(lodge.geometry.location.lat), lng: parseFloat(lodge.geometry.location.lng) }}
+                        icon={{
+                            url: 'lodging64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(lodge);
+                        }}
+                    />
+                ))}
+
+                {hospitalsData.results.map((hospital) => (
+                    <Marker
+                        key={hospital['place_id']}
+                        position={{ lat: parseFloat(hospital.geometry.location.lat), lng: parseFloat(hospital.geometry.location.lng) }}
+                        icon={{
+                            url: 'icons8-hospital-3-64.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(hospital);
+                        }}
+                    />
+                ))}
+
+                {gymsData.results.map((gym) => (
+                    <Marker
+                        key={gym['place_id']}
+                        position={{ lat: parseFloat(gym.geometry.location.lat), lng: parseFloat(gym.geometry.location.lng) }}
+                        icon={{
+                            url: 'gym64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(gym);
+                        }}
+                    />
+                ))}
+
+                {cafesData.results.map((cafe) => (
+                    <Marker
+                        key={cafe['place_id']}
+                        position={{ lat: parseFloat(cafe.geometry.location.lat), lng: parseFloat(cafe.geometry.location.lng) }}
+                        icon={{
+                            url: 'cafe64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(cafe);
+                        }}
+                    />
+                ))}
+
+                {attractionsData.results.map((attraction) => (
+                    <Marker
+                        key={attraction['place_id']}
+                        position={{ lat: parseFloat(attraction.geometry.location.lat), lng: parseFloat(attraction.geometry.location.lng) }}
+                        icon={{
+                            url: 'attraction64px.png',
+                            scaledSize: new window.google.maps.Size(30, 30),
+                            origin: new window.google.maps.Point(0, 0),
+                            anchor: new window.google.maps.Point(15, 15),
+                        }}
+                        onClick={() => {
+                            setselectedDefaultMarker(attraction);
+                        }}
+                    />
+                ))}
+
                 {resturantsData.results.map((resturant) => (
                     <Marker
                         key={resturant['place_id']}
@@ -347,6 +492,7 @@ export default function NewMap() {
                     />
                 ))}
 
+                {/* destinations are markers created by users whereas the one above is created by data files */}
                 {destinations.map((destination, index) => (
                     <Marker
                         key={index}
@@ -370,6 +516,7 @@ export default function NewMap() {
                         <div>
                             <h2>{selectedDefaultMarker.name}</h2>
                             {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
+                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
                         </div>
                     </InfoWindow>
                 )}
