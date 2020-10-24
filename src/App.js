@@ -33,8 +33,9 @@ import SignUp from './signup'
 import Login from './login'
 import Home from './home'
 import MainMenu from './mainMenu'
-import MapPage from './mapPage'
-import NewMap from './NewMap' //transferring new map from other file 
+import Translate from './Translate'
+
+import Map from './Map' //transferring new map from other file 
 
 import {
   BrowserRouter,
@@ -73,11 +74,11 @@ class App extends Component {
             </Route>
 
             <Route exact path="/map">
-              <MapPage />
+              <Map />
             </Route>
 
-            <Route exact path="/newmap">
-              <NewMap />
+            <Route exact path="/translate">
+              <Translate />
             </Route>
 
           </Switch>

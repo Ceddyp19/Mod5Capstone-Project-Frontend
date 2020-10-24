@@ -178,3 +178,38 @@
     top: 10px;
     padding-bottom: 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.25);
+    right: 600px;
+    top:200px;
+    width: 550px;
+    height: 300px;
+    padding: 30px;
+    /* height: auto; */
+    /* margin: 0 auto; */
+
+  }
+
+  .modal_content {
+    background-color: white;
+    position: relative;
+    height: 100%;
+  }
