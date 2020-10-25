@@ -43,6 +43,7 @@
     width: 38%;
     height: 90%;
     z-index: 9;
+    overflow: scroll;
 }
 
 .form-drop-down {

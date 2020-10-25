@@ -42,6 +42,9 @@ import PlacesAutocomplete from './PlacesAutocomplete'
 import DropDown from './dropDown';
 import MapStyleDropDown from './mapStyleDropDown'
 import MultiImageInput from 'react-multiple-image-input';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import { ReactPhotoCollage } from "react-photo-collage";
 
 //=================================================================My Global Variables===============================================================================
 const libraries = ["places"];
@@ -65,8 +68,8 @@ export default function Map() {
     const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
     const [visited, setVisited] = useState([]);      //holds Visited destinations list
     // const [shared, setShared] = useState([]);     //holds Shared destinations list
-   // const [selectedFiles, setSelectedFiles] = useState([]); // holds uploaded pictures from user  
-   const [images, setImages] = useState({});  
+    const [images, setImages] = useState({});  //used for image upload
+    const [collages, setCollages] = useState([]); //holds all pictures setting of each collage
 
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
@@ -105,7 +108,7 @@ export default function Map() {
         unit: '%',
         aspect: 4 / 3,
         width: '100'
-      };
+    };
 
     //***************Functions*****************************************/
 
@@ -262,6 +265,37 @@ export default function Map() {
     //     console.log(selectedFiles)
     // }
 
+    function addMemory(e) {
+        e.preventDefault();
+        console.log([images])
+        // console.log(images[0])
+        let currentImages = images
+        let photos = []
+        //currentImages.map((image) => photos.push({ src: image }))
+
+        //     function pushImage(value, key, map){
+        //         photos.push({src: value})
+        //     }
+        //    currentImages.forEach(pushImage);
+
+        Object.keys(currentImages).map(function (keyName, keyIndex) {
+            photos.push({ src: currentImages[keyName] })
+        })
+
+
+
+        const setting = {
+            width: '150px',
+            height: ['62.5px', '42.5px'],
+            layout: [1, 4],
+            photos: photos,
+            showNumOfRemainingPhotos: true
+        };
+        setCollages([...collages, setting])
+
+        // setImages([]);
+    }
+
 
     //lists for each category shown in side panel
     const favoritedDestinations = destinations.filter(destination => destination.listCategory === 'Favorite')
@@ -278,28 +312,28 @@ export default function Map() {
                     <h2>Memory</h2>
                     <h3>Images</h3>
                     <MultiImageInput
-                                  images={images}
-                                   setImages={setImages}
-                                      cropConfig={{ crop, ruleOfThirds: true }}
-                                          />
-                    <form onSubmit={addDestination}>
-                    <label >
-                                Tell Your Story:<br />
-                                <textarea name='story' id='story' rows='5' cols='33'></textarea>
-                            </label><br /><br />
-                            <label >
-                                Date:<br />
-                                <input type="date" name="date" value={nameValue} onChange={handleNameInput} />
-                            </label><br /><br />
-                           
-                            {/* <label >
+                        images={images}
+                        setImages={setImages}
+                        cropConfig={{ crop, ruleOfThirds: true }}
+                    />
+                    <form onSubmit={addMemory}>
+                        <label >
+                            Tell Your Story:<br />
+                            <textarea name='story' id='story' rows='5' cols='33'></textarea>
+                        </label><br /><br />
+                        <label >
+                            Date:<br />
+                            <input type="date" name="date" value={nameValue} onChange={handleNameInput} />
+                        </label><br /><br />
+
+                        {/* <label >
                                 Tell Your Story:<br />
                                 <textarea name='story' id='story' rows='5' cols='33'></textarea>
                             </label>
                             <br/><br/> */}
-                            <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" />
 
-                        </form>
+                    </form>
                 </div>
             </div>
 
@@ -360,6 +394,42 @@ export default function Map() {
                         ))}
                     </div>
 
+
+
+
+
+
+
+                    {/* 
+                    <CarouselProvider
+                    naturalSlideWidth={15}
+                    naturalSlideHeight={20}
+                    orientation="horizontal"
+                    totalSlides={this.props.movies.length}
+                    visibleSlides={5}
+                    step={5}
+                    infinite={true}
+
+                >
+                    <div className="carousel">
+
+                        <div className="slider">
+                            <Slider >
+                                {this.props.movies.map((movie, index) => <Slide key={index} index={index}><Link key={index} to={`${this.props.url}/${movie.id}`}><Card addMovie={this.props.addMovie} deleteMovie={this.props.deleteMovie} key={movie.title} movie={movie} /></Link> <div>
+                                    {movie.favorited ? (<button class="add-btn fa fa-minus" onClick={() => this.props.deleteMovie(movie, false)}></button>) : (<button class="add-btn fa fa-plus" onClick={() => this.props.addMovie(movie, true)} ></button>)}
+                                </div></Slide>)}
+                            </Slider>
+                        </div>
+                        <div className="control-btn backbutton">
+                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                        </div>
+                        <div className="control-btn nextbutton">
+                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
+                        </div>
+                    </div>
+                </CarouselProvider> */}
+
+
                     <div label="Visited">
                         {visitedDestinations.map((destination) => (
                             <div>
@@ -368,6 +438,49 @@ export default function Map() {
                                 <p>{destination.address}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
                                 <button onClick={memoryPopUpWindow}>Add Memory</button>
+                                <CarouselProvider
+                                    naturalSlideWidth={15}
+                                    naturalSlideHeight={20}
+                                    orientation="horizontal"
+                                    totalSlides={12}
+                                    visibleSlides={5}
+                                    step={3}
+                                    infinite={true}
+
+                                >
+                                    <div className='carousel'>
+                                        <div className="slider">
+                                            <Slider >
+
+                                                {collages.map((collage, index) => <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide>)}
+                                                {/* <Slide index={0}>I am the first Slide.</Slide>
+                                                <Slide index={1}>I am the second Slide.</Slide>
+                                                <Slide index={2}>I am the third Slide.</Slide>
+                                                <Slide index={3}>I am the fourth Slide.</Slide>
+                                                <Slide index={4}>I am the fifth Slide.</Slide>
+                                                <Slide index={5}>I am the sixth Slide.</Slide>
+                                                <Slide index={6}>I am the seventh Slide.</Slide>
+                                                <Slide index={7}>I am the eighth Slide.</Slide>
+                                                <Slide index={8}>I am the ninth Slide.</Slide>
+                                                <Slide index={9}>I am the tenth Slide.</Slide>
+                                                <Slide index={10}>I am the eleventh Slide.</Slide>
+                                                <Slide index={11}>I am the twelth Slide.</Slide> */}
+                                                {/* this is where the collages would go. would iterate over the state of currently selected collages */}
+                                            </Slider>
+                                        </div>
+                                        <div className="control-btn backbutton">
+                                            <ButtonBack className='arrow-buttons fa fa-angle-left'>Back</ButtonBack>
+                                        </div>
+                                        <div className="control-btn nextbutton">
+                                            <ButtonNext className="arrow-buttons fa fa-angle-right">Next</ButtonNext>
+                                        </div>
+                                        {/* <h2>{destination.name}</h2>
+                                        <img src={destination.image} width="120" height="80" />
+                                        <p>{destination.address}</p>
+                                        <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                        <button onClick={memoryPopUpWindow}>Add Memory</button> */}
+                                    </div>
+                                </CarouselProvider>
                             </div>
 
                         ))}

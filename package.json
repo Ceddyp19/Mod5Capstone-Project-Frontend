@@ -12,13 +12,16 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "auth0-lock": "^11.27.0",
+    "pure-react-carousel": "^1.27.5",
     "react": "^16.13.1",
     "react-cool-onclickoutside": "^1.5.7",
     "react-dom": "^16.13.1",
     "react-json-pretty": "^2.2.0",
     "react-multiple-image-input": "^1.0.0",
+    "react-photo-collage": "^1.0.7",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "styled-components": "^5.2.0",
     "use-places-autocomplete": "^1.5.4"
   },
   "scripts": {
