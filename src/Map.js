@@ -275,28 +275,28 @@ export default function Map() {
             <div class="modal">
                 <div class="modal_content">
                     <span class="close">&times;</span>
-                    <h3>Memory</h3>
+                    <h2>Memory</h2>
+                    <h3>Images</h3>
+                    <MultiImageInput
+                                  images={images}
+                                   setImages={setImages}
+                                      cropConfig={{ crop, ruleOfThirds: true }}
+                                          />
                     <form onSubmit={addDestination}>
+                    <label >
+                                Tell Your Story:<br />
+                                <textarea name='story' id='story' rows='5' cols='33'></textarea>
+                            </label><br /><br />
                             <label >
                                 Date:<br />
                                 <input type="date" name="date" value={nameValue} onChange={handleNameInput} />
                             </label><br /><br />
-                            <label >
-                                 Images:<br />
-                                 <MultiImageInput
-      images={images}
-      setImages={setImages}
-      cropConfig={{ crop, ruleOfThirds: true }}
-    />
-                                {/* <input type="file" multiple name="image" onChange={fileChangedHandler} />
-                                <br />
-                                <button onClick={uploadHandler}>Upload!</button> */}
-                            </label><br /><br />
-                            <label >
+                           
+                            {/* <label >
                                 Tell Your Story:<br />
                                 <textarea name='story' id='story' rows='5' cols='33'></textarea>
                             </label>
-                            <br/><br/>
+                            <br/><br/> */}
                             <input type="submit" value="Submit" />
 
                         </form>
