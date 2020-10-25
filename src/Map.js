@@ -35,12 +35,13 @@ import {
 } from "@reach/combobox";
 import "@reach/combobox/styles.css";
 
-//import mapStyles from './mapStyles';
+
 import * as mapStyles from './mapStyles';
 import Tabs from "./Tabs";
 import PlacesAutocomplete from './PlacesAutocomplete'
 import DropDown from './dropDown';
 import MapStyleDropDown from './mapStyleDropDown'
+import MultiImageInput from 'react-multiple-image-input';
 
 //=================================================================My Global Variables===============================================================================
 const libraries = ["places"];
@@ -64,7 +65,8 @@ export default function Map() {
     const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
     const [visited, setVisited] = useState([]);      //holds Visited destinations list
     // const [shared, setShared] = useState([]);     //holds Shared destinations list
-
+   // const [selectedFiles, setSelectedFiles] = useState([]); // holds uploaded pictures from user  
+   const [images, setImages] = useState({});  
 
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
@@ -98,6 +100,12 @@ export default function Map() {
 
     if (loadError) return "Error loading maps";
     if (!isLoaded) return "Loading Maps";
+
+    const crop = {
+        unit: '%',
+        aspect: 4 / 3,
+        width: '100'
+      };
 
     //***************Functions*****************************************/
 
@@ -245,6 +253,15 @@ export default function Map() {
         })
     }
 
+    // function fileChangedHandler(event){
+    //     const file = event.target.files[0]
+    //     setSelectedFiles([...selectedFiles, file])
+    // }
+
+    // function uploadHandler() {
+    //     console.log(selectedFiles)
+    // }
+
 
     //lists for each category shown in side panel
     const favoritedDestinations = destinations.filter(destination => destination.listCategory === 'Favorite')
@@ -266,7 +283,14 @@ export default function Map() {
                             </label><br /><br />
                             <label >
                                  Images:<br />
-                                <input type="text" name="image" placeholder="Paste Image Url" value={imageUrlValue} onChange={handleImageInput} />
+                                 <MultiImageInput
+      images={images}
+      setImages={setImages}
+      cropConfig={{ crop, ruleOfThirds: true }}
+    />
+                                {/* <input type="file" multiple name="image" onChange={fileChangedHandler} />
+                                <br />
+                                <button onClick={uploadHandler}>Upload!</button> */}
                             </label><br /><br />
                             <label >
                                 Tell Your Story:<br />
