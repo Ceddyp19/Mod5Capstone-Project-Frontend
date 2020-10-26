@@ -70,6 +70,8 @@ export default function Map() {
     // const [shared, setShared] = useState([]);     //holds Shared destinations list
     const [images, setImages] = useState({});  //used for image upload
     const [collages, setCollages] = useState([]); //holds all pictures setting of each collage
+    const [currentVisitedDestination, setCurrentVisitedDestination] = useState(null);  // this state is used to keep track of the currently selected visited destination that a collage/Memory Album is being added to
+
 
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
@@ -247,7 +249,8 @@ export default function Map() {
         return <MapStyleDropDown changeStyle={changeStyle} />
     }
 
-    function memoryPopUpWindow() {
+    function toggleMemoryPopUpWindow(index) {
+        setCurrentVisitedDestination(index)
         const modal = document.querySelector(".modal")
         const closeBtn = document.querySelector(".close")
         modal.style.display = "block";
@@ -267,29 +270,28 @@ export default function Map() {
 
     function addMemory(e) {
         e.preventDefault();
-        console.log([images])
+        //console.log([images])
         // console.log(images[0])
         let currentImages = images
         let photos = []
-        //currentImages.map((image) => photos.push({ src: image }))
-
-        //     function pushImage(value, key, map){
-        //         photos.push({src: value})
-        //     }
-        //    currentImages.forEach(pushImage);
+        
 
         Object.keys(currentImages).map(function (keyName, keyIndex) {
             photos.push({ src: currentImages[keyName] })
         })
 
 
+       //we set the collage settings and also pass the array of photos to the collage as photos
+
+       let visitedDestinationId = currentVisitedDestination
 
         const setting = {
             width: '150px',
             height: ['62.5px', '42.5px'],
             layout: [1, 4],
             photos: photos,
-            showNumOfRemainingPhotos: true
+            showNumOfRemainingPhotos: true,
+            visitedDestinationId: visitedDestinationId
         };
         setCollages([...collages, setting])
 
@@ -431,13 +433,13 @@ export default function Map() {
 
 
                     <div label="Visited">
-                        {visitedDestinations.map((destination) => (
+                        {visitedDestinations.map((destination, index) => (
                             <div>
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.address}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                <button onClick={memoryPopUpWindow}>Add Memory</button>
+                                <button onClick={() => toggleMemoryPopUpWindow(index)}>Add Memory</button>
                                 <CarouselProvider
                                     naturalSlideWidth={15}
                                     naturalSlideHeight={20}
@@ -450,9 +452,23 @@ export default function Map() {
                                 >
                                     <div className='carousel'>
                                         <div className="slider">
-                                            <Slider >
+                                            <Slider key={index} >
+                                        {/* { index === currentVisitedDestination ? 
+                                                collages.map((collage, index) => <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide>)
+                                                :
+                                                null
 
-                                                {collages.map((collage, index) => <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide>)}
+                                        } */}
+
+
+
+
+                                         { collages.map((collage) => index === collage.visitedDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide> : null)}
+
+
+
+
+
                                                 {/* <Slide index={0}>I am the first Slide.</Slide>
                                                 <Slide index={1}>I am the second Slide.</Slide>
                                                 <Slide index={2}>I am the third Slide.</Slide>
@@ -478,7 +494,7 @@ export default function Map() {
                                         <img src={destination.image} width="120" height="80" />
                                         <p>{destination.address}</p>
                                         <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                        <button onClick={memoryPopUpWindow}>Add Memory</button> */}
+                                        <button onClick={closeMemoryPopUpWindow}>Add Memory</button> */}
                                     </div>
                                 </CarouselProvider>
                             </div>
