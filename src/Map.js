@@ -1,19 +1,31 @@
 //============================================My Imports======================================================
 import './App.css';
 import './Map.css';
+import RenderUserMarker from './markers/renderUserMarker';
+import AttractionMarkers from './markers/attractionMarkers';
+import CafeMarkers from './markers/cafeMarkers';
+import GymMarkers from './markers/gymMarkers.js';
+import HospitalMarkers from './markers/hospitalMarkers';
+import LodgingMarkers from './markers/lodgingMarkers';
+import NightClubMarkers from './markers/nightClubMarkers';
+import ResturantMarkers from './markers/resturantMarkers';
+import ShoppingMallMarkers from './markers/shoppingMallMarkers';
+import SuperMarketMarkers from './markers/superMarketMarkers';
+import TransitMarkers from './markers/transitMarkers';
 
-import * as attractionsData from './TokyoAttractions.json';
-import * as cafesData from './TokyoCafes.json';
-import * as gymsData from './TokyoGyms.json';
-import * as hospitalsData from './TokyoHospitals.json';
-import * as lodgingData from './TokyoLodging.json';
-import * as nightClubsData from './TokyoNightClubs.json';
-import * as resturantsData from './TokyoResturants.json';
-import * as shoppingMallsData from './TokyoShoppingMalls.json';
-import * as superMarketsData from './TokyoSuperMarkets.json';
-import * as transitStationsData from './TokyoTransitStations.json';
 
-import React, { useState } from 'react';
+import * as attractionsData from './location_types/TokyoAttractions.json';
+import * as cafesData from './location_types/TokyoCafes.json';
+import * as gymsData from './location_types/TokyoGyms.json';
+import * as hospitalsData from './location_types/TokyoHospitals.json';
+import * as lodgingData from './location_types/TokyoLodging.json';
+import * as nightClubsData from './location_types/TokyoNightClubs.json';
+import * as resturantsData from './location_types/TokyoResturants.json';
+import * as shoppingMallsData from './location_types/TokyoShoppingMalls.json';
+import * as superMarketsData from './location_types/TokyoSuperMarkets.json';
+import * as transitStationsData from './location_types/TokyoTransitStations.json';
+
+import React, { useState, useEffect } from 'react';
 import {
     GoogleMap,
     useLoadScript,
@@ -56,9 +68,25 @@ const center = {
     lat: 35.689487,
     lng: 139.691711,
 }
+const DESTINATIONS_URL = "http://localhost:3000/destinations"
+const USER_DESTINATIONS_URL = "http://localhost:3000/user_destinations"
 
 //==================================================================My Map Component=========================================================
 export default function Map() {
+
+    useEffect(() => {
+        fetchDestinations();
+    }, []);
+
+    //   const fetchUsers = () => {
+    //   fetch('http://localhost:3000/users')
+
+    //     .then(response => response.json())
+    //     .then(data => {
+    //       console.log('Success:', data);
+    //     })
+    // };
+    // fetchUsers();
 
     //**************State Hooks***************************/
     const [nameValue, setNameValue] = useState('');  //set the input value of Name of Place as person types
@@ -75,8 +103,8 @@ export default function Map() {
 
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
-    const [selectedDefaultMarker, setselectedDefaultMarker] = React.useState(null);
-    const [selectedCreatedMarker, setselectedCreatedMarker] = React.useState(null);
+    const [selectedDefaultMarker, setSelectedDefaultMarker] = React.useState(null);
+    const [selectedCreatedMarker, setSelectedCreatedMarker] = React.useState(null);
     //***************Variables*************************************/
     const options = {                     //map options
         styles: mapStyle,
@@ -162,13 +190,67 @@ export default function Map() {
             .then((results) => getLatLng(results[0]))
             .then(({ lat, lng }) => {
                 //console.log(" I grabbed the Coordinates on Submit!", { lat, lng });
+
+                //adding new destination to state on frontend
                 setDestinations([...destinations, { name: name, image: image, address: address, lat: lat, lng: lng }])
+                //persisting new destination on backend
+                fetch(DESTINATIONS_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `JWT ${localStorage.getItem("token")}`,
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        "name": name,
+                        "image": image,
+                        "lng": lng,
+                        "lat": lat,
+                        "addr": address
+                    })
+                }).then(res => console.log(res))
+
             })
             .catch((error) => {
                 console.log("😱 Error: ", error);
             });
 
     }
+
+    function fetchDestinations() {
+        if (localStorage.getItem("token")) {
+            fetch(DESTINATIONS_URL, {
+                method: "GET",
+                headers: {
+                    'Authorization': `JWT ${localStorage.getItem("token")}`
+                }
+            }).then(res => res.json()).then(data => {
+                setDestinations(data)
+                //setTimeout(this.fetchUserDestinations(), 1500)
+
+            })
+        }
+    }
+
+    function fetchUserDestinations() {
+        if (localStorage.getItem("token")) {
+            fetch(USER_DESTINATIONS_URL, {
+                method: "GET",
+                headers: {
+                    'Authorization': `JWT ${localStorage.getItem("token")}`
+                }
+            }).then(res => res.json()).then(data => {
+
+                console.log(data)
+
+                // this.makeUserMoviesFavorites(data.map(m => m.movie_id), data)
+
+                //  MAKE FUNCTION TO CHANGE MOVIES IN RESPONSE TO FAVORITED this.setState({ movies: data })
+            }
+            )
+        }
+    }
+
 
     function addToList(destination, listName) {
         //console.log('addToList function operational!', markerProps, listName)
@@ -195,6 +277,8 @@ export default function Map() {
         //     default:
         //         console.log('Error, List not found')
         // }
+
+
     }
 
     function deleteFromList(destination) {                       //deletes marker from list 
@@ -274,16 +358,16 @@ export default function Map() {
         // console.log(images[0])
         let currentImages = images
         let photos = []
-        
+
 
         Object.keys(currentImages).map(function (keyName, keyIndex) {
             photos.push({ src: currentImages[keyName] })
         })
 
 
-       //we set the collage settings and also pass the array of photos to the collage as photos
+        //we set the collage settings and also pass the array of photos to the collage as photos
 
-       let visitedDestinationId = currentVisitedDestination
+        let visitedDestinationId = currentVisitedDestination
 
         const setting = {
             width: '150px',
@@ -297,6 +381,7 @@ export default function Map() {
 
         // setImages([]);
     }
+
 
 
     //lists for each category shown in side panel
@@ -453,7 +538,7 @@ export default function Map() {
                                     <div className='carousel'>
                                         <div className="slider">
                                             <Slider key={index} >
-                                        {/* { index === currentVisitedDestination ? 
+                                                {/* { index === currentVisitedDestination ? 
                                                 collages.map((collage, index) => <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide>)
                                                 :
                                                 null
@@ -463,7 +548,7 @@ export default function Map() {
 
 
 
-                                         { collages.map((collage) => index === collage.visitedDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide> : null)}
+                                                {collages.map((collage) => index === collage.visitedDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide> : null)}
 
 
 
@@ -535,23 +620,24 @@ export default function Map() {
                 onLoad={onMapLoad}
             >
 
-                {transitStationsData.results.map((transitStation) => (
+                <TransitMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {transitStationsData.results.map((transitStation) => (
                     <Marker
                         key={transitStation['place_id']}
                         position={{ lat: parseFloat(transitStation.geometry.location.lat), lng: parseFloat(transitStation.geometry.location.lng) }}
-                        icon={{
-                            url: 'transit64.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
+                        // icon={{
+                        //     url: 'transit64.png',
+                        //     scaledSize: new window.google.maps.Size(30, 30),
+                        //     origin: new window.google.maps.Point(0, 0),
+                        //     anchor: new window.google.maps.Point(15, 15),
+                        // }}
                         onClick={() => {
-                            setselectedDefaultMarker(transitStation);
+                            setSelectedDefaultMarker(transitStation);
                         }}
                     />
-                ))}
-
-                {superMarketsData.results.map((superMarket) => (
+                ))} */}
+<SuperMarketMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {superMarketsData.results.map((superMarket) => (
                     <Marker
                         key={superMarket['place_id']}
                         position={{ lat: parseFloat(superMarket.geometry.location.lat), lng: parseFloat(superMarket.geometry.location.lng) }}
@@ -562,12 +648,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(superMarket);
+                            setSelectedDefaultMarker(superMarket);
                         }}
                     />
-                ))}
-
-                {shoppingMallsData.results.map((shoppingMall) => (
+                ))} */}
+<ShoppingMallMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {shoppingMallsData.results.map((shoppingMall) => (
                     <Marker
                         key={shoppingMall['place_id']}
                         position={{ lat: parseFloat(shoppingMall.geometry.location.lat), lng: parseFloat(shoppingMall.geometry.location.lng) }}
@@ -578,12 +664,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(shoppingMall);
+                            setSelectedDefaultMarker(shoppingMall);
                         }}
                     />
-                ))}
-
-                {nightClubsData.results.map((nightClub) => (
+                ))} */}
+<NightClubMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {nightClubsData.results.map((nightClub) => (
                     <Marker
                         key={nightClub['place_id']}
                         position={{ lat: parseFloat(nightClub.geometry.location.lat), lng: parseFloat(nightClub.geometry.location.lng) }}
@@ -594,12 +680,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(nightClub);
+                            setSelectedDefaultMarker(nightClub);
                         }}
                     />
-                ))}
-
-                {lodgingData.results.map((lodge) => (
+                ))} */}
+<LodgingMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {lodgingData.results.map((lodge) => (
                     <Marker
                         key={lodge['place_id']}
                         position={{ lat: parseFloat(lodge.geometry.location.lat), lng: parseFloat(lodge.geometry.location.lng) }}
@@ -610,12 +696,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(lodge);
+                            setSelectedDefaultMarker(lodge);
                         }}
                     />
-                ))}
-
-                {hospitalsData.results.map((hospital) => (
+                ))} */}
+<HospitalMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {hospitalsData.results.map((hospital) => (
                     <Marker
                         key={hospital['place_id']}
                         position={{ lat: parseFloat(hospital.geometry.location.lat), lng: parseFloat(hospital.geometry.location.lng) }}
@@ -626,12 +712,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(hospital);
+                            setSelectedDefaultMarker(hospital);
                         }}
                     />
-                ))}
-
-                {gymsData.results.map((gym) => (
+                ))} */}
+<GymMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {gymsData.results.map((gym) => (
                     <Marker
                         key={gym['place_id']}
                         position={{ lat: parseFloat(gym.geometry.location.lat), lng: parseFloat(gym.geometry.location.lng) }}
@@ -642,12 +728,13 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(gym);
+                            setSelectedDefaultMarker(gym);
                         }}
                     />
-                ))}
+                ))} */}
 
-                {cafesData.results.map((cafe) => (
+                <CafeMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {cafesData.results.map((cafe) => (
                     <Marker
                         key={cafe['place_id']}
                         position={{ lat: parseFloat(cafe.geometry.location.lat), lng: parseFloat(cafe.geometry.location.lng) }}
@@ -658,12 +745,13 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(cafe);
+                            setSelectedDefaultMarker(cafe);
                         }}
                     />
-                ))}
+                ))} */}
 
-                {attractionsData.results.map((attraction) => (
+                <AttractionMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {attractionsData.results.map((attraction) => (
                     <Marker
                         key={attraction['place_id']}
                         position={{ lat: parseFloat(attraction.geometry.location.lat), lng: parseFloat(attraction.geometry.location.lng) }}
@@ -674,12 +762,12 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(attraction);
+                            setSelectedDefaultMarker(attraction);
                         }}
                     />
-                ))}
-
-                {resturantsData.results.map((resturant) => (
+                ))} */}
+<ResturantMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+                {/* {resturantsData.results.map((resturant) => (
                     <Marker
                         key={resturant['place_id']}
                         position={{ lat: parseFloat(resturant.geometry.location.lat), lng: parseFloat(resturant.geometry.location.lng) }}
@@ -690,21 +778,24 @@ export default function Map() {
                             anchor: new window.google.maps.Point(15, 15),
                         }}
                         onClick={() => {
-                            setselectedDefaultMarker(resturant);
+                            setSelectedDefaultMarker(resturant);
                         }}
                     />
-                ))}
+                ))} */}
 
-                {/* destinations are markers created by users whereas the one above is created by data files */}
-                {destinations.map((destination, index) => (
+                {/* destinations are markers created by users whereas the ones above is created by data files */}
+
+                <RenderUserMarker destinations={destinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
+                {/* {destinations.map((destination, index) => (
                     <Marker
                         key={index}
                         position={{ lat: parseFloat(destination.lat), lng: parseFloat(destination.lng) }}
                         onClick={() => {
-                            setselectedCreatedMarker(destination);
+                            setSelectedCreatedMarker(destination);
                         }}
                     />
-                ))}
+                ))} */}
+
 
                 {selectedDefaultMarker && (
                     <InfoWindow
@@ -713,7 +804,7 @@ export default function Map() {
                             lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
                         }}
                         onCloseClick={() => {
-                            setselectedDefaultMarker(null);
+                            setSelectedDefaultMarker(null);
                         }}
                     >
                         <div>
@@ -727,11 +818,11 @@ export default function Map() {
                 {selectedCreatedMarker && (
                     <InfoWindow
                         position={{
-                            lat: parseFloat(selectedCreatedMarker.lat),
+                            lat: parseFloat(selectedCreatedMarker.lat + .005), //info box doesn't cover marker with .005 added
                             lng: parseFloat(selectedCreatedMarker.lng)
                         }}
                         onCloseClick={() => {
-                            setselectedCreatedMarker(null);
+                            setSelectedCreatedMarker(null);
                         }}
                     >
                         <div>

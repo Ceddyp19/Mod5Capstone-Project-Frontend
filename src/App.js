@@ -25,18 +25,15 @@
 
 // export default App;
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import SignUp from './signup'
-import Login from './login'
+// import SignUp from './signup'  Auth0
+// import Login from './login'   Auth0
 import Home from './home'
 import MainMenu from './mainMenu'
 import Translate from './Translate'
-
 import Map from './Map' //transferring new map from other file 
-
 import {
   BrowserRouter,
   Switch,
@@ -46,8 +43,31 @@ import {
 } from "react-router-dom";
 
 
+import Start from './components/Start.js'
+import Login from './components/registration/Login.js'
+import Signup from './components/registration/Signup.js'
+
+
 
 class App extends Component {
+
+  state = {
+    username: "",
+    email: ""
+  }
+
+
+  logout = () => {
+    localStorage.clear()
+    window.location.href = "/login"
+  }
+
+
+  setUserState = (username, email) => {
+    this.setState({ username: username, email: email})
+    console.log(username, email)
+  }
+
 
 
 
@@ -61,13 +81,27 @@ class App extends Component {
               <Home />
             </Route>
 
-            <Route exact path='/login'>
+
+
+            <Route exact path='/start' render={props => (
+            <Start {...props} />
+          )} />
+          <Route exact path='/login' render={props => (
+            <Login {...props} getUserInfo={this.setUserState} />
+          )} />
+          <Route exact path='/signup' render={props => (
+            <Signup {...props} getUserInfo={this.setUserState}/>
+          )} />
+
+
+            {/* Auth0 */}
+            {/* <Route exact path='/login'>
               <Login />
             </Route>
 
             <Route exact path='/signup'>
               <SignUp />
-            </Route>
+            </Route> */}
 
             <Route exact path="/mainmenu">
               <MainMenu />

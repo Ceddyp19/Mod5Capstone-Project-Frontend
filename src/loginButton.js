@@ -6,9 +6,12 @@ import React from "react";
 
 const LoginButton = () => {
 
-    const { loginWithRedirect } = useAuth0(); //UNIVERSAL LOGIN CODE
+    const { isAuthenticated,loginWithRedirect } = useAuth0(); //UNIVERSAL LOGIN CODE
 
-    return <button onClick={() => loginWithRedirect()}> Auth0 Log In</button>;     //UNIVERSAL LOGIN CODE
+    return !isAuthenticated && ( 
+    <button onClick={() => loginWithRedirect()}> Auth0 Log In</button> 
+    );     //UNIVERSAL LOGIN CODE
+    
     // return <button onClick={() => lock.show()}> Auth0 Log In</button>;  //EMBEDDED LOGIN CODE
 };
 

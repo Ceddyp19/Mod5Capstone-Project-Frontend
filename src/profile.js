@@ -7,6 +7,8 @@ const Profile = () => {
   const [userMetadata, setUserMetadata] = useState(null);
   //console.log(user)
 
+
+  //Code to access my protected API...couldn't figure out how to work it yet so I went back to using unprotected APIs
   // useEffect(() => {
   //   const getUser = async () => {
   
@@ -43,42 +45,48 @@ const Profile = () => {
   //   getUser();
   // }, []);
 
-  useEffect(() => {
-    // console.log(getAccessTokenSilently({
-    //   audience: `https://dev-rez4d2lc.us.auth0.com/api/v2/`,
-    //   scope: "read:current_user"}));
 
-    const getUserMetadata = async () => {
-      const domain = "dev-rez4d2lc.us.auth0.com";
+
+  //this is for the example on Auth0 to access protected APIs
+  // useEffect(() => {
+  //   // console.log(getAccessTokenSilently({
+  //   //   audience: `https://dev-rez4d2lc.us.auth0.com/api/v2/`,
+  //   //   scope: "read:current_user"}));
+
+  //   const getUserMetadata = async () => {
+  //     const domain = "dev-rez4d2lc.us.auth0.com";
   
-      try {
-        const accessToken = await getAccessTokenSilently({
-          audience: `https://${domain}/api/v2/`,
-          scope: "read:current_user",
-        });
+  //     try {
+  //       const accessToken = await getAccessTokenSilently({
+  //         audience: `https://${domain}/api/v2/`,
+  //         scope: "read:current_user",
+  //       });
          
-        const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
+  //       const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
   
-        const metadataResponse = await fetch(userDetailsByIdUrl, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        });
+  //       const metadataResponse = await fetch(userDetailsByIdUrl, {
+  //         headers: {
+  //           Authorization: `Bearer ${accessToken}`,
+  //         },
+  //       });
   
-        const { user_metadata } = await metadataResponse.json();
+  //       const { user_metadata } = await metadataResponse.json();
   
-        setUserMetadata(user_metadata);
-      } catch (e) {
-        console.log(e.message);
-      }
-    };
+  //       setUserMetadata(user_metadata);
+  //     } catch (e) {
+  //       console.log(e.message);
+  //     }
+  //   };
   
-    getUserMetadata();
-  }, []);
+  //   getUserMetadata();
+  // }, []);
+
+ 
 
   return (
     isAuthenticated && (
       <div>
+         {/* {console.log(user.email)} */}
         <img src={user.picture} alt={user.name} />
         <h2>{user.name}</h2>
         <p>{user.email}</p>
@@ -95,3 +103,17 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
+//withAuth0 is for classes and useAuth0 is for hooks 
+// import React, { Component } from 'react';
+// import { withAuth0 } from '@auth0/auth0-react';
+
+// class Profile extends Component {
+//   render() {
+//     const { user } = this.props.auth0;
+//     return <div>Hello {user.name}</div>;
+//   }
+// }
+
+// export default withAuth0(Profile);

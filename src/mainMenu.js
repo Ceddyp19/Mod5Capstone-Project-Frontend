@@ -48,67 +48,70 @@ const MainMenu = () => {
   //   getUser();
   // }, []);
   /////////////////////////////////////////////////////////////////////////////////
-  useEffect(() => {
-    const opts = {
-      audience: 'http://localhost:3000',  //This is used to access api on backend...values are given at Auth0.com
-      scope: 'read:users',
-    };
+  // useEffect(() => {
+  //   const opts = {
+  //     audience: 'http://localhost:3000',  //This is used to access api on backend...values are given at Auth0.com
+  //     scope: 'read:users',
+  //   };
 
 
-    //   const accessToken = getAccessTokenSilently(opts) // get access token using opts
+  //   //   const accessToken = getAccessTokenSilently(opts) // get access token using opts
 
-    //   console.log(accessToken)
-    //   console.log(user)
-    const data = {
-      uid: '54235849',
-      email: 'test@email.com',
-      first_name: 'tested',
-      last_name: 'testing',
-      image: 'bkajdska'
-    }
-    //   // const data = {
-    //   //   uid: user.sub,
-    //   //   email: user.email,
-    //   //   first_name: user.given_name,
-    //   //   last_name: user.family_name,
-    //   //   image: user.picture
-    //   // };
+  //   //   console.log(accessToken)
+  //   //   console.log(user)
+  //   const data = {
+  //     uid: '54235849',
+  //     email: 'test@email.com',
+  //     first_name: 'tested',
+  //     last_name: 'testing',
+  //     image: 'bkajdska'
+  //   }
+  //   //   // const data = {
+  //   //   //   uid: user.sub,
+  //   //   //   email: user.email,
+  //   //   //   first_name: user.given_name,
+  //   //   //   last_name: user.family_name,
+  //   //   //   image: user.picture
+  //   //   // };
 
-    //   fetch('http://localhost:3000/users', {               //making the fetch request to our Api to Authenticate on backend
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       'Accept': 'application/json'
-    //       // authorization: `Bearer ${accessToken}`
-    //     },
-    //     body: JSON.stringify(data)
-    //   })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log('Success:', data);
-    //     })
-    //     .catch((error) => {
-    //       console.error('Error:', error);
-    //     });
+  //   //   fetch('http://localhost:3000/users', {               //making the fetch request to our Api to Authenticate on backend
+  //   //     method: 'POST',
+  //   //     headers: {
+  //   //       'Content-Type': 'application/json',
+  //   //       'Accept': 'application/json'
+  //   //       // authorization: `Bearer ${accessToken}`
+  //   //     },
+  //   //     body: JSON.stringify(data)
+  //   //   })
+  //   //     .then(response => response.json())
+  //   //     .then(data => {
+  //   //       console.log('Success:', data);
+  //   //     })
+  //   //     .catch((error) => {
+  //   //       console.error('Error:', error);
+  //   //     });
 
-    // }, []);
-    const fetchUsers = () => {
-      fetch('http://localhost:3000/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({ email: 'test@email.com22gjgu2' })
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-        })
-    };
-    fetchUsers();
+  //   // }, []);
 
-  }, []);
+
+
+  //   const fetchUsers = () => {
+  //     fetch('http://localhost:3000/users', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         'Accept': 'application/json'
+  //       },
+  //       body: JSON.stringify({ email: 'test@email.com22gjgu2' })
+  //     })
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         console.log('Success:', data);
+  //       })
+  //   };
+  //   fetchUsers();
+
+  // }, []);
 
 
   return (
