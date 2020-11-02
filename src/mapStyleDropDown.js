@@ -32,14 +32,15 @@ class MapStyleDropDown extends Component {
     return (
     
         <div className="container" ref={this.container}>
-          <button className='map-icon' type="button" class="button" onClick={this.handleButtonClick}>
+          <button className='map-icon' type="button" onClick={this.handleButtonClick}>
           <img src="icons8-map-100.png" alt="map" width="50" height="60" />
           </button>
           {this.state.open && (
-            <div class="inner-container">
+            <div className="inner-container">
               <ul>
                 <li onClick={() => this.props.changeStyle('multiBrandNetwork')}>Multi Brand Network</li>
                 <li onClick={() => this.props.changeStyle('bluewater')}>Blue Water</li>
+                <li onClick={() => this.props.changeStyle('blueEssence')}>Blue Essence</li>
                 <li onClick={() => this.props.changeStyle('mutedBlue')}>Muted Blue</li>
                 <li onClick={() => this.props.changeStyle('lunarLandscape')}>Lunar Landscape</li>
                 <li onClick={() => this.props.changeStyle('mutedMonotone')}>Muted Monotone</li>

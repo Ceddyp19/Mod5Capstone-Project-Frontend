@@ -1714,6 +1714,7 @@ const appleMap = [
 
 export {
     multiBrandNetwork,
+    blueEssence,
     bluewater,
     mutedBlue,
     lunarLandscape,

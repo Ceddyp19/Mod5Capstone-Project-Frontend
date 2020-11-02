@@ -7,7 +7,7 @@ import useOnclickOutside from "react-cool-onclickoutside";
  
 const PlacesAutocomplete = () => {
   const {
-    ready,
+    //ready,
     value,
     suggestions: { status, data },
     setValue,
@@ -49,7 +49,7 @@ const PlacesAutocomplete = () => {
   const renderSuggestions = () =>
     data.map((suggestion, index) => {
       const {
-        id,
+        //id,
         structured_formatting: { main_text, secondary_text },
       } = suggestion;
  

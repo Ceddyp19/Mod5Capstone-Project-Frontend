@@ -14,22 +14,10 @@ import SuperMarketMarkers from './markers/superMarketMarkers';
 import TransitMarkers from './markers/transitMarkers';
 
 
-import * as attractionsData from './location_types/TokyoAttractions.json';
-import * as cafesData from './location_types/TokyoCafes.json';
-import * as gymsData from './location_types/TokyoGyms.json';
-import * as hospitalsData from './location_types/TokyoHospitals.json';
-import * as lodgingData from './location_types/TokyoLodging.json';
-import * as nightClubsData from './location_types/TokyoNightClubs.json';
-import * as resturantsData from './location_types/TokyoResturants.json';
-import * as shoppingMallsData from './location_types/TokyoShoppingMalls.json';
-import * as superMarketsData from './location_types/TokyoSuperMarkets.json';
-import * as transitStationsData from './location_types/TokyoTransitStations.json';
-
 import React, { useState, useEffect } from 'react';
 import {
     GoogleMap,
     useLoadScript,
-    Marker,
     InfoWindow,
 } from "@react-google-maps/api";
 
@@ -86,12 +74,10 @@ export default function Map() {
     const [dateValue, setDateValue] = useState('');  //set the input value of Date of add memory modal 
     const [imageUrlValue, setImageUrlValue] = useState('');  //set the input value of image
     const [destinations, setDestinations] = useState([]);  //holds all destinations created by all users of app
-    //const [userDestinations, setUserDestinations] = useState([]); //holds destination ids pertaining to a specific user; will be used to filter out the destinations state before rendering
-    const [renderDestinations, setRenderDestinations] = useState([]); //holds filtered destinations, userDestinations only has id's, that's why I don't just render UserDestinations; there's no details to render
-    const [favorited, setFavorited] = useState([]);  //holds favorited destinations list
-    const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
-    const [visited, setVisited] = useState([]);      //holds Visited destinations list
-    // const [shared, setShared] = useState([]);     //holds Shared destinations list
+    const [renderDestinations, setRenderDestinations] = useState([]); //holds filtered destinations that pertain to specific user
+    //const [favorited, setFavorited] = useState([]);  //holds favorited destinations list
+    //const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
+    //const [visited, setVisited] = useState([]);      //holds Visited destinations list
     const [images, setImages] = useState({});  //used for image upload
     const [collages, setCollages] = useState([]); //holds all pictures setting of each collage
     const [currentVisitedDestination, setCurrentVisitedDestination] = useState(null);  // this state is used to keep track of the currently selected visited destination that a collage/Memory Album is being added to
@@ -112,8 +98,7 @@ export default function Map() {
 
 
     const { isLoaded, loadError } = useLoadScript({
-        // googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
-        googleMapsApiKey: 'AIzaSyCkpZHFHHoT4a991ZAcJ7Z7jUnZXXgaO2Y',
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
         libraries,
     });
 
@@ -174,7 +159,7 @@ export default function Map() {
     function handleImageInput(event) {
         setImageUrlValue(event.target.value);   //handles user input in form 
     }
-    let id = 0;
+
     //when a user adds a created destination to their map, this functions saves that to the Destinations model in the database. The Destinations model represents 
     //all the destinations created by all users, then addUserDestination is called in order to persist destinations unique to a particular user. 
     //The UserDestinations data should then be loaded into the destinations state hook whenever the component is first mounted using the useEffect hook 
@@ -210,7 +195,7 @@ export default function Map() {
                         "lat": lat,
                         "addr": address
                     })
-                }).then(res => console.log(res))
+                })//.then(res => console.log(res))
 
                 setTimeout(() => addUserDestination(address), 2000)
             })
@@ -233,7 +218,7 @@ export default function Map() {
                 body: JSON.stringify({
                     "addr": address
                 })
-            }).then(res => console.log(res))
+            })//.then(res => console.log(res))
         }
         setTimeout(() => it(address), 3000)
     }
@@ -275,7 +260,7 @@ export default function Map() {
                     }
                 }).then(res => res.json()).then(data => {
 
-                    console.log(data)
+                    // console.log(data)
                     // setUserDestinations(data)
                     Userdes = data
 
@@ -290,10 +275,8 @@ export default function Map() {
 
             Userdes.forEach((ud) => {
                 Des.forEach((d) => {
-                    // console.log(d)
                     if (ud.destination_id === d.id) {
                         d.listCategory = ud.listCategory
-                        console.log(d)
                         currentUserDestinations.push(d)
                     }
                 })
@@ -302,7 +285,7 @@ export default function Map() {
         }
 
         function fetchCollages() {
-         
+
 
             if (localStorage.getItem("token")) {
                 fetch(COLLAGES_URL, {
@@ -312,36 +295,31 @@ export default function Map() {
                     }
                 }).then(res => res.json()).then(data => {
 
-                  
+
                     // console.log(data)
                     //creates the setting for each Collage of user
                     data.forEach((d) => {
                         let photos = d.photos
                         let formattedPhotos = [];
-                        console.log('this is photos', photos)
-                        console.log('this is photos', photos.split(" "))
-                   
-                   //with the way that the photos data is, I must:
-                   // 1) split the photos data to go from away to string,
-                   // 2) filter out the elements that aren't photo urls.
-                   // 3) push filtered photos into an array [to avoid too many rerenders error]
-                   // 4) add formatted photos array as photos value in setting
-                   // 5) push setting into collageSetting [to avoid too many rerenders error]
-                   // 6) update collages state with collageSettings
-                       photos = photos.split(" ")
-                       photos = photos.filter((ph) => {
-                         return  ph[0] === 'd'
-                       })
+                        // console.log('this is photos', photos)
+                        // console.log('this is photos', photos.split(" "))
 
-                        for(const photo of photos){
-                            console.log(photo[0])
-                            formattedPhotos.push({src: photo})
+                        //with the way that the photos data is, I must:
+                        // 1) split the photos data to go from away to string,
+                        // 2) filter out the elements that aren't photo urls.
+                        // 3) push filtered photos into an array [to avoid too many rerenders error]
+                        // 4) add formatted photos array as photos value in setting
+                        // 5) push setting into collageSetting [to avoid too many rerenders error]
+                        // 6) update collages state with collageSettings
+                        photos = photos.split(" ")
+                        photos = photos.filter((ph) => {
+                            return ph[0] === 'd'
+                        })
+
+                        for (const photo of photos) {
+                            formattedPhotos.push({ src: photo })
                         }
 
-                        // photos.forEach(photo => {
-                        //     formattedPhotos.push({src: photo})
-                        // })
-                       
                         // console.log(formattedPhotos)
 
                         const setting = {
@@ -359,10 +337,10 @@ export default function Map() {
 
                         collageSettings.push(setting);
                     })
-                setCollages(collageSettings)
+                    setCollages(collageSettings)
                 })
             }
-           console.log(collageSettings)
+            console.log(collageSettings)
         }
 
 
@@ -504,34 +482,19 @@ export default function Map() {
         })
     }
 
-    // function fileChangedHandler(event){
-    //     const file = event.target.files[0]
-    //     setSelectedFiles([...selectedFiles, file])
-    // }
-
-    // function uploadHandler() {
-    //     console.log(selectedFiles)
-    // }
 
     function addMemory(e) {
         e.preventDefault();
-        //console.log([images])
-        // console.log(images[0])
         let userDestinationId = currentVisitedDestination
         let currentImages = images
         let photos = []
 
         //===============================================================================
         // Frontend Rendering
-        //use this to get rid array of arrays and return just array of image urls, then pass photos to settings
+        //use this to get rid array of arrays in currentImages and return just array of image urls, then pass photos to settings
         Object.keys(currentImages).map(function (keyName, keyIndex) {
             photos.push({ src: currentImages[keyName] })
         })
-
-        //console.log(currentVisitedDestination)
-        console.log(currentImages)
-        console.log(photos)
-        // console.log(photos.toString())
 
         const setting = {
             width: '150px',
@@ -543,7 +506,7 @@ export default function Map() {
         };
         setCollages([...collages, setting])
 
-        // setImages([]);
+
         //=================================================================================
         // Persistence on backend
         fetch(USER_DESTINATIONS_URL, {
@@ -557,13 +520,9 @@ export default function Map() {
             let newPhotos = [];
             photos.forEach((photo) => newPhotos.push(` ${photo.src} `))
 
+            // console.log(newPhotos)
+            // console.log(newPhotos.join())
 
-            // console.log(ud)
-            // console.log(ud.id)
-            console.log(newPhotos)
-            console.log(newPhotos.join())
-
-            // newPhotos = newPhotos.join()
             fetch(COLLAGES_URL, {
                 method: 'POST',
                 headers: {
@@ -579,21 +538,9 @@ export default function Map() {
                 })
             })
 
-
-            // console.log('attributes')
-            // console.log('photos', photos)
-            // console.log('photos', newPhotos.toString())
-            // console.log('story', storyValue)
-            // console.log('date', dateValue)
-            // console.log('user_des_id', ud.id)
-
         })
     }
 
-    // t.string :pics
-    // t.string :story
-    // t.string :date
-    // t.integer :user_destination_id
 
     //lists for each category shown in side panel
     const favoritedDestinations = renderDestinations.filter(destination => destination.listCategory === 'Favorite')
@@ -603,10 +550,9 @@ export default function Map() {
     return (
         <div>
 
-
-            <div class="modal">
-                <div class="modal_content">
-                    <span class="close">&times;</span>
+            <div className="modal">
+                <div className="modal_content">
+                    <span className="close">&times;</span>
                     <h2>Memory</h2>
                     <h3>Images</h3>
                     <MultiImageInput
@@ -624,11 +570,6 @@ export default function Map() {
                             <input type="date" name="date" value={dateValue} onChange={e => setDateValue(e.target.value)} />
                         </label><br /><br />
 
-                        {/* <label >
-                                Tell Your Story:<br />
-                                <textarea name='story' id='story' rows='5' cols='33'></textarea>
-                            </label>
-                            <br/><br/> */}
                         <input type="submit" value="Submit" />
 
                     </form>
@@ -641,7 +582,7 @@ export default function Map() {
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
             </div>
             <div id='mySidebar'>
-                <a href="" className="closebtn" onClick={closeNav}>×</a>
+                <button  className="closebtn" onClick={closeNav}>×</button>
 
 
                 <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
@@ -673,7 +614,7 @@ export default function Map() {
                             renderDestinations.map((destination) => (
                                 <div key={destination.name}>
                                     <h2>{destination.name}</h2>
-                                    <img src={destination.image} width="120" height="80" />
+                                    <img src={destination.image} alt={destination.name} width="120" height="80" />
                                     <p>{destination.addr}</p>
                                     <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
                                 </div>
@@ -686,7 +627,7 @@ export default function Map() {
                         {wantToGoDestinations.map((destination, index) => (
                             <div key={index}>
                                 <h2>{destination.name}</h2>
-                                <img src={destination.image} width="120" height="80" />
+                                <img src={destination.image} alt={destination.name} width="120" height="80" />
                                 <p>{destination.addr}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
                             </div>
@@ -734,66 +675,37 @@ export default function Map() {
                         {visitedDestinations.map((destination, index) => (
                             <div key={index} >
                                 <h2>{destination.name}</h2>
-                                <img src={destination.image} width="120" height="80" />
+                                <img src={destination.image} alt={destination.name}width="120" height="80" />
                                 <p>{destination.addr}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
                                 <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
+
                                 <CarouselProvider
                                     naturalSlideWidth={15}
                                     naturalSlideHeight={20}
                                     orientation="horizontal"
-                                    totalSlides={12}
+                                    totalSlides={collages.filter((collage) => destination.id === collage.userDestinationId).length}
                                     visibleSlides={5}
                                     step={3}
                                     infinite={true}
-
                                 >
+
                                     <div className='carousel'>
                                         <div className="slider">
                                             <Slider key={index} >
-                                                {/* { index === currentVisitedDestination ? 
-                                                collages.map((collage, index) => <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide>)
-                                                :
-                                                null
-
-                                        } */}
-
-
-
-
-                                                {collages.map((collage) => destination.id === collage.userDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /> <p>details button</p></Slide> : null)}
-
-
-
-
-
-                                                {/* <Slide index={0}>I am the first Slide.</Slide>
-                                                <Slide index={1}>I am the second Slide.</Slide>
-                                                <Slide index={2}>I am the third Slide.</Slide>
-                                                <Slide index={3}>I am the fourth Slide.</Slide>
-                                                <Slide index={4}>I am the fifth Slide.</Slide>
-                                                <Slide index={5}>I am the sixth Slide.</Slide>
-                                                <Slide index={6}>I am the seventh Slide.</Slide>
-                                                <Slide index={7}>I am the eighth Slide.</Slide>
-                                                <Slide index={8}>I am the ninth Slide.</Slide>
-                                                <Slide index={9}>I am the tenth Slide.</Slide>
-                                                <Slide index={10}>I am the eleventh Slide.</Slide>
-                                                <Slide index={11}>I am the twelth Slide.</Slide> */}
-                                                {/* this is where the collages would go. would iterate over the state of currently selected collages */}
+                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /> <p>details button</p></Slide> : null)}
                                             </Slider>
                                         </div>
+
                                         <div className="control-btn backbutton">
                                             <ButtonBack className='arrow-buttons fa fa-angle-left'>Back</ButtonBack>
                                         </div>
+
                                         <div className="control-btn nextbutton">
                                             <ButtonNext className="arrow-buttons fa fa-angle-right">Next</ButtonNext>
                                         </div>
-                                        {/* <h2>{destination.name}</h2>
-                                        <img src={destination.image} width="120" height="80" />
-                                        <p>{destination.address}</p>
-                                        <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                        <button onClick={closeMemoryPopUpWindow}>Add Memory</button> */}
                                     </div>
+
                                 </CarouselProvider>
                             </div>
 
@@ -805,7 +717,7 @@ export default function Map() {
                         {favoritedDestinations.map((destination, index) => (
                             <div key={index} >
                                 <h2>{destination.name}</h2>
-                                <img src={destination.image} width="120" height="80" />
+                                <img src={destination.image} alt={destination.name} width="120" height="80" />
                                 <p>{destination.addr}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
                             </div>
@@ -815,7 +727,7 @@ export default function Map() {
 
                     <div label="Shared">
                         Nothing to see here, this tab is <em>extinct</em>!
-       </div>
+                </div>
 
                 </Tabs>
             </div>
@@ -834,181 +746,28 @@ export default function Map() {
             >
 
                 <TransitMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {transitStationsData.results.map((transitStation) => (
-                    <Marker
-                        key={transitStation['place_id']}
-                        position={{ lat: parseFloat(transitStation.geometry.location.lat), lng: parseFloat(transitStation.geometry.location.lng) }}
-                        // icon={{
-                        //     url: 'transit64.png',
-                        //     scaledSize: new window.google.maps.Size(30, 30),
-                        //     origin: new window.google.maps.Point(0, 0),
-                        //     anchor: new window.google.maps.Point(15, 15),
-                        // }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(transitStation);
-                        }}
-                    />
-                ))} */}
+
                 <SuperMarketMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {superMarketsData.results.map((superMarket) => (
-                    <Marker
-                        key={superMarket['place_id']}
-                        position={{ lat: parseFloat(superMarket.geometry.location.lat), lng: parseFloat(superMarket.geometry.location.lng) }}
-                        icon={{
-                            url: 'superMarketpx.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(superMarket);
-                        }}
-                    />
-                ))} */}
+
                 <ShoppingMallMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {shoppingMallsData.results.map((shoppingMall) => (
-                    <Marker
-                        key={shoppingMall['place_id']}
-                        position={{ lat: parseFloat(shoppingMall.geometry.location.lat), lng: parseFloat(shoppingMall.geometry.location.lng) }}
-                        icon={{
-                            url: 'mall64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(shoppingMall);
-                        }}
-                    />
-                ))} */}
+
                 <NightClubMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {nightClubsData.results.map((nightClub) => (
-                    <Marker
-                        key={nightClub['place_id']}
-                        position={{ lat: parseFloat(nightClub.geometry.location.lat), lng: parseFloat(nightClub.geometry.location.lng) }}
-                        icon={{
-                            url: 'nightclub64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(nightClub);
-                        }}
-                    />
-                ))} */}
+
                 <LodgingMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {lodgingData.results.map((lodge) => (
-                    <Marker
-                        key={lodge['place_id']}
-                        position={{ lat: parseFloat(lodge.geometry.location.lat), lng: parseFloat(lodge.geometry.location.lng) }}
-                        icon={{
-                            url: 'lodging64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(lodge);
-                        }}
-                    />
-                ))} */}
+
                 <HospitalMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {hospitalsData.results.map((hospital) => (
-                    <Marker
-                        key={hospital['place_id']}
-                        position={{ lat: parseFloat(hospital.geometry.location.lat), lng: parseFloat(hospital.geometry.location.lng) }}
-                        icon={{
-                            url: 'icons8-hospital-3-64.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(hospital);
-                        }}
-                    />
-                ))} */}
+
                 <GymMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {gymsData.results.map((gym) => (
-                    <Marker
-                        key={gym['place_id']}
-                        position={{ lat: parseFloat(gym.geometry.location.lat), lng: parseFloat(gym.geometry.location.lng) }}
-                        icon={{
-                            url: 'gym64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(gym);
-                        }}
-                    />
-                ))} */}
 
                 <CafeMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {cafesData.results.map((cafe) => (
-                    <Marker
-                        key={cafe['place_id']}
-                        position={{ lat: parseFloat(cafe.geometry.location.lat), lng: parseFloat(cafe.geometry.location.lng) }}
-                        icon={{
-                            url: 'cafe64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(cafe);
-                        }}
-                    />
-                ))} */}
 
                 <AttractionMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {attractionsData.results.map((attraction) => (
-                    <Marker
-                        key={attraction['place_id']}
-                        position={{ lat: parseFloat(attraction.geometry.location.lat), lng: parseFloat(attraction.geometry.location.lng) }}
-                        icon={{
-                            url: 'attraction64px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(attraction);
-                        }}
-                    />
-                ))} */}
-                <ResturantMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-                {/* {resturantsData.results.map((resturant) => (
-                    <Marker
-                        key={resturant['place_id']}
-                        position={{ lat: parseFloat(resturant.geometry.location.lat), lng: parseFloat(resturant.geometry.location.lng) }}
-                        icon={{
-                            url: 'restaurant48px.png',
-                            scaledSize: new window.google.maps.Size(30, 30),
-                            origin: new window.google.maps.Point(0, 0),
-                            anchor: new window.google.maps.Point(15, 15),
-                        }}
-                        onClick={() => {
-                            setSelectedDefaultMarker(resturant);
-                        }}
-                    />
-                ))} */}
 
-                {/* destinations are markers created by users whereas the ones above is created by data files */}
+                <ResturantMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                {/* UserMarkers are markers created by users whereas the ones above is created by data files */}
 
                 <UserMarkers destinations={renderDestinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
-                {/* {destinations.map((destination, index) => (
-                    <Marker
-                        key={index}
-                        position={{ lat: parseFloat(destination.lat), lng: parseFloat(destination.lng) }}
-                        onClick={() => {
-                            setSelectedCreatedMarker(destination);
-                        }}
-                    />
-                ))} */}
-
 
                 {selectedDefaultMarker && (
                     <InfoWindow
@@ -1040,7 +799,7 @@ export default function Map() {
                     >
                         <div>
                             <h2>{selectedCreatedMarker.name}</h2>
-                            <img src={selectedCreatedMarker.image} width="400" height="300" />
+                            <img src={selectedCreatedMarker.image} alt={selectedCreatedMarker.name} width="400" height="300" />
                             <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
                         </div>
                     </InfoWindow>

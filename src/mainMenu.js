@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import LogoutButton from "./logoutButton";
 import Profile from "./profile";
 import { NavLink } from 'react-router-dom';
-import { useAuth0 } from "@auth0/auth0-react";
-import { useApi } from './use-api';
-import createAuth0Client from '@auth0/auth0-spa-js';
+// import { useAuth0 } from "@auth0/auth0-react";
+// import { useApi } from './use-api';
+// import createAuth0Client from '@auth0/auth0-spa-js';
 import './mainMenu.css'
 
 
 const MainMenu = () => {
-  const { user, getAccessTokenSilently } = useAuth0();
+  // const { user, getAccessTokenSilently } = useAuth0();
 
   //   const userInfo =  auth0.getUser();
   //   console.log(user);
