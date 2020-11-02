@@ -70,47 +70,20 @@ const center = {
 }
 const DESTINATIONS_URL = "http://localhost:3000/destinations"
 const USER_DESTINATIONS_URL = "http://localhost:3000/user_destinations"
+const COLLAGES_URL = "http://localhost:3000/collages"
 const currentUserDestinations = []; //too many rerenders when trying to use state, so I saved all filtered destinations into this varible and render this instead
+const collageSettings = [];
 //==================================================================My Map Component=========================================================
 export default function Map() {
 
-
     useEffect(() => {
         fetchData();
-
-        // fetchDestinations();
-        // fetchUserDestinations();
-        // setTimeout(() => render(), 5000);
-
-        // function render() {
-        //     console.log('hi')
-        //     console.log(destinations)
-        //     console.log(userDestinations)
-        //     userDestinations.forEach((ud) => {
-        //         destinations.forEach((d) => {
-        //             console.log(d)
-        //             if (ud.destination_id === d.id) {
-        //                 console.log(d)
-        //                 currentUserDestinations.push(d)
-        //             }
-        //         })
-        //     })
-        //     setRenderDestinations([...renderDestinations, ...currentUserDestinations])
-        // }
     }, []);
-
-    //   const fetchUsers = () => {
-    //   fetch('http://localhost:3000/users')
-
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log('Success:', data);
-    //     })
-    // };
-    // fetchUsers();
 
     //**************State Hooks***************************/
     const [nameValue, setNameValue] = useState('');  //set the input value of Name of Place as person types
+    const [storyValue, setStoryValue] = useState('');  //set the input value of Story of add memory modal as person types
+    const [dateValue, setDateValue] = useState('');  //set the input value of Date of add memory modal 
     const [imageUrlValue, setImageUrlValue] = useState('');  //set the input value of image
     const [destinations, setDestinations] = useState([]);  //holds all destinations created by all users of app
     //const [userDestinations, setUserDestinations] = useState([]); //holds destination ids pertaining to a specific user; will be used to filter out the destinations state before rendering
@@ -122,6 +95,7 @@ export default function Map() {
     const [images, setImages] = useState({});  //used for image upload
     const [collages, setCollages] = useState([]); //holds all pictures setting of each collage
     const [currentVisitedDestination, setCurrentVisitedDestination] = useState(null);  // this state is used to keep track of the currently selected visited destination that a collage/Memory Album is being added to
+
 
 
 
@@ -327,12 +301,75 @@ export default function Map() {
             setRenderDestinations([...renderDestinations, ...currentUserDestinations])
         }
 
+        function fetchCollages() {
+         
+
+            if (localStorage.getItem("token")) {
+                fetch(COLLAGES_URL, {
+                    method: "GET",
+                    headers: {
+                        'Authorization': `JWT ${localStorage.getItem("token")}`
+                    }
+                }).then(res => res.json()).then(data => {
+
+                  
+                    // console.log(data)
+                    //creates the setting for each Collage of user
+                    data.forEach((d) => {
+                        let photos = d.photos
+                        let formattedPhotos = [];
+                        console.log('this is photos', photos)
+                        console.log('this is photos', photos.split(" "))
+                   
+                   //with the way that the photos data is, I must:
+                   // 1) split the photos data to go from away to string,
+                   // 2) filter out the elements that aren't photo urls.
+                   // 3) push filtered photos into an array [to avoid too many rerenders error]
+                   // 4) add formatted photos array as photos value in setting
+                   // 5) push setting into collageSetting [to avoid too many rerenders error]
+                   // 6) update collages state with collageSettings
+                       photos = photos.split(" ")
+                       photos = photos.filter((ph) => {
+                         return  ph[0] === 'd'
+                       })
+
+                        for(const photo of photos){
+                            console.log(photo[0])
+                            formattedPhotos.push({src: photo})
+                        }
+
+                        // photos.forEach(photo => {
+                        //     formattedPhotos.push({src: photo})
+                        // })
+                       
+                        // console.log(formattedPhotos)
+
+                        const setting = {
+                            width: '150px',
+                            height: ['62.5px', '42.5px'],
+                            layout: [1, 4],
+                            photos: formattedPhotos,
+                            showNumOfRemainingPhotos: true,
+                            userDestinationId: d.user_destination_id
+                        };
+
+                        // Object.keys(currentImages).map(function (keyName, keyIndex) {
+                        //     photos.push({ src: currentImages[keyName] })
+                        // })
+
+                        collageSettings.push(setting);
+                    })
+                setCollages(collageSettings)
+                })
+            }
+           console.log(collageSettings)
+        }
 
 
         fetchDestinations();
         fetchUserDestinations();
         setTimeout(() => renderUserDestinations(), 2000);
-
+        setTimeout(() => fetchCollages(), 2500);
 
     }
 
@@ -361,7 +398,8 @@ export default function Map() {
             return newDestination;
         })
 
-        setDestinations(newDestinations);
+        setRenderDestinations(newDestinations);
+
         // switch (listName) {
         //     case "Favorite":
         //         console.log(marker.name + ' added to ' + listName)
@@ -379,50 +417,46 @@ export default function Map() {
 
     function deleteFromList(destination) {                       //deletes marker from list 
 
-        if (destination.listCategory === undefined) {
-            //deletes from all lists if not currently 
-            const currentDestinations = destinations
-            setDestinations(currentDestinations.filter(d => d.name !== destination.name))
-        } else {
+        //remove from frontend
+        const newDestinations = destinations.map((d) => {
+            const newDestination = { ...d }
+            if (destination.name === d.name) {
+                newDestination.listCategory = undefined
+            }
+            return newDestination;
+        })
 
-            const newDestinations = destinations.map((d) => {
-                const newDestination = { ...d }
-                if (destination.name === d.name) {
-                    newDestination.listCategory = undefined
-                }
-                return newDestination;
+        setDestinations(newDestinations);
+
+        //remove from backend 
+        fetch(`${USER_DESTINATIONS_URL}/${destination.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Authorization': `JWT ${localStorage.getItem("token")}`,
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                "listCategory": null,
+                "addr": destination.addr
             })
-
-            setDestinations(newDestinations);
-        }
-
-        // let id = destination.id
-        // fetch(`${DESTINATIONS_URL}/{id}`, {
-        //     method: 'DELETE',
-        //     headers: {
-        //         'Authorization': `JWT ${localStorage.getItem("token")}`,
-        //         "Content-Type": "application/json",
-        //         "Accept": "application/json"
-        //     },
-
-        // })
-
+        })
+        // }
 
     }
 
     function deleteFromAllLists(destination) {
         //removes offscreen from frontend
-        // const currentDestinations = destinations
-        // setDestinations(currentDestinations.filter(d => d.name !== destination.name))
+        const currentDestinations = renderDestinations.filter((d) => d.name !== destination.name)
+        setRenderDestinations(currentDestinations)
+
         //===================================================================================
+        //_____________________________________________________________________________________________________
         //deletes on backend
         //first, had to find User_Destination Instance with the same matching destination id attribute
         //so I'll know I'm deleting the correct user_destination instance from database
 
-
-        // console.log('destinations', renderDestinations)
-
-
+        //First Method, if backend didn't know user id, I would have to find user_destination id directly
         // fetch(USER_DESTINATIONS_URL, {
         //     method: "GET",
         //     headers: {
@@ -442,17 +476,9 @@ export default function Map() {
         //     })
 
         // })
-
-        // renderDestinations.forEach((ud) => {
-        //     console.log('break here')
-        //     console.log(ud)
-        //     console.log('break')
-        //     console.log(destination)
-        //     if (ud['destination_id'] === destination.id) {
-        //         console.log('this should work theoretically speaking')
-        //         id = ud.id
-        //     }
-        // })
+        //_____________________________________________________________________________________________________
+        //better solution; since backend already knows the user id, I can just use destination id instead of finding user_destination id 
+        //because user_destination id is found on backend using destination/user id pair
         fetch(`${USER_DESTINATIONS_URL}/${destination.id}`, {
             method: 'DELETE',
             headers: {
@@ -468,8 +494,8 @@ export default function Map() {
         return <MapStyleDropDown changeStyle={changeStyle} />
     }
 
-    function toggleMemoryPopUpWindow(index) {
-        setCurrentVisitedDestination(index)
+    function toggleMemoryPopUpWindow(destinationId) {
+        setCurrentVisitedDestination(destinationId)
         const modal = document.querySelector(".modal")
         const closeBtn = document.querySelector(".close")
         modal.style.display = "block";
@@ -491,18 +517,21 @@ export default function Map() {
         e.preventDefault();
         //console.log([images])
         // console.log(images[0])
+        let userDestinationId = currentVisitedDestination
         let currentImages = images
         let photos = []
 
-
+        //===============================================================================
+        // Frontend Rendering
+        //use this to get rid array of arrays and return just array of image urls, then pass photos to settings
         Object.keys(currentImages).map(function (keyName, keyIndex) {
             photos.push({ src: currentImages[keyName] })
         })
 
-
-        //we set the collage settings and also pass the array of photos to the collage as photos
-
-        let visitedDestinationId = currentVisitedDestination
+        //console.log(currentVisitedDestination)
+        console.log(currentImages)
+        console.log(photos)
+        // console.log(photos.toString())
 
         const setting = {
             width: '150px',
@@ -510,20 +539,66 @@ export default function Map() {
             layout: [1, 4],
             photos: photos,
             showNumOfRemainingPhotos: true,
-            visitedDestinationId: visitedDestinationId
+            userDestinationId: userDestinationId
         };
         setCollages([...collages, setting])
 
         // setImages([]);
+        //=================================================================================
+        // Persistence on backend
+        fetch(USER_DESTINATIONS_URL, {
+            method: "GET",
+            headers: {
+                'Authorization': `JWT ${localStorage.getItem("token")}`
+            }
+        }).then(res => res.json()).then(data => {
+
+            let ud = data.find(d => d.destination_id === userDestinationId)
+            let newPhotos = [];
+            photos.forEach((photo) => newPhotos.push(` ${photo.src} `))
+
+
+            // console.log(ud)
+            // console.log(ud.id)
+            console.log(newPhotos)
+            console.log(newPhotos.join())
+
+            // newPhotos = newPhotos.join()
+            fetch(COLLAGES_URL, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `JWT ${localStorage.getItem("token")}`,
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    "photos": newPhotos,
+                    "story": storyValue,
+                    "date": dateValue,
+                    "user_destination_id": ud.id
+                })
+            })
+
+
+            // console.log('attributes')
+            // console.log('photos', photos)
+            // console.log('photos', newPhotos.toString())
+            // console.log('story', storyValue)
+            // console.log('date', dateValue)
+            // console.log('user_des_id', ud.id)
+
+        })
     }
 
-
-
+    // t.string :pics
+    // t.string :story
+    // t.string :date
+    // t.integer :user_destination_id
 
     //lists for each category shown in side panel
-    const favoritedDestinations = destinations.filter(destination => destination.listCategory === 'Favorite')
-    const wantToGoDestinations = destinations.filter(destination => destination.listCategory === 'Want to Go')
-    const visitedDestinations = destinations.filter(destination => destination.listCategory === 'Visited')
+    const favoritedDestinations = renderDestinations.filter(destination => destination.listCategory === 'Favorite')
+    const wantToGoDestinations = renderDestinations.filter(destination => destination.listCategory === 'Want to Go')
+    const visitedDestinations = renderDestinations.filter(destination => destination.listCategory === 'Visited')
     //********************Returned Component Values**************************************/
     return (
         <div>
@@ -542,11 +617,11 @@ export default function Map() {
                     <form onSubmit={addMemory}>
                         <label >
                             Tell Your Story:<br />
-                            <textarea name='story' id='story' rows='5' cols='33'></textarea>
+                            <textarea name='story' id='story' rows='5' cols='33' value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
                         </label><br /><br />
                         <label >
                             Date:<br />
-                            <input type="date" name="date" value={nameValue} onChange={handleNameInput} />
+                            <input type="date" name="date" value={dateValue} onChange={e => setDateValue(e.target.value)} />
                         </label><br /><br />
 
                         {/* <label >
@@ -657,12 +732,12 @@ export default function Map() {
 
                     <div label="Visited">
                         {visitedDestinations.map((destination, index) => (
-                            <div>
+                            <div key={index} >
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.addr}</p>
                                 <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                <button onClick={() => toggleMemoryPopUpWindow(index)}>Add Memory</button>
+                                <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
                                 <CarouselProvider
                                     naturalSlideWidth={15}
                                     naturalSlideHeight={20}
@@ -686,7 +761,7 @@ export default function Map() {
 
 
 
-                                                {collages.map((collage) => index === collage.visitedDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /></Slide> : null)}
+                                                {collages.map((collage) => destination.id === collage.userDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /> <p>details button</p></Slide> : null)}
 
 
 
