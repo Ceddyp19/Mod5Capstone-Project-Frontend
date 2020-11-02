@@ -113,7 +113,7 @@ export default function Map() {
     const [nameValue, setNameValue] = useState('');  //set the input value of Name of Place as person types
     const [imageUrlValue, setImageUrlValue] = useState('');  //set the input value of image
     const [destinations, setDestinations] = useState([]);  //holds all destinations created by all users of app
-    const [userDestinations, setUserDestinations] = useState([]); //holds destination ids pertaining to a specific user; will be used to filter out the destinations state before rendering
+    //const [userDestinations, setUserDestinations] = useState([]); //holds destination ids pertaining to a specific user; will be used to filter out the destinations state before rendering
     const [renderDestinations, setRenderDestinations] = useState([]); //holds filtered destinations, userDestinations only has id's, that's why I don't just render UserDestinations; there's no details to render
     const [favorited, setFavorited] = useState([]);  //holds favorited destinations list
     const [wantToGo, setWantToGo] = useState([]);    //holds Want2Go destinations list
@@ -279,10 +279,12 @@ export default function Map() {
                         'Authorization': `JWT ${localStorage.getItem("token")}`
                     }
                 }).then(res => res.json()).then(data => {
-                    setDestinations(prevDestinations => ([...data]))
+                    //the code on line below is essential for rendering the markers upon render
+                    setDestinations(prevDestinations => ([...data])) //does same as setDestinations(data)
+
                     //console.log(data.map(d => d.id))
-                    console.log(data)
-                    console.log(destinations)
+                    // console.log(data)
+                    // console.log(destinations)
                     Des = data
 
                 })
@@ -300,25 +302,23 @@ export default function Map() {
                 }).then(res => res.json()).then(data => {
 
                     console.log(data)
-                    setUserDestinations(data)
+                    // setUserDestinations(data)
                     Userdes = data
 
-                    // this.makeUserMoviesFavorites(data.map(m => m.movie_id), data)
-
-                    //  MAKE FUNCTION TO CHANGE MOVIES IN RESPONSE TO FAVORITED this.setState({ movies: data })
                 }
                 )
             }
         }
 
         function renderUserDestinations() {
-            console.log(Userdes)
-            console.log(Des)
-            
+            // console.log(Userdes)
+            // console.log(Des)
+
             Userdes.forEach((ud) => {
                 Des.forEach((d) => {
-                    console.log(d)
+                    // console.log(d)
                     if (ud.destination_id === d.id) {
+                        d.listCategory = ud.listCategory
                         console.log(d)
                         currentUserDestinations.push(d)
                     }
@@ -331,19 +331,32 @@ export default function Map() {
 
         fetchDestinations();
         fetchUserDestinations();
-       setTimeout(() => renderUserDestinations(), 2000);
+        setTimeout(() => renderUserDestinations(), 2000);
 
 
     }
 
 
     function addToList(destination, listName) {
-        //console.log('addToList function operational!', markerProps, listName)
+        // iterating over renderDestinations state instead of destinations 
+        //inorder to only add user specific destinations to a list
 
-        const newDestinations = destinations.map((d) => {
+        const newDestinations = renderDestinations.map((d) => {
             const newDestination = { ...d }
             if (destination.name === d.name) {
                 newDestination.listCategory = listName
+                fetch(`${USER_DESTINATIONS_URL}/${destination.id}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'Authorization': `JWT ${localStorage.getItem("token")}`,
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        "listCategory": listName,
+                        "addr": destination.addr
+                    })
+                })
             }
             return newDestination;
         })
@@ -362,13 +375,12 @@ export default function Map() {
         //     default:
         //         console.log('Error, List not found')
         // }
-
-
     }
 
     function deleteFromList(destination) {                       //deletes marker from list 
 
         if (destination.listCategory === undefined) {
+            //deletes from all lists if not currently 
             const currentDestinations = destinations
             setDestinations(currentDestinations.filter(d => d.name !== destination.name))
         } else {
@@ -396,6 +408,57 @@ export default function Map() {
         // })
 
 
+    }
+
+    function deleteFromAllLists(destination) {
+        //removes offscreen from frontend
+        // const currentDestinations = destinations
+        // setDestinations(currentDestinations.filter(d => d.name !== destination.name))
+        //===================================================================================
+        //deletes on backend
+        //first, had to find User_Destination Instance with the same matching destination id attribute
+        //so I'll know I'm deleting the correct user_destination instance from database
+
+
+        // console.log('destinations', renderDestinations)
+
+
+        // fetch(USER_DESTINATIONS_URL, {
+        //     method: "GET",
+        //     headers: {
+        //         'Authorization': `JWT ${localStorage.getItem("token")}`
+        //     }
+        // }).then(res => res.json()).then(data => {
+        //     let ans;
+        //     ans = data.find(d => d.destination_id === destination.id)
+        //     console.log(ans)
+        //     console.log(ans.id)
+
+        //        fetch(`${USER_DESTINATIONS_URL}/${ans.id}`, {
+        //         method: 'DELETE',
+        //         headers: {
+        //             'Authorization': `JWT ${localStorage.getItem("token")}`
+        //             }
+        //     })
+
+        // })
+
+        // renderDestinations.forEach((ud) => {
+        //     console.log('break here')
+        //     console.log(ud)
+        //     console.log('break')
+        //     console.log(destination)
+        //     if (ud['destination_id'] === destination.id) {
+        //         console.log('this should work theoretically speaking')
+        //         id = ud.id
+        //     }
+        // })
+        fetch(`${USER_DESTINATIONS_URL}/${destination.id}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `JWT ${localStorage.getItem("token")}`
+            }
+        })
     }
 
     function StyleMap() {                                   //set map style state hook
@@ -531,37 +594,13 @@ export default function Map() {
                 </div>
                 <Tabs>
                     <div label="All">
-                        {/* 
-                        {
-
-
-
-                            userDestinations.forEach((ud) => {
-                                //  console.log(ud)
-                                //console.log(ud.destination_id)
-                                destinations.forEach((d) => {
-                                    // console.log(d.id)
-                                    if (ud.destination_id === d.id) {
-                                        //console.log(d)
-                                        currentUserDestinations.push(d)
-                                    }
-                                })
-                            })
-
-
-                        } */}
-                        {/* 
-                        {
-                            setRenderDestination([...renderDestinations, ...currentUserDestinations])
-                        } */}
-
                         {
                             renderDestinations.map((destination) => (
-                                <div>
+                                <div key={destination.name}>
                                     <h2>{destination.name}</h2>
                                     <img src={destination.image} width="120" height="80" />
                                     <p>{destination.addr}</p>
-                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                    <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
                                 </div>
 
                             ))
@@ -569,8 +608,8 @@ export default function Map() {
                     </div>
 
                     <div label="Want2Go">
-                        {wantToGoDestinations.map((destination) => (
-                            <div>
+                        {wantToGoDestinations.map((destination, index) => (
+                            <div key={index}>
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.addr}</p>
@@ -688,8 +727,8 @@ export default function Map() {
 
                     <div label="Favorited">
 
-                        {favoritedDestinations.map((destination) => (
-                            <div>
+                        {favoritedDestinations.map((destination, index) => (
+                            <div key={index} >
                                 <h2>{destination.name}</h2>
                                 <img src={destination.image} width="120" height="80" />
                                 <p>{destination.addr}</p>
@@ -884,7 +923,7 @@ export default function Map() {
 
                 {/* destinations are markers created by users whereas the ones above is created by data files */}
 
-                <UserMarkers destinations={destinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
+                <UserMarkers destinations={renderDestinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
                 {/* {destinations.map((destination, index) => (
                     <Marker
                         key={index}

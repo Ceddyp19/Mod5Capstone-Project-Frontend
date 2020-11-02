@@ -47,14 +47,14 @@ const PlacesAutocomplete = () => {
   };
  
   const renderSuggestions = () =>
-    data.map((suggestion) => {
+    data.map((suggestion, index) => {
       const {
         id,
         structured_formatting: { main_text, secondary_text },
       } = suggestion;
  
       return (
-        <li key={id} onClick={handleSelect(suggestion)}>
+        <li key={index} onClick={handleSelect(suggestion)}>
           <strong>{main_text}</strong> <small>{secondary_text}</small>
         </li>
       );
