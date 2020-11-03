@@ -1,6 +1,6 @@
 //This component is used to make the dropdown element when a user adds a marker to a list
 import React, { Component } from "react";
-import "./mapStyleDropDown.css";
+import "./css/mapStyleDropDown.css";
 
 class MapStyleDropDown extends Component {
   container = React.createRef();

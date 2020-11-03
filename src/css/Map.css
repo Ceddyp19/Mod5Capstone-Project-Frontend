@@ -1,0 +1,49 @@
+/* map related code below */
+
+#Logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: orange;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    position: absolute;
+    top: 1 rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+}
+
+.locate {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    z-index: 10;
+}
+
+.locate img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Code related to side bar */
+
+
+/* modal/ popup window code  */
+.meh {
+    background-color: green;
+    position: relative;
+    text-align: center;
+    right: 1000px;
+    top: 800px;
+    z-index: 25;
+
+}

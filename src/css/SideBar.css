@@ -1,50 +1,12 @@
-/* map related code below */
-
-#Logo {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    color: orange;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
-}
-
-.search {
-    position: absolute;
-    top: 1 rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 400px;
-    z-index: 10;
-}
-
-.locate {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    z-index: 10;
-}
-
-.locate img {
-    width: 30px;
-    cursor: pointer;
-}
-
-/* Code related to side bar */
-
-#mySidebar {
+/* #mySideBar {
     background-color: brown;
     position: absolute;
     top: 97px;
-    width: 38%;
+    width: 40%;
     height: 90%;
     z-index: 9;
     overflow: scroll;
-}
+} */
 
 .form-drop-down {
     background-color: #777;
@@ -82,47 +44,56 @@
     background-color: #f1f1f1;
 }
 
-
-.sidebar {
+#mySideBar {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 10%;
     left: 0;
-    background-color: #111;
+    background-color: rgb(13, 51, 122);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
-.sidebar a {
-    padding: 8px 8px 8px 32px;
+#mySideBar .closebtn {
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+    color: #2c1414;
+    /* display: block; */
     transition: 0.3s;
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
+#mySideBar .closebtn:hover {
+    color: #772d2d;
 }
 
-.sidebar .closebtn {
-    position: absolute;
+#mySideBar .closebtn {
+    /* position: absolute; */
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 94.9%;
+    /* margin-left: 50px; */
+  
 }
 
+
 .openbtn {
+    z-index: 10;
+    position: absolute;
+   
+    top: 10%; 
+    width: 55px;
+    height: 150px;
+    vertical-align: center;
+    transition: 0.5s;
+
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 15px;
+    padding: 1px 1px;
     border: none;
 }
 
@@ -130,16 +101,16 @@
     background-color: #444;
 }
 
-#main {
+/* #main {
     position: absolute;
     top: 30px;
     right: 80px;
     transition: margin-left .5s;
     padding: 16px;
     z-index: 10;
-}
+} */
 
-.location-search{
+.location-search {
     /* padding: 10px; */
     position: relative;
     right: -250px;
@@ -147,70 +118,60 @@
     padding-bottom: 80px;
 }
 
-.form-div{
+.form-div {
     position: relative;
-    right:1px;
+    right: 1px;
     top: 10px;
     padding-bottom: 50px;
 }
 
-.submit-btn{
+.submit-btn {
     position: relative;
-    right:-130px;
+    right: -130px;
     top: 10px;
     padding: 2px;
 }
 
-.place-input{
+.place-input {
     position: relative;
-    right:-250px;
+    right: -250px;
     top: 10px;
 }
 
-.image-input{
+.image-input {
     position: relative;
-    right:-250px;
+    right: -250px;
     top: 10px;
 }
 
-.location-input{
+.location-input {
     position: relative;
-    right:-250px;
+    right: -250px;
     top: 10px;
     padding-bottom: 80px;
 }
 
+.destination-details {
+    text-align: center;
+    /* background-color: gray; */
+    margin-top: 60px;
+}
+
+.destination-details img {
+    width: 200px;
+    height: 160px;
+}
 
 
+.carousel {
+     /* text-align: center; */
+    margin-left: 19px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 11;
-    background-color: rgba(0, 0, 0, 0.25);
-    right: 600px;
-    top:200px;
-    width: 700px;
-    height: 500px;
-    padding: 30px;
-    /* height: auto; */
-    /* margin: 0 auto; */
-
-  }
-
-  .modal_content {
-    background-color: white;
+.carousel .slider p{
     position: relative;
-    height: 100%;
-  }
+    text-align: center;
+    right: 15px;
+  
+}

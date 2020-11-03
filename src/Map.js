@@ -1,6 +1,8 @@
 //============================================My Imports======================================================
-import './App.css';
-import './Map.css';
+import './css/Map.css';
+import './css/SideBar.css'
+import './css/AddMemoryPopUpWindow.css'
+import './css/NavBar.css'
 import UserMarkers from './markers/renderUserMarker';
 import AttractionMarkers from './markers/attractionMarkers';
 import CafeMarkers from './markers/cafeMarkers';
@@ -142,14 +144,16 @@ export default function Map() {
     }
 
     function openNav() {
-        document.getElementById("mySidebar").style.width = "38%";
+        document.getElementById("mySideBar").style.width = "38%";
+        document.getElementsByClassName("openbtn")[0].style.left = '730px';
         // document.getElementById("main").style.marginLeft = "250px";
     }
 
     function closeNav(e) {
         e.preventDefault();
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySideBar").style.width = "0";
+        document.getElementsByClassName("openbtn")[0].style.left = '-0px';
+        // document.getElementById("main").style.marginLeft = "0";
     }
 
     function handleNameInput(event) {
@@ -323,9 +327,9 @@ export default function Map() {
                         // console.log(formattedPhotos)
 
                         const setting = {
-                            width: '150px',
-                            height: ['62.5px', '42.5px'],
-                            layout: [1, 4],
+                            width: '200px',
+                            height: ['100px', '60px'],
+                            layout: [1, 3],
                             photos: formattedPhotos,
                             showNumOfRemainingPhotos: true,
                             userDestinationId: d.user_destination_id
@@ -340,7 +344,7 @@ export default function Map() {
                     setCollages(collageSettings)
                 })
             }
-            console.log(collageSettings)
+            // console.log(collageSettings)
         }
 
 
@@ -497,9 +501,9 @@ export default function Map() {
         })
 
         const setting = {
-            width: '150px',
-            height: ['62.5px', '42.5px'],
-            layout: [1, 4],
+            width: '200px',
+            height: ['100px', '60px'],
+            layout: [1, 3],
             photos: photos,
             showNumOfRemainingPhotos: true,
             userDestinationId: userDestinationId
@@ -578,11 +582,12 @@ export default function Map() {
 
 
             <h1 id='Logo'>Logo here!!</h1>
+
             <div id='main'>
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
             </div>
-            <div id='mySidebar'>
-                <button  className="closebtn" onClick={closeNav}>×</button>
+            <div id='mySideBar'>
+                <button className="closebtn" onClick={closeNav}>×</button>
 
 
                 <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
@@ -613,10 +618,13 @@ export default function Map() {
                         {
                             renderDestinations.map((destination) => (
                                 <div key={destination.name}>
-                                    <h2>{destination.name}</h2>
-                                    <img src={destination.image} alt={destination.name} width="120" height="80" />
-                                    <p>{destination.addr}</p>
-                                    <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
+
+                                    <div className="destination-details">
+                                        <h2>{destination.name}</h2>
+                                        <img src={destination.image} alt={destination.name} />
+                                        <p>{destination.addr}</p>
+                                        <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
+                                    </div>
                                 </div>
 
                             ))
@@ -626,32 +634,20 @@ export default function Map() {
                     <div label="Want2Go">
                         {wantToGoDestinations.map((destination, index) => (
                             <div key={index}>
-                                <h2>{destination.name}</h2>
-                                <img src={destination.image} alt={destination.name} width="120" height="80" />
-                                <p>{destination.addr}</p>
-                                <button onClick={() => deleteFromList(destination)}>Delete</button>
+
+                                <div className="destination-details">
+                                    <h2>{destination.name}</h2>
+                                    <img src={destination.image} alt={destination.name} />
+                                    <p>{destination.addr}</p>
+                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                </div>
                             </div>
 
                         ))}
                     </div>
 
-
-
-
-
-
-
                     {/* 
-                    <CarouselProvider
-                    naturalSlideWidth={15}
-                    naturalSlideHeight={20}
-                    orientation="horizontal"
-                    totalSlides={this.props.movies.length}
-                    visibleSlides={5}
-                    step={5}
-                    infinite={true}
-
-                >
+            
                     <div className="carousel">
 
                         <div className="slider">
@@ -674,19 +670,22 @@ export default function Map() {
                     <div label="Visited">
                         {visitedDestinations.map((destination, index) => (
                             <div key={index} >
-                                <h2>{destination.name}</h2>
-                                <img src={destination.image} alt={destination.name}width="120" height="80" />
-                                <p>{destination.addr}</p>
-                                <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
+
+                                <div className="destination-details">
+                                    <h2>{destination.name}</h2>
+                                    <img src={destination.image} alt={destination.name} />
+                                    <p>{destination.addr}</p>
+                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                    <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
+                                </div>
 
                                 <CarouselProvider
-                                    naturalSlideWidth={15}
-                                    naturalSlideHeight={20}
+                                    naturalSlideWidth={38}
+                                    naturalSlideHeight={35}
                                     orientation="horizontal"
                                     totalSlides={collages.filter((collage) => destination.id === collage.userDestinationId).length}
-                                    visibleSlides={5}
-                                    step={3}
+                                    visibleSlides={3}
+                                    step={1}
                                     infinite={true}
                                 >
 
@@ -716,10 +715,13 @@ export default function Map() {
 
                         {favoritedDestinations.map((destination, index) => (
                             <div key={index} >
-                                <h2>{destination.name}</h2>
-                                <img src={destination.image} alt={destination.name} width="120" height="80" />
-                                <p>{destination.addr}</p>
-                                <button onClick={() => deleteFromList(destination)}>Delete</button>
+
+                                <div className="destination-details">
+                                    <h2>{destination.name}</h2>
+                                    <img src={destination.image} alt={destination.name} />
+                                    <p>{destination.addr}</p>
+                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                </div>
                             </div>
 
                         ))}
@@ -829,7 +831,7 @@ function Locate({ panTo }) {
                 );
             }}
         >
-            <img src="compass1.png" alt="compass" />
+            <img src="big_compass.png" alt="compass"  width='200' length='200'/>
         </button>
     );
 }

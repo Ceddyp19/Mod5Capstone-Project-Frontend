@@ -34,9 +34,11 @@ images.map((image) => collage.push({ src: image }))
 const setting = {
     // width: '600px',
     // height: ['250px', '170px'],
-    width: '150px',
-    height: ['62.5px', '42.5px'],
-    layout: [1, 4],
+    // width: '150px',
+    // height: ['62.5px', '42.5px'],
+    width: '300px',
+    height: ['125px', '85px'],
+    layout: [1, 3],
     photos: collage
     //   { src: 'url/image-1.jpg' },
     //   { src: 'url/image-2.jpg' },
