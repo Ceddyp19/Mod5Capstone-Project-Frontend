@@ -70,6 +70,7 @@ export default function Map() {
 
     useEffect(() => {
         fetchData();
+        setTimeout(() => fetchCollages(), 2500);
     }, []);
 
     //**************State Hooks***************************/
@@ -89,6 +90,8 @@ export default function Map() {
     const [allCollages, setAllCollages] = useState(null); //holds all the persisted collages when fetching after component mounts 
     const [currentlyViewedCollage, setCurrentlyViewedCollage] = useState(''); //the collage details the user is currently, found by filtering through allCollages
     const [currentlyViewedCollagePhotos, setCurrentlyViewedCollagePhotos] = useState([]); //since the photos data in each Collage isn't formatted properly, I must reformate them and place the photos in seprate state
+    const [currentlyViewedCollageStory, setCurrentlyViewedCollageStory] = useState(''); //when user edits story, the edited collage story will be rendered 
+    const [editMode, setEditMode] = useState(false); // switches details popup window to edit mode 
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
     const [selectedDefaultMarker, setSelectedDefaultMarker] = React.useState(null);
@@ -177,6 +180,9 @@ export default function Map() {
         let name = e.target.name.value
         let image = e.target.image.value
         let address = e.target.autocomplete.value
+
+        setNameValue('')
+        setImageUrlValue('')
 
         getGeocode({ address: address })
             .then((results) => getLatLng(results[0]))
@@ -291,71 +297,132 @@ export default function Map() {
             setRenderDestinations([...renderDestinations, ...currentUserDestinations])
         }
 
-        function fetchCollages() {
+        // function fetchCollages() {
 
 
-            if (localStorage.getItem("token")) {
-                fetch(COLLAGES_URL, {
-                    method: "GET",
-                    headers: {
-                        'Authorization': `JWT ${localStorage.getItem("token")}`
-                    }
-                }).then(res => res.json()).then(data => {
+        //     if (localStorage.getItem("token")) {
+        //         fetch(COLLAGES_URL, {
+        //             method: "GET",
+        //             headers: {
+        //                 'Authorization': `JWT ${localStorage.getItem("token")}`
+        //             }
+        //         }).then(res => res.json()).then(data => {
 
-                    setAllCollages(data);
-                    // console.log(data)
-                    //creates the setting for each Collage of user
-                    data.forEach((d) => {
-                        let photos = d.photos
-                        let formattedPhotos = [];
-                        // console.log('this is photos', photos)
-                        // console.log('this is photos', photos.split(" "))
+        //             setAllCollages(data);
+        //             // console.log(data)
+        //             //creates the setting for each Collage of user
+        //             data.forEach((d) => {
+        //                 let photos = d.photos
+        //                 let formattedPhotos = [];
+        //                 // console.log('this is photos', photos)
+        //                 // console.log('this is photos', photos.split(" "))
 
-                        //with the way that the photos data is, I must:
-                        // 1) split the photos data to go from away to string,
-                        // 2) filter out the elements that aren't photo urls.
-                        // 3) push filtered photos into an array [to avoid too many rerenders error]
-                        // 4) add formatted photos array as photos value in setting
-                        // 5) push setting into collageSetting [to avoid too many rerenders error]
-                        // 6) update collages state with collageSettings
-                        photos = photos.split(" ")
-                        photos = photos.filter((ph) => {
-                            return ph[0] === 'd'
-                        })
+        //                 //with the way that the photos data is, I must:
+        //                 // 1) split the photos data to go from away to string,
+        //                 // 2) filter out the elements that aren't photo urls.
+        //                 // 3) push filtered photos into an array [to avoid too many rerenders error]
+        //                 // 4) add formatted photos array as photos value in setting
+        //                 // 5) push setting into collageSetting [to avoid too many rerenders error]
+        //                 // 6) update collages state with collageSettings
+        //                 photos = photos.split(" ")
+        //                 photos = photos.filter((ph) => {
+        //                     return ph[0] === 'd'
+        //                 })
 
-                        for (const photo of photos) {
-                            formattedPhotos.push({ src: photo })
-                        }
+        //                 for (const photo of photos) {
+        //                     formattedPhotos.push({ src: photo })
+        //                 }
 
-                        // console.log(formattedPhotos)
+        //                 // console.log(formattedPhotos)
 
-                        const setting = {
-                            width: '200px',
-                            height: ['100px', '60px'],
-                            layout: [1, 3],
-                            photos: formattedPhotos,
-                            showNumOfRemainingPhotos: true,
-                            userDestinationId: d.user_destination_id
-                        };
+        //                 const setting = {
+        //                     width: '200px',
+        //                     height: ['100px', '60px'],
+        //                     layout: [1, 3],
+        //                     photos: formattedPhotos,
+        //                     showNumOfRemainingPhotos: true,
+        //                     userDestinationId: d.user_destination_id,
+        //                     id: d.id
+        //                 };
 
-                        // Object.keys(currentImages).map(function (keyName, keyIndex) {
-                        //     photos.push({ src: currentImages[keyName] })
-                        // })
+        //                 // Object.keys(currentImages).map(function (keyName, keyIndex) {
+        //                 //     photos.push({ src: currentImages[keyName] })
+        //                 // })
 
-                        collageSettings.push(setting);
-                    })
-                    setCollages(collageSettings)
-                })
-            }
-            // console.log(collageSettings)
-        }
+        //                 collageSettings.push(setting);
+        //             })
+        //             setCollages(collageSettings)
+        //         })
+        //     }
+        //     // console.log(collageSettings)
+        // }
 
 
         fetchDestinations();
         fetchUserDestinations();
         setTimeout(() => renderUserDestinations(), 2000);
-        setTimeout(() => fetchCollages(), 2500);
+        // setTimeout(() => fetchCollages(), 2500);
 
+    }
+
+    function fetchCollages() {
+
+
+        if (localStorage.getItem("token")) {
+            fetch(COLLAGES_URL, {
+                method: "GET",
+                headers: {
+                    'Authorization': `JWT ${localStorage.getItem("token")}`
+                }
+            }).then(res => res.json()).then(data => {
+
+                setAllCollages(data);
+                // console.log(data)
+                //creates the setting for each Collage of user
+                data.forEach((d) => {
+                    let photos = d.photos
+                    let formattedPhotos = [];
+                    // console.log('this is photos', photos)
+                    // console.log('this is photos', photos.split(" "))
+
+                    //with the way that the photos data is, I must:
+                    // 1) split the photos data to go from away to string,
+                    // 2) filter out the elements that aren't photo urls.
+                    // 3) push filtered photos into an array [to avoid too many rerenders error]
+                    // 4) add formatted photos array as photos value in setting
+                    // 5) push setting into collageSetting [to avoid too many rerenders error]
+                    // 6) update collages state with collageSettings
+                    photos = photos.split(" ")
+                    photos = photos.filter((ph) => {
+                        return ph[0] === 'd'
+                    })
+
+                    for (const photo of photos) {
+                        formattedPhotos.push({ src: photo })
+                    }
+
+                    // console.log(formattedPhotos)
+
+                    const setting = {
+                        width: '200px',
+                        height: ['100px', '60px'],
+                        layout: [1, 3],
+                        photos: formattedPhotos,
+                        showNumOfRemainingPhotos: true,
+                        userDestinationId: d.user_destination_id,
+                        id: d.id
+                    };
+
+                    // Object.keys(currentImages).map(function (keyName, keyIndex) {
+                    //     photos.push({ src: currentImages[keyName] })
+                    // })
+
+                    collageSettings.push(setting);
+                })
+                setCollages(collageSettings)
+            })
+        }
+        // console.log(collageSettings)
     }
 
 
@@ -490,16 +557,17 @@ export default function Map() {
         })
     }
 
-    function toggleDetailsPopUpWindow(userDestinationId) {
+    function toggleDetailsPopUpWindow(userDestinationId, collageId) {
         //finding currently viewed collage by userDestinationId
-        let currentCollage = allCollages.find(c => c.user_destination_id === userDestinationId)
+        let currentCollage = allCollages.find(c => c.user_destination_id === userDestinationId & c.id === collageId)
         //changing format of photos
         let photos = currentCollage.photos
         photos = photos.split(" ")
         photos = photos.filter(ph => (ph[0] === 'd'))
         setCurrentlyViewedCollage(currentCollage)
         setCurrentlyViewedCollagePhotos(photos)
-        console.log(currentlyViewedCollagePhotos)
+        setCurrentlyViewedCollageStory(currentCollage.story)
+        // console.log(currentlyViewedCollagePhotos)
 
         const modal = document.querySelector(".details-modal")
         const closeBtn = document.querySelector(".details-close")
@@ -508,6 +576,8 @@ export default function Map() {
             modal.style.display = "none";
         })
     }
+    // console.log(collages)
+
 
 
     function addMemory(e) {
@@ -565,7 +635,56 @@ export default function Map() {
                 })
             })
 
+            // let newCollage = {
+            //     photos: newPhotos,
+            //     story: storyValue,
+            //     date: dateValue,
+            //     user_destination_id: ud.id
+            // }
+
+            // setAllCollages([...allCollages, newCollage])
         })
+        // setTimeout(() => fetchCollages(), 30000);
+    }
+
+    function editMemory(e) {
+        e.preventDefault();
+        let story = e.target.story.value
+        console.log('it works!!', e.target.story.value)
+        // Persistence on backend
+        fetch(`${COLLAGES_URL}/${currentlyViewedCollage.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Authorization': `JWT ${localStorage.getItem("token")}`,
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                "story": story
+            })
+        })
+        //Rendering on Frontend
+        setCurrentlyViewedCollageStory(story)
+        setEditMode(!editMode)
+    }
+
+    function deleteMemory(e) {
+        e.preventDefault();
+        console.log('deletion')
+        // Deletion on Backend
+        fetch(`${COLLAGES_URL}/${currentlyViewedCollage.id}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `JWT ${localStorage.getItem("token")}`
+            }
+        })
+
+        // Update on frontend
+        let updatedCollages = collages.filter(c => c.id !== currentlyViewedCollage.id)
+         setCollages(updatedCollages)
+        // Close popup window
+        const modal = document.querySelector(".details-modal")
+        modal.style.display = "none";        
     }
 
 
@@ -582,6 +701,7 @@ export default function Map() {
                     <h2>Memory</h2>
                     <h3>Images</h3>
                     <MultiImageInput
+                        max={12}
                         images={images}
                         setImages={setImages}
                         cropConfig={{ crop, ruleOfThirds: true }}
@@ -603,40 +723,80 @@ export default function Map() {
             </div>
 
             <div className="details-modal">
-                {console.log(currentlyViewedCollagePhotos)}
+                {/* {console.log(currentlyViewedCollagePhotos)} */}
                 <div className="details_modal_content">
                     <span className="details-close">&times;</span>
-                    <h2>Details</h2>
-                    <h3>{currentlyViewedCollage.date}</h3>
-                    <h5>{currentlyViewedCollage.story}</h5>
 
-                    <CarouselProvider
-                        naturalSlideWidth={28}
-                        naturalSlideHeight={15}
-                        orientation="horizontal"
-                        totalSlides={currentlyViewedCollagePhotos.length}
-                        visibleSlides={1}
-                        step={1}
-                        infinite={true}
-                    >
+                    {editMode ? (
+                        <>
+                            <h2>Edit Story</h2>
+                            <h3>Images</h3>
+                            {/* <MultiImageInput
+                            max={12}
+                                images={images}
+                                setImages={setImages}
+                                cropConfig={{ crop, ruleOfThirds: true }}
+                            /> */}
+                            <form onSubmit={editMemory}>
+                                <label >
+                                    Story:<br />
+                                    <textarea name='story' id='story' rows='5' cols='33' placeholder={currentlyViewedCollage.story} value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
+                                </label><br /><br />
+                                {/* <label >
+                                    Date:<br />
+                                    <input type="date" name="date" placeholder={currentlyViewedCollage.date} value={dateValue} onChange={e => setDateValue(e.target.value)} />
+                                </label><br /><br /> */}
 
-                        <div className='details-carousel'>
-                            <div className="details-slider">
-                                <Slider key={currentlyViewedCollage.date} >
-                                    {currentlyViewedCollagePhotos.map((photoUrl, index) => <Slide className='details-slide' key={index} index={index}><img src={photoUrl} alt="image" width='325' height='300' /></Slide>)}
-                                </Slider>
-                            </div>
+                                <input type="submit" value="Submit" />
 
-                            <div className="control-btn backbutton">
-                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
-                            </div>
+                            </form>
 
-                            <div className="control-btn nextbutton">
-                                <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
-                            </div>
-                        </div>
+                            <button onClick={() => {
+                                setEditMode(!editMode)
+                                setImages({})
+                            }
+                            }>Cancel</button>
+                        </>
+                    )
+                        :
+                        (
+                            <>
+                                <h2>Details</h2>
+                                <h3>{currentlyViewedCollage.date}</h3>
+                                <h5>{currentlyViewedCollageStory}</h5>
 
-                    </CarouselProvider>
+                                <CarouselProvider
+                                    naturalSlideWidth={28}
+                                    naturalSlideHeight={15}
+                                    orientation="horizontal"
+                                    totalSlides={currentlyViewedCollagePhotos.length}
+                                    visibleSlides={1}
+                                    step={1}
+                                    infinite={true}
+                                >
+
+                                    <div className='details-carousel'>
+                                        <div className="details-slider">
+                                            <Slider key={currentlyViewedCollage.date} >
+                                                {currentlyViewedCollagePhotos.map((photoUrl, index) => <Slide className='details-slide' key={index} index={index}><img src={photoUrl} alt="image" width='325' height='300' /></Slide>)}
+                                            </Slider>
+                                        </div>
+
+                                        <div className="control-btn backbutton">
+                                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                                        </div>
+
+                                        <div className="control-btn nextbutton">
+                                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
+                                        </div>
+                                    </div>
+
+                                </CarouselProvider>
+
+                                <button onClick={() => setEditMode(!editMode)}>Edit</button>
+                                <button onClick={deleteMemory}>Delete</button>
+                            </>
+                        )}
                 </div>
             </div>
 
@@ -706,7 +866,7 @@ export default function Map() {
                         ))}
                     </div>
 
-                 
+
                     <div label="Visited">
                         {visitedDestinations.map((destination, index) => (
                             <div key={index} >
@@ -732,7 +892,7 @@ export default function Map() {
                                     <div className='carousel'>
                                         <div className="slider">
                                             <Slider key={index} >
-                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId)}>Details</button></Slide> : null)}
+                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId, collage.id)}>Details</button></Slide> : null)}
                                             </Slider>
                                         </div>
 
@@ -777,9 +937,9 @@ export default function Map() {
             <Search panTo={panTo} />
             <Locate panTo={panTo} />
             <StyleMap />
-          
-                <button className='refresh-btn' onClick={() => window.location.reload(false)}>refresh</button>
-        
+
+            <button className='refresh-btn' onClick={() => window.location.reload(false)}>refresh</button>
+
 
             <GoogleMap
                 id='map'
