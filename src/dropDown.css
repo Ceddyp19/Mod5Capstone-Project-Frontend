@@ -1,6 +1,7 @@
 .container {
     position: relative;
     display: inline-block;
+    
   }
   .button {
     padding: 0;
@@ -36,3 +37,9 @@
     background-color: rgba(0, 0, 0, 0.14);
     cursor: pointer;
   }
+
+  .App {
+    position: relative;
+    right: 90%;
+    top: -340px;
+  } 

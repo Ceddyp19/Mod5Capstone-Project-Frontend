@@ -37,7 +37,7 @@ class DropDown extends Component {
       <div className="App">
         <div className="container" ref={this.container}>
           <button type="button" class="button" onClick={this.handleButtonClick}>
-            Add To List
+            +
           </button>
           {this.state.open && (
             <div class="container">

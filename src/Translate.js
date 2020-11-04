@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //const { Translate } = require('@google-cloud/translate').v2;
 import { ReactPhotoCollage } from "react-photo-collage";
-
+import './css/Translate.css';
 // const setting = {
 //     width: '600px',
 //     height: ['250px', '170px'],
@@ -74,7 +74,7 @@ class TranslatePage extends Component {
         //     console.log(`Translation: ${translation}`)
 
         return (
-            <div>
+            <div Id='translation-page'>
                 <p>translation page</p>
                 <ReactPhotoCollage {...setting} />
             </div>);

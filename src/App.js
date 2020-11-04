@@ -33,6 +33,7 @@ import './App.css';
 import Home from './home'
 import MainMenu from './mainMenu'
 import Translate from './Translate'
+import Converse from './Converse'
 import Map from './Map' //transferring new map from other file 
 import {
   BrowserRouter,
@@ -42,12 +43,12 @@ import {
   // useHistory
 } from "react-router-dom";
 
-
+import Navbar from './Navbar'
 import Start from './components/Start.js'
 import Login from './components/registration/Login.js'
 import Signup from './components/registration/Signup.js'
 
-
+const USER_URL = "http://localhost:3000/api/v1/users"
 
 class App extends Component {
 
@@ -64,18 +65,30 @@ class App extends Component {
 
 
   setUserState = (username, email) => {
-    this.setState({ username: username, email: email})
+    this.setState({ username: username, email: email })
     console.log(username, email)
   }
 
 
+
+  deleteUser = () => {
+    fetch(`${USER_URL}/1}`, {
+      method: 'DELETE',
+      headers: {
+        'Authorization': `JWT ${localStorage.getItem("token")}`
+      }
+    })
+    this.logout()
+  }
 
 
 
   render() {
     return (
       <div>
+
         <BrowserRouter>
+          <Navbar deleteUser={this.deleteUser} username={this.state.username} email={this.state.email} logout={this.logout} />
           <Switch>
             <Route exact path="/">
               <Home />
@@ -84,14 +97,16 @@ class App extends Component {
 
 
             <Route exact path='/start' render={props => (
-            <Start {...props} />
-          )} />
-          <Route exact path='/login' render={props => (
-            <Login {...props} getUserInfo={this.setUserState} />
-          )} />
-          <Route exact path='/signup' render={props => (
-            <Signup {...props} getUserInfo={this.setUserState}/>
-          )} />
+              <Start {...props} />
+            )} />
+
+            <Route exact path='/login' render={props => (
+              <Login {...props} getUserInfo={this.setUserState} />
+            )} />
+
+            <Route exact path='/signup' render={props => (
+              <Signup {...props} getUserInfo={this.setUserState} />
+            )} />
 
 
             {/* Auth0 */}
@@ -113,6 +128,10 @@ class App extends Component {
 
             <Route exact path="/translate">
               <Translate />
+            </Route>
+
+            <Route exact path="/converse">
+              <Converse />
             </Route>
 
           </Switch>

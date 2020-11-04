@@ -1,4 +1,4 @@
-.modal {
+.details-modal {
     display: none;
     position: fixed;
     z-index: 11;
@@ -13,13 +13,14 @@
     /* margin: 0 auto; */
 }
 
-.modal_content {
+.details_modal_content {
     background-color: white;
     position: relative;
     height: 100%;
+    overflow: scroll;
 }
 
-.close {
+.details-close {
     position: relative;
     right: 49%;
 }

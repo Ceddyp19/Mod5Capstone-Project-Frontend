@@ -2,7 +2,8 @@
 import './css/Map.css';
 import './css/SideBar.css'
 import './css/AddMemoryPopUpWindow.css'
-import './css/NavBar.css'
+import './css/DetailsPopUpWindow.css'
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import UserMarkers from './markers/renderUserMarker';
 import AttractionMarkers from './markers/attractionMarkers';
 import CafeMarkers from './markers/cafeMarkers';
@@ -61,8 +62,9 @@ const center = {
 const DESTINATIONS_URL = "http://localhost:3000/destinations"
 const USER_DESTINATIONS_URL = "http://localhost:3000/user_destinations"
 const COLLAGES_URL = "http://localhost:3000/collages"
-const currentUserDestinations = []; //too many rerenders when trying to use state, so I saved all filtered destinations into this varible and render this instead
-const collageSettings = [];
+const currentUserDestinations = []; //too many rerenders when trying to use state, so I saved all filtered destinations into this variable and render this instead
+const collageSettings = []; //same reason as line 66; holds settings for each collage
+
 //==================================================================My Map Component=========================================================
 export default function Map() {
 
@@ -83,9 +85,10 @@ export default function Map() {
     const [images, setImages] = useState({});  //used for image upload
     const [collages, setCollages] = useState([]); //holds all pictures setting of each collage
     const [currentVisitedDestination, setCurrentVisitedDestination] = useState(null);  // this state is used to keep track of the currently selected visited destination that a collage/Memory Album is being added to
-
-
-
+    // don't need I think const [currentDetailsWindow, setCurrentDetailsWindow] = useState(null); // keeps track of which details Modal is being veiwed so correct collage info is shown
+    const [allCollages, setAllCollages] = useState(null); //holds all the persisted collages when fetching after component mounts 
+    const [currentlyViewedCollage, setCurrentlyViewedCollage] = useState(''); //the collage details the user is currently, found by filtering through allCollages
+    const [currentlyViewedCollagePhotos, setCurrentlyViewedCollagePhotos] = useState([]); //since the photos data in each Collage isn't formatted properly, I must reformate them and place the photos in seprate state
 
     const [mapStyle, setMapStyle] = useState(mapStyles.mutedBlue) //preset map style
     const [selectedDefaultMarker, setSelectedDefaultMarker] = React.useState(null);
@@ -299,7 +302,7 @@ export default function Map() {
                     }
                 }).then(res => res.json()).then(data => {
 
-
+                    setAllCollages(data);
                     // console.log(data)
                     //creates the setting for each Collage of user
                     data.forEach((d) => {
@@ -477,9 +480,29 @@ export default function Map() {
     }
 
     function toggleMemoryPopUpWindow(destinationId) {
+
         setCurrentVisitedDestination(destinationId)
         const modal = document.querySelector(".modal")
         const closeBtn = document.querySelector(".close")
+        modal.style.display = "block";
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        })
+    }
+
+    function toggleDetailsPopUpWindow(userDestinationId) {
+        //finding currently viewed collage by userDestinationId
+        let currentCollage = allCollages.find(c => c.user_destination_id === userDestinationId)
+        //changing format of photos
+        let photos = currentCollage.photos
+        photos = photos.split(" ")
+        photos = photos.filter(ph => (ph[0] === 'd'))
+        setCurrentlyViewedCollage(currentCollage)
+        setCurrentlyViewedCollagePhotos(photos)
+        console.log(currentlyViewedCollagePhotos)
+
+        const modal = document.querySelector(".details-modal")
+        const closeBtn = document.querySelector(".details-close")
         modal.style.display = "block";
         closeBtn.addEventListener("click", () => {
             modal.style.display = "none";
@@ -552,8 +575,7 @@ export default function Map() {
     const visitedDestinations = renderDestinations.filter(destination => destination.listCategory === 'Visited')
     //********************Returned Component Values**************************************/
     return (
-        <div>
-
+        <div className='page'>
             <div className="modal">
                 <div className="modal_content">
                     <span className="close">&times;</span>
@@ -580,8 +602,46 @@ export default function Map() {
                 </div>
             </div>
 
+            <div className="details-modal">
+                {console.log(currentlyViewedCollagePhotos)}
+                <div className="details_modal_content">
+                    <span className="details-close">&times;</span>
+                    <h2>Details</h2>
+                    <h3>{currentlyViewedCollage.date}</h3>
+                    <h5>{currentlyViewedCollage.story}</h5>
 
-            <h1 id='Logo'>Logo here!!</h1>
+                    <CarouselProvider
+                        naturalSlideWidth={28}
+                        naturalSlideHeight={15}
+                        orientation="horizontal"
+                        totalSlides={currentlyViewedCollagePhotos.length}
+                        visibleSlides={1}
+                        step={1}
+                        infinite={true}
+                    >
+
+                        <div className='details-carousel'>
+                            <div className="details-slider">
+                                <Slider key={currentlyViewedCollage.date} >
+                                    {currentlyViewedCollagePhotos.map((photoUrl, index) => <Slide className='details-slide' key={index} index={index}><img src={photoUrl} alt="image" width='325' height='300' /></Slide>)}
+                                </Slider>
+                            </div>
+
+                            <div className="control-btn backbutton">
+                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                            </div>
+
+                            <div className="control-btn nextbutton">
+                                <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
+                            </div>
+                        </div>
+
+                    </CarouselProvider>
+                </div>
+            </div>
+
+
+            {/* <h1 id='Logo'>Logo here!!</h1> */}
 
             <div id='main'>
                 <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
@@ -646,27 +706,7 @@ export default function Map() {
                         ))}
                     </div>
 
-                    {/* 
-            
-                    <div className="carousel">
-
-                        <div className="slider">
-                            <Slider >
-                                {this.props.movies.map((movie, index) => <Slide key={index} index={index}><Link key={index} to={`${this.props.url}/${movie.id}`}><Card addMovie={this.props.addMovie} deleteMovie={this.props.deleteMovie} key={movie.title} movie={movie} /></Link> <div>
-                                    {movie.favorited ? (<button class="add-btn fa fa-minus" onClick={() => this.props.deleteMovie(movie, false)}></button>) : (<button class="add-btn fa fa-plus" onClick={() => this.props.addMovie(movie, true)} ></button>)}
-                                </div></Slide>)}
-                            </Slider>
-                        </div>
-                        <div className="control-btn backbutton">
-                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
-                        </div>
-                        <div className="control-btn nextbutton">
-                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
-                        </div>
-                    </div>
-                </CarouselProvider> */}
-
-
+                 
                     <div label="Visited">
                         {visitedDestinations.map((destination, index) => (
                             <div key={index} >
@@ -692,16 +732,16 @@ export default function Map() {
                                     <div className='carousel'>
                                         <div className="slider">
                                             <Slider key={index} >
-                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide key={index} index={index}><ReactPhotoCollage {...collage} /> <p>details button</p></Slide> : null)}
+                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId)}>Details</button></Slide> : null)}
                                             </Slider>
                                         </div>
 
                                         <div className="control-btn backbutton">
-                                            <ButtonBack className='arrow-buttons fa fa-angle-left'>Back</ButtonBack>
+                                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
                                         </div>
 
                                         <div className="control-btn nextbutton">
-                                            <ButtonNext className="arrow-buttons fa fa-angle-right">Next</ButtonNext>
+                                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
                                         </div>
                                     </div>
 
@@ -737,11 +777,14 @@ export default function Map() {
             <Search panTo={panTo} />
             <Locate panTo={panTo} />
             <StyleMap />
+          
+                <button className='refresh-btn' onClick={() => window.location.reload(false)}>refresh</button>
+        
 
             <GoogleMap
                 id='map'
                 mapContainerStyle={mapContainerStyle}
-                zoom={13}
+                zoom={4}
                 center={center}
                 options={options}
                 onLoad={onMapLoad}
@@ -781,7 +824,7 @@ export default function Map() {
                             setSelectedDefaultMarker(null);
                         }}
                     >
-                        <div>
+                        <div className="info-window">
                             <h2>{selectedDefaultMarker.name}</h2>
                             {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
                             <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
@@ -792,14 +835,14 @@ export default function Map() {
                 {selectedCreatedMarker && (
                     <InfoWindow
                         position={{
-                            lat: parseFloat(selectedCreatedMarker.lat + .005), //info box doesn't cover marker with .005 added
+                            lat: parseFloat(selectedCreatedMarker.lat + .01), //info box doesn't cover marker with .005 added
                             lng: parseFloat(selectedCreatedMarker.lng)
                         }}
                         onCloseClick={() => {
                             setSelectedCreatedMarker(null);
                         }}
                     >
-                        <div>
+                        <div className="info-window">
                             <h2>{selectedCreatedMarker.name}</h2>
                             <img src={selectedCreatedMarker.image} alt={selectedCreatedMarker.name} width="400" height="300" />
                             <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
@@ -831,7 +874,7 @@ function Locate({ panTo }) {
                 );
             }}
         >
-            <img src="big_compass.png" alt="compass"  width='200' length='200'/>
+            <img src="big_compass.png" alt="compass" width='200' length='200' />
         </button>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import LogoutButton from "./logoutButton";
-import Profile from "./profile";
+// import LogoutButton from "./logoutButton";
+// import Profile from "./profile";
 import { NavLink } from 'react-router-dom';
 // import { useAuth0 } from "@auth0/auth0-react";
 // import { useApi } from './use-api';
@@ -116,8 +116,8 @@ const MainMenu = () => {
 
   return (
     <div id='background'>
-      <Profile />
-      <LogoutButton />
+      {/* <Profile /> */}
+      {/* <LogoutButton /> */}
       {/* <Link to="/map">Map</Link><br /><br /> */}
       <div id='mainmenudiv'>
         <div id='apptitle'>App Title</div><br />

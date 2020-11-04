@@ -47,13 +47,14 @@
 #mySideBar {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 0%;
     left: 0;
     background-color: rgb(13, 51, 122);
     overflow-x: hidden;
     transition: 0.5s;
+  
     /* padding-top: 60px; */
 }
 
@@ -83,7 +84,7 @@
     z-index: 10;
     position: absolute;
    
-    top: 10%; 
+    top: 35%; 
     width: 55px;
     height: 150px;
     vertical-align: center;
@@ -175,3 +176,26 @@
     right: 15px;
   
 }
+
+.arrow-buttons {
+    background-color: transparent;
+    border: none;
+    font-size: 5em;
+    color: rgb(116, 241, 137);
+  }
+
+  .slide {
+      text-align: center;
+      border: antiquewhite;
+    
+  }
+
+  .slide button {
+      position: relative;
+      right: 5%;
+  }
+
+  /* .collage{
+  
+      
+  } */
