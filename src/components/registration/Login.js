@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 // import axios from 'axios'
 import { Link } from 'react-router-dom'
+import './Login.css'
+
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +44,7 @@ class Login extends Component {
   };
   redirect = () => {
     this.props.getUserInfo(this.state.username, this.state.email)
-    this.props.history.push('/mainmenu')
+    this.props.history.push('/map')                                     //Change back to mainmenu after presentation
   }
   handleErrors = () => {
     return (
@@ -57,54 +60,77 @@ class Login extends Component {
   render() {
     const { username, email, password } = this.state
     return (
-      <div className="login-div">
-        <div className="login-form-div">
-          <h1>Login</h1>
-          <form className="login-form" onSubmit={this.handleSubmit}>
-          <div className="textbox">
-          <i className="fa fa-user"></i>
-            <input
-              placeholder="Username"
-              type="text"
-              name="username"
-              value={username}
-              onChange={this.handleChange}
-            />
-            </div>
-            <div className="textbox">
-            <i class="fa fa-envelope"></i>
-            <input
-              placeholder="Email"
-              type="text"
-              name="email"
-              value={email}
-              onChange={this.handleChange}
-            />
-            </div>
-            <div className="textbox">
-            <i className="fa fa-lock" aria-hidden='true'></i>
-            <input
-              placeholder="Password"
-              type="password"
-              name="password"
-              value={password}
-              onChange={this.handleChange}
-            />
-            </div>
-            <button className="btn" placeholder="submit" type="submit">
-              Login
+      <div id='login-page'>
+        <img src='logo.png' alt='logo'/>
+        <div className="login">
+          <div className="login-form-div">
+            <h1>Login</h1>
+            <form className="login-form" onSubmit={this.handleSubmit}>
+              <div className="textbox">
+                <i className="fa fa-user"></i>
+                <input
+                  placeholder="Username"
+                  type="text"
+                  name="username"
+                  value={username}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="textbox">
+                <i class="fa fa-envelope"></i>
+                <input
+                  placeholder="Email"
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="textbox">
+                <i className="fa fa-lock" aria-hidden='true'></i>
+                <input
+                  placeholder="Password"
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <button className="btn" class="btn btn-primary btn-block btn-large" type="submit">
+                Enter
           </button>
-            <div>
-              or <Link className="signup-link" to='/signup'>sign up</Link>
-            </div>
+              <div>
+               <span>or <a href="/signup">sign up</a></span>
+              </div>
 
-          </form>
-          <div>
-            {
-              this.state.errors ? this.handleErrors() : null
-            }
+            </form>
+            <div>
+              {
+                this.state.errors ? this.handleErrors() : null
+              }
+            </div>
           </div>
         </div>
+        
+
+
+
+
+        {/* <div class="login">
+<h1>Login</h1>
+    <form method="post">
+    <input type="text" name="u" placeholder="Username" required="required" />
+        <input type="password" name="p" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    </form>
+</div> */}
+
+
+
+
+
+
+        
       </div>
     );
   }

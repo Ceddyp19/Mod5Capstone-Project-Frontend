@@ -27,14 +27,14 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 import React, { Component } from 'react';
-import './App.css';
+// import './App.css';
 // import SignUp from './signup'  Auth0
 // import Login from './login'   Auth0
-import Home from './home'
+import Home from './Home'
 import MainMenu from './mainMenu'
 import Translate from './Translate'
 import Converse from './Converse'
-import Map from './Map' //transferring new map from other file 
+import Map from './Map' 
 import {
   BrowserRouter,
   Switch,
@@ -43,7 +43,7 @@ import {
   // useHistory
 } from "react-router-dom";
 
-import Navbar from './Navbar'
+import Navbar from './Navbar';
 import Start from './components/Start.js'
 import Login from './components/registration/Login.js'
 import Signup from './components/registration/Signup.js'
@@ -60,7 +60,7 @@ class App extends Component {
 
   logout = () => {
     localStorage.clear()
-    window.location.href = "/login"
+    window.location.href = "/"
   }
 
 
@@ -88,7 +88,10 @@ class App extends Component {
       <div>
 
         <BrowserRouter>
-          <Navbar deleteUser={this.deleteUser} username={this.state.username} email={this.state.email} logout={this.logout} />
+
+  
+
+          {/* <Navbar deleteUser={this.deleteUser} username={this.state.username} email={this.state.email} logout={this.logout} /> */}
           <Switch>
             <Route exact path="/">
               <Home />
@@ -96,9 +99,9 @@ class App extends Component {
 
 
 
-            <Route exact path='/start' render={props => (
+            {/* <Route exact path='/start' render={props => (
               <Start {...props} />
-            )} />
+            )} /> */}
 
             <Route exact path='/login' render={props => (
               <Login {...props} getUserInfo={this.setUserState} />
@@ -123,7 +126,7 @@ class App extends Component {
             </Route>
 
             <Route exact path="/map">
-              <Map />
+              <Map deleteUser={this.deleteUser} username={this.state.username} email={this.state.email} logout={this.logout} />
             </Route>
 
             <Route exact path="/translate">

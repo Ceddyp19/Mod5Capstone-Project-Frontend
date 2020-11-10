@@ -5,10 +5,11 @@ import { NavLink } from 'react-router-dom';
 // import { useAuth0 } from "@auth0/auth0-react";
 // import { useApi } from './use-api';
 // import createAuth0Client from '@auth0/auth0-spa-js';
-import './mainMenu.css'
+import './css/mainMenu.css'
+import Navbar from './Navbar';
 
 
-const MainMenu = () => {
+const MainMenu = (props) => {
   // const { user, getAccessTokenSilently } = useAuth0();
 
   //   const userInfo =  auth0.getUser();
@@ -115,25 +116,12 @@ const MainMenu = () => {
 
 
   return (
-    <div id='background'>
-      {/* <Profile /> */}
-      {/* <LogoutButton /> */}
-      {/* <Link to="/map">Map</Link><br /><br /> */}
-      <div id='mainmenudiv'>
-        <div id='apptitle'>App Title</div><br />
-        <div id='mapdiv' className="buttondiv">
-          <NavLink to='/map' className='mainmenubuttons' exact>Map</NavLink><br />
-        </div>
-        <div id='translatediv' className="buttondiv">
-          <NavLink to='/translate' className='mainmenubuttons' exact>Translate</NavLink><br />
-        </div>
-        <div id='conversediv' className="buttondiv">
-          <NavLink to='/converse' className='mainmenubuttons' exact>Converse</NavLink><br />
-        </div>
+    <>
+      <Navbar deleteUser={props.deleteUser} username={props.username} email={props.email} logout={props.logout} />
+      <div id='mainmenu-page'>
+    
       </div>
-      {/* <button>Translate</button>
-      <button>Converse</button> */}
-    </div>
+    </>
   )
 };
 

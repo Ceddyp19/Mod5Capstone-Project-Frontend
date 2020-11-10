@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import axios from 'axios'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './Signup.css';
+
 class Signup extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +45,7 @@ class Signup extends Component {
   };
   redirect = () => {
     this.props.getUserInfo(this.state.username, this.state.email)
-    this.props.history.push('/mainmenu')
+    this.props.history.push('/map')                                   //Change back to mainmenu after presentation
   }
   handleErrors = () => {
     return (
@@ -58,62 +60,65 @@ class Signup extends Component {
   render() {
     const { username, email, password, password_confirmation } = this.state
     return (
-      <div className="login-div">
-        <div className="login-form-div">
-          <h1>Sign Up</h1>
-          <form className="login-form" onSubmit={this.handleSubmit}>
-            <div className="textbox">
-              <i className="fa fa-user"></i>
-              <input
-                placeholder="Username"
-                type="text"
-                name="username"
-                value={username}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="textbox">
-              <i class="fa fa-envelope"></i>
-              <input
-                placeholder="Email"
-                type="text"
-                name="email"
-                value={email}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="textbox">
-              <i className="fa fa-lock" aria-hidden='true'></i>
-              <input
-                placeholder="Password"
-                type="password"
-                name="password"
-                value={password}
-                onChange={this.handleChange}
-              />
-            </div>
-            <div className="textbox">
-              <i className="fa fa-lock" aria-hidden='true'></i>
-              <input
-                placeholder="Confirm Password"
-                type="password"
-                name="password_confirmation"
-                value={password_confirmation}
-                onChange={this.handleChange}
-              />
-            </div>
-            <button className="btn" placeholder="submit" type="submit">
-              Sign Up
+      <div id='signup-page'>
+        <img src='logo.png' alt='logo'/>
+        <div className="signup">
+          <div className="login-form-div">
+            <h1>Sign Up</h1>
+            <form className="login-form" onSubmit={this.handleSubmit}>
+              <div className="textbox">
+                <i className="fa fa-user"></i>
+                <input
+                  placeholder="Username"
+                  type="text"
+                  name="username"
+                  value={username}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="textbox">
+                <i class="fa fa-envelope"></i>
+                <input
+                  placeholder="Email"
+                  type="text"
+                  name="email"
+                  value={email}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="textbox">
+                <i className="fa fa-lock" aria-hidden='true'></i>
+                <input
+                  placeholder="Password"
+                  type="password"
+                  name="password"
+                  value={password}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <div className="textbox">
+                <i className="fa fa-lock" aria-hidden='true'></i>
+                <input
+                  placeholder="Confirm Password"
+                  type="password"
+                  name="password_confirmation"
+                  value={password_confirmation}
+                  onChange={this.handleChange}
+                />
+              </div>
+              <button className="btn" placeholder="submit" type="submit">
+                Sign Up
           </button>
 
-          </form>
-          <div>
-            or <Link className="signup-link" to='/login'>login</Link>
-          </div>
-          <div>
-            {
-              this.state.errors ? this.handleErrors() : null
-            }
+            </form>
+            <div>
+             <span> or <a href="/login">login</a></span>
+            </div>
+            <div>
+              {
+                this.state.errors ? this.handleErrors() : null
+              }
+            </div>
           </div>
         </div>
       </div>

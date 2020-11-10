@@ -4,6 +4,8 @@ import './css/SideBar.css'
 import './css/AddMemoryPopUpWindow.css'
 import './css/DetailsPopUpWindow.css'
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import Navbar from './Navbar';
+
 import UserMarkers from './markers/renderUserMarker';
 import AttractionMarkers from './markers/attractionMarkers';
 import CafeMarkers from './markers/cafeMarkers';
@@ -66,8 +68,7 @@ const currentUserDestinations = []; //too many rerenders when trying to use stat
 const collageSettings = []; //same reason as line 66; holds settings for each collage
 
 //==================================================================My Map Component=========================================================
-export default function Map() {
-
+export default function Map(props) {
     useEffect(() => {
         fetchData();
         setTimeout(() => fetchCollages(), 2500);
@@ -239,8 +240,8 @@ export default function Map() {
 
     function fetchData() {
 
-        let Userdes = null;
-        let Des = null;
+        let Userdes = [];
+        let Des = [];
 
         function fetchDestinations() {
             //fetches all saved destinations that all users have created
@@ -561,6 +562,13 @@ export default function Map() {
         //finding currently viewed collage by userDestinationId
         let currentCollage = allCollages.find(c => c.user_destination_id === userDestinationId & c.id === collageId)
         //changing format of photos
+        console.log(userDestinationId)
+        console.log(collages)
+        console.log(allCollages)
+        console.log(collageId)
+
+        console.log(currentCollage)
+        console.log(currentCollage.photos)
         let photos = currentCollage.photos
         photos = photos.split(" ")
         photos = photos.filter(ph => (ph[0] === 'd'))
@@ -616,9 +624,6 @@ export default function Map() {
             let ud = data.find(d => d.destination_id === userDestinationId)
             let newPhotos = [];
             photos.forEach((photo) => newPhotos.push(` ${photo.src} `))
-
-            // console.log(newPhotos)
-            // console.log(newPhotos.join())
 
             fetch(COLLAGES_URL, {
                 method: 'POST',
@@ -694,6 +699,8 @@ export default function Map() {
     const visitedDestinations = renderDestinations.filter(destination => destination.listCategory === 'Visited')
     //********************Returned Component Values**************************************/
     return (
+        <div id='map-page'>
+        <Navbar deleteUser={props.deleteUser} username={props.username} email={props.email} logout={props.logout} />
         <div className='page'>
             <div className="modal">
                 <div className="modal_content">
@@ -944,7 +951,7 @@ export default function Map() {
             <GoogleMap
                 id='map'
                 mapContainerStyle={mapContainerStyle}
-                zoom={4}
+                zoom={8}
                 center={center}
                 options={options}
                 onLoad={onMapLoad}
@@ -1010,6 +1017,7 @@ export default function Map() {
                     </InfoWindow>
                 )}
             </GoogleMap>
+        </div>
         </div>
     );
 }

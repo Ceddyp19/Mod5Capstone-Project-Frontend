@@ -1,0 +1,96 @@
+#start-page{
+    background-color: aqua;
+    position: absolute;
+    width: 100%;
+    height: 89%;
+    top: 11%;
+    text-align: center;
+    /* background-image: url(stock.jpeg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; Resize the background image to cover the entire container */
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+.left {
+    left: 0;
+    /* background-color: #111; */
+/* padding-top: 8%; */
+position: absolute;
+top: 0%;
+height: 116%;
+
+  }
+  
+  /* Control the right side */
+.right {
+    right: 0;
+    background-color: black;
+  }
+
+  /* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .centered img {
+    /* width: 650px;
+    border-radius: 50%; */
+   position: absolute;
+   
+   width: 960px;
+   height: 970px;
+   top: -561px;
+   left: -480px; 
+
+   /* position: relative;
+
+     max-width: 180%;
+    max-height: 200%;
+    right: 30%; 
+    right: 122px; */
+    
+    /* display: block;  remove extra space below image  */
+  }
+
+  .description-box {
+      /* position: relative; */
+      /* top: -250px; */
+      position: absolute;
+      top: -150px;
+      right: -220px;
+      color: rgb(211, 39, 39);
+      background-color: rgb(0, 0, 0);
+      padding: 10px;
+      width: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      /* opacity:70%; */
+  }
+
+  .description-box span{
+    color: whitesmoke;
+  
+  }
+
+
+  .horizontal {
+    text-decoration: none;
+  }
+
+  .vertical {
+    text-decoration: none;
+  }

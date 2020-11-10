@@ -66,3 +66,7 @@
     position: absolute;
     top: -12.5%;
 }
+
+#map-page{
+    right: -200px;
+}
