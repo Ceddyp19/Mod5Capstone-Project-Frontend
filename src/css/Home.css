@@ -94,3 +94,7 @@ height: 116%;
   .vertical {
     text-decoration: none;
   }
+   /* monspace is default font if other fail to load */
+  #App-Name {
+    font-family: 'Big Shoulders Stencil Text', monospace;
+  }

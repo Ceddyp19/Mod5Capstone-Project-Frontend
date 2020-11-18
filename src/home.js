@@ -29,7 +29,7 @@ class Home extends Component {
                 <div class="split left">
                     <div class="centered">
                         <img src="home-Image.jpg" alt="Photo by Fred Nassar on Unsplash" />
-                        <div class='description-box'><h1>Welcome to <span>TRAVME</span></h1> <h1>Sign In to Continue</h1></div>
+                        <div class='description-box'><h1>Welcome to <span id='App-Name'>TRAVME</span></h1> <h1>Sign In to Continue</h1></div>
                         {/* <p>Some text.</p> */}
                     </div>
                 </div>
