@@ -852,6 +852,9 @@ export default function Map(props) {
                                         <p>{destination.addr}</p>
                                         <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
                                     </div>
+                                    <br/> 
+                                    <br/> 
+                                    <hr/>
                                 </div>
 
                             ))
