@@ -30,7 +30,7 @@ import React, { Component } from 'react';
 // import './App.css';
 // import SignUp from './signup'  Auth0
 // import Login from './login'   Auth0
-import Home from './Home'
+import Welcome from './Welcome'
 import MainMenu from './mainMenu'
 import Translate from './Translate'
 import Converse from './Converse'
@@ -94,7 +94,7 @@ class App extends Component {
           {/* <Navbar deleteUser={this.deleteUser} username={this.state.username} email={this.state.email} logout={this.logout} /> */}
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Welcome />
             </Route>
 
 

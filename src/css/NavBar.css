@@ -52,7 +52,7 @@
     transition: all .3s ease-in-out;
     list-style-type: none;
     text-decoration: none;
-    color: rgb(116, 241, 137);
+    color: brown;
 
     /* position: relativse;
 right: 59%;
@@ -61,7 +61,7 @@ right: 59%;
 
 .fa-user-circle:hover{
     transition: all .3s ease-in-out;
-    background:rgb(116, 241, 137,0.5);
+    background:rgb(255, 50, 0,0.5);
     color: white;
 }
 
@@ -81,7 +81,7 @@ right: 59%;
 
 .dropdown-content {
     width: 25vh;
-    border: 3px rgb(116, 241, 137,0.5) solid;
+    border: 3px brown solid;
     display: none;
     position: absolute;
     background-color: #707070;
