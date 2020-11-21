@@ -1,8 +1,4 @@
-/* :root {
-  --background: orange;
-} */
 
-/* the code above is an example of variables in css. We use the root element to make the var global. "var(--background, 'default color')" to set call vairable */
 
 #start-page {
   background-color: aqua;
