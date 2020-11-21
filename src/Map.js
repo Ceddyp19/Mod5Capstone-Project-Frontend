@@ -811,7 +811,7 @@ export default function Map(props) {
             {/* <h1 id='Logo'>Logo here!!</h1> */}
 
             <div id='main'>
-                <button className='openbtn' onClick={openNav}>☰ Open Sidebar</button>
+                <button className='openbtn' onClick={openNav}>☰</button>
             </div>
             <div id='mySideBar'>
                 <button className="closebtn" onClick={closeNav}>×</button>
