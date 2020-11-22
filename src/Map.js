@@ -830,15 +830,15 @@ export default function Map(props) {
                         <div className='form-div'>
                             <form onSubmit={addDestination}>
                                 <label className='place-input'>
-                                    Name of Place:<br />
+                                    Name of Place<br />
                                     <input type="text" name="name" placeholder="What's the Name?" value={nameValue} onChange={handleNameInput} />
                                 </label><br /><br />
                                 <label className='image-input'>
-                                    Url Image:<br />
+                                    Url Image<br />
                                     <input type="text" name="image" placeholder="Paste Image Url" value={imageUrlValue} onChange={handleImageInput} />
                                 </label><br /><br />
                                 <label className='location-input'>
-                                    Location:<br />
+                                    Location<br />
                                     <PlacesAutocomplete />
                                 </label>
                                 <input className='submit-btn' type="submit" value="Submit" />
