@@ -150,17 +150,24 @@ export default function Map(props) {
         }
     }
 
-    function openNav() {
-        document.getElementById("mySideBar").style.width = "38%";
+    function openNav() {  
+        let mySideBar = document.getElementById("mySideBar")
+        mySideBar.style.width = "38%";
+        mySideBar.style.paddingLeft = "4%";
+        mySideBar.style.paddingRight = "4%";
         document.getElementsByClassName("openbtn")[0].style.left = '730px';
-        // document.getElementById("main").style.marginLeft = "250px";
+
     }
 
     function closeNav(e) {
         e.preventDefault();
-        document.getElementById("mySideBar").style.width = "0";
-        document.getElementsByClassName("openbtn")[0].style.left = '-0px';
-        // document.getElementById("main").style.marginLeft = "0";
+        let mySideBar = document.getElementById("mySideBar")
+        mySideBar.style.width = "0";
+        mySideBar.style.paddingLeft = "0%";
+        mySideBar.style.paddingRight = "0%";
+        let openbtn = document.getElementsByClassName("openbtn")[0]
+        openbtn.style.left = '-0px';
+
     }
 
     function handleNameInput(event) {
@@ -686,10 +693,10 @@ export default function Map(props) {
 
         // Update on frontend
         let updatedCollages = collages.filter(c => c.id !== currentlyViewedCollage.id)
-         setCollages(updatedCollages)
+        setCollages(updatedCollages)
         // Close popup window
         const modal = document.querySelector(".details-modal")
-        modal.style.display = "none";        
+        modal.style.display = "none";
     }
 
 
@@ -700,327 +707,337 @@ export default function Map(props) {
     //********************Returned Component Values**************************************/
     return (
         <div id='map-page'>
-        <Navbar deleteUser={props.deleteUser} username={props.username} email={props.email} logout={props.logout} />
-        <div className='page'>
-            <div className="modal">
-                <div className="modal_content">
-                    <span className="close">&times;</span>
-                    <h2>Memory</h2>
-                    <h3>Images</h3>
-                    <MultiImageInput
-                        max={12}
-                        images={images}
-                        setImages={setImages}
-                        cropConfig={{ crop, ruleOfThirds: true }}
-                    />
-                    <form onSubmit={addMemory}>
-                        <label >
-                            Tell Your Story:<br />
-                            <textarea name='story' id='story' rows='5' cols='33' value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
-                        </label><br /><br />
-                        <label >
-                            Date:<br />
-                            <input type="date" name="date" value={dateValue} onChange={e => setDateValue(e.target.value)} />
-                        </label><br /><br />
+            <Navbar deleteUser={props.deleteUser} username={props.username} email={props.email} logout={props.logout} />
+            <div className='page'>
+                <div className="modal">
+                    <div className="modal_content">
+                        <span className="close">&times;</span>
+                        <h2>Memory</h2>
+                        <h3>Images</h3>
+                        <MultiImageInput
+                            max={12}
+                            images={images}
+                            setImages={setImages}
+                            cropConfig={{ crop, ruleOfThirds: true }}
+                        />
+                        <form onSubmit={addMemory}>
+                            <label >
+                                Tell Your Story:<br />
+                                <textarea name='story' id='story' rows='5' cols='33' value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
+                            </label><br /><br />
+                            <label >
+                                Date:<br />
+                                <input type="date" name="date" value={dateValue} onChange={e => setDateValue(e.target.value)} />
+                            </label><br /><br />
 
-                        <input type="submit" value="Submit" />
+                            <input type="submit" value="Submit" />
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
-            <div className="details-modal">
-                {/* {console.log(currentlyViewedCollagePhotos)} */}
-                <div className="details_modal_content">
-                    <span className="details-close">&times;</span>
+                <div className="details-modal">
+                    {/* {console.log(currentlyViewedCollagePhotos)} */}
+                    <div className="details_modal_content">
+                        <span className="details-close">&times;</span>
 
-                    {editMode ? (
-                        <>
-                            <h2>Edit Story</h2>
-                            <h3>Images</h3>
-                            {/* <MultiImageInput
+                        {editMode ? (
+                            <>
+                                <h2>Edit Story</h2>
+                                <h3>Images</h3>
+                                {/* <MultiImageInput
                             max={12}
                                 images={images}
                                 setImages={setImages}
                                 cropConfig={{ crop, ruleOfThirds: true }}
                             /> */}
-                            <form onSubmit={editMemory}>
-                                <label >
-                                    Story:<br />
-                                    <textarea name='story' id='story' rows='5' cols='33' placeholder={currentlyViewedCollage.story} value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
-                                </label><br /><br />
-                                {/* <label >
+                                <form onSubmit={editMemory}>
+                                    <label >
+                                        Story:<br />
+                                        <textarea name='story' id='story' rows='5' cols='33' placeholder={currentlyViewedCollage.story} value={storyValue} onChange={e => setStoryValue(e.target.value)}></textarea>
+                                    </label><br /><br />
+                                    {/* <label >
                                     Date:<br />
                                     <input type="date" name="date" placeholder={currentlyViewedCollage.date} value={dateValue} onChange={e => setDateValue(e.target.value)} />
                                 </label><br /><br /> */}
 
-                                <input type="submit" value="Submit" />
+                                    <input type="submit" value="Submit" />
+
+                                </form>
+
+                                <button onClick={() => {
+                                    setEditMode(!editMode)
+                                    setImages({})
+                                }
+                                }>Cancel</button>
+                            </>
+                        )
+                            :
+                            (
+                                <>
+                                    <h2>Details</h2>
+                                    <h3>{currentlyViewedCollage.date}</h3>
+                                    <h5>{currentlyViewedCollageStory}</h5>
+
+                                    <CarouselProvider
+                                        naturalSlideWidth={28}
+                                        naturalSlideHeight={15}
+                                        orientation="horizontal"
+                                        totalSlides={currentlyViewedCollagePhotos.length}
+                                        visibleSlides={1}
+                                        step={1}
+                                        infinite={true}
+                                    >
+
+                                        <div className='details-carousel'>
+                                            <div className="details-slider">
+                                                <Slider key={currentlyViewedCollage.date} >
+                                                    {currentlyViewedCollagePhotos.map((photoUrl, index) => <Slide className='details-slide' key={index} index={index}><img src={photoUrl} alt="image" width='325' height='300' /></Slide>)}
+                                                </Slider>
+                                            </div>
+
+                                            <div className="control-btn backbutton">
+                                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                                            </div>
+
+                                            <div className="control-btn nextbutton">
+                                                <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
+                                            </div>
+                                        </div>
+
+                                    </CarouselProvider>
+
+                                    <button onClick={() => setEditMode(!editMode)}>Edit</button>
+                                    <button onClick={deleteMemory}>Delete</button>
+                                </>
+                            )}
+                    </div>
+                </div>
+
+
+                {/* <h1 id='Logo'>Logo here!!</h1> */}
+
+                <div id='main'>
+                    <button className='openbtn' onClick={openNav}>☰</button>
+                </div>
+                <div id='mySideBar'>
+                    <button className="closebtn" onClick={closeNav}>×</button>
+
+
+                    <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
+                    <div className='content'>
+
+                        <div className='form-div'>
+                            <form onSubmit={addDestination}>
+                                <label className='place-input'>
+                                    Name of Place:<br />
+                                    <input type="text" name="name" placeholder="What's the Name?" value={nameValue} onChange={handleNameInput} />
+                                </label><br /><br />
+                                <label className='image-input'>
+                                    Url Image:<br />
+                                    <input type="text" name="image" placeholder="Paste Image Url" value={imageUrlValue} onChange={handleImageInput} />
+                                </label><br /><br />
+                                <label className='location-input'>
+                                    Location:<br />
+                                    <PlacesAutocomplete />
+                                </label>
+                                <input className='submit-btn' type="submit" value="Submit" />
 
                             </form>
+                        </div>
 
-                            <button onClick={() => {
-                                setEditMode(!editMode)
-                                setImages({})
-                            }
-                            }>Cancel</button>
-                        </>
-                    )
-                        :
-                        (
-                            <>
-                                <h2>Details</h2>
-                                <h3>{currentlyViewedCollage.date}</h3>
-                                <h5>{currentlyViewedCollageStory}</h5>
+                    </div>
+                    <Tabs>
+                        <div label="All">
+                            {
+                                renderDestinations.map((destination) => (
+                                    <div key={destination.name}>
 
-                                <CarouselProvider
-                                    naturalSlideWidth={28}
-                                    naturalSlideHeight={15}
-                                    orientation="horizontal"
-                                    totalSlides={currentlyViewedCollagePhotos.length}
-                                    visibleSlides={1}
-                                    step={1}
-                                    infinite={true}
-                                >
-
-                                    <div className='details-carousel'>
-                                        <div className="details-slider">
-                                            <Slider key={currentlyViewedCollage.date} >
-                                                {currentlyViewedCollagePhotos.map((photoUrl, index) => <Slide className='details-slide' key={index} index={index}><img src={photoUrl} alt="image" width='325' height='300' /></Slide>)}
-                                            </Slider>
+                                        <div className="destination-details">
+                                            <h2>{destination.name}</h2>
+                                            <img src={destination.image} alt={destination.name} />
+                                            <p>{destination.addr}</p>
+                                            <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
                                         </div>
-
-                                        <div className="control-btn backbutton">
-                                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
-                                        </div>
-
-                                        <div className="control-btn nextbutton">
-                                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
-                                        </div>
+                                        <br />
+                                        <br />
+                                        <hr />
                                     </div>
 
-                                </CarouselProvider>
+                                ))
+                            }
+                        </div>
 
-                                <button onClick={() => setEditMode(!editMode)}>Edit</button>
-                                <button onClick={deleteMemory}>Delete</button>
-                            </>
-                        )}
-                </div>
-            </div>
-
-
-            {/* <h1 id='Logo'>Logo here!!</h1> */}
-
-            <div id='main'>
-                <button className='openbtn' onClick={openNav}>☰</button>
-            </div>
-            <div id='mySideBar'>
-                <button className="closebtn" onClick={closeNav}>×</button>
-
-
-                <button className='form-drop-down' onClick={toggleForm}>Add Destination</button>
-                <div className='content'>
-
-                    <div className='form-div'>
-                        <form onSubmit={addDestination}>
-                            <label className='place-input'>
-                                Name of Place:<br />
-                                <input type="text" name="name" placeholder="What's the Name?" value={nameValue} onChange={handleNameInput} />
-                            </label><br /><br />
-                            <label className='image-input'>
-                                Url Image:<br />
-                                <input type="text" name="image" placeholder="Paste Image Url" value={imageUrlValue} onChange={handleImageInput} />
-                            </label><br /><br />
-                            <label className='location-input'>
-                                Location:<br />
-                                <PlacesAutocomplete />
-                            </label>
-                            <input className='submit-btn' type="submit" value="Submit" />
-
-                        </form>
-                    </div>
-
-                </div>
-                <Tabs>
-                    <div label="All">
-                        {
-                            renderDestinations.map((destination) => (
-                                <div key={destination.name}>
+                        <div label="Want2Go">
+                            {wantToGoDestinations.map((destination, index) => (
+                                <div key={index}>
 
                                     <div className="destination-details">
                                         <h2>{destination.name}</h2>
                                         <img src={destination.image} alt={destination.name} />
                                         <p>{destination.addr}</p>
-                                        <button onClick={() => deleteFromAllLists(destination)}>Delete</button>
+                                        <button onClick={() => deleteFromList(destination)}>Delete</button>
                                     </div>
-                                    <br/> 
-                                    <br/> 
-                                    <hr/>
+                                    <br />
+                                    <br />
+                                    <hr />
                                 </div>
 
-                            ))
-                        }
-                    </div>
-
-                    <div label="Want2Go">
-                        {wantToGoDestinations.map((destination, index) => (
-                            <div key={index}>
-
-                                <div className="destination-details">
-                                    <h2>{destination.name}</h2>
-                                    <img src={destination.image} alt={destination.name} />
-                                    <p>{destination.addr}</p>
-                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                </div>
-                            </div>
-
-                        ))}
-                    </div>
+                            ))}
+                        </div>
 
 
-                    <div label="Visited">
-                        {visitedDestinations.map((destination, index) => (
-                            <div key={index} >
+                        <div label="Visited">
+                            {visitedDestinations.map((destination, index) => (
+                                <div key={index} >
 
-                                <div className="destination-details">
-                                    <h2>{destination.name}</h2>
-                                    <img src={destination.image} alt={destination.name} />
-                                    <p>{destination.addr}</p>
-                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
-                                    <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
-                                </div>
-
-                                <CarouselProvider
-                                    naturalSlideWidth={38}
-                                    naturalSlideHeight={35}
-                                    orientation="horizontal"
-                                    totalSlides={collages.filter((collage) => destination.id === collage.userDestinationId).length}
-                                    visibleSlides={3}
-                                    step={1}
-                                    infinite={true}
-                                >
-
-                                    <div className='carousel'>
-                                        <div className="slider">
-                                            <Slider key={index} >
-                                                {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId, collage.id)}>Details</button></Slide> : null)}
-                                            </Slider>
-                                        </div>
-
-                                        <div className="control-btn backbutton">
-                                            <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
-                                        </div>
-
-                                        <div className="control-btn nextbutton">
-                                            <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
-                                        </div>
+                                    <div className="destination-details">
+                                        <h2>{destination.name}</h2>
+                                        <img src={destination.image} alt={destination.name} />
+                                        <p>{destination.addr}</p>
+                                        <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                        <button onClick={() => toggleMemoryPopUpWindow(destination.id)}>Add Memory</button>
                                     </div>
 
-                                </CarouselProvider>
-                            </div>
+                                    <CarouselProvider
+                                        naturalSlideWidth={38}
+                                        naturalSlideHeight={35}
+                                        orientation="horizontal"
+                                        totalSlides={collages.filter((collage) => destination.id === collage.userDestinationId).length}
+                                        visibleSlides={3}
+                                        step={1}
+                                        infinite={true}
+                                    >
 
-                        ))}
-                    </div>
+                                        <div className='carousel'>
+                                            <div className="slider">
+                                                <Slider key={index} >
+                                                    {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId, collage.id)}>Details</button></Slide> : null)}
+                                                </Slider>
+                                            </div>
 
-                    <div label="Favorited">
+                                            <div className="control-btn backbutton">
+                                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                                            </div>
 
-                        {favoritedDestinations.map((destination, index) => (
-                            <div key={index} >
+                                            <div className="control-btn nextbutton">
+                                                <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
+                                            </div>
+                                        </div>
 
-                                <div className="destination-details">
-                                    <h2>{destination.name}</h2>
-                                    <img src={destination.image} alt={destination.name} />
-                                    <p>{destination.addr}</p>
-                                    <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                    </CarouselProvider>
+
+                                    <br />
+                                    <br />
+                                    <hr />
                                 </div>
-                            </div>
 
-                        ))}
-                    </div>
+                            ))}
+                        </div>
 
-                    <div label="Shared">
-                        Nothing to see here, this tab is <em>extinct</em>!
+                        <div label="Favorited">
+
+                            {favoritedDestinations.map((destination, index) => (
+                                <div key={index} >
+
+                                    <div className="destination-details">
+                                        <h2>{destination.name}</h2>
+                                        <img src={destination.image} alt={destination.name} />
+                                        <p>{destination.addr}</p>
+                                        <button onClick={() => deleteFromList(destination)}>Delete</button>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <hr />
+                                </div>
+
+                            ))}
+                        </div>
+
+                        <div label="Shared">
+                            Nothing to see here, this tab is <em>extinct</em>!
                 </div>
 
-                </Tabs>
+                    </Tabs>
+                </div>
+
+                <Search panTo={panTo} />
+                <Locate panTo={panTo} />
+                <StyleMap />
+
+                <button className='refresh-btn' onClick={() => window.location.reload(false)}>refresh</button>
+
+
+                <GoogleMap
+                    id='map'
+                    mapContainerStyle={mapContainerStyle}
+                    zoom={8}
+                    center={center}
+                    options={options}
+                    onLoad={onMapLoad}
+                >
+
+                    <TransitMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <SuperMarketMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <ShoppingMallMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <NightClubMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <LodgingMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <HospitalMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <GymMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <CafeMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <AttractionMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    <ResturantMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
+
+                    {/* UserMarkers are markers created by users whereas the ones above is created by data files */}
+
+                    <UserMarkers destinations={renderDestinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
+
+                    {selectedDefaultMarker && (
+                        <InfoWindow
+                            position={{
+                                lat: parseFloat(selectedDefaultMarker.geometry.location.lat),
+                                lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
+                            }}
+                            onCloseClick={() => {
+                                setSelectedDefaultMarker(null);
+                            }}
+                        >
+                            <div className="info-window">
+                                <h2>{selectedDefaultMarker.name}</h2>
+                                {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
+                                <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
+                            </div>
+                        </InfoWindow>
+                    )}
+
+                    {selectedCreatedMarker && (
+                        <InfoWindow
+                            position={{
+                                lat: parseFloat(selectedCreatedMarker.lat + .01), //info box doesn't cover marker with .005 added
+                                lng: parseFloat(selectedCreatedMarker.lng)
+                            }}
+                            onCloseClick={() => {
+                                setSelectedCreatedMarker(null);
+                            }}
+                        >
+                            <div className="info-window">
+                                <h2>{selectedCreatedMarker.name}</h2>
+                                <img src={selectedCreatedMarker.image} alt={selectedCreatedMarker.name} width="400" height="300" />
+                                <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
+                            </div>
+                        </InfoWindow>
+                    )}
+                </GoogleMap>
             </div>
-
-            <Search panTo={panTo} />
-            <Locate panTo={panTo} />
-            <StyleMap />
-
-            <button className='refresh-btn' onClick={() => window.location.reload(false)}>refresh</button>
-
-
-            <GoogleMap
-                id='map'
-                mapContainerStyle={mapContainerStyle}
-                zoom={8}
-                center={center}
-                options={options}
-                onLoad={onMapLoad}
-            >
-
-                <TransitMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <SuperMarketMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <ShoppingMallMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <NightClubMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <LodgingMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <HospitalMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <GymMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <CafeMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <AttractionMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                <ResturantMarkers setSelectedDefaultMarker={setSelectedDefaultMarker} />
-
-                {/* UserMarkers are markers created by users whereas the ones above is created by data files */}
-
-                <UserMarkers destinations={renderDestinations} setSelectedCreatedMarker={setSelectedCreatedMarker} />
-
-                {selectedDefaultMarker && (
-                    <InfoWindow
-                        position={{
-                            lat: parseFloat(selectedDefaultMarker.geometry.location.lat),
-                            lng: parseFloat(selectedDefaultMarker.geometry.location.lng)
-                        }}
-                        onCloseClick={() => {
-                            setSelectedDefaultMarker(null);
-                        }}
-                    >
-                        <div className="info-window">
-                            <h2>{selectedDefaultMarker.name}</h2>
-                            {/* <img src={`${selectedDefaultMarker.photos['photo_reference']}`} /> */}
-                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
-                        </div>
-                    </InfoWindow>
-                )}
-
-                {selectedCreatedMarker && (
-                    <InfoWindow
-                        position={{
-                            lat: parseFloat(selectedCreatedMarker.lat + .01), //info box doesn't cover marker with .005 added
-                            lng: parseFloat(selectedCreatedMarker.lng)
-                        }}
-                        onCloseClick={() => {
-                            setSelectedCreatedMarker(null);
-                        }}
-                    >
-                        <div className="info-window">
-                            <h2>{selectedCreatedMarker.name}</h2>
-                            <img src={selectedCreatedMarker.image} alt={selectedCreatedMarker.name} width="400" height="300" />
-                            <DropDown selectedCreatedMarker={selectedCreatedMarker} addToList={addToList} />
-                        </div>
-                    </InfoWindow>
-                )}
-            </GoogleMap>
-        </div>
         </div>
     );
 }

@@ -54,17 +54,17 @@
 }
 
 #mySideBar {
+    display: inline-block;
+    position: relative;
     height: 90%;
-    width: 0;
-    position: absolute;
+    
     z-index: 1;
     top: 5%;
-    left: 0;
+    left: 2%;
     background-color: brown;
     overflow-x: hidden;
     transition: 0.5s;
     border-radius: 10px;
-    /* padding-top: 60px; */
     padding-left: 4%;
     padding-right: 4%;
     box-shadow: 10px 10px 10px gray;
