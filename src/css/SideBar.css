@@ -57,7 +57,7 @@
     display: inline-block;
     position: relative;
     height: 90%;
-    
+    width: 25%;
     z-index: 1;
     top: 5%;
     left: 2%;
@@ -69,6 +69,17 @@
     padding-right: 4%;
     box-shadow: 10px 10px 10px gray;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#mySideBar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #mySideBar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 #mySideBar .closebtn {
     text-decoration: none;

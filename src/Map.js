@@ -152,10 +152,10 @@ export default function Map(props) {
 
     function openNav() {  
         let mySideBar = document.getElementById("mySideBar")
-        mySideBar.style.width = "38%";
+        mySideBar.style.width = "25%";
         mySideBar.style.paddingLeft = "4%";
         mySideBar.style.paddingRight = "4%";
-        document.getElementsByClassName("openbtn")[0].style.left = '730px';
+        document.getElementsByClassName("openbtn")[0].style.left = '27%';
 
     }
 
@@ -954,9 +954,10 @@ export default function Map(props) {
                             ))}
                         </div>
 
+{/* uncomment this when I'm ready to work on the share feature
                         <div label="Shared">
                             Nothing to see here, this tab is <em>extinct</em>!
-                </div>
+                </div> */}
 
                     </Tabs>
                 </div>
