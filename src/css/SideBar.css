@@ -67,7 +67,8 @@
     border-radius: 10px;
     padding-left: 4%;
     padding-right: 4%;
-    box-shadow: 10px 10px 10px gray;
+    /* box-shadow: 10px 10px 10px gray; */
+    box-shadow: 0 10px 20px rgba(192, 192, 192, 0.5), 0 6px 6px rgba(187, 187, 187, 0.5);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
