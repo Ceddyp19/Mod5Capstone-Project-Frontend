@@ -112,7 +112,7 @@ class Signup extends Component {
 
             </form>
             <div>
-             <span> or <a href="/login">login</a></span>
+             <span id='login-text'> or <a href="/login">login</a></span>
             </div>
             <div>
               {

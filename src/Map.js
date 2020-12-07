@@ -1111,7 +1111,7 @@ function Search({ panTo }) {
                     placeholder="Enter an address"
                 />
                 <ComboboxPopover>
-                    <ComboboxList>
+                    <ComboboxList className='list'>
                         {status === 'OK' &&
                             data.map(({ id, description }) => (
                                 <ComboboxOption key={id} value={description} />

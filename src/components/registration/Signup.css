@@ -19,14 +19,14 @@
     left: 50%; */
     background: rgba(0, 0, 0, 0.6);
 }
-span {
+#login-text {
     text-decoration: none;
     color: whitesmoke;
     /* background: rgba(0, 0, 0, 0.6); */
 }
-span a{
+#login-text a{
     text-decoration: none;
-    color: whitesmoke;
+    /* color: whitesmoke; */
 }
 
 img {

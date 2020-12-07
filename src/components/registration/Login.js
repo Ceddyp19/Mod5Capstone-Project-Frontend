@@ -100,7 +100,7 @@ class Login extends Component {
                 Enter
           </button>
               <div>
-               <span>or <a href="/signup">sign up</a></span>
+               <span id='signup-text'>or <a href="/signup">sign up</a></span>
               </div>
 
             </form>
