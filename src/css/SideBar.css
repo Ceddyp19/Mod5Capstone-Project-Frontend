@@ -14,6 +14,12 @@
 
 /* the code above is an example of variables in css. We use the root element to make the var global. "var(--background, 'default color')" to set call vairable */
 
+.details-btn {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
 .form-drop-down {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -200,33 +206,47 @@
 
 .carousel {
     /* text-align: center; */
-    margin-left: 19px;
+    /* margin-left: 19px; */
+    position: relative;
+    top: 20px;
+    padding: 5%;
+    /* background-color: hotpink; */
+    /* overflow: hidden; */
 }
 
-.carousel .slider p {
+/* .carousel .slider p {
     position: relative;
     text-align: center;
     right: 15px;
-}
+} */
 
 .arrow-buttons {
     background-color: transparent;
     border: none;
-    font-size: 5em;
-    color: rgb(116, 241, 137);
+    font-size: 4em;
+    color: rgb(21, 77, 196);
 }
 
-.slide {
+/* .slide {
     text-align: center;
     border: antiquewhite;
-}
+} */
 
-.slide button {
+/* .slide button {
     position: relative;
     right: 5%;
+} */
+
+#backbutton {
+    position: relative;
+    float: left;
+    right: 10px;
+    top: 55px;
 }
 
-/* .collage{
-  
-      
-  } */
+#nextbutton {
+    position: relative;
+    float: right;
+    left: 10px;
+    bottom: 165px;
+}

@@ -150,7 +150,7 @@ export default function Map(props) {
         }
     }
 
-    function openNav() {  
+    function openNav() {
         let mySideBar = document.getElementById("mySideBar")
         mySideBar.style.width = "25%";
         mySideBar.style.paddingLeft = "4%";
@@ -904,23 +904,22 @@ export default function Map(props) {
                                         naturalSlideHeight={35}
                                         orientation="horizontal"
                                         totalSlides={collages.filter((collage) => destination.id === collage.userDestinationId).length}
-                                        visibleSlides={3}
+                                        visibleSlides={1}
                                         step={1}
                                         infinite={true}
                                     >
 
                                         <div className='carousel'>
+                                            <div  id='backbutton' className="control-btn backbutton">
+                                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
+                                            </div>
                                             <div className="slider">
                                                 <Slider key={index} >
-                                                    {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId, collage.id)}>Details</button></Slide> : null)}
+                                                    {collages.map((collage, index) => destination.id === collage.userDestinationId ? <Slide className='slide' key={index} index={index}><ReactPhotoCollage className='collage' {...collage} /> <button onClick={() => toggleDetailsPopUpWindow(collage.userDestinationId, collage.id)} class='details-btn'>Details</button></Slide> : null)}
                                                 </Slider>
                                             </div>
 
-                                            <div className="control-btn backbutton">
-                                                <ButtonBack className='arrow-buttons fa fa-angle-left'></ButtonBack>
-                                            </div>
-
-                                            <div className="control-btn nextbutton">
+                                            <div id='nextbutton' className="control-btn nextbutton">
                                                 <ButtonNext className="arrow-buttons fa fa-angle-right"></ButtonNext>
                                             </div>
                                         </div>
@@ -954,7 +953,7 @@ export default function Map(props) {
                             ))}
                         </div>
 
-{/* uncomment this when I'm ready to work on the share feature
+                        {/* uncomment this when I'm ready to work on the share feature
                         <div label="Shared">
                             Nothing to see here, this tab is <em>extinct</em>!
                 </div> */}
