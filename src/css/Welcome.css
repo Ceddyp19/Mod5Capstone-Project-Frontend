@@ -49,7 +49,7 @@
 
 .right {
   right: 0;
-  background-color: black;
+  background: linear-gradient(90deg, black, black, brown,grey, brown, black, black);
 }
 
 /* If you want the content centered horizontally and vertically */
